@@ -80,11 +80,37 @@ class TestExtraction(unittest.TestCase):
             for b in c["bullets"]:
                 self.assertNotRegex(b, r"\d과목")
 
-    def test_no_control_characters_survive(self):
+    def test_no_control_or_private_use_characters_survive(self):
+        # \x07 alone isn't enough: PDF extraction also leaves other C0
+        # control bytes (mis-decoded graphics, e.g. card 204's Gantt
+        # chart) and Private Use Area glyphs (decorative icon stand-ins,
+        # e.g. the "예제" badge) embedded in title/bullet text.
+        def offenders(s):
+            return [ch for ch in s
+                    if (ord(ch) < 0x20 and ch != "\n")
+                    or 0xE000 <= ord(ch) <= 0xF8FF]
+
+        bad = []
         for c in self.cards:
-            self.assertNotIn("\x07", c["title"])
+            if offenders(c["title"]):
+                bad.append((c["id"], "title", c["title"]))
             for b in c["bullets"]:
-                self.assertNotIn("\x07", b)
+                if offenders(b):
+                    bad.append((c["id"], "bullet", b))
+        self.assertEqual(bad, [], f"control/PUA characters survived: {bad}")
+
+    def test_card_204_bullets_are_clean_and_nonempty(self):
+        # Regression: card 204's Gantt-chart example mis-decodes as control
+        # byte soup with no recoverable text (analogous to id 142's title
+        # rendering as a graphic). Not parseable; bullet_overrides.json
+        # supplies a hand-read replacement.
+        bullets = self.by_id["204"]["bullets"]
+        self.assertTrue(bullets)
+        for b in bullets:
+            self.assertTrue(b.strip())
+            for ch in b:
+                self.assertFalse(ord(ch) < 0x20 and ch != "\n")
+                self.assertFalse(0xE000 <= ord(ch) <= 0xF8FF)
 
     def test_every_card_has_a_nonempty_title(self):
         empty = [c["id"] for c in self.cards if not c["title"].strip()]

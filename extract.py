@@ -40,8 +40,23 @@ def is_hangul(ch):
 
 
 def normalize(raw):
-    """The extractor emits BEL where the source uses a narrow space."""
-    return raw.replace("\x07", " ")
+    """Undo extractor artifacts that are not real Korean/English content.
+
+    - \\x07 stands in for a narrow space in the source; turn it into one.
+    - Codepoints in the Private Use Area (U+E000-U+F8FF) are decorative
+      glyphs (e.g. the book's "예제" example-icon badge) with no textual
+      meaning of their own; drop them.
+    - Any other C0 control byte (0x00-0x1F, excluding the newline that
+      structures the extracted text) is a PDF-extraction artifact, not
+      content; drop it too.
+    - Dropping a glyph can leave two spaces where the source had one;
+      collapse them back down.
+    """
+    text = raw.replace("\x07", " ")
+    text = re.sub(r"[-]", "", text)
+    text = re.sub(r"[\x00-\x09\x0b-\x1f]", "", text)
+    text = re.sub(r" {2,}", " ", text)
+    return text
 
 
 def is_noise(line):
@@ -116,7 +131,7 @@ def titles_by_font(pdf_path):
                 if clean:
                     buf.append(clean)
             elif ID_FONT in bf and re.fullmatch(r"\d{3}", text.strip()):
-                titles[text.strip()] = _join_title_runs(buf)
+                titles[text.strip()] = normalize(_join_title_runs(buf))
                 buf.clear()
             elif text.strip():
                 buf.clear()
@@ -201,6 +216,7 @@ def extract(pdf_path=PDF):
     text = read_text(pdf_path)
     marks = find_markers(text)
     overrides = load_json(os.path.join(HERE, "title_overrides.json"), {})
+    bullet_overrides = load_json(os.path.join(HERE, "bullet_overrides.json"), {})
     font_titles = titles_by_font(pdf_path)
 
     def title_for(cid, m):
@@ -228,7 +244,10 @@ def extract(pdf_path=PDF):
             "subject": num,
             "subjectName": name,
             "title": title,
-            "bullets": split_bullets("\n".join(keep)),
+            # A graphic (table/chart) that has no text-stream representation
+            # can't be parsed; bullet_overrides.json supplies a hand-read
+            # replacement for those, same precedence as title_overrides.
+            "bullets": bullet_overrides.get(cid) or split_bullets("\n".join(keep)),
             "kind": None,
             "hook": None,
         })
