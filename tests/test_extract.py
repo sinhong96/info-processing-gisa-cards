@@ -90,6 +90,18 @@ class TestExtraction(unittest.TestCase):
         empty = [c["id"] for c in self.cards if not c["title"].strip()]
         self.assertEqual(empty, [], f"cards with empty titles: {empty}")
 
+    def test_title_does_not_leak_previous_cards_bullet_tail(self):
+        # Regression: title_span could not tell a wrapped title from the
+        # tail of the previous card's last bullet using text alone (e.g.
+        # a bullet ending in '-함' or an arrow-diagram fragment doesn't
+        # match any of its stop conditions). Font metadata fixes this.
+        # Titles confirmed against the rendered PDF (pages 1-8, 20-22).
+        self.assertEqual(self.by_id["014"]["title"], "UML의 주요 관계")
+        self.assertEqual(self.by_id["022"]["title"], "사용자 인터페이스의 기본 원칙")
+        self.assertEqual(self.by_id["039"]["title"], "모듈(Module)")
+        self.assertEqual(self.by_id["055"]["title"], "미들웨어의 종류")
+        self.assertEqual(self.by_id["146"]["title"], "CREATE TABLE")
+
     def test_kind_and_hook_start_null(self):
         self.assertIsNone(self.by_id["002"]["kind"])
         self.assertIsNone(self.by_id["002"]["hook"])
