@@ -29,24 +29,41 @@ Located at:
 The master PDF is the single source of truth. The four subject PDFs are redundant extracts
 and are not read by the pipeline.
 
-**Content inventory:** 320 numbered points, IDs 001–324. IDs 149, 150, 151, and 196 do not
-exist in the source — this is a property of the book, not an extraction failure, and the
-pipeline must treat these gaps as expected.
+**Content inventory:** **324 numbered points, IDs 001–324, with no gaps.** Every ID in that
+range is present exactly once.
 
 | 과목 | Name | Points | Range |
 | --- | --- | --- | --- |
 | 1 | 소프트웨어 설계 | 55 | 001–055 |
 | 2 | 소프트웨어 개발 | 45 | 056–100 |
-| 3 | 데이터베이스 구축 | ~54 | 101–154 |
-| 4 | 프로그래밍 언어 활용 | ~68 | 155–222 |
-| 5 | 정보시스템 구축 관리 | ~98 | 223–324 |
+| 3 | 데이터베이스 구축 | 54 | 101–154 |
+| 4 | 프로그래밍 언어 활용 | 61 | 155–215 |
+| 5 | 정보시스템 구축 관리 | 109 | 216–324 |
 
-Subject boundaries for 과목 3/4/5 are approximate in this table because the subject PDFs
-overlap. `extract.py` determines the true boundaries from the `N과목` headings in the
-master PDF, and the counts in `cards.json` are authoritative.
+Boundaries were read from the `N과목` headings in the master PDF (pages 1, 9, 16, 23, 33)
+and confirmed against the per-subject PDFs. 55+45+54+61+109 = 324.
 
-Text extracts cleanly with `pypdf` (already installed). Note: the extractor emits `\x07`
-(BEL) where the source uses a narrow space — this must be normalized to a regular space.
+Text extracts cleanly with `pypdf` (already installed), but four source quirks drive the
+extractor design. All four were found by running the extraction, not by inspection:
+
+1. **`\x07` (BEL) stands in for a narrow space.** Must be normalized to a regular space
+   before anything else, or every bullet carries control characters.
+2. **Each point is anchored by the marker `NNN\n초\n치기\n`** — the 3-digit ID glued to the
+   end of the title, followed by the 초치기 logo text. Matching on `\d{3}` alone silently
+   misses points; matching on the full marker finds all 324. The page header also contains
+   a bare `초\n치기`, but it is never preceded by a 3-digit number, so the anchored pattern
+   excludes it.
+3. **Titles may wrap onto two lines** (`행위(Behavioral)` + `다이어그램의 종류` = 016). The
+   walk-back must collect up to two lines and stop at a line ending in `.`, `다`, or `음` —
+   those endings mark body prose, not a title.
+4. **Korean text wraps mid-word** (`확`/`실히`, `기록`/`을`). Joining wrapped lines with a
+   space corrupts the text. Rule: if the line ends in whitespace, join with a space;
+   otherwise, if the characters on both sides of the break are Hangul, join with no
+   separator; otherwise join with a space. This keeps `Interaction Overview Diagram`
+   spaced while repairing `확실히`.
+
+Reading order in the PDF is not ID order — 002 precedes 001 on page 1 — so nothing may
+depend on positional sequence. Subject is assigned by ID range.
 
 ## Architecture
 
@@ -82,7 +99,21 @@ Each record:
 
 `kind` and `hook` are authored, not extracted. `extract.py` writes `kind: null` and
 `hook: null` on first run and **must never overwrite** an already-authored value on
-re-run — it merges by `id`.
+re-run — it merges by `id`. Titles listed in `title_overrides.json` likewise win over
+extracted titles. Together these mean re-running extraction is always safe.
+
+Subject is assigned from a hardcoded ID-range table, because PDF reading order is not ID
+order:
+
+```python
+SUBJECT_RANGES = [
+    (1, "소프트웨어 설계",       1,  55),
+    (2, "소프트웨어 개발",       56, 100),
+    (3, "데이터베이스 구축",     101, 154),
+    (4, "프로그래밍 언어 활용",  155, 215),
+    (5, "정보시스템 구축 관리",  216, 324),
+]
+```
 
 ### 2. `scenes/NNN.svg` — the visual layer
 
@@ -133,12 +164,12 @@ there is no server and no account.
 ## Scope and Phasing
 
 The SVG scenes are hand-authored, so quality is gated on human review of the style. Doing
-all 320 in one pass risks discovering a style problem at card 300.
+all 324 in one pass risks discovering a style problem at card 300.
 
 - **Phase 1 — 1과목 only (55 cards), complete end to end.** `extract.py`, all 55 scenes,
   `build.py`, and the full study app. Delivered as something he actually studies with.
 - **Review gate.** He studies Phase 1 and reports what is wrong with the style.
-- **Phases 2–5 — remaining 265 cards,** one 과목 per phase, with Phase 1 corrections
+- **Phases 2–5 — remaining 269 cards,** one 과목 per phase, with Phase 1 corrections
   applied.
 
 Each phase ships a working `study.html`. There is no phase that leaves the deck unusable.
@@ -148,9 +179,12 @@ Each phase ships a working `study.html`. There is no phase that leaves the deck 
 Before any phase is called complete:
 
 1. **Coverage:** every card in `cards.json` for that 과목 has a matching `scenes/NNN.svg`.
-2. **Gaps:** no unexpected ID gaps beyond the known-absent 149, 150, 151, 196.
-3. **Fidelity:** bullet text in `cards.json` matches the PDF source — spot-checked against
-   the rendered PDF, not just the extracted stream.
+2. **Gaps:** IDs are contiguous with no gaps and no duplicates; the total is 324.
+3. **Fidelity:** every title and bullet is checked against the *rendered* PDF pages, not
+   the extracted text stream — the two can disagree. Titles that extraction gets wrong are
+   corrected in `title_overrides.json`, keyed by ID, which `extract.py` applies on every
+   run so corrections survive re-extraction. ID 142 is known to extract with an empty title
+   and requires an override.
 4. **Render:** `study.html` is loaded in headless Chrome and screenshotted, confirming
    cards actually display. Writing the file is not evidence that it renders.
 5. **Interaction:** flip, navigate, filter, and mark are exercised in the browser, not
@@ -175,6 +209,7 @@ InformationProcess-gisa-Cards/
 ├── extract.py
 ├── build.py
 ├── cards.json
+├── title_overrides.json
 ├── scenes/
 │   ├── 001.svg
 │   └── ...
