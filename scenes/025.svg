@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 160">
+  <defs><marker id="arw" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#0b8ad4"/></marker></defs>
+  <rect x="16"  y="36" width="116" height="84" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="74"  y="74"  font-size="22" text-anchor="middle">🎯</text>
+  <text x="74"  y="100" font-size="13" font-weight="800" text-anchor="middle" fill="#0a3d5c">설계 목표</text>
+  <text x="74"  y="116" font-size="11" text-anchor="middle" fill="#9aa4ae">설정</text>
+  <path d="M134 78 L148 78" stroke="#0b8ad4" stroke-width="2.5" marker-end="url(#arw)"/>
+  <rect x="152" y="36" width="116" height="84" rx="8" fill="#fff3d6" stroke="#e8b33a" stroke-width="2"/>
+  <text x="210" y="74"  font-size="22" text-anchor="middle">🖥️</text>
+  <text x="210" y="100" font-size="13" font-weight="800" text-anchor="middle" fill="#7a4f00">시스템 타입</text>
+  <text x="210" y="116" font-size="11" text-anchor="middle" fill="#9aa4ae">결정</text>
+  <path d="M270 78 L284 78" stroke="#0b8ad4" stroke-width="2.5" marker-end="url(#arw)"/>
+  <rect x="288" y="36" width="116" height="84" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="346" y="74"  font-size="22" text-anchor="middle">🏛️</text>
+  <text x="346" y="100" font-size="13" font-weight="800" text-anchor="middle" fill="#1a1a1a">아키텍처 패턴</text>
+  <text x="346" y="116" font-size="11" text-anchor="middle" fill="#9aa4ae">적용</text>
+  <path d="M406 78 L420 78" stroke="#0b8ad4" stroke-width="2.5" marker-end="url(#arw)"/>
+  <rect x="424" y="36" width="116" height="84" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="482" y="74"  font-size="22" text-anchor="middle">🔩</text>
+  <text x="482" y="100" font-size="13" font-weight="800" text-anchor="middle" fill="#0a3d5c">서브시스템</text>
+  <text x="482" y="116" font-size="11" text-anchor="middle" fill="#9aa4ae">구체화</text>
+  <path d="M542 78 L556 78" stroke="#0b8ad4" stroke-width="2.5" marker-end="url(#arw)"/>
+  <rect x="560" y="36" width="144" height="84" rx="8" fill="#fff3d6" stroke="#e8b33a" stroke-width="2"/>
+  <text x="632" y="74"  font-size="22" text-anchor="middle">✅</text>
+  <text x="632" y="100" font-size="13" font-weight="800" text-anchor="middle" fill="#7a4f00">검토</text>
+  <text x="632" y="116" font-size="11" text-anchor="middle" fill="#9aa4ae">Review</text>
+</svg>

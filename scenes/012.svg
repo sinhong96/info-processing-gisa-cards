@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 190">
+  <rect x="24" y="16" width="672" height="44" rx="8" fill="#4a5560"/>
+  <text x="60" y="34" font-size="20" text-anchor="middle">📁</text>
+  <text x="360" y="34" font-size="16" font-weight="800" fill="#fff" text-anchor="middle">HIPO</text>
+  <text x="360" y="52" font-size="12" fill="#9aa4ae" text-anchor="middle">Hierarchy Input Process Output</text>
+  <rect x="24"  y="74" width="215" height="100" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="131" y="110" font-size="28" text-anchor="middle">⬇️</text>
+  <text x="131" y="142" font-size="14" font-weight="800" text-anchor="middle" fill="#0a3d5c">하향식 개발</text>
+  <text x="131" y="160" font-size="11" text-anchor="middle" fill="#9aa4ae">문서화 도구</text>
+  <rect x="252" y="74" width="215" height="100" rx="8" fill="#fff3d6" stroke="#e8b33a" stroke-width="2"/>
+  <text x="359" y="110" font-size="28" text-anchor="middle">📊</text>
+  <text x="359" y="142" font-size="14" font-weight="800" text-anchor="middle" fill="#7a4f00">기호·도표 사용</text>
+  <text x="359" y="160" font-size="11" text-anchor="middle" fill="#9aa4ae">보기 쉽고 이해 용이</text>
+  <rect x="480" y="74" width="215" height="100" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="587" y="110" font-size="28" text-anchor="middle">🔗</text>
+  <text x="587" y="142" font-size="14" font-weight="800" text-anchor="middle" fill="#1a1a1a">기능·자료 동시 표현</text>
+  <text x="587" y="160" font-size="11" text-anchor="middle" fill="#9aa4ae">의존 관계 표현 가능</text>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 190">
+  <rect x="24" y="16" width="672" height="50" rx="8" fill="#4a5560"/>
+  <text x="360" y="36" font-size="14" fill="#fff" text-anchor="middle">UML 기본 기능 외에 추가적인 기능을 표현하기 위해 사용</text>
+  <text x="360" y="56" font-size="13" fill="#9aa4ae" text-anchor="middle">길러멧(Guillemet) — 겹화살괄호 사이에 기술</text>
+  <rect x="90" y="82" width="540" height="84" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="180" y="132" font-size="38" font-weight="800" fill="#0b8ad4" text-anchor="middle">&lt;&lt;</text>
+  <text x="360" y="136" font-size="22" font-weight="800" fill="#0a3d5c" text-anchor="middle">interface</text>
+  <text x="540" y="132" font-size="38" font-weight="800" fill="#0b8ad4" text-anchor="middle">&gt;&gt;</text>
+  <text x="360" y="158" font-size="12" fill="#9aa4ae" text-anchor="middle">예: &lt;&lt;interface&gt;&gt; &lt;&lt;abstract&gt;&gt; &lt;&lt;extends&gt;&gt;</text>
+</svg>

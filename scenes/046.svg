@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 190">
+  <defs><marker id="arw" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#0b8ad4"/></marker></defs>
+  <text x="360" y="22" font-size="14" fill="#9aa4ae" text-anchor="middle">재사용 규모에 따른 분류</text>
+  <rect x="24"  y="36" width="195" height="130" rx="10" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="121" y="80"  font-size="28" text-anchor="middle">⚙️</text>
+  <text x="121" y="112" font-size="16" font-weight="800" text-anchor="middle" fill="#1a1a1a">함수와 객체</text>
+  <text x="121" y="134" font-size="12" text-anchor="middle" fill="#9aa4ae">소규모</text>
+  <path d="M221 101 L248 101" stroke="#0b8ad4" stroke-width="2.5" marker-end="url(#arw)"/>
+  <rect x="252" y="36" width="216" height="130" rx="10" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="360" y="80"  font-size="28" text-anchor="middle">🧩</text>
+  <text x="360" y="112" font-size="16" font-weight="800" text-anchor="middle" fill="#7a4f00">컴포넌트</text>
+  <text x="360" y="134" font-size="12" text-anchor="middle" fill="#9aa4ae">중규모</text>
+  <path d="M470 101 L497 101" stroke="#0b8ad4" stroke-width="2.5" marker-end="url(#arw)"/>
+  <rect x="501" y="36" width="195" height="130" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="598" y="80"  font-size="28" text-anchor="middle">🏢</text>
+  <text x="598" y="112" font-size="16" font-weight="800" text-anchor="middle" fill="#0a3d5c">애플리케이션</text>
+  <text x="598" y="134" font-size="12" text-anchor="middle" fill="#9aa4ae">대규모</text>
+</svg>

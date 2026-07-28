@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 200">
+  <rect x="235" y="16" width="250" height="70" rx="8" fill="#0b8ad4"/>
+  <text x="360" y="46"  font-size="22" text-anchor="middle">👴 부모 클래스</text>
+  <text x="360" y="68"  font-size="12" fill="#cce8f7" text-anchor="middle">속성 A, 속성 B, 연산 X()</text>
+  <line x1="360" y1="86" x2="360" y2="114" stroke="#0b8ad4" stroke-width="2.5" stroke-dasharray="6 3"/>
+  <polygon points="350,114 370,114 360,126" fill="#0b8ad4"/>
+  <rect x="80"  y="128" width="230" height="60" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="195" y="154" font-size="16" font-weight="800" text-anchor="middle" fill="#0a3d5c">👦 자식 클래스 A</text>
+  <text x="195" y="174" font-size="11" text-anchor="middle" fill="#9aa4ae">속성 A, B 상속 + 속성 C</text>
+  <rect x="410" y="128" width="230" height="60" rx="8" fill="#fff3d6" stroke="#e8b33a" stroke-width="2"/>
+  <text x="525" y="154" font-size="16" font-weight="800" text-anchor="middle" fill="#7a4f00">👦 자식 클래스 B</text>
+  <text x="525" y="174" font-size="11" text-anchor="middle" fill="#9aa4ae">속성 A, B 상속 + 속성 D</text>
+</svg>

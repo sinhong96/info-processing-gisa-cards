@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 220">
+  <defs><marker id="arw" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#4a5560"/></marker></defs>
+  <rect x="270" y="16" width="180" height="90" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="360" y="52"  font-size="26" text-anchor="middle">💾</text>
+  <text x="360" y="78"  font-size="17" font-weight="800" text-anchor="middle" fill="#0a3d5c">Model</text>
+  <text x="360" y="98"  font-size="11" text-anchor="middle" fill="#9aa4ae">핵심 기능 · 데이터 보관</text>
+  <rect x="40"  y="120" width="180" height="90" rx="10" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="130" y="156" font-size="26" text-anchor="middle">👁️</text>
+  <text x="130" y="182" font-size="17" font-weight="800" text-anchor="middle" fill="#7a4f00">View</text>
+  <text x="130" y="202" font-size="11" text-anchor="middle" fill="#9aa4ae">사용자에게 정보 표시</text>
+  <rect x="500" y="120" width="180" height="90" rx="10" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2.5"/>
+  <text x="590" y="156" font-size="26" text-anchor="middle">🎮</text>
+  <text x="590" y="182" font-size="17" font-weight="800" text-anchor="middle" fill="#1a1a1a">Controller</text>
+  <text x="590" y="202" font-size="11" text-anchor="middle" fill="#9aa4ae">변경 요청 처리·명령</text>
+  <path d="M310 106 L200 136" stroke="#4a5560" stroke-width="2" stroke-dasharray="5 3" marker-end="url(#arw)" fill="none"/>
+  <path d="M410 106 L520 136" stroke="#4a5560" stroke-width="2" stroke-dasharray="5 3" marker-end="url(#arw)" fill="none"/>
+  <path d="M500 165 L220 165" stroke="#4a5560" stroke-width="2" stroke-dasharray="5 3" marker-end="url(#arw)" fill="none"/>
+</svg>

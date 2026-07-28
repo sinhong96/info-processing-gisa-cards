@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 200">
+  <rect x="24" y="16" width="672" height="44" rx="8" fill="#0b8ad4"/>
+  <text x="360" y="36" font-size="14" fill="#fff" text-anchor="middle">UML — 객체지향 모델링 표준 언어</text>
+  <text x="360" y="54" font-size="12" fill="#cce8f7" text-anchor="middle">개발자와 고객 간 의사소통을 원활하게 하기 위한 표준화 언어</text>
+  <rect x="24"  y="74" width="204" height="110" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="126" y="112" font-size="30" text-anchor="middle">🧱</text>
+  <text x="126" y="144" font-size="16" font-weight="800" text-anchor="middle" fill="#0a3d5c">사물(Things)</text>
+  <text x="126" y="164" font-size="11" text-anchor="middle" fill="#9aa4ae">모델을 구성하는 요소</text>
+  <rect x="258" y="74" width="204" height="110" rx="8" fill="#fff3d6" stroke="#e8b33a" stroke-width="2"/>
+  <text x="360" y="112" font-size="30" text-anchor="middle">🔗</text>
+  <text x="360" y="144" font-size="16" font-weight="800" text-anchor="middle" fill="#7a4f00">관계(Relationships)</text>
+  <text x="360" y="164" font-size="11" text-anchor="middle" fill="#9aa4ae">사물 간의 연관성</text>
+  <rect x="492" y="74" width="204" height="110" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="594" y="112" font-size="30" text-anchor="middle">📐</text>
+  <text x="594" y="144" font-size="16" font-weight="800" text-anchor="middle" fill="#1a1a1a">다이어그램(Diagram)</text>
+  <text x="594" y="164" font-size="11" text-anchor="middle" fill="#9aa4ae">시각적 표현</text>
+</svg>

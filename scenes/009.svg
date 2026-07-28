@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 200">
+  <rect x="24" y="16" width="672" height="50" rx="8" fill="#0b8ad4"/>
+  <text x="360" y="36" font-size="13" fill="#fff" text-anchor="middle">개발 대상에 대한 사용자의 요구사항을 이해하고 문서화(명세화)하는 활동</text>
+  <text x="360" y="56" font-size="13" font-weight="800" fill="#fff" text-anchor="middle">소프트웨어 개발의 실제적인 첫 단계</text>
+  <rect x="24"  y="80" width="158" height="100" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="103" y="118" font-size="26" text-anchor="middle">🔍</text>
+  <text x="103" y="148" font-size="13" font-weight="800" text-anchor="middle" fill="#0a3d5c">타당성 조사</text>
+  <text x="103" y="166" font-size="11" text-anchor="middle" fill="#9aa4ae">비용·일정 제약 설정</text>
+  <rect x="196" y="80" width="158" height="100" rx="8" fill="#fff3d6" stroke="#e8b33a" stroke-width="2"/>
+  <text x="275" y="118" font-size="26" text-anchor="middle">🎯</text>
+  <text x="275" y="148" font-size="13" font-weight="800" text-anchor="middle" fill="#7a4f00">목표 정의</text>
+  <text x="275" y="166" font-size="11" text-anchor="middle" fill="#9aa4ae">요구를 정확히 추출</text>
+  <rect x="368" y="80" width="158" height="100" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="447" y="118" font-size="26" text-anchor="middle">🗺️</text>
+  <text x="447" y="148" font-size="13" font-weight="800" text-anchor="middle" fill="#1a1a1a">해결 방식 결정</text>
+  <text x="447" y="166" font-size="11" text-anchor="middle" fill="#9aa4ae">문제 해결 방안 도출</text>
+  <rect x="540" y="80" width="158" height="100" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="619" y="118" font-size="26" text-anchor="middle">📄</text>
+  <text x="619" y="148" font-size="13" font-weight="800" text-anchor="middle" fill="#0a3d5c">명세화</text>
+  <text x="619" y="166" font-size="11" text-anchor="middle" fill="#9aa4ae">문서로 기록</text>
+</svg>

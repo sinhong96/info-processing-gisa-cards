@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 200">
+  <rect x="24"  y="16" width="109" height="76" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="78"  y="50"  font-size="22" text-anchor="middle">🏗️</text>
+  <text x="78"  y="78"  font-size="13" font-weight="800" text-anchor="middle" fill="#0a3d5c">클래스</text>
+  <rect x="145" y="16" width="109" height="76" rx="8" fill="#fff3d6" stroke="#e8b33a" stroke-width="2"/>
+  <text x="199" y="50"  font-size="22" text-anchor="middle">📦</text>
+  <text x="199" y="78"  font-size="13" font-weight="800" text-anchor="middle" fill="#7a4f00">객체</text>
+  <rect x="266" y="16" width="109" height="76" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="320" y="50"  font-size="22" text-anchor="middle">🧩</text>
+  <text x="320" y="78"  font-size="13" font-weight="800" text-anchor="middle" fill="#0a3d5c">컴포넌트</text>
+  <rect x="387" y="16" width="109" height="76" rx="8" fill="#fff3d6" stroke="#e8b33a" stroke-width="2"/>
+  <text x="441" y="50"  font-size="22" text-anchor="middle">🗂️</text>
+  <text x="441" y="78"  font-size="13" font-weight="800" text-anchor="middle" fill="#7a4f00">배치</text>
+  <rect x="508" y="16" width="109" height="76" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="562" y="50"  font-size="22" text-anchor="middle">🔧</text>
+  <text x="562" y="78"  font-size="13" font-weight="800" text-anchor="middle" fill="#0a3d5c">복합체구조</text>
+  <rect x="584" y="16" width="112" height="76" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="640" y="50"  font-size="22" text-anchor="middle">📁</text>
+  <text x="640" y="78"  font-size="13" font-weight="800" text-anchor="middle" fill="#1a1a1a">패키지</text>
+  <text x="360" y="116" font-size="13" fill="#9aa4ae" text-anchor="middle">▶ 구조적(Structural) 다이어그램: 시스템의 정적 구조를 표현</text>
+  <rect x="24" y="128" width="672" height="56" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="360" y="150" font-size="14" font-weight="800" fill="#1a1a1a" text-anchor="middle">클래스 · 객체 · 컴포넌트 · 배치 · 복합체구조 · 패키지</text>
+  <text x="360" y="170" font-size="12" fill="#9aa4ae" text-anchor="middle">암기: 클 · 객 · 컴 · 배 · 복 · 패</text>
+</svg>

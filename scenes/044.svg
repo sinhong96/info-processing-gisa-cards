@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 240">
+  <defs><marker id="arw" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#4a5560"/></marker></defs>
+  <!-- Left: Fan-In -->
+  <rect x="16" y="16" width="326" height="208" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="179" y="36" font-size="14" font-weight="800" fill="#0a3d5c" text-anchor="middle">팬인 (Fan-In)</text>
+  <text x="179" y="52" font-size="11" fill="#9aa4ae" text-anchor="middle">어떤 모듈을 호출하는 모듈의 수</text>
+  <rect x="126" y="62" width="106" height="40" rx="6" fill="#0b8ad4"/>
+  <text x="179" y="87" font-size="14" font-weight="800" fill="#fff" text-anchor="middle">모듈 F</text>
+  <rect x="36"  y="150" width="80" height="36" rx="5" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="76"  y="173" font-size="12" font-weight="800" fill="#1a1a1a" text-anchor="middle">모듈 A</text>
+  <rect x="134" y="150" width="80" height="36" rx="5" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="174" y="173" font-size="12" font-weight="800" fill="#1a1a1a" text-anchor="middle">모듈 B</text>
+  <rect x="232" y="150" width="80" height="36" rx="5" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="272" y="173" font-size="12" font-weight="800" fill="#1a1a1a" text-anchor="middle">모듈 C</text>
+  <path d="M76 148 L158 106" stroke="#4a5560" stroke-width="1.5" marker-end="url(#arw)" fill="none"/>
+  <path d="M174 148 L179 106" stroke="#4a5560" stroke-width="1.5" marker-end="url(#arw)" fill="none"/>
+  <path d="M272 148 L200 106" stroke="#4a5560" stroke-width="1.5" marker-end="url(#arw)" fill="none"/>
+  <text x="179" y="210" font-size="13" fill="#0b8ad4" font-weight="800" text-anchor="middle">팬인 = 3</text>
+  <!-- Right: Fan-Out -->
+  <rect x="378" y="16" width="326" height="208" rx="10" fill="#fff3d6" stroke="#e8b33a" stroke-width="2"/>
+  <text x="541" y="36" font-size="14" font-weight="800" fill="#7a4f00" text-anchor="middle">팬아웃 (Fan-Out)</text>
+  <text x="541" y="52" font-size="11" fill="#9aa4ae" text-anchor="middle">어떤 모듈이 호출하는 모듈의 수</text>
+  <rect x="488" y="62" width="106" height="40" rx="6" fill="#e8b33a"/>
+  <text x="541" y="87" font-size="14" font-weight="800" fill="#fff" text-anchor="middle">모듈 A</text>
+  <rect x="398" y="150" width="80" height="36" rx="5" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="438" y="173" font-size="12" font-weight="800" fill="#1a1a1a" text-anchor="middle">모듈 B</text>
+  <rect x="496" y="150" width="80" height="36" rx="5" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="536" y="173" font-size="12" font-weight="800" fill="#1a1a1a" text-anchor="middle">모듈 C</text>
+  <rect x="594" y="150" width="80" height="36" rx="5" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="634" y="173" font-size="12" font-weight="800" fill="#1a1a1a" text-anchor="middle">모듈 D</text>
+  <path d="M541 104 L438 148" stroke="#4a5560" stroke-width="1.5" marker-end="url(#arw)" fill="none"/>
+  <path d="M541 104 L536 148" stroke="#4a5560" stroke-width="1.5" marker-end="url(#arw)" fill="none"/>
+  <path d="M541 104 L634 148" stroke="#4a5560" stroke-width="1.5" marker-end="url(#arw)" fill="none"/>
+  <text x="541" y="210" font-size="13" fill="#e8b33a" font-weight="800" text-anchor="middle">팬아웃 = 3</text>
+</svg>

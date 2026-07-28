@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 220">
+  <rect x="24"  y="16" width="210" height="182" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="129" y="60"  font-size="30" text-anchor="middle">👥</text>
+  <text x="129" y="90"  font-size="16" font-weight="800" text-anchor="middle" fill="#0a3d5c">동료검토</text>
+  <text x="129" y="108" font-size="11" text-anchor="middle" fill="#9aa4ae">Peer Review</text>
+  <text x="129" y="134" font-size="12" text-anchor="middle" fill="#1a1a1a">작성자가 직접 설명</text>
+  <text x="129" y="152" font-size="12" text-anchor="middle" fill="#1a1a1a">하며 결함 발견</text>
+  <text x="129" y="184" font-size="11" font-weight="700" fill="#0b8ad4" text-anchor="middle">비공식적 검토</text>
+  <rect x="254" y="16" width="210" height="182" rx="10" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="359" y="60"  font-size="30" text-anchor="middle">🚶</text>
+  <text x="359" y="90"  font-size="16" font-weight="800" text-anchor="middle" fill="#7a4f00">워크스루</text>
+  <text x="359" y="108" font-size="11" text-anchor="middle" fill="#9aa4ae">Walk Through</text>
+  <text x="359" y="134" font-size="12" text-anchor="middle" fill="#1a1a1a">미리 배포한 명세서를</text>
+  <text x="359" y="152" font-size="12" text-anchor="middle" fill="#1a1a1a">사전 검토 후 발견</text>
+  <text x="359" y="184" font-size="11" font-weight="700" fill="#e8b33a" text-anchor="middle">비공식적 검토</text>
+  <rect x="484" y="16" width="210" height="182" rx="10" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2.5"/>
+  <text x="589" y="60"  font-size="30" text-anchor="middle">🔎</text>
+  <text x="589" y="90"  font-size="16" font-weight="800" text-anchor="middle" fill="#1a1a1a">인스펙션</text>
+  <text x="589" y="108" font-size="11" text-anchor="middle" fill="#9aa4ae">Inspection</text>
+  <text x="589" y="134" font-size="12" text-anchor="middle" fill="#1a1a1a">작성자 제외 검토</text>
+  <text x="589" y="152" font-size="12" text-anchor="middle" fill="#1a1a1a">전문가들이 결함 발견</text>
+  <text x="589" y="184" font-size="11" font-weight="700" fill="#4a5560" text-anchor="middle">공식적 검토</text>
+</svg>

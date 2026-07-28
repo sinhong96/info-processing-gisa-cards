@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 230">
+  <text x="360" y="22" font-size="14" font-weight="800" fill="#9aa4ae" text-anchor="middle">… 보다는 … 에 더 가치를 둔다</text>
+  <rect x="16" y="34" width="688" height="44" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="200" y="62" font-size="14" fill="#9aa4ae" text-anchor="middle" text-decoration="line-through">프로세스와 도구</text>
+  <text x="380" y="62" font-size="20" text-anchor="middle">➡️</text>
+  <text x="548" y="62" font-size="14" font-weight="800" fill="#0b8ad4" text-anchor="middle">개인과 상호작용</text>
+  <rect x="16" y="86" width="688" height="44" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="200" y="114" font-size="14" fill="#9aa4ae" text-anchor="middle" text-decoration="line-through">방대한 문서</text>
+  <text x="380" y="114" font-size="20" text-anchor="middle">➡️</text>
+  <text x="548" y="114" font-size="14" font-weight="800" fill="#0b8ad4" text-anchor="middle">실행되는 SW</text>
+  <rect x="16" y="138" width="688" height="44" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="200" y="166" font-size="14" fill="#9aa4ae" text-anchor="middle" text-decoration="line-through">계약 협상</text>
+  <text x="380" y="166" font-size="20" text-anchor="middle">➡️</text>
+  <text x="548" y="166" font-size="14" font-weight="800" fill="#0b8ad4" text-anchor="middle">고객과 협업</text>
+  <rect x="16" y="190" width="688" height="44" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="200" y="218" font-size="14" fill="#9aa4ae" text-anchor="middle" text-decoration="line-through">계획을 따름</text>
+  <text x="380" y="218" font-size="20" text-anchor="middle">➡️</text>
+  <text x="548" y="218" font-size="14" font-weight="800" fill="#0b8ad4" text-anchor="middle">변화에 반응</text>
+</svg>

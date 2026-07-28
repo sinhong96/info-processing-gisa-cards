@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 200">
+  <rect x="24"  y="24" width="210" height="160" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="129" y="66"  font-size="30" text-anchor="middle">🌳</text>
+  <text x="129" y="98"  font-size="16" font-weight="800" text-anchor="middle" fill="#0a3d5c">일반화</text>
+  <text x="129" y="116" font-size="11" text-anchor="middle" fill="#9aa4ae">Generalization</text>
+  <text x="129" y="140" font-size="11" text-anchor="middle" fill="#1a1a1a">일반적 ↔ 구체적</text>
+  <text x="129" y="158" font-size="11" text-anchor="middle" fill="#9aa4ae">관계를 표현</text>
+  <rect x="254" y="24" width="210" height="160" rx="10" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="359" y="66"  font-size="30" text-anchor="middle">⏱️</text>
+  <text x="359" y="98"  font-size="16" font-weight="800" text-anchor="middle" fill="#7a4f00">의존</text>
+  <text x="359" y="116" font-size="11" text-anchor="middle" fill="#9aa4ae">Dependency</text>
+  <text x="359" y="140" font-size="11" text-anchor="middle" fill="#1a1a1a">짧은 시간 동안 연관</text>
+  <text x="359" y="158" font-size="11" text-anchor="middle" fill="#9aa4ae">영향을 주는 관계</text>
+  <rect x="484" y="24" width="210" height="160" rx="10" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2.5"/>
+  <text x="589" y="66"  font-size="30" text-anchor="middle">🎭</text>
+  <text x="589" y="98"  font-size="16" font-weight="800" text-anchor="middle" fill="#1a1a1a">실체화</text>
+  <text x="589" y="116" font-size="11" text-anchor="middle" fill="#9aa4ae">Realization</text>
+  <text x="589" y="140" font-size="11" text-anchor="middle" fill="#1a1a1a">기능으로 그룹화</text>
+  <text x="589" y="158" font-size="11" text-anchor="middle" fill="#9aa4ae">할 수 있는 관계</text>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 290">
+  <rect x="24" y="16" width="672" height="48" rx="8" fill="#4a5560"/>
+  <text x="44" y="46" font-size="28" font-weight="800" fill="#fff">S</text>
+  <text x="80" y="34" font-size="14" font-weight="800" fill="#fff">단일 책임 원칙 (SRP)</text>
+  <text x="80" y="54" font-size="12" fill="#9aa4ae">객체는 단 하나의 책임만 가져야 한다</text>
+  <rect x="24" y="70" width="672" height="48" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="1.5"/>
+  <text x="44" y="100" font-size="28" font-weight="800" fill="#0b8ad4">O</text>
+  <text x="80" y="88" font-size="14" font-weight="800" fill="#0a3d5c">개방-폐쇄 원칙 (OCP)</text>
+  <text x="80" y="108" font-size="12" fill="#9aa4ae">기존 코드를 변경하지 않고 기능을 추가할 수 있도록 설계</text>
+  <rect x="24" y="124" width="672" height="48" rx="8" fill="#fff3d6" stroke="#e8b33a" stroke-width="1.5"/>
+  <text x="44" y="154" font-size="28" font-weight="800" fill="#e8b33a">L</text>
+  <text x="80" y="142" font-size="14" font-weight="800" fill="#7a4f00">리스코프 치환 원칙 (LSP)</text>
+  <text x="80" y="162" font-size="12" fill="#9aa4ae">자식 클래스는 최소한 부모 클래스에서 가능한 행위를 수행할 수 있어야 함</text>
+  <rect x="24" y="178" width="672" height="48" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="44" y="208" font-size="28" font-weight="800" fill="#9aa4ae">I</text>
+  <text x="80" y="196" font-size="14" font-weight="800" fill="#1a1a1a">인터페이스 분리 원칙 (ISP)</text>
+  <text x="80" y="216" font-size="12" fill="#9aa4ae">자신이 사용하지 않는 인터페이스와 의존 관계를 맺지 않아야 함</text>
+  <rect x="24" y="232" width="672" height="48" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="1.5"/>
+  <text x="44" y="262" font-size="28" font-weight="800" fill="#0b8ad4">D</text>
+  <text x="80" y="250" font-size="14" font-weight="800" fill="#0a3d5c">의존 역전 원칙 (DIP)</text>
+  <text x="80" y="270" font-size="12" fill="#9aa4ae">추상성이 낮은 클래스보다 추상성이 높은 클래스와 의존 관계를 맺어야 함</text>
+</svg>

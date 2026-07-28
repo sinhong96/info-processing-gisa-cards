@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 220">
+  <defs><marker id="arw" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#0b8ad4"/></marker></defs>
+  <rect x="40" y="24" width="150" height="82" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="115" y="60" font-size="26" text-anchor="middle">📋</text>
+  <text x="115" y="84" font-size="15" font-weight="800" text-anchor="middle" fill="#0a3d5c">계획 수립</text>
+  <rect x="296" y="24" width="150" height="82" rx="10" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="371" y="60" font-size="26" text-anchor="middle">⚠️</text>
+  <text x="371" y="84" font-size="15" font-weight="800" text-anchor="middle" fill="#7a4f00">위험 분석</text>
+  <rect x="296" y="124" width="150" height="82" rx="10" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2.5"/>
+  <text x="371" y="160" font-size="26" text-anchor="middle">🔬</text>
+  <text x="371" y="184" font-size="15" font-weight="800" text-anchor="middle" fill="#1a1a1a">개발 및 검증</text>
+  <rect x="40" y="124" width="150" height="82" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="115" y="160" font-size="26" text-anchor="middle">👤</text>
+  <text x="115" y="184" font-size="15" font-weight="800" text-anchor="middle" fill="#0a3d5c">고객 평가</text>
+  <path d="M194 65 L290 65" stroke="#0b8ad4" stroke-width="2.5" marker-end="url(#arw)" fill="none"/>
+  <path d="M371 110 L371 118" stroke="#0b8ad4" stroke-width="2.5" marker-end="url(#arw)" fill="none"/>
+  <path d="M292 165 L194 165" stroke="#0b8ad4" stroke-width="2.5" marker-end="url(#arw)" fill="none"/>
+  <path d="M115 120 L115 112" stroke="#0b8ad4" stroke-width="2.5" marker-end="url(#arw)" fill="none"/>
+  <text x="580" y="82" font-size="42" text-anchor="middle">🌀</text>
+  <text x="580" y="130" font-size="16" font-weight="800" fill="#1a1a1a" text-anchor="middle">반복 수행</text>
+  <text x="580" y="152" font-size="13" fill="#9aa4ae" text-anchor="middle">점진적으로 완벽한</text>
+  <text x="580" y="170" font-size="13" fill="#9aa4ae" text-anchor="middle">소프트웨어 개발</text>
+</svg>

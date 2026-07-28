@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 230">
+  <rect x="16"  y="16" width="96" height="86" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="64"  y="52"  font-size="22" text-anchor="middle">🔌</text>
+  <text x="64"  y="78"  font-size="12" font-weight="800" text-anchor="middle" fill="#0a3d5c">어댑터</text>
+  <text x="64"  y="94"  font-size="10" text-anchor="middle" fill="#9aa4ae">인터페이스 변환</text>
+  <rect x="118" y="16" width="96" height="86" rx="8" fill="#d8edf8" stroke="#0b8ad4" stroke-width="1.5"/>
+  <text x="166" y="52"  font-size="22" text-anchor="middle">🌉</text>
+  <text x="166" y="78"  font-size="12" font-weight="800" text-anchor="middle" fill="#0a3d5c">브리지</text>
+  <text x="166" y="94"  font-size="10" text-anchor="middle" fill="#9aa4ae">독립 확장</text>
+  <rect x="220" y="16" width="96" height="86" rx="8" fill="#fff3d6" stroke="#e8b33a" stroke-width="2"/>
+  <text x="268" y="52"  font-size="22" text-anchor="middle">🌳</text>
+  <text x="268" y="78"  font-size="12" font-weight="800" text-anchor="middle" fill="#7a4f00">컴포지트</text>
+  <text x="268" y="94"  font-size="10" text-anchor="middle" fill="#9aa4ae">복합·단일 통합</text>
+  <rect x="322" y="16" width="96" height="86" rx="8" fill="#fde8cc" stroke="#e8b33a" stroke-width="1.5"/>
+  <text x="370" y="52"  font-size="22" text-anchor="middle">🎀</text>
+  <text x="370" y="78"  font-size="12" font-weight="800" text-anchor="middle" fill="#7a4f00">데코레이터</text>
+  <text x="370" y="94"  font-size="10" text-anchor="middle" fill="#9aa4ae">기능 덧붙이기</text>
+  <rect x="424" y="16" width="96" height="86" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="472" y="52"  font-size="22" text-anchor="middle">🏛️</text>
+  <text x="472" y="78"  font-size="12" font-weight="800" text-anchor="middle" fill="#1a1a1a">퍼싸드</text>
+  <text x="472" y="94"  font-size="10" text-anchor="middle" fill="#9aa4ae">상위 인터페이스</text>
+  <rect x="526" y="16" width="96" height="86" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="1.5"/>
+  <text x="574" y="52"  font-size="22" text-anchor="middle">♻️</text>
+  <text x="574" y="78"  font-size="12" font-weight="800" text-anchor="middle" fill="#0a3d5c">플라이웨이트</text>
+  <text x="574" y="94"  font-size="10" text-anchor="middle" fill="#9aa4ae">인스턴스 공유</text>
+  <rect x="628" y="16" width="78" height="86" rx="8" fill="#d8edf8" stroke="#0b8ad4" stroke-width="1.5"/>
+  <text x="667" y="52"  font-size="22" text-anchor="middle">🔮</text>
+  <text x="667" y="78"  font-size="12" font-weight="800" text-anchor="middle" fill="#0a3d5c">프록시</text>
+  <text x="667" y="94"  font-size="10" text-anchor="middle" fill="#9aa4ae">인터페이스 역할</text>
+  <rect x="16" y="120" width="688" height="96" rx="8" fill="#eef1f4"/>
+  <text x="360" y="144" font-size="14" font-weight="800" fill="#1a1a1a" text-anchor="middle">암기: 어 · 브 · 컴 · 데 · 퍼 · 플 · 프</text>
+  <text x="360" y="166" font-size="12" fill="#9aa4ae" text-anchor="middle">어댑터 / 브리지 / 컴포지트 / 데코레이터 / 퍼싸드 / 플라이웨이트 / 프록시</text>
+  <text x="360" y="198" font-size="12" fill="#9aa4ae" text-anchor="middle">구조 패턴: 클래스나 객체를 조합하여 더 큰 구조를 만드는 패턴</text>
+</svg>

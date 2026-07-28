@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 200">
+  <rect x="24"  y="16" width="326" height="168" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="187" y="52"  font-size="16" font-weight="800" text-anchor="middle" fill="#0a3d5c">오버로딩 (Overloading)</text>
+  <text x="187" y="78"  font-size="13" fill="#1a1a1a" text-anchor="middle">메소드 이름 같음</text>
+  <text x="187" y="98"  font-size="13" fill="#1a1a1a" text-anchor="middle">자료형·인수 개수를 달리함</text>
+  <rect x="50"  y="110" width="260" height="60" rx="6" fill="#eef1f4"/>
+  <text x="180" y="134" font-size="11" fill="#4a5560" text-anchor="middle" font-family="monospace">add(int a, int b)</text>
+  <text x="180" y="152" font-size="11" fill="#4a5560" text-anchor="middle" font-family="monospace">add(float a, float b)</text>
+  <rect x="370" y="16" width="326" height="168" rx="10" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="533" y="52"  font-size="16" font-weight="800" text-anchor="middle" fill="#7a4f00">오버라이딩 (Overriding)</text>
+  <text x="533" y="78"  font-size="13" fill="#1a1a1a" text-anchor="middle">메소드 이름 같음</text>
+  <text x="533" y="98"  font-size="13" fill="#1a1a1a" text-anchor="middle">자식 클래스에서 재정의</text>
+  <rect x="396" y="110" width="260" height="60" rx="6" fill="#eef1f4"/>
+  <text x="526" y="132" font-size="11" fill="#4a5560" text-anchor="middle" font-family="monospace">부모: draw() → 기본 도형</text>
+  <text x="526" y="152" font-size="11" fill="#4a5560" text-anchor="middle" font-family="monospace">자식: draw() → 원 그리기</text>
+</svg>

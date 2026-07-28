@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 220">
+  <rect x="24"  y="16" width="326" height="88" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="64"  y="56"  font-size="30" text-anchor="middle">⚙️</text>
+  <text x="64"  y="90"  font-size="13" text-anchor="middle" fill="#9aa4ae">기능성</text>
+  <text x="235" y="48"  font-size="15" font-weight="800" fill="#0a3d5c" text-anchor="middle">기능성 (Functionality)</text>
+  <text x="235" y="68"  font-size="12" fill="#1a1a1a" text-anchor="middle">요구사항을 정확히 만족하는</text>
+  <text x="235" y="86"  font-size="12" fill="#1a1a1a" text-anchor="middle">기능 제공 여부</text>
+  <rect x="370" y="16" width="326" height="88" rx="10" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="410" y="56"  font-size="30" text-anchor="middle">🛡️</text>
+  <text x="410" y="90"  font-size="13" text-anchor="middle" fill="#9aa4ae">신뢰성</text>
+  <text x="581" y="48"  font-size="15" font-weight="800" fill="#7a4f00" text-anchor="middle">신뢰성 (Reliability)</text>
+  <text x="581" y="68"  font-size="12" fill="#1a1a1a" text-anchor="middle">요구된 기능을 오류 없이</text>
+  <text x="581" y="86"  font-size="12" fill="#1a1a1a" text-anchor="middle">수행할 수 있는 정도</text>
+  <rect x="24"  y="120" width="326" height="88" rx="10" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2.5"/>
+  <text x="64"  y="160" font-size="30" text-anchor="middle">👥</text>
+  <text x="64"  y="194" font-size="13" text-anchor="middle" fill="#9aa4ae">사용성</text>
+  <text x="235" y="152" font-size="15" font-weight="800" fill="#1a1a1a" text-anchor="middle">사용성 (Usability)</text>
+  <text x="235" y="172" font-size="12" fill="#1a1a1a" text-anchor="middle">사용자가 쉽게 배우고</text>
+  <text x="235" y="190" font-size="12" fill="#1a1a1a" text-anchor="middle">사용할 수 있는 정도</text>
+  <rect x="370" y="120" width="326" height="88" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="410" y="160" font-size="30" text-anchor="middle">🌍</text>
+  <text x="410" y="194" font-size="13" text-anchor="middle" fill="#9aa4ae">이식성</text>
+  <text x="581" y="152" font-size="15" font-weight="800" fill="#0a3d5c" text-anchor="middle">이식성 (Portability)</text>
+  <text x="581" y="172" font-size="12" fill="#1a1a1a" text-anchor="middle">다른 환경에서도</text>
+  <text x="581" y="190" font-size="12" fill="#1a1a1a" text-anchor="middle">쉽게 적용 가능한 정도</text>
+</svg>

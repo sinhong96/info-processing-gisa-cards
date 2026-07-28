@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 160">
+  <defs><marker id="arw" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#0b8ad4"/></marker></defs>
+  <rect x="16"  y="36" width="110" height="80" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="71"  y="72"  font-size="20" text-anchor="middle">🔍</text>
+  <text x="71"  y="100" font-size="12" font-weight="800" text-anchor="middle" fill="#0a3d5c">객체 식별</text>
+  <path d="M128 76 L140 76" stroke="#0b8ad4" stroke-width="2.5" marker-end="url(#arw)"/>
+  <rect x="144" y="36" width="110" height="80" rx="8" fill="#fff3d6" stroke="#e8b33a" stroke-width="2"/>
+  <text x="199" y="72"  font-size="20" text-anchor="middle">🏗️</text>
+  <text x="199" y="100" font-size="12" font-weight="800" text-anchor="middle" fill="#7a4f00">구조 식별</text>
+  <path d="M256 76 L268 76" stroke="#0b8ad4" stroke-width="2.5" marker-end="url(#arw)"/>
+  <rect x="272" y="36" width="110" height="80" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="327" y="72"  font-size="20" text-anchor="middle">📑</text>
+  <text x="327" y="100" font-size="12" font-weight="800" text-anchor="middle" fill="#1a1a1a">주제 정의</text>
+  <path d="M384 76 L396 76" stroke="#0b8ad4" stroke-width="2.5" marker-end="url(#arw)"/>
+  <rect x="400" y="36" width="140" height="80" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="470" y="72"  font-size="20" text-anchor="middle">🔗</text>
+  <text x="470" y="96"  font-size="11" font-weight="800" text-anchor="middle" fill="#0a3d5c">속성·인스턴스</text>
+  <text x="470" y="110" font-size="11" font-weight="800" text-anchor="middle" fill="#0a3d5c">연결 정의</text>
+  <path d="M542 76 L554 76" stroke="#0b8ad4" stroke-width="2.5" marker-end="url(#arw)"/>
+  <rect x="558" y="36" width="148" height="80" rx="8" fill="#fff3d6" stroke="#e8b33a" stroke-width="2"/>
+  <text x="632" y="72"  font-size="20" text-anchor="middle">✉️</text>
+  <text x="632" y="96"  font-size="11" font-weight="800" text-anchor="middle" fill="#7a4f00">연산·메시지</text>
+  <text x="632" y="110" font-size="11" font-weight="800" text-anchor="middle" fill="#7a4f00">연결 정의</text>
+  <text x="360" y="146" font-size="11" fill="#9aa4ae" text-anchor="middle">E-R 다이어그램 사용 · 암기: 객 · 구 · 주 · 속 · 연</text>
+</svg>

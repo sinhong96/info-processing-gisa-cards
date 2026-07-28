@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 190">
+  <rect x="24" y="16" width="340" height="158" rx="10" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <rect x="44" y="32" width="300" height="32" rx="4" fill="#4a5560"/>
+  <text x="194" y="54" font-size="14" font-weight="800" fill="#fff" text-anchor="middle">NS 차트 (N-S Chart)</text>
+  <rect x="44" y="70" width="300" height="28" rx="3" fill="#e8f4fc"/>
+  <text x="194" y="89" font-size="13" fill="#0a3d5c" text-anchor="middle">연속 (Sequence)</text>
+  <rect x="44" y="102" width="300" height="28" rx="3" fill="#fff3d6"/>
+  <text x="194" y="121" font-size="13" fill="#7a4f00" text-anchor="middle">선택·다중 선택 (Selection)</text>
+  <rect x="44" y="134" width="300" height="28" rx="3" fill="#eef1f4"/>
+  <text x="194" y="153" font-size="13" fill="#1a1a1a" text-anchor="middle">반복 (Iteration)</text>
+  <rect x="380" y="16" width="316" height="158" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="538" y="52" font-size="28" text-anchor="middle">🚫</text>
+  <text x="538" y="84" font-size="14" font-weight="800" text-anchor="middle" fill="#0a3d5c">GOTO · 화살표 없음</text>
+  <text x="538" y="112" font-size="13" text-anchor="middle" fill="#9aa4ae">논리 기술에 중점</text>
+  <text x="538" y="132" font-size="13" text-anchor="middle" fill="#9aa4ae">시각적으로 명확</text>
+  <text x="538" y="152" font-size="13" text-anchor="middle" fill="#9aa4ae">코드 변환 용이</text>
+</svg>

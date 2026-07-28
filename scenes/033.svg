@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 190">
+  <rect x="170" y="24" width="380" height="110" rx="16" fill="#4a5560"/>
+  <rect x="186" y="36" width="164" height="86" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="268" y="72"  font-size="22" text-anchor="middle">💾</text>
+  <text x="268" y="100" font-size="14" font-weight="800" text-anchor="middle" fill="#0a3d5c">데이터</text>
+  <text x="268" y="118" font-size="11" text-anchor="middle" fill="#9aa4ae">Data</text>
+  <rect x="370" y="36" width="164" height="86" rx="8" fill="#fff3d6" stroke="#e8b33a" stroke-width="2"/>
+  <text x="452" y="72"  font-size="22" text-anchor="middle">⚙️</text>
+  <text x="452" y="100" font-size="14" font-weight="800" text-anchor="middle" fill="#7a4f00">함수</text>
+  <text x="452" y="118" font-size="11" text-anchor="middle" fill="#9aa4ae">Function</text>
+  <text x="360" y="154" font-size="13" fill="#9aa4ae" text-anchor="middle">하나로 묶어 외부 파급 효과 최소화 · 인터페이스 단순화 · 재사용 용이</text>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 190">
+  <rect x="200" y="16" width="320" height="90" rx="10" fill="#4a5560"/>
+  <rect x="220" y="32" width="280" height="58" rx="6" fill="#eef1f4"/>
+  <text x="360" y="58"  font-size="13" fill="#9aa4ae" text-anchor="middle">내부 절차와 자료</text>
+  <text x="360" y="78"  font-size="15" font-weight="800" fill="#1a1a1a" text-anchor="middle">🔒 외부 접근 차단</text>
+  <text x="360" y="120" font-size="28" text-anchor="middle">🔒</text>
+  <text x="360" y="148" font-size="13" fill="#9aa4ae" text-anchor="middle">private = 은닉</text>
+  <rect x="24"  y="124" width="158" height="50" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="103" y="154" font-size="13" font-weight="800" fill="#0a3d5c" text-anchor="middle">독립 수행 가능</text>
+  <rect x="538" y="124" width="158" height="50" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="617" y="154" font-size="13" font-weight="800" fill="#0a3d5c" text-anchor="middle">유지보수 용이</text>
+</svg>

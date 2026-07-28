@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 220">
+  <rect x="24"  y="16" width="209" height="84" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="64"  y="54"  font-size="28" text-anchor="middle">🗄️</text>
+  <text x="64"  y="82"  font-size="13" text-anchor="middle" fill="#9aa4ae">DB</text>
+  <text x="180" y="46"  font-size="15" font-weight="800" fill="#0a3d5c" text-anchor="middle">DB</text>
+  <text x="180" y="66"  font-size="12" fill="#1a1a1a" text-anchor="middle">DataBase</text>
+  <text x="180" y="84"  font-size="11" fill="#9aa4ae" text-anchor="middle">데이터베이스 접근</text>
+  <rect x="245" y="16" width="230" height="84" rx="10" fill="#fff3d6" stroke="#e8b33a" stroke-width="2"/>
+  <text x="285" y="54"  font-size="28" text-anchor="middle">📞</text>
+  <text x="285" y="82"  font-size="13" text-anchor="middle" fill="#9aa4ae">RPC</text>
+  <text x="400" y="46"  font-size="15" font-weight="800" fill="#7a4f00" text-anchor="middle">RPC</text>
+  <text x="400" y="66"  font-size="12" fill="#1a1a1a" text-anchor="middle">Remote Procedure Call</text>
+  <text x="400" y="84"  font-size="11" fill="#9aa4ae" text-anchor="middle">원격 프로시저 호출</text>
+  <rect x="487" y="16" width="209" height="84" rx="10" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="527" y="54"  font-size="28" text-anchor="middle">✉️</text>
+  <text x="527" y="82"  font-size="13" text-anchor="middle" fill="#9aa4ae">MOM</text>
+  <text x="643" y="46"  font-size="15" font-weight="800" fill="#1a1a1a" text-anchor="middle">MOM</text>
+  <text x="643" y="66"  font-size="12" fill="#1a1a1a" text-anchor="middle">Message Oriented</text>
+  <text x="643" y="84"  font-size="11" fill="#9aa4ae" text-anchor="middle">메시지 기반 통신</text>
+  <rect x="24"  y="116" width="209" height="84" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="64"  y="154" font-size="28" text-anchor="middle">💳</text>
+  <text x="64"  y="182" font-size="13" text-anchor="middle" fill="#9aa4ae">TP</text>
+  <text x="180" y="146" font-size="15" font-weight="800" fill="#0a3d5c" text-anchor="middle">TP-Monitor</text>
+  <text x="180" y="166" font-size="12" fill="#1a1a1a" text-anchor="middle">Transaction Processing</text>
+  <text x="180" y="184" font-size="11" fill="#9aa4ae" text-anchor="middle">트랜잭션 처리 모니터</text>
+  <rect x="245" y="116" width="230" height="84" rx="10" fill="#fff3d6" stroke="#e8b33a" stroke-width="2"/>
+  <text x="285" y="154" font-size="28" text-anchor="middle">🌐</text>
+  <text x="285" y="182" font-size="13" text-anchor="middle" fill="#9aa4ae">ORB</text>
+  <text x="400" y="146" font-size="15" font-weight="800" fill="#7a4f00" text-anchor="middle">ORB</text>
+  <text x="400" y="166" font-size="12" fill="#1a1a1a" text-anchor="middle">Object Request Broker</text>
+  <text x="400" y="184" font-size="11" fill="#9aa4ae" text-anchor="middle">객체 기반 분산 환경</text>
+  <rect x="487" y="116" width="209" height="84" rx="10" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="527" y="154" font-size="28" text-anchor="middle">🖥️</text>
+  <text x="527" y="182" font-size="13" text-anchor="middle" fill="#9aa4ae">WAS</text>
+  <text x="643" y="146" font-size="15" font-weight="800" fill="#1a1a1a" text-anchor="middle">WAS</text>
+  <text x="643" y="166" font-size="12" fill="#1a1a1a" text-anchor="middle">Web Application Server</text>
+  <text x="643" y="184" font-size="11" fill="#9aa4ae" text-anchor="middle">웹 기반 서비스 처리</text>
+</svg>

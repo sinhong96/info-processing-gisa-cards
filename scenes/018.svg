@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 200">
+  <rect x="24"  y="16" width="326" height="168" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="187" y="60"  font-size="36" text-anchor="middle">🧑</text>
+  <text x="187" y="96"  font-size="18" font-weight="800" text-anchor="middle" fill="#0a3d5c">주액터 (Primary Actor)</text>
+  <text x="187" y="120" font-size="13" text-anchor="middle" fill="#1a1a1a">시스템을 사용함으로써</text>
+  <text x="187" y="138" font-size="13" text-anchor="middle" fill="#1a1a1a">이득을 얻는 대상</text>
+  <text x="187" y="162" font-size="13" font-weight="700" fill="#0b8ad4" text-anchor="middle">주로 사람</text>
+  <rect x="370" y="16" width="326" height="168" rx="10" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="533" y="60"  font-size="36" text-anchor="middle">🏢</text>
+  <text x="533" y="96"  font-size="18" font-weight="800" text-anchor="middle" fill="#7a4f00">부액터 (Secondary Actor)</text>
+  <text x="533" y="120" font-size="13" text-anchor="middle" fill="#1a1a1a">주액터 목적 달성을 위해</text>
+  <text x="533" y="138" font-size="13" text-anchor="middle" fill="#1a1a1a">시스템에 서비스 제공</text>
+  <text x="533" y="162" font-size="13" font-weight="700" fill="#e8b33a" text-anchor="middle">외부 시스템 · 조직 · 기관</text>
+</svg>

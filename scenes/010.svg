@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 200">
+  <rect x="30" y="24" width="152" height="140" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <circle cx="106" cy="84" r="30" fill="#0b8ad4" opacity=".15" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="106" y="91" font-size="15" font-weight="800" text-anchor="middle" fill="#0a3d5c">P</text>
+  <text x="106" y="134" font-size="15" font-weight="800" text-anchor="middle" fill="#1a1a1a">프로세스</text>
+  <text x="106" y="152" font-size="11" text-anchor="middle" fill="#9aa4ae">Process (원)</text>
+  <rect x="196" y="24" width="152" height="140" rx="10" fill="#fff3d6" stroke="#e8b33a" stroke-width="2"/>
+  <line x1="220" y1="84" x2="320" y2="84" stroke="#e8b33a" stroke-width="3" marker-end="url(#arwf)"/>
+  <defs><marker id="arwf" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#e8b33a"/></marker></defs>
+  <text x="272" y="134" font-size="15" font-weight="800" text-anchor="middle" fill="#1a1a1a">자료 흐름</text>
+  <text x="272" y="152" font-size="11" text-anchor="middle" fill="#9aa4ae">Data Flow (화살표)</text>
+  <rect x="362" y="24" width="152" height="140" rx="10" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <line x1="386" y1="74" x2="490" y2="74" stroke="#4a5560" stroke-width="2.5"/>
+  <line x1="386" y1="94" x2="490" y2="94" stroke="#4a5560" stroke-width="2.5"/>
+  <text x="438" y="134" font-size="15" font-weight="800" text-anchor="middle" fill="#1a1a1a">자료 저장소</text>
+  <text x="438" y="152" font-size="11" text-anchor="middle" fill="#9aa4ae">Data Store (=)</text>
+  <rect x="528" y="24" width="162" height="140" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <rect x="558" y="64" width="72" height="40" rx="4" fill="#0b8ad4" opacity=".2" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="594" y="89" font-size="14" font-weight="800" text-anchor="middle" fill="#0a3d5c">공장</text>
+  <text x="609" y="134" font-size="15" font-weight="800" text-anchor="middle" fill="#1a1a1a">단말</text>
+  <text x="609" y="152" font-size="11" text-anchor="middle" fill="#9aa4ae">Terminator (사각형)</text>
+</svg>

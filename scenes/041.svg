@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 240">
+  <rect x="24"  y="16" width="214" height="66" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="131" y="40"  font-size="14" font-weight="800" fill="#0a3d5c" text-anchor="middle">자료(Data) 결합도</text>
+  <text x="131" y="58"  font-size="11" fill="#9aa4ae" text-anchor="middle">자료 요소로만 구성된 인터페이스</text>
+  <rect x="254" y="16" width="214" height="66" rx="8" fill="#d8edf8" stroke="#0b8ad4" stroke-width="1.5"/>
+  <text x="361" y="40"  font-size="14" font-weight="800" fill="#0a3d5c" text-anchor="middle">스탬프(Stamp) 결합도</text>
+  <text x="361" y="58"  font-size="11" fill="#9aa4ae" text-anchor="middle">배열·레코드 자료구조가 전달</text>
+  <rect x="484" y="16" width="212" height="66" rx="8" fill="#fff3d6" stroke="#e8b33a" stroke-width="1.5"/>
+  <text x="590" y="40"  font-size="14" font-weight="800" fill="#7a4f00" text-anchor="middle">제어(Control) 결합도</text>
+  <text x="590" y="58"  font-size="11" fill="#9aa4ae" text-anchor="middle">제어 신호·제어 요소 전달</text>
+  <rect x="24"  y="96" width="214" height="66" rx="8" fill="#fde8cc" stroke="#e8b33a" stroke-width="1.5"/>
+  <text x="131" y="120" font-size="14" font-weight="800" fill="#7a4f00" text-anchor="middle">외부(External) 결합도</text>
+  <text x="131" y="138" font-size="11" fill="#9aa4ae" text-anchor="middle">외부 모듈이 변수를 참조</text>
+  <rect x="254" y="96" width="214" height="66" rx="8" fill="#fdd8cc" stroke="#e03131" stroke-width="1.5"/>
+  <text x="361" y="120" font-size="14" font-weight="800" fill="#a00" text-anchor="middle">공통(Common) 결합도</text>
+  <text x="361" y="138" font-size="11" fill="#9aa4ae" text-anchor="middle">공통 데이터 영역을 여러 모듈이 사용</text>
+  <rect x="484" y="96" width="212" height="66" rx="8" fill="#ffc0c0" stroke="#e03131" stroke-width="2"/>
+  <text x="590" y="120" font-size="14" font-weight="800" fill="#a00" text-anchor="middle">내용(Content) 결합도</text>
+  <text x="590" y="138" font-size="11" fill="#9aa4ae" text-anchor="middle">다른 모듈 내부를 직접 참조·수정</text>
+  <rect x="24" y="178" width="672" height="48" rx="8" fill="#eef1f4"/>
+  <text x="360" y="200" font-size="14" font-weight="800" fill="#1a1a1a" text-anchor="middle">약함 ←————————————————————→ 강함</text>
+  <text x="360" y="218" font-size="13" fill="#9aa4ae" text-anchor="middle">자 · 스 · 제 · 외 · 공 · 내 (낮은 결합도가 좋은 설계)</text>
+</svg>

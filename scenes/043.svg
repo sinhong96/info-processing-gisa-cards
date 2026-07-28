@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 200">
+  <rect x="24"  y="24" width="210" height="158" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="129" y="66"  font-size="30" text-anchor="middle">📋</text>
+  <text x="129" y="100" font-size="16" font-weight="800" text-anchor="middle" fill="#0a3d5c">절차적 응집도</text>
+  <text x="129" y="120" font-size="11" text-anchor="middle" fill="#9aa4ae">Procedural</text>
+  <text x="129" y="144" font-size="12" text-anchor="middle" fill="#1a1a1a">기능을 순차적으로</text>
+  <text x="129" y="162" font-size="12" text-anchor="middle" fill="#1a1a1a">수행할 경우</text>
+  <rect x="254" y="24" width="210" height="158" rx="10" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="359" y="66"  font-size="30" text-anchor="middle">⏱️</text>
+  <text x="359" y="100" font-size="16" font-weight="800" text-anchor="middle" fill="#7a4f00">시간적 응집도</text>
+  <text x="359" y="120" font-size="11" text-anchor="middle" fill="#9aa4ae">Temporal</text>
+  <text x="359" y="144" font-size="12" text-anchor="middle" fill="#1a1a1a">특정 시간에 처리되는</text>
+  <text x="359" y="162" font-size="12" text-anchor="middle" fill="#1a1a1a">기능들을 모아 구성</text>
+  <rect x="484" y="24" width="212" height="158" rx="10" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2.5"/>
+  <text x="590" y="66"  font-size="30" text-anchor="middle">🎲</text>
+  <text x="590" y="100" font-size="16" font-weight="800" text-anchor="middle" fill="#1a1a1a">우연적 응집도</text>
+  <text x="590" y="120" font-size="11" text-anchor="middle" fill="#9aa4ae">Coincidental</text>
+  <text x="590" y="144" font-size="12" text-anchor="middle" fill="#1a1a1a">서로 관련 없는 요소로만</text>
+  <text x="590" y="162" font-size="12" text-anchor="middle" fill="#1a1a1a">구성된 경우</text>
+</svg>

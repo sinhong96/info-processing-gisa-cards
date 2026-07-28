@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 200">
+  <rect x="24"  y="24" width="212" height="158" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="130" y="66"  font-size="32" text-anchor="middle">📦</text>
+  <text x="130" y="100" font-size="16" font-weight="800" text-anchor="middle" fill="#0a3d5c">객체 모델링</text>
+  <text x="130" y="120" font-size="11" text-anchor="middle" fill="#9aa4ae">정보 모델링</text>
+  <text x="130" y="144" font-size="12" text-anchor="middle" fill="#1a1a1a">객체 다이어그램으로</text>
+  <text x="130" y="162" font-size="12" text-anchor="middle" fill="#1a1a1a">관계 규정</text>
+  <rect x="254" y="24" width="212" height="158" rx="10" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="360" y="66"  font-size="32" text-anchor="middle">🔄</text>
+  <text x="360" y="100" font-size="16" font-weight="800" text-anchor="middle" fill="#7a4f00">동적 모델링</text>
+  <text x="360" y="120" font-size="11" text-anchor="middle" fill="#9aa4ae">Dynamic Modeling</text>
+  <text x="360" y="144" font-size="12" text-anchor="middle" fill="#1a1a1a">상태 다이어그램으로</text>
+  <text x="360" y="162" font-size="12" text-anchor="middle" fill="#1a1a1a">동적 행위 표현</text>
+  <rect x="484" y="24" width="212" height="158" rx="10" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2.5"/>
+  <text x="590" y="66"  font-size="32" text-anchor="middle">🌊</text>
+  <text x="590" y="100" font-size="16" font-weight="800" text-anchor="middle" fill="#1a1a1a">기능 모델링</text>
+  <text x="590" y="120" font-size="11" text-anchor="middle" fill="#9aa4ae">Functional Modeling</text>
+  <text x="590" y="144" font-size="12" text-anchor="middle" fill="#1a1a1a">자료 흐름도(DFD)로</text>
+  <text x="590" y="162" font-size="12" text-anchor="middle" fill="#1a1a1a">자료 흐름 표현</text>
+</svg>

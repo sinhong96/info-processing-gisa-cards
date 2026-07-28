@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 190">
+  <rect x="24"  y="16" width="326" height="158" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="187" y="54"  font-size="18" font-weight="800" text-anchor="middle" fill="#0a3d5c">순차 코드</text>
+  <text x="187" y="76"  font-size="13" text-anchor="middle" fill="#1a1a1a">일정 기준에 따라서</text>
+  <text x="187" y="96"  font-size="13" text-anchor="middle" fill="#1a1a1a">차례로 일련번호를 부여</text>
+  <rect x="80" y="114" width="216" height="44" rx="6" fill="#eef1f4"/>
+  <text x="188" y="138" font-size="13" fill="#4a5560" text-anchor="middle">001, 002, 003 …</text>
+  <text x="188" y="156" font-size="11" fill="#9aa4ae" text-anchor="middle">단순 순서 부여</text>
+  <rect x="370" y="16" width="326" height="158" rx="10" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="533" y="54"  font-size="18" font-weight="800" text-anchor="middle" fill="#7a4f00">표의 숫자 코드</text>
+  <text x="533" y="76"  font-size="13" text-anchor="middle" fill="#1a1a1a">중량, 면적, 용량 등</text>
+  <text x="533" y="96"  font-size="13" text-anchor="middle" fill="#1a1a1a">물리적 수치를 코드로 적용</text>
+  <rect x="424" y="114" width="216" height="44" rx="6" fill="#eef1f4"/>
+  <text x="532" y="138" font-size="13" fill="#4a5560" text-anchor="middle">1200cc, 55kg …</text>
+  <text x="532" y="156" font-size="11" fill="#9aa4ae" text-anchor="middle">수치 자체가 의미</text>
+</svg>

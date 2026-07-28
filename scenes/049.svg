@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 200">
+  <rect x="24" y="16" width="672" height="44" rx="8" fill="#4a5560"/>
+  <text x="360" y="36" font-size="14" fill="#fff" text-anchor="middle">디자인 패턴 — 전형적인 해결 방식 또는 예제</text>
+  <text x="360" y="54" font-size="12" fill="#9aa4ae" text-anchor="middle">세부 구현 방안 설계 시 참조하는 반복적 문제 해결 방식</text>
+  <rect x="24"  y="74" width="210" height="110" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="129" y="116" font-size="30" text-anchor="middle">🏭</text>
+  <text x="129" y="152" font-size="17" font-weight="800" text-anchor="middle" fill="#0a3d5c">생성 패턴</text>
+  <text x="129" y="172" font-size="11" text-anchor="middle" fill="#9aa4ae">Creational</text>
+  <rect x="254" y="74" width="212" height="110" rx="10" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="360" y="116" font-size="30" text-anchor="middle">🏗️</text>
+  <text x="360" y="152" font-size="17" font-weight="800" text-anchor="middle" fill="#7a4f00">구조 패턴</text>
+  <text x="360" y="172" font-size="11" text-anchor="middle" fill="#9aa4ae">Structural</text>
+  <rect x="486" y="74" width="210" height="110" rx="10" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2.5"/>
+  <text x="591" y="116" font-size="30" text-anchor="middle">🎭</text>
+  <text x="591" y="152" font-size="17" font-weight="800" text-anchor="middle" fill="#1a1a1a">행위 패턴</text>
+  <text x="591" y="172" font-size="11" text-anchor="middle" fill="#9aa4ae">Behavioral</text>
+</svg>

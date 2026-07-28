@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 190">
+  <rect x="24"  y="24" width="212" height="148" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="130" y="76"  font-size="36" text-anchor="middle">⚙️</text>
+  <text x="130" y="112" font-size="17" font-weight="800" text-anchor="middle" fill="#0a3d5c">과정 추상화</text>
+  <text x="130" y="136" font-size="12" text-anchor="middle" fill="#9aa4ae">자세한 수행 절차를</text>
+  <text x="130" y="154" font-size="12" text-anchor="middle" fill="#9aa4ae">추상적으로 표현</text>
+  <rect x="254" y="24" width="212" height="148" rx="10" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="360" y="76"  font-size="36" text-anchor="middle">💾</text>
+  <text x="360" y="112" font-size="17" font-weight="800" text-anchor="middle" fill="#7a4f00">데이터 추상화</text>
+  <text x="360" y="136" font-size="12" text-anchor="middle" fill="#9aa4ae">데이터 구조를</text>
+  <text x="360" y="154" font-size="12" text-anchor="middle" fill="#9aa4ae">추상적으로 표현</text>
+  <rect x="484" y="24" width="212" height="148" rx="10" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2.5"/>
+  <text x="590" y="76"  font-size="36" text-anchor="middle">🎛️</text>
+  <text x="590" y="112" font-size="17" font-weight="800" text-anchor="middle" fill="#1a1a1a">제어 추상화</text>
+  <text x="590" y="136" font-size="12" text-anchor="middle" fill="#9aa4ae">제어 흐름을</text>
+  <text x="590" y="154" font-size="12" text-anchor="middle" fill="#9aa4ae">추상적으로 표현</text>
+</svg>
