@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 250">
+  <path d="M70 56 L368 8 L666 56 Z" fill="#0b8ad4"/>
+  <text x="368" y="46" font-size="18" font-weight="800" fill="#fff" text-anchor="middle">품질 좋은 소프트웨어</text>
+  <rect x="112" y="64" width="124" height="140" rx="5" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="174" y="112" font-size="34" text-anchor="middle">🔧</text>
+  <text x="174" y="146" font-size="16" font-weight="800" text-anchor="middle" fill="#1a1a1a">최신 기술</text>
+  <text x="174" y="169" font-size="13" text-anchor="middle" fill="#9aa4ae">계속 적용</text>
+  <rect x="306" y="64" width="124" height="140" rx="5" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="368" y="112" font-size="34" text-anchor="middle">🔬</text>
+  <text x="368" y="146" font-size="16" font-weight="800" text-anchor="middle" fill="#1a1a1a">품질 검증</text>
+  <text x="368" y="169" font-size="13" text-anchor="middle" fill="#9aa4ae">지속 검증</text>
+  <rect x="500" y="64" width="124" height="140" rx="5" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="562" y="112" font-size="34" text-anchor="middle">📋</text>
+  <text x="562" y="146" font-size="16" font-weight="800" text-anchor="middle" fill="#1a1a1a">명확한 기록</text>
+  <text x="562" y="169" font-size="13" text-anchor="middle" fill="#9aa4ae">유지</text>
+  <rect x="70" y="204" width="596" height="14" rx="3" fill="#4a5560"/>
+</svg>

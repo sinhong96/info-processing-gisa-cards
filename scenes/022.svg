@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 200">
+  <circle cx="168" cy="80" r="54" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="168" y="96"  font-size="38" text-anchor="middle">💡</text>
+  <text x="168" y="152" font-size="17" font-weight="800" text-anchor="middle" fill="#1a1a1a">직관성</text>
+  <text x="168" y="172" font-size="12" text-anchor="middle" fill="#9aa4ae">누구나 쉽게 이해·사용</text>
+
+  <circle cx="360" cy="80" r="54" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="360" y="96"  font-size="38" text-anchor="middle">🎯</text>
+  <text x="360" y="152" font-size="17" font-weight="800" text-anchor="middle" fill="#1a1a1a">유효성</text>
+  <text x="360" y="172" font-size="12" text-anchor="middle" fill="#9aa4ae">목적을 정확·완벽하게 달성</text>
+
+  <circle cx="552" cy="80" r="54" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2.5"/>
+  <text x="552" y="96"  font-size="38" text-anchor="middle">📖</text>
+  <text x="552" y="152" font-size="17" font-weight="800" text-anchor="middle" fill="#1a1a1a">학습성</text>
+  <text x="552" y="172" font-size="12" text-anchor="middle" fill="#9aa4ae">누구나 쉽게 배우고 익힘</text>
+</svg>

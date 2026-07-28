@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 354">
+  <g>
+    <rect x="60"  y="42"  width="118" height="17" rx="3" fill="#4a5560"/>
+    <rect x="178" y="96"  width="118" height="17" rx="3" fill="#4a5560"/>
+    <rect x="296" y="150" width="118" height="17" rx="3" fill="#4a5560"/>
+    <rect x="414" y="204" width="118" height="17" rx="3" fill="#4a5560"/>
+    <rect x="532" y="258" width="118" height="17" rx="3" fill="#4a5560"/>
+  </g>
+  <g fill="#0b8ad4" opacity=".45">
+    <path d="M178 59 h20 v37 h-20 z"/>
+    <path d="M296 113 h20 v37 h-20 z"/>
+    <path d="M414 167 h20 v37 h-20 z"/>
+    <path d="M532 221 h20 v37 h-20 z"/>
+  </g>
+  <text x="188" y="86"  font-size="17">💧</text>
+  <text x="306" y="140" font-size="17">💧</text>
+  <text x="424" y="194" font-size="17">💧</text>
+  <text x="542" y="248" font-size="17">💧</text>
+  <text x="119" y="35"  font-size="14" fill="#1a1a1a" text-anchor="middle" font-weight="700">요구분석</text>
+  <text x="237" y="89"  font-size="14" fill="#1a1a1a" text-anchor="middle" font-weight="700">설계</text>
+  <text x="355" y="143" font-size="14" fill="#1a1a1a" text-anchor="middle" font-weight="700">구현</text>
+  <text x="473" y="197" font-size="14" fill="#1a1a1a" text-anchor="middle" font-weight="700">시험</text>
+  <text x="591" y="251" font-size="14" fill="#1a1a1a" text-anchor="middle" font-weight="700">유지보수</text>
+  <defs>
+    <marker id="rb002" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="#e03131"/>
+    </marker>
+  </defs>
+  <path d="M600 240 C 470 174, 300 114, 150 24" stroke="#e03131" stroke-width="3.5"
+        stroke-dasharray="9 7" fill="none" marker-end="url(#rb002)" opacity=".9"/>
+  <text x="366" y="74" font-size="34" text-anchor="middle">🚫</text>
+  <text x="366" y="21" font-size="17" fill="#e03131" text-anchor="middle" font-weight="800">이전 단계로 돌아갈 수 없다</text>
+  <text x="52"  y="316" font-size="30">👴</text>
+  <text x="92"  y="310" font-size="16" fill="#1a1a1a" font-weight="700">보헴(Boehm)</text>
+  <text x="92"  y="332" font-size="14" fill="#9aa4ae">고전적 생명 주기 모형</text>
+  <text x="470" y="310" font-size="16" fill="#1a1a1a" font-weight="700">🔒 요구사항 반영 어려움</text>
+  <text x="470" y="332" font-size="14" fill="#9aa4ae">각 단계를 확실히 매듭짓고 진행</text>
+</svg>

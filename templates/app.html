@@ -1,0 +1,135 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>정보처리기사 암기 카드</title>
+<style>
+  :root{--bg:#f2f3f5;--fg:#1a1a1a;--card:#fff;--muted:#7a828a;--line:#e2e5e8;--blue:#0b8ad4}
+  @media (prefers-color-scheme:dark){
+    :root{--bg:#16181c;--fg:#e8eaed;--card:#1f2227;--muted:#9aa4ae;--line:#2c3036}
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);font-family:-apple-system,"Apple SD Gothic Neo",sans-serif;
+       display:flex;flex-direction:column;min-height:100vh;min-height:100dvh}
+  header{display:flex;align-items:center;gap:10px;padding:12px 16px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+  header b{font-size:15px}
+  .count{color:var(--muted);font-size:13px;margin-left:auto;font-variant-numeric:tabular-nums}
+  button{font:inherit;font-size:13px;padding:6px 12px;border-radius:8px;border:1px solid var(--line);
+         background:var(--card);color:var(--fg);cursor:pointer}
+  button.on{background:var(--blue);border-color:var(--blue);color:#fff}
+  main{flex:1;display:flex;align-items:center;justify-content:center;padding:16px}
+  .card{background:var(--card);border-radius:16px;box-shadow:0 2px 18px rgba(0,0,0,.12);
+        width:100%;max-width:760px;padding:22px;cursor:pointer;user-select:none}
+  .front{text-align:center;padding:64px 20px}
+  .front .num{font-size:44px;font-weight:800;color:var(--blue);font-variant-numeric:tabular-nums}
+  .front .ttl{font-size:26px;font-weight:800;margin-top:10px;line-height:1.35}
+  .front .tap{margin-top:32px;color:var(--muted);font-size:13px}
+  .card svg{width:100%;height:auto;display:block}
+  ul{margin:16px 0 0;padding-left:20px;line-height:1.65;font-size:15px}
+  li{margin-bottom:7px}
+  .hook{margin-top:14px;text-align:center;color:#e03131;font-weight:800;font-size:15px}
+  footer{display:flex;gap:8px;padding:12px 16px;border-top:1px solid var(--line);justify-content:center;
+         padding-bottom:calc(12px + env(safe-area-inset-bottom))}
+  .empty{color:var(--muted);text-align:center;padding:60px 20px;line-height:1.7}
+</style>
+
+<header>
+  <b id="subj">—</b>
+  <button id="shuffle">🔀 섞기</button>
+  <button id="hardonly">😵 어려운 것만</button>
+  <button id="reset">↺ 초기화</button>
+  <span class="count" id="count"></span>
+</header>
+
+<main><div class="card" id="card"></div></main>
+
+<footer>
+  <button id="prev">← 이전</button>
+  <button id="flip">뒤집기 (space)</button>
+  <button id="hard">😵 어려움</button>
+  <button id="known">✅ 암기함</button>
+  <button id="next">다음 →</button>
+</footer>
+
+<script>
+const CARDS = /*__CARDS__*/;
+const KEY = "gisa-cards-v1";
+let mark = {};
+try { mark = JSON.parse(localStorage.getItem(KEY) || "{}"); } catch (e) { mark = {}; }
+const save = () => localStorage.setItem(KEY, JSON.stringify(mark));
+
+let deck = CARDS.slice(), i = 0, flipped = false, hardOnly = false;
+
+function activeDeck() {
+  return hardOnly ? deck.filter(c => mark[c.id] === "hard") : deck;
+}
+
+function render() {
+  const d = activeDeck(), el = document.getElementById("card");
+  if (!d.length) {
+    el.innerHTML = '<div class="empty">어려움으로 표시한 카드가 없습니다.<br>"어려운 것만"을 다시 눌러 전체 카드로 돌아가세요.</div>';
+    document.getElementById("count").textContent = "0 / 0";
+    return;
+  }
+  if (i >= d.length) i = 0;
+  if (i < 0) i = d.length - 1;
+  const c = d[i];
+  el.innerHTML = flipped
+    ? c.svg + "<ul>" + c.bullets.map(b => "<li>" + esc(b) + "</li>").join("") + "</ul>"
+        + (c.hook ? '<div class="hook">' + esc(c.hook) + "</div>" : "")
+    : '<div class="front"><div class="num">' + c.id + '</div><div class="ttl">'
+        + esc(c.title) + '</div><div class="tap">탭하거나 space를 눌러 뒤집기</div></div>';
+  const known = CARDS.filter(x => mark[x.id] === "known").length;
+  const badge = mark[c.id] === "hard" ? " 😵" : mark[c.id] === "known" ? " ✅" : "";
+  document.getElementById("count").textContent =
+    (i + 1) + " / " + d.length + badge + "   ·   암기 " + known + "/" + CARDS.length;
+  document.getElementById("subj").textContent =
+    CARDS.length ? CARDS[0].subjectName : "—";
+}
+
+function esc(s) {
+  return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+function go(n) { i += n; flipped = false; render(); }
+function setMark(v) {
+  const d = activeDeck(); if (!d.length) return;
+  const id = d[i].id;
+  mark[id] = mark[id] === v ? undefined : v;
+  if (mark[id] === undefined) delete mark[id];
+  save(); go(1);
+}
+
+document.getElementById("card").onclick = () => { flipped = !flipped; render(); };
+document.getElementById("flip").onclick = e => { e.stopPropagation(); flipped = !flipped; render(); };
+document.getElementById("next").onclick = () => go(1);
+document.getElementById("prev").onclick = () => go(-1);
+document.getElementById("hard").onclick = () => setMark("hard");
+document.getElementById("known").onclick = () => setMark("known");
+document.getElementById("shuffle").onclick = function () {
+  for (let k = deck.length - 1; k > 0; k--) {
+    const j = Math.floor(Math.random() * (k + 1));
+    [deck[k], deck[j]] = [deck[j], deck[k]];
+  }
+  i = 0; flipped = false; render();
+};
+document.getElementById("hardonly").onclick = function () {
+  hardOnly = !hardOnly; this.classList.toggle("on", hardOnly);
+  i = 0; flipped = false; render();
+};
+document.getElementById("reset").onclick = function () {
+  mark = {}; save(); deck = CARDS.slice(); i = 0; flipped = false;
+  hardOnly = false; document.getElementById("hardonly").classList.remove("on");
+  render();
+};
+addEventListener("keydown", e => {
+  if (e.key === " ") { e.preventDefault(); flipped = !flipped; render(); }
+  else if (e.key === "ArrowRight") go(1);
+  else if (e.key === "ArrowLeft") go(-1);
+});
+let tx = 0;
+addEventListener("touchstart", e => { tx = e.changedTouches[0].clientX; }, {passive: true});
+addEventListener("touchend", e => {
+  const dx = e.changedTouches[0].clientX - tx;
+  if (Math.abs(dx) > 60) go(dx < 0 ? 1 : -1);
+}, {passive: true});
+
+render();
+</script>

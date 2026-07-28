@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 180">
+  <circle cx="76"  cy="74" r="42" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="76"  y="87"  font-size="30" text-anchor="middle">🧑</text>
+  <text x="76"  y="136" font-size="15" font-weight="800" text-anchor="middle" fill="#1a1a1a">액터</text>
+  <text x="76"  y="155" font-size="11" text-anchor="middle" fill="#9aa4ae">Actor</text>
+
+  <circle cx="210" cy="74" r="42" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="210" y="87"  font-size="30" text-anchor="middle">📦</text>
+  <text x="210" y="136" font-size="15" font-weight="800" text-anchor="middle" fill="#1a1a1a">객체</text>
+  <text x="210" y="155" font-size="11" text-anchor="middle" fill="#9aa4ae">Object</text>
+
+  <circle cx="360" cy="74" r="42" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="360" y="87"  font-size="30" text-anchor="middle">〰️</text>
+  <text x="360" y="136" font-size="15" font-weight="800" text-anchor="middle" fill="#1a1a1a">생명선</text>
+  <text x="360" y="155" font-size="11" text-anchor="middle" fill="#9aa4ae">Lifeline</text>
+
+  <circle cx="510" cy="74" r="42" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="510" y="87"  font-size="30" text-anchor="middle">▬</text>
+  <text x="510" y="136" font-size="15" font-weight="800" text-anchor="middle" fill="#1a1a1a">실행 상자</text>
+  <text x="510" y="155" font-size="11" text-anchor="middle" fill="#9aa4ae">Active Box</text>
+
+  <circle cx="648" cy="74" r="42" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="648" y="87"  font-size="30" text-anchor="middle">✉️</text>
+  <text x="648" y="136" font-size="15" font-weight="800" text-anchor="middle" fill="#1a1a1a">메시지</text>
+  <text x="648" y="155" font-size="11" text-anchor="middle" fill="#9aa4ae">Message</text>
+</svg>
