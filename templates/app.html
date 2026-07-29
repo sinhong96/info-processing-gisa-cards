@@ -15,6 +15,9 @@
   button{font:inherit;font-size:13px;padding:6px 12px;border-radius:8px;border:1px solid var(--line);
          background:var(--card);color:var(--fg);cursor:pointer}
   button.on{background:var(--blue);border-color:var(--blue);color:#fff}
+  select{font:inherit;font-size:13px;font-weight:700;padding:6px 10px;border-radius:8px;
+         border:1px solid var(--line);background:var(--card);color:var(--fg);cursor:pointer;
+         max-width:46vw}
   main{flex:1;display:flex;align-items:center;justify-content:center;padding:16px}
   .card{background:var(--card);border-radius:16px;box-shadow:0 2px 18px rgba(0,0,0,.12);
         width:100%;max-width:760px;padding:22px;cursor:pointer;user-select:none}
@@ -32,7 +35,7 @@
 </style>
 
 <header>
-  <b id="subj">—</b>
+  <select id="subjsel" aria-label="과목 선택"></select>
   <button id="shuffle">🔀 섞기</button>
   <button id="hardonly">😵 어려운 것만</button>
   <button id="reset">↺ 초기화</button>
@@ -56,16 +59,49 @@ let mark = {};
 try { mark = JSON.parse(localStorage.getItem(KEY) || "{}"); } catch (e) { mark = {}; }
 const save = () => localStorage.setItem(KEY, JSON.stringify(mark));
 
-let deck = CARDS.slice(), i = 0, flipped = false, hardOnly = false;
+const SUBJ_KEY = "gisa-cards-subject";
+let order = CARDS.slice();          // card order; shuffling permutes this
+let subj = 0;                       // 0 = 전체, otherwise a 과목 number
+let i = 0, flipped = false, hardOnly = false;
 
+try {
+  const saved = parseInt(localStorage.getItem(SUBJ_KEY) || "0", 10);
+  if (saved && CARDS.some(c => c.subject === saved)) subj = saved;
+} catch (e) { subj = 0; }
+
+// Cards in the chosen 과목, before the 어려움 filter.
+function subjectDeck() {
+  return subj ? order.filter(c => c.subject === subj) : order;
+}
 function activeDeck() {
-  return hardOnly ? deck.filter(c => mark[c.id] === "hard") : deck;
+  const d = subjectDeck();
+  return hardOnly ? d.filter(c => mark[c.id] === "hard") : d;
+}
+
+function buildSubjectSelect() {
+  const sel = document.getElementById("subjsel");
+  const seen = [];
+  CARDS.forEach(c => {
+    if (!seen.some(s => s.n === c.subject)) seen.push({n: c.subject, name: c.subjectName});
+  });
+  seen.sort((a, b) => a.n - b.n);
+  let html = "";
+  if (seen.length > 1) html += '<option value="0">전체 ' + CARDS.length + '장</option>';
+  seen.forEach(s => {
+    const n = CARDS.filter(c => c.subject === s.n).length;
+    html += '<option value="' + s.n + '">' + s.n + "과목 " + esc(s.name) + " " + n + "장</option>";
+  });
+  sel.innerHTML = html;
+  if (seen.length === 1) subj = seen[0].n;
+  sel.value = String(subj);
 }
 
 function render() {
   const d = activeDeck(), el = document.getElementById("card");
   if (!d.length) {
-    el.innerHTML = '<div class="empty">어려움으로 표시한 카드가 없습니다.<br>"어려운 것만"을 다시 눌러 전체 카드로 돌아가세요.</div>';
+    el.innerHTML = hardOnly
+      ? '<div class="empty">이 과목에 어려움으로 표시한 카드가 없습니다.<br>"어려운 것만"을 다시 눌러 전체 카드로 돌아가세요.</div>'
+      : '<div class="empty">이 과목은 아직 카드가 없습니다.</div>';
     document.getElementById("count").textContent = "0 / 0";
     return;
   }
@@ -77,12 +113,11 @@ function render() {
         + (c.hook ? '<div class="hook">' + esc(c.hook) + "</div>" : "")
     : '<div class="front"><div class="num">' + c.id + '</div><div class="ttl">'
         + esc(c.title) + '</div><div class="tap">탭하거나 space를 눌러 뒤집기</div></div>';
-  const known = CARDS.filter(x => mark[x.id] === "known").length;
+  const scope = subjectDeck();
+  const known = scope.filter(x => mark[x.id] === "known").length;
   const badge = mark[c.id] === "hard" ? " 😵" : mark[c.id] === "known" ? " ✅" : "";
   document.getElementById("count").textContent =
-    (i + 1) + " / " + d.length + badge + "   ·   암기 " + known + "/" + CARDS.length;
-  document.getElementById("subj").textContent =
-    CARDS.length ? CARDS[0].subjectName : "—";
+    (i + 1) + " / " + d.length + badge + "   ·   암기 " + known + "/" + scope.length;
 }
 
 function esc(s) {
@@ -103,10 +138,15 @@ document.getElementById("next").onclick = () => go(1);
 document.getElementById("prev").onclick = () => go(-1);
 document.getElementById("hard").onclick = () => setMark("hard");
 document.getElementById("known").onclick = () => setMark("known");
+document.getElementById("subjsel").onchange = function () {
+  subj = parseInt(this.value, 10) || 0;
+  try { localStorage.setItem(SUBJ_KEY, String(subj)); } catch (e) {}
+  i = 0; flipped = false; render();
+};
 document.getElementById("shuffle").onclick = function () {
-  for (let k = deck.length - 1; k > 0; k--) {
+  for (let k = order.length - 1; k > 0; k--) {
     const j = Math.floor(Math.random() * (k + 1));
-    [deck[k], deck[j]] = [deck[j], deck[k]];
+    [order[k], order[j]] = [order[j], order[k]];
   }
   i = 0; flipped = false; render();
 };
@@ -115,7 +155,7 @@ document.getElementById("hardonly").onclick = function () {
   i = 0; flipped = false; render();
 };
 document.getElementById("reset").onclick = function () {
-  mark = {}; save(); deck = CARDS.slice(); i = 0; flipped = false;
+  mark = {}; save(); order = CARDS.slice(); i = 0; flipped = false;
   hardOnly = false; document.getElementById("hardonly").classList.remove("on");
   render();
 };
@@ -131,5 +171,6 @@ addEventListener("touchend", e => {
   if (Math.abs(dx) > 60) go(dx < 0 ? 1 : -1);
 }, {passive: true});
 
+buildSubjectSelect();
 render();
 </script>
