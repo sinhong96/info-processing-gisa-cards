@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Assemble cards.json + scenes/*.svg into a single self-contained study.html."""
+"""Assemble cards.json + scenes/*.svg into a single self-contained index.html."""
 import html as html_mod
 import json, os, re, sys
 
@@ -67,7 +67,7 @@ def build(cards, subject):
 def main():
     subject = int(sys.argv[1]) if len(sys.argv) > 1 else 1
     cards = json.load(open(os.path.join(HERE, "cards.json"), encoding="utf-8"))
-    out = os.path.join(HERE, "study.html")
+    out = os.path.join(HERE, "index.html")
     html = build(cards, subject)
     with open(out, "w", encoding="utf-8") as fh:
         fh.write(html)
