@@ -2,15 +2,17 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>정보처리기사 암기 카드</title>
 <style>
-  :root{--bg:#f2f3f5;--fg:#1a1a1a;--card:#fff;--muted:#7a828a;--line:#e2e5e8;--blue:#0b8ad4}
+  :root{--bg:#f2f3f5;--fg:#1a1a1a;--card:#fff;--muted:#7a828a;--line:#e2e5e8;--blue:#0b8ad4;
+        --toc:#fafbfc;--hover:#eef1f4}
   @media (prefers-color-scheme:dark){
-    :root{--bg:#16181c;--fg:#e8eaed;--card:#1f2227;--muted:#9aa4ae;--line:#2c3036}
+    :root{--bg:#16181c;--fg:#e8eaed;--card:#1f2227;--muted:#9aa4ae;--line:#2c3036;
+          --toc:#1a1d21;--hover:#252a30}
   }
   *{box-sizing:border-box}
   body{margin:0;background:var(--bg);color:var(--fg);font-family:-apple-system,"Apple SD Gothic Neo",sans-serif;
-       display:flex;flex-direction:column;min-height:100vh;min-height:100dvh}
-  header{display:flex;align-items:center;gap:10px;padding:12px 16px;border-bottom:1px solid var(--line);flex-wrap:wrap}
-  header b{font-size:15px}
+       display:flex;flex-direction:column;height:100vh;height:100dvh;overflow:hidden}
+  header{display:flex;align-items:center;gap:8px;padding:10px 14px;border-bottom:1px solid var(--line);
+         flex-wrap:wrap;flex:none}
   .count{color:var(--muted);font-size:13px;margin-left:auto;font-variant-numeric:tabular-nums}
   button{font:inherit;font-size:13px;padding:6px 12px;border-radius:8px;border:1px solid var(--line);
          background:var(--card);color:var(--fg);cursor:pointer}
@@ -18,9 +20,30 @@
   select{font:inherit;font-size:13px;font-weight:700;padding:6px 10px;border-radius:8px;
          border:1px solid var(--line);background:var(--card);color:var(--fg);cursor:pointer;
          max-width:46vw}
-  main{flex:1;display:flex;align-items:center;justify-content:center;padding:16px}
+
+  .body{flex:1;display:flex;min-height:0}
+
+  /* ---- table of contents ---- */
+  #toc{width:300px;flex:none;background:var(--toc);border-right:1px solid var(--line);
+       overflow-y:auto;overscroll-behavior:contain;padding-bottom:20px}
+  .toc-sub{position:sticky;top:0;background:var(--toc);padding:10px 14px 6px;font-size:12px;
+           font-weight:800;color:var(--muted);border-bottom:1px solid var(--line);
+           letter-spacing:.02em}
+  .toc-item{display:flex;align-items:baseline;gap:8px;width:100%;text-align:left;border:0;
+            border-radius:0;background:none;padding:7px 14px;font-size:13px;line-height:1.4;
+            border-left:3px solid transparent}
+  .toc-item:hover{background:var(--hover)}
+  .toc-item.cur{background:var(--blue);color:#fff;border-left-color:#fff}
+  .toc-item.cur .n,.toc-item.cur .s{color:#fff;opacity:.85}
+  .toc-item .n{font-variant-numeric:tabular-nums;color:var(--muted);font-weight:700;flex:none}
+  .toc-item .t{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .toc-item .s{flex:none;font-size:11px}
+  #backdrop{display:none}
+
+  main{flex:1;display:flex;align-items:flex-start;justify-content:center;padding:16px;
+       overflow-y:auto;-webkit-overflow-scrolling:touch}
   .card{background:var(--card);border-radius:16px;box-shadow:0 2px 18px rgba(0,0,0,.12);
-        width:100%;max-width:760px;padding:22px;cursor:pointer;user-select:none}
+        width:100%;max-width:760px;padding:22px;cursor:pointer;user-select:none;margin:auto 0}
   .front{text-align:center;padding:64px 20px}
   .front .num{font-size:44px;font-weight:800;color:var(--blue);font-variant-numeric:tabular-nums}
   .front .ttl{font-size:26px;font-weight:800;margin-top:10px;line-height:1.35}
@@ -29,12 +52,24 @@
   ul{margin:16px 0 0;padding-left:20px;line-height:1.65;font-size:15px}
   li{margin-bottom:7px}
   .hook{margin-top:14px;text-align:center;color:#e03131;font-weight:800;font-size:15px}
-  footer{display:flex;gap:8px;padding:12px 16px;border-top:1px solid var(--line);justify-content:center;
-         padding-bottom:calc(12px + env(safe-area-inset-bottom))}
+  footer{display:flex;gap:8px;padding:10px 14px;border-top:1px solid var(--line);
+         justify-content:center;flex:none;flex-wrap:wrap;
+         padding-bottom:calc(10px + env(safe-area-inset-bottom))}
   .empty{color:var(--muted);text-align:center;padding:60px 20px;line-height:1.7}
+
+  /* ---- phone: TOC becomes a drawer ---- */
+  @media (max-width:780px){
+    #toc{position:fixed;top:0;bottom:0;left:0;z-index:20;width:82vw;max-width:320px;
+         transform:translateX(-100%);transition:transform .22s ease;
+         box-shadow:2px 0 22px rgba(0,0,0,.3);padding-top:env(safe-area-inset-top)}
+    #toc.open{transform:none}
+    #backdrop.open{display:block;position:fixed;inset:0;z-index:19;background:rgba(0,0,0,.45)}
+  }
+  @media (min-width:781px){ #tocbtn{display:none} }
 </style>
 
 <header>
+  <button id="tocbtn" aria-label="목차 열기">☰ 목차</button>
   <select id="subjsel" aria-label="과목 선택"></select>
   <button id="shuffle">🔀 섞기</button>
   <button id="hardonly">😵 어려운 것만</button>
@@ -42,7 +77,11 @@
   <span class="count" id="count"></span>
 </header>
 
-<main><div class="card" id="card"></div></main>
+<div class="body">
+  <aside id="toc"></aside>
+  <main><div class="card" id="card"></div></main>
+</div>
+<div id="backdrop"></div>
 
 <footer>
   <button id="prev">← 이전</button>
@@ -77,23 +116,88 @@ function activeDeck() {
   const d = subjectDeck();
   return hardOnly ? d.filter(c => mark[c.id] === "hard") : d;
 }
-
-function buildSubjectSelect() {
-  const sel = document.getElementById("subjsel");
+function esc(s) {
+  return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+function subjectsPresent() {
   const seen = [];
   CARDS.forEach(c => {
     if (!seen.some(s => s.n === c.subject)) seen.push({n: c.subject, name: c.subjectName});
   });
-  seen.sort((a, b) => a.n - b.n);
+  return seen.sort((a, b) => a.n - b.n);
+}
+
+function buildSubjectSelect() {
+  const sel = document.getElementById("subjsel"), subs = subjectsPresent();
   let html = "";
-  if (seen.length > 1) html += '<option value="0">전체 ' + CARDS.length + '장</option>';
-  seen.forEach(s => {
+  if (subs.length > 1) html += '<option value="0">전체 ' + CARDS.length + '장</option>';
+  subs.forEach(s => {
     const n = CARDS.filter(c => c.subject === s.n).length;
     html += '<option value="' + s.n + '">' + s.n + "과목 " + esc(s.name) + " " + n + "장</option>";
   });
   sel.innerHTML = html;
-  if (seen.length === 1) subj = seen[0].n;
+  if (subs.length === 1) subj = subs[0].n;
   sel.value = String(subj);
+}
+
+/* The TOC is a reference index: always in id order, never shuffled, and it
+   lists every card regardless of the 과목 / 어려움 filters currently applied. */
+function buildToc() {
+  const toc = document.getElementById("toc");
+  const byId = CARDS.slice().sort((a, b) => parseInt(a.id, 10) - parseInt(b.id, 10));
+  let html = "";
+  let last = null;
+  byId.forEach(c => {
+    if (c.subject !== last) {
+      const n = CARDS.filter(x => x.subject === c.subject).length;
+      html += '<div class="toc-sub">' + c.subject + "과목 " + esc(c.subjectName) +
+              " · " + n + "장</div>";
+      last = c.subject;
+    }
+    html += '<button class="toc-item" data-id="' + c.id + '" title="' + esc(c.title) + '">' +
+            '<span class="n">' + c.id + '</span>' +
+            '<span class="t">' + esc(c.title) + '</span>' +
+            '<span class="s" data-s="' + c.id + '"></span></button>';
+  });
+  toc.innerHTML = html;
+  toc.querySelectorAll(".toc-item").forEach(el => {
+    el.onclick = () => jumpTo(el.dataset.id);
+  });
+}
+
+function updateToc() {
+  const d = activeDeck();
+  const curId = d.length ? d[i].id : null;
+  document.querySelectorAll(".toc-item").forEach(el => {
+    const on = el.dataset.id === curId;
+    el.classList.toggle("cur", on);
+    if (on) el.scrollIntoView({block: "nearest"});
+  });
+  document.querySelectorAll("[data-s]").forEach(el => {
+    const m = mark[el.dataset.s];
+    el.textContent = m === "hard" ? "😵" : m === "known" ? "✅" : "";
+  });
+}
+
+/* Jumping must be able to reach any card, so it clears whatever filter
+   would otherwise hide the target. */
+function jumpTo(id) {
+  const card = CARDS.find(c => c.id === id);
+  if (!card) return;
+  if (subj && card.subject !== subj) {
+    subj = card.subject;
+    document.getElementById("subjsel").value = String(subj);
+    try { localStorage.setItem(SUBJ_KEY, String(subj)); } catch (e) {}
+  }
+  if (hardOnly && mark[id] !== "hard") {
+    hardOnly = false;
+    document.getElementById("hardonly").classList.remove("on");
+  }
+  const idx = activeDeck().findIndex(c => c.id === id);
+  if (idx >= 0) i = idx;
+  flipped = false;
+  closeToc();
+  render();
 }
 
 function render() {
@@ -103,6 +207,7 @@ function render() {
       ? '<div class="empty">이 과목에 어려움으로 표시한 카드가 없습니다.<br>"어려운 것만"을 다시 눌러 전체 카드로 돌아가세요.</div>'
       : '<div class="empty">이 과목은 아직 카드가 없습니다.</div>';
     document.getElementById("count").textContent = "0 / 0";
+    updateToc();
     return;
   }
   if (i >= d.length) i = 0;
@@ -118,11 +223,9 @@ function render() {
   const badge = mark[c.id] === "hard" ? " 😵" : mark[c.id] === "known" ? " ✅" : "";
   document.getElementById("count").textContent =
     (i + 1) + " / " + d.length + badge + "   ·   암기 " + known + "/" + scope.length;
+  updateToc();
 }
 
-function esc(s) {
-  return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
-}
 function go(n) { i += n; flipped = false; render(); }
 function setMark(v) {
   const d = activeDeck(); if (!d.length) return;
@@ -132,12 +235,24 @@ function setMark(v) {
   save(); go(1);
 }
 
+function openToc() {
+  document.getElementById("toc").classList.add("open");
+  document.getElementById("backdrop").classList.add("open");
+}
+function closeToc() {
+  document.getElementById("toc").classList.remove("open");
+  document.getElementById("backdrop").classList.remove("open");
+}
+
 document.getElementById("card").onclick = () => { flipped = !flipped; render(); };
 document.getElementById("flip").onclick = e => { e.stopPropagation(); flipped = !flipped; render(); };
 document.getElementById("next").onclick = () => go(1);
 document.getElementById("prev").onclick = () => go(-1);
 document.getElementById("hard").onclick = () => setMark("hard");
 document.getElementById("known").onclick = () => setMark("known");
+document.getElementById("tocbtn").onclick = () =>
+  document.getElementById("toc").classList.contains("open") ? closeToc() : openToc();
+document.getElementById("backdrop").onclick = closeToc;
 document.getElementById("subjsel").onchange = function () {
   subj = parseInt(this.value, 10) || 0;
   try { localStorage.setItem(SUBJ_KEY, String(subj)); } catch (e) {}
@@ -160,17 +275,29 @@ document.getElementById("reset").onclick = function () {
   render();
 };
 addEventListener("keydown", e => {
+  if (e.key === "Escape") { closeToc(); return; }
+  if (e.target && /^(INPUT|SELECT|TEXTAREA)$/.test(e.target.tagName)) return;
   if (e.key === " ") { e.preventDefault(); flipped = !flipped; render(); }
   else if (e.key === "ArrowRight") go(1);
   else if (e.key === "ArrowLeft") go(-1);
 });
-let tx = 0;
-addEventListener("touchstart", e => { tx = e.changedTouches[0].clientX; }, {passive: true});
+
+/* Swipe to navigate. Ignore gestures that start inside the TOC (that is
+   scrolling), and require the movement to be mostly horizontal. */
+let tx = 0, ty = 0, swipeOk = false;
+addEventListener("touchstart", e => {
+  const t = e.changedTouches[0];
+  tx = t.clientX; ty = t.clientY;
+  swipeOk = !document.getElementById("toc").contains(e.target);
+}, {passive: true});
 addEventListener("touchend", e => {
+  if (!swipeOk) return;
   const dx = e.changedTouches[0].clientX - tx;
-  if (Math.abs(dx) > 60) go(dx < 0 ? 1 : -1);
+  const dy = e.changedTouches[0].clientY - ty;
+  if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5) go(dx < 0 ? 1 : -1);
 }, {passive: true});
 
 buildSubjectSelect();
+buildToc();
 render();
 </script>
