@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 220">
+  <text x="360" y="20" font-size="13" text-anchor="middle" fill="#9aa4ae">개발 과정에서 소프트웨어의 변경 사항을 관리하는 일련의 활동</text>
+
+  <rect x="24" y="34" width="672" height="54" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="44" y="58" font-size="14" font-weight="800" fill="#0a3d5c">목적</text>
+  <text x="120" y="58" font-size="13.5" fill="#1a1a1a">개발 비용 감소, 방해 요인 최소화</text>
+
+  <rect x="24" y="96" width="672" height="54" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="44" y="120" font-size="14" font-weight="800" fill="#0a3d5c">관리 항목</text>
+  <text x="140" y="120" font-size="13.5" fill="#1a1a1a">소스 코드, 프로젝트 분석서, 운영 및 설치 지침서 등</text>
+
+  <rect x="24" y="158" width="672" height="54" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="44" y="182" font-size="14" font-weight="800" fill="#0a3d5c">형상 관리 도구</text>
+  <text x="176" y="182" font-size="13.5" fill="#1a1a1a">Git, CVS, Subversion 등</text>
+</svg>
