@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 290">
+  <rect x="24" y="8"   width="672" height="52" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="48" y="30" font-size="14.5" font-weight="800" fill="#0a3d5c">xUnit</text>
+  <text x="48" y="50" font-size="12" fill="#1a1a1a">JUnit, CppUnit, NUnit, HttpUnit 등 다양한 언어에 적용되는 단위 테스트 프레임워크</text>
+
+  <rect x="24" y="66"  width="672" height="52" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="48" y="88" font-size="14.5" font-weight="800" fill="#0a3d5c">STAF</text>
+  <text x="48" y="108" font-size="12" fill="#1a1a1a">서비스 호출·컴포넌트 재사용 등 다양한 환경을 지원하는 테스트 프레임워크</text>
+
+  <rect x="24" y="124" width="672" height="52" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="48" y="146" font-size="14.5" font-weight="800" fill="#0a3d5c">FitNesse</text>
+  <text x="48" y="166" font-size="12" fill="#1a1a1a">웹 기반 테스트 케이스 설계·실행·결과 확인 등을 지원하는 테스트 프레임워크</text>
+
+  <rect x="24" y="182" width="672" height="52" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="48" y="204" font-size="14.5" font-weight="800" fill="#0a3d5c">NTAF</text>
+  <text x="48" y="224" font-size="12" fill="#1a1a1a">FitNesse와 STAF의 장점을 통합한 NHN(Naver)의 테스트 자동화 프레임워크</text>
+
+  <rect x="24" y="240" width="672" height="42" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="48" y="266" font-size="14.5" font-weight="800" fill="#0a3d5c">watir</text>
+  <text x="140" y="266" font-size="12" fill="#1a1a1a">Ruby를 사용하는 애플리케이션 테스트 프레임워크</text>
+</svg>

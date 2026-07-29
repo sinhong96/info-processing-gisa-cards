@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 190">
+  <rect x="200" y="24" width="320" height="122" rx="10" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <rect x="200" y="24" width="320" height="30" rx="10" fill="#4a5560"/>
+  <rect x="200" y="40" width="320" height="14" fill="#4a5560"/>
+  <circle cx="216" cy="39" r="5" fill="#e03131"/>
+  <circle cx="232" cy="39" r="5" fill="#e8b33a"/>
+  <circle cx="248" cy="39" r="5" fill="#0b8ad4"/>
+  <text x="222" y="78"  font-size="13" fill="#0a3d5c" font-weight="700">{</text>
+  <text x="240" y="78"  font-size="13" fill="#e03131">"name"</text>
+  <text x="300" y="78"  font-size="13" fill="#4a5560">:</text>
+  <text x="312" y="78"  font-size="13" fill="#0b8ad4">"정처기"</text>
+  <text x="240" y="100" font-size="13" fill="#e03131">"pass"</text>
+  <text x="292" y="100" font-size="13" fill="#4a5560">:</text>
+  <text x="304" y="100" font-size="13" fill="#0b8ad4">true</text>
+  <text x="222" y="122" font-size="13" fill="#0a3d5c" font-weight="700">}</text>
+
+  <text x="360" y="170" font-size="13" text-anchor="middle" fill="#1a1a1a" font-weight="700">속성-값 쌍(Attribute-Value Pairs) · 사람이 읽을 수 있는 개방형 표준 텍스트 포맷</text>
+</svg>
