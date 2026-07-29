@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 260">
+  <rect x="24" y="8"   width="672" height="58" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="48" y="32" font-size="15" font-weight="800" fill="#0a3d5c">제산법 (Division)</text>
+  <text x="48" y="52" font-size="12.5" fill="#1a1a1a">키 값(K)을 해시표 크기보다 큰 최소 소수(Q)로 나눈 나머지를 홈 주소로</text>
+
+  <rect x="24" y="72"  width="672" height="58" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="48" y="96" font-size="15" font-weight="800" fill="#0a3d5c">제곱법 (Mid-Square)</text>
+  <text x="48" y="116" font-size="12.5" fill="#1a1a1a">키 값(K)을 제곱한 후 그 중간 부분의 값을 홈 주소로</text>
+
+  <rect x="24" y="136" width="672" height="58" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="48" y="160" font-size="15" font-weight="800" fill="#0a3d5c">폴딩법 (Folding)</text>
+  <text x="48" y="180" font-size="12.5" fill="#1a1a1a">키 값(K)을 여러 부분으로 나눈 후 더하거나 XOR한 값을 홈 주소로</text>
+
+  <rect x="24" y="200" width="672" height="58" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="48" y="224" font-size="15" font-weight="800" fill="#0a3d5c">숫자 분석법 (Digit Analysis)</text>
+  <text x="48" y="244" font-size="12.5" fill="#1a1a1a">키를 이루는 숫자의 분포를 분석해 고른 자리를 선택해 홈 주소로</text>
+</svg>

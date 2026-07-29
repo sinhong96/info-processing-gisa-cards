@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 210">
+  <defs>
+    <marker id="pab059" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#0b8ad4"/></marker>
+    <marker id="pob059" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#e03131"/></marker>
+  </defs>
+  <line x1="20" y1="178" x2="700" y2="178" stroke="#d3d5d8" stroke-width="2"/>
+  <text x="48" y="16" font-size="13" font-weight="800" text-anchor="middle" fill="#0b8ad4">PUSH A</text>
+  <path d="M48 22 L48 46" stroke="#0b8ad4" stroke-width="2.5" marker-end="url(#pab059)"/>
+  <rect x="24" y="152" width="48" height="26" rx="4" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="48" y="170" font-size="14" font-weight="800" text-anchor="middle" fill="#0a3d5c">A</text>
+  <text x="48" y="146" font-size="10" font-weight="700" text-anchor="middle" fill="#9aa4ae">TOP</text>
+  <text x="134" y="16" font-size="13" font-weight="800" text-anchor="middle" fill="#0b8ad4">PUSH B</text>
+  <path d="M134 22 L134 46" stroke="#0b8ad4" stroke-width="2.5" marker-end="url(#pab059)"/>
+  <rect x="110" y="152" width="48" height="26" rx="4" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="134" y="170" font-size="14" font-weight="800" text-anchor="middle" fill="#0a3d5c">A</text>
+  <rect x="110" y="124" width="48" height="26" rx="4" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="134" y="142" font-size="14" font-weight="800" text-anchor="middle" fill="#0a3d5c">B</text>
+  <text x="134" y="118" font-size="10" font-weight="700" text-anchor="middle" fill="#9aa4ae">TOP</text>
+  <text x="220" y="16" font-size="13" font-weight="800" text-anchor="middle" fill="#e03131">POP B</text>
+  <path d="M220 46 L220 22" stroke="#e03131" stroke-width="2.5" marker-end="url(#pob059)"/>
+  <rect x="196" y="152" width="48" height="26" rx="4" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="220" y="170" font-size="14" font-weight="800" text-anchor="middle" fill="#0a3d5c">A</text>
+  <text x="220" y="146" font-size="10" font-weight="700" text-anchor="middle" fill="#9aa4ae">TOP</text>
+  <text x="306" y="16" font-size="13" font-weight="800" text-anchor="middle" fill="#0b8ad4">PUSH C</text>
+  <path d="M306 22 L306 46" stroke="#0b8ad4" stroke-width="2.5" marker-end="url(#pab059)"/>
+  <rect x="282" y="152" width="48" height="26" rx="4" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="306" y="170" font-size="14" font-weight="800" text-anchor="middle" fill="#0a3d5c">A</text>
+  <rect x="282" y="124" width="48" height="26" rx="4" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="306" y="142" font-size="14" font-weight="800" text-anchor="middle" fill="#0a3d5c">C</text>
+  <text x="306" y="118" font-size="10" font-weight="700" text-anchor="middle" fill="#9aa4ae">TOP</text>
+  <text x="392" y="16" font-size="13" font-weight="800" text-anchor="middle" fill="#e03131">POP C</text>
+  <path d="M392 46 L392 22" stroke="#e03131" stroke-width="2.5" marker-end="url(#pob059)"/>
+  <rect x="368" y="152" width="48" height="26" rx="4" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="392" y="170" font-size="14" font-weight="800" text-anchor="middle" fill="#0a3d5c">A</text>
+  <text x="392" y="146" font-size="10" font-weight="700" text-anchor="middle" fill="#9aa4ae">TOP</text>
+  <text x="478" y="16" font-size="13" font-weight="800" text-anchor="middle" fill="#0b8ad4">PUSH D</text>
+  <path d="M478 22 L478 46" stroke="#0b8ad4" stroke-width="2.5" marker-end="url(#pab059)"/>
+  <rect x="454" y="152" width="48" height="26" rx="4" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="478" y="170" font-size="14" font-weight="800" text-anchor="middle" fill="#0a3d5c">A</text>
+  <rect x="454" y="124" width="48" height="26" rx="4" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="478" y="142" font-size="14" font-weight="800" text-anchor="middle" fill="#0a3d5c">D</text>
+  <text x="478" y="118" font-size="10" font-weight="700" text-anchor="middle" fill="#9aa4ae">TOP</text>
+  <text x="564" y="16" font-size="13" font-weight="800" text-anchor="middle" fill="#e03131">POP D</text>
+  <path d="M564 46 L564 22" stroke="#e03131" stroke-width="2.5" marker-end="url(#pob059)"/>
+  <rect x="540" y="152" width="48" height="26" rx="4" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="564" y="170" font-size="14" font-weight="800" text-anchor="middle" fill="#0a3d5c">A</text>
+  <text x="564" y="146" font-size="10" font-weight="700" text-anchor="middle" fill="#9aa4ae">TOP</text>
+  <text x="650" y="16" font-size="13" font-weight="800" text-anchor="middle" fill="#e03131">POP A</text>
+  <path d="M650 46 L650 22" stroke="#e03131" stroke-width="2.5" marker-end="url(#pob059)"/>
+  <rect x="626" y="152" width="48" height="26" rx="4" fill="#eef1f4" stroke="#d3d5d8" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <text x="650" y="170" font-size="12" text-anchor="middle" fill="#9aa4ae">empty</text>
+  <text x="360" y="196" font-size="15" fill="#1a1a1a" text-anchor="middle" font-weight="700">출력 순서 : B → C → D → A (입력의 역순)</text>
+</svg>

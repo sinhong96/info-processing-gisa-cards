@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 240">
+  <!-- generic illustrative tree: Node / Branch / Terminal Node -->
+  <line x1="130" y1="50" x2="75"  y2="108" stroke="#9aa4ae" stroke-width="2.5"/>
+  <line x1="130" y1="50" x2="185" y2="108" stroke="#9aa4ae" stroke-width="2.5"/>
+  <line x1="75"  y1="118" x2="45"  y2="176" stroke="#9aa4ae" stroke-width="2.5"/>
+  <line x1="75"  y1="118" x2="105" y2="176" stroke="#9aa4ae" stroke-width="2.5"/>
+
+  <circle cx="130" cy="40" r="14" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="130" y="20" font-size="12" font-weight="800" text-anchor="middle" fill="#0a3d5c">Root(정점)</text>
+
+  <circle cx="75" cy="108" r="13" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2.5"/>
+  <text x="42" y="112" font-size="11" font-weight="700" text-anchor="middle" fill="#0a3d5c">Node</text>
+
+  <circle cx="185" cy="108" r="13" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="45"  y="192" font-size="18" text-anchor="middle">🍃</text>
+  <text x="105" y="192" font-size="18" text-anchor="middle">🍃</text>
+
+  <text x="222" y="104" font-size="11" font-weight="700" text-anchor="middle" fill="#0a3d5c">Terminal</text>
+  <text x="222" y="120" font-size="10" text-anchor="middle" fill="#9aa4ae">(단말 노드)</text>
+
+  <text x="107" y="72" font-size="12" fill="#4a5560" font-weight="700" transform="rotate(-35 107 72)">Branch(가지)</text>
+
+  <text x="30"  y="214" font-size="11" fill="#9aa4ae">단말 노드 = 잎 노드 : 자식이 없는, 디그리 0인 노드</text>
+
+  <!-- exact bullet callouts on the right -->
+  <rect x="290" y="30" width="400" height="76" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="310" y="56" font-size="14" font-weight="800" fill="#0a3d5c">디그리(Degree, 차수)</text>
+  <text x="310" y="80" font-size="14" fill="#1a1a1a">각 노드에서 뻗어 나온 가지의 수</text>
+  <text x="310" y="100" font-size="14" font-weight="800" fill="#e03131">A = 3, B = 2, C = 1, D = 3</text>
+
+  <rect x="290" y="122" width="400" height="76" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="310" y="148" font-size="14" font-weight="800" fill="#0a3d5c">단말 노드(Terminal = Leaf)</text>
+  <text x="310" y="172" font-size="14" fill="#1a1a1a">자식이 하나도 없는, 디그리 0인 노드</text>
+  <text x="310" y="192" font-size="14" font-weight="800" fill="#e03131">K, L, F, G, M, I, J</text>
+</svg>

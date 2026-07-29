@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 200">
+  <defs>
+    <marker id="pa073" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="#0b8ad4"/>
+    </marker>
+  </defs>
+  <rect x="40"  y="30" width="50" height="50" rx="6" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="65" y="62" font-size="24" text-anchor="middle">🧩</text>
+  <rect x="40"  y="90" width="50" height="50" rx="6" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="65" y="122" font-size="24" text-anchor="middle">🧩</text>
+  <rect x="40"  y="150" width="50" height="34" rx="6" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="65" y="173" font-size="18" text-anchor="middle">🧩</text>
+  <text x="65" y="20" font-size="12" text-anchor="middle" fill="#9aa4ae">모듈별 실행 파일</text>
+
+  <path d="M112 100 L172 100" stroke="#0b8ad4" stroke-width="3" marker-end="url(#pa073)"/>
+
+  <rect x="196" y="50" width="140" height="100" rx="10" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="266" y="108" font-size="40" text-anchor="middle">🎁</text>
+  <text x="266" y="168" font-size="13" font-weight="800" text-anchor="middle" fill="#1a1a1a">배포용 설치 파일</text>
+
+  <path d="M356 100 L416 100" stroke="#0b8ad4" stroke-width="3" marker-end="url(#pa073)"/>
+
+  <text x="470" y="90" font-size="46" text-anchor="middle">🙂</text>
+  <text x="470" y="150" font-size="14" font-weight="800" text-anchor="middle" fill="#0a3d5c">사용자</text>
+  <text x="470" y="168" font-size="12" text-anchor="middle" fill="#9aa4ae">중심으로 진행</text>
+
+  <text x="610" y="90" font-size="40" text-anchor="middle" opacity=".4">👨‍💻</text>
+  <text x="610" y="60" font-size="26" text-anchor="middle">🚫</text>
+  <text x="610" y="150" font-size="13" fill="#9aa4ae" text-anchor="middle">개발자 중심</text>
+  <text x="610" y="168" font-size="13" fill="#9aa4ae" text-anchor="middle">아님</text>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 270">
+  <rect x="24" y="8"   width="672" height="46" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="44" y="30" font-size="13.5" font-weight="800" fill="#0a3d5c">클리어링 하우스</text>
+  <text x="44" y="46" font-size="11.5" fill="#1a1a1a">저작권 사용 권한·라이선스 발급·사용량에 따른 결제 관리</text>
+
+  <rect x="24" y="60"  width="672" height="46" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="44" y="82" font-size="13.5" font-weight="800" fill="#0a3d5c">콘텐츠 제공자</text>
+  <text x="44" y="98" font-size="11.5" fill="#1a1a1a">콘텐츠를 제공하는 저작권자</text>
+
+  <rect x="24" y="112" width="672" height="46" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="44" y="134" font-size="13.5" font-weight="800" fill="#0a3d5c">패키저</text>
+  <text x="44" y="150" font-size="11.5" fill="#1a1a1a">콘텐츠를 메타데이터와 함께 배포 형태로 묶어 암호화하는 프로그램</text>
+
+  <rect x="24" y="164" width="672" height="46" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="44" y="186" font-size="13.5" font-weight="800" fill="#0a3d5c">콘텐츠 분배자</text>
+  <text x="44" y="202" font-size="11.5" fill="#1a1a1a">암호화된 콘텐츠를 유통하는 곳이나 사람</text>
+
+  <rect x="24" y="216" width="672" height="46" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="44" y="238" font-size="13.5" font-weight="800" fill="#0a3d5c">DRM 컨트롤러</text>
+  <text x="44" y="254" font-size="11.5" fill="#1a1a1a">배포된 콘텐츠의 이용 권한을 통제하는 프로그램</text>
+</svg>

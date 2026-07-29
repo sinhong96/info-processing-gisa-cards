@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 320">
+  <defs>
+    <marker id="fa063" markerWidth="8" markerHeight="8" refX="4" refY="7" orient="auto"><path d="M0,0 L8,0 L4,8 z" fill="#0b8ad4"/></marker>
+  </defs>
+  <text x="360" y="34" font-size="18" font-weight="800" text-anchor="middle" fill="#1a1a1a">X = A / B * (C + D) + E</text>
+  <text x="360" y="52" font-size="12" text-anchor="middle" fill="#9aa4ae">Infix</text>
+  <path d="M360 74 L360 94" stroke="#0b8ad4" stroke-width="2.5" marker-end="url(#fa063)"/>
+  <text x="380" y="89" font-size="12" font-weight="700" fill="#0a3d5c">① 연산 우선순위에 따라 괄호로 묶는다</text>
+  <rect x="24" y="100" width="672" height="40" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="360" y="126" font-size="16" font-weight="800" text-anchor="middle" fill="#1a1a1a">( X = ( ( (A / B) * (C + D) ) + E ) )</text>
+  <path d="M360 154 L360 174" stroke="#0b8ad4" stroke-width="2.5" marker-end="url(#fa063)"/>
+  <text x="380" y="169" font-size="12" font-weight="700" fill="#0a3d5c">② 연산자를 해당 괄호의 뒤(오른쪽)로 옮긴다</text>
+  <rect x="24" y="180" width="672" height="40" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="360" y="206" font-size="16" font-weight="800" text-anchor="middle" fill="#1a1a1a">( X ( ( (AB) / (CD) + ) * E ) + ) =</text>
+  <path d="M360 234 L360 254" stroke="#0b8ad4" stroke-width="2.5" marker-end="url(#fa063)"/>
+  <text x="380" y="249" font-size="12" font-weight="700" fill="#0a3d5c">③ 괄호를 제거한다 → Postfix</text>
+  <rect x="24" y="260" width="672" height="40" rx="8" fill="#fff3d6" stroke="#e8b33a" stroke-width="2"/>
+  <text x="360" y="286" font-size="16" font-weight="800" text-anchor="middle" fill="#e03131">X A B / C D + * E + =</text>
+</svg>

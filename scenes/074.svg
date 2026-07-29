@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 180">
+  <circle cx="230" cy="76" r="46" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="230" y="92" font-size="40" text-anchor="middle">🔐</text>
+  <text x="230" y="150" font-size="16" font-weight="800" text-anchor="middle" fill="#1a1a1a">암호화·보안</text>
+  <text x="230" y="168" font-size="12" text-anchor="middle" fill="#9aa4ae">내부 콘텐츠 암호화·보안 고려</text>
+
+  <circle cx="490" cy="76" r="46" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="490" y="92" font-size="40" text-anchor="middle">🔗</text>
+  <text x="490" y="150" font-size="16" font-weight="800" text-anchor="middle" fill="#1a1a1a">DRM 연동</text>
+  <text x="490" y="168" font-size="12" text-anchor="middle" fill="#9aa4ae">타 콘텐츠·단말기 간 DRM 연동</text>
+</svg>
