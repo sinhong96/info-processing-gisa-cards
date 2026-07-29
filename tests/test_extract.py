@@ -150,6 +150,49 @@ class TestExtraction(unittest.TestCase):
         self.assertIn("→", self.by_id["067"]["bullets"][2])
         self.assertIn("→", self.by_id["068"]["bullets"][2])
 
+    def test_card_319_title_is_not_corrupted_by_mixed_font_hanja(self):
+        # Regression: 319's title "인증(認證, Authentication)" sets the
+        # Hanja "認證" in a third font (not TITLE_FONT, not ID_FONT).
+        # titles_by_font's visitor treated that as "some other text" and
+        # cleared its buffer, wiping the "인증( " already accumulated, so
+        # only ", Authentication)" survived. The wiped "인증( 認證" then
+        # stayed in the raw text stream and got swept into 318's last
+        # bullet by title_offset (which searched for the corrupted title).
+        # Fixed via title_overrides.json (319) + bullet_overrides.json (318).
+        self.assertEqual(self.by_id["319"]["title"], "인증(認證, Authentication)")
+        self.assertNotIn("認證", self.by_id["318"]["bullets"][-1])
+        self.assertTrue(self.by_id["318"]["bullets"][-1].endswith("등"))
+
+    def test_card_146_syntax_box_is_split_not_run_on(self):
+        # Regression: 146's CREATE TABLE syntax box has no bullet
+        # characters between its indented lines, so split_bullets's
+        # single-bullet fallback produced one 200+ char run-on line.
+        # bullet_overrides.json splits it into one bullet per source line.
+        self.assertGreater(len(self.by_id["146"]["bullets"]), 5)
+        self.assertTrue(any("PRIMARY KEY" in b for b in self.by_id["146"]["bullets"]))
+
+    def test_phase3_column_overflow_misattributions_are_fixed(self):
+        # Regression: three more instances of the same stream-order bug
+        # phase2 found at 061/062 (extract() bounds a card's body by the
+        # NEXT MARKER IN STREAM ORDER, not visual order; unheaded text
+        # that overflows into the next column with no marker of its own
+        # gets swept into whichever card's marker precedes it in the
+        # stream, not the card it's visually a continuation of):
+        #   - 131's "부분 완료"/"완료" transaction states overflowed into
+        #     126's body (both on the page 18/19 break).
+        #   - 137's "장애 투명성" (4th transparency type) overflowed into
+        #     134's body (page 19/20 break).
+        #   - 145's GRANT/REVOKE (DCL's other two commands) overflowed
+        #     into 135's body (page 20/21 break).
+        # All fixed via bullet_overrides.json.
+        self.assertEqual(len(self.by_id["126"]["bullets"]), 2)
+        self.assertIn("완료(Committed)", " ".join(self.by_id["131"]["bullets"]))
+        self.assertEqual(len(self.by_id["134"]["bullets"]), 5)
+        self.assertIn("장애 투명성", " ".join(self.by_id["137"]["bullets"]))
+        self.assertEqual(len(self.by_id["135"]["bullets"]), 5)
+        self.assertIn("GRANT", " ".join(self.by_id["145"]["bullets"]))
+        self.assertIn("REVOKE", " ".join(self.by_id["145"]["bullets"]))
+
 
 class TestMergeSafety(unittest.TestCase):
     def test_rerun_preserves_authored_kind_and_hook(self):
