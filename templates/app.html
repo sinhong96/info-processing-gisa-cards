@@ -213,8 +213,13 @@ function render() {
   if (i >= d.length) i = 0;
   if (i < 0) i = d.length - 1;
   const c = d[i];
+  // "image" scenes are a crop of the source page and already show the printed
+  // bullets, so repeating them below would just duplicate the text.
+  const body = c.kind === "image"
+    ? ""
+    : "<ul>" + c.bullets.map(b => "<li>" + esc(b) + "</li>").join("") + "</ul>";
   el.innerHTML = flipped
-    ? c.svg + "<ul>" + c.bullets.map(b => "<li>" + esc(b) + "</li>").join("") + "</ul>"
+    ? c.svg + body
         + (c.hook ? '<div class="hook">' + esc(c.hook) + "</div>" : "")
     : '<div class="front"><div class="num">' + c.id + '</div><div class="ttl">'
         + esc(c.title) + '</div><div class="tap">탭하거나 space를 눌러 뒤집기</div></div>';

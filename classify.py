@@ -7,7 +7,10 @@ author them; it only reports what is missing or malformed.
 import json, os, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-VALID_KINDS = {"diagram", "mnemonic"}
+# "image" is for cards the PDF draws rather than writes — the scene is a crop of the
+# source page (see crop_card.py), and the study app skips its own bullet list because
+# the picture already contains them.
+VALID_KINDS = {"diagram", "mnemonic", "image"}
 MAX_HOOK = 30
 
 

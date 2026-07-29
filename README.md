@@ -108,6 +108,19 @@ before trusting a card:
     204. Mostly worked examples, sorting traces, a tree-traversal diagram, a complexity
     table, and a Gantt chart — content the PDF draws rather than writes.
 
+  For cards that are *entirely* a graphic, redrawing them by hand is slow and invites
+  errors. Those use `crop_card.py` instead, which crops the region straight off the
+  rendered page and embeds it as a data URI:
+
+  ```bash
+  python3 crop_card.py 204 --hook "짧은 작업 먼저 (SJF)"
+  ```
+
+  It sets the card's `kind` to `"image"`, and the study app then skips its own bullet
+  list because the cropped picture already shows the printed bullets. The crop starts
+  below the title bar so `build.py` still draws the deck's standard header. Card 204
+  (스케줄링 - SJF, a Gantt chart) is built this way.
+
   Anything in these files was read off the rendered page by hand. If a card looks wrong,
   check here first, then `docs/verification/phase*-fidelity.md` for what was checked and
   why.
@@ -123,6 +136,7 @@ extract.py               PDF -> cards.json
 classify.py              validates that a subject's kind/hook are authored
 build.py                 cards.json + scenes -> index.html
 verify_render.py         headless-Chrome screenshot check
+crop_card.py             builds a scene by cropping the source page (graphic cards)
 cards.json               all 324 extracted points
 title_overrides.json     hand-read titles for graphic-rendered cards
 bullet_overrides.json    hand-read bullets for graphic-rendered cards
