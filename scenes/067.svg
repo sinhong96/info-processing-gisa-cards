@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 310">
+  <defs>
+    <marker id="sa067" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#0b8ad4"/></marker>
+  </defs>
+  <text x="24" y="20" font-size="13" fill="#9aa4ae">예제 : 8, 5, 6, 2, 4 를 선택 정렬로 정렬  (남은 값 중 최솟값을 찾아 앞자리와 교환)</text>
+  <text x="24" y="51" font-size="14" font-weight="800" fill="#0a3d5c">초기</text>
+  <rect x="88" y="34" width="24" height="24" rx="4" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="100" y="50" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">8</text>
+  <rect x="114" y="34" width="24" height="24" rx="4" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="126" y="50" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">5</text>
+  <rect x="140" y="34" width="24" height="24" rx="4" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="152" y="50" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">6</text>
+  <rect x="166" y="34" width="24" height="24" rx="4" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="178" y="50" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">2</text>
+  <rect x="192" y="34" width="24" height="24" rx="4" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="204" y="50" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">4</text>
+  <text x="24" y="101" font-size="14" font-weight="800" fill="#0a3d5c">1회전</text>
+  <rect x="88" y="84" width="24" height="24" rx="4" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="100" y="100" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">5</text>
+  <rect x="114" y="84" width="24" height="24" rx="4" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="126" y="100" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">8</text>
+  <rect x="140" y="84" width="24" height="24" rx="4" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="152" y="100" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">6</text>
+  <rect x="166" y="84" width="24" height="24" rx="4" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="178" y="100" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">2</text>
+  <rect x="192" y="84" width="24" height="24" rx="4" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="204" y="100" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">4</text>
+  <path d="M221 96 L237 96" stroke="#0b8ad4" stroke-width="2" marker-end="url(#sa067)"/>
+  <rect x="242" y="84" width="24" height="24" rx="4" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="254" y="100" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">5</text>
+  <rect x="268" y="84" width="24" height="24" rx="4" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="280" y="100" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">8</text>
+  <rect x="294" y="84" width="24" height="24" rx="4" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="306" y="100" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">6</text>
+  <rect x="320" y="84" width="24" height="24" rx="4" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="332" y="100" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">2</text>
+  <rect x="346" y="84" width="24" height="24" rx="4" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="358" y="100" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">4</text>
+  <path d="M375 96 L391 96" stroke="#0b8ad4" stroke-width="2" marker-end="url(#sa067)"/>
+  <rect x="396" y="84" width="24" height="24" rx="4" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="408" y="100" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">2</text>
+  <rect x="422" y="84" width="24" height="24" rx="4" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="434" y="100" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">8</text>
+  <rect x="448" y="84" width="24" height="24" rx="4" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="460" y="100" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">6</text>
+  <rect x="474" y="84" width="24" height="24" rx="4" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="486" y="100" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">5</text>
+  <rect x="500" y="84" width="24" height="24" rx="4" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="512" y="100" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">4</text>
+  <path d="M529 96 L545 96" stroke="#0b8ad4" stroke-width="2" marker-end="url(#sa067)"/>
+  <rect x="550" y="84" width="24" height="24" rx="4" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="562" y="100" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">2</text>
+  <rect x="576" y="84" width="24" height="24" rx="4" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="588" y="100" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">8</text>
+  <rect x="602" y="84" width="24" height="24" rx="4" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="614" y="100" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">6</text>
+  <rect x="628" y="84" width="24" height="24" rx="4" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="640" y="100" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">5</text>
+  <rect x="654" y="84" width="24" height="24" rx="4" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="666" y="100" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">4</text>
+  <text x="24" y="151" font-size="14" font-weight="800" fill="#0a3d5c">2회전</text>
+  <rect x="88" y="134" width="24" height="24" rx="4" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="100" y="150" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">2</text>
+  <rect x="114" y="134" width="24" height="24" rx="4" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="126" y="150" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">6</text>
+  <rect x="140" y="134" width="24" height="24" rx="4" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="152" y="150" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">8</text>
+  <rect x="166" y="134" width="24" height="24" rx="4" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="178" y="150" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">5</text>
+  <rect x="192" y="134" width="24" height="24" rx="4" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="204" y="150" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">4</text>
+  <path d="M221 146 L237 146" stroke="#0b8ad4" stroke-width="2" marker-end="url(#sa067)"/>
+  <rect x="242" y="134" width="24" height="24" rx="4" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="254" y="150" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">2</text>
+  <rect x="268" y="134" width="24" height="24" rx="4" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="280" y="150" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">5</text>
+  <rect x="294" y="134" width="24" height="24" rx="4" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="306" y="150" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">8</text>
+  <rect x="320" y="134" width="24" height="24" rx="4" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="332" y="150" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">6</text>
+  <rect x="346" y="134" width="24" height="24" rx="4" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="358" y="150" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">4</text>
+  <path d="M375 146 L391 146" stroke="#0b8ad4" stroke-width="2" marker-end="url(#sa067)"/>
+  <rect x="396" y="134" width="24" height="24" rx="4" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="408" y="150" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">2</text>
+  <rect x="422" y="134" width="24" height="24" rx="4" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="434" y="150" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">4</text>
+  <rect x="448" y="134" width="24" height="24" rx="4" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="460" y="150" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">8</text>
+  <rect x="474" y="134" width="24" height="24" rx="4" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="486" y="150" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">6</text>
+  <rect x="500" y="134" width="24" height="24" rx="4" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="512" y="150" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">5</text>
+  <text x="24" y="201" font-size="14" font-weight="800" fill="#0a3d5c">3회전</text>
+  <rect x="88" y="184" width="24" height="24" rx="4" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="100" y="200" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">2</text>
+  <rect x="114" y="184" width="24" height="24" rx="4" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="126" y="200" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">4</text>
+  <rect x="140" y="184" width="24" height="24" rx="4" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="152" y="200" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">6</text>
+  <rect x="166" y="184" width="24" height="24" rx="4" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="178" y="200" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">8</text>
+  <rect x="192" y="184" width="24" height="24" rx="4" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="204" y="200" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">5</text>
+  <path d="M221 196 L237 196" stroke="#0b8ad4" stroke-width="2" marker-end="url(#sa067)"/>
+  <rect x="242" y="184" width="24" height="24" rx="4" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="254" y="200" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">2</text>
+  <rect x="268" y="184" width="24" height="24" rx="4" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="280" y="200" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">4</text>
+  <rect x="294" y="184" width="24" height="24" rx="4" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="306" y="200" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">5</text>
+  <rect x="320" y="184" width="24" height="24" rx="4" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="332" y="200" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">8</text>
+  <rect x="346" y="184" width="24" height="24" rx="4" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="358" y="200" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">6</text>
+  <text x="24" y="251" font-size="14" font-weight="800" fill="#0a3d5c">4회전</text>
+  <rect x="88" y="234" width="24" height="24" rx="4" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="100" y="250" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">2</text>
+  <rect x="114" y="234" width="24" height="24" rx="4" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="126" y="250" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">4</text>
+  <rect x="140" y="234" width="24" height="24" rx="4" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="152" y="250" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">5</text>
+  <rect x="166" y="234" width="24" height="24" rx="4" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="178" y="250" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">6</text>
+  <rect x="192" y="234" width="24" height="24" rx="4" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="204" y="250" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">8</text>
+  <text x="24" y="300" font-size="13" fill="#e03131" font-weight="700">정렬 완료 : 2 4 5 6 8  (파란 테두리 = 이번 회전에 교환된 값)</text>
+</svg>

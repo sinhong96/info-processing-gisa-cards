@@ -45,9 +45,11 @@ def load_scene(card_id):
         return fh.read()
 
 
-def build(cards, subject):
+def build(cards, subjects):
+    """subjects: a subject number, or an iterable of them."""
+    wanted = {subjects} if isinstance(subjects, int) else set(subjects)
     payload = []
-    for c in sorted((c for c in cards if c["subject"] == subject),
+    for c in sorted((c for c in cards if c["subject"] in wanted),
                     key=lambda c: int(c["id"])):
         svg = load_scene(c["id"])
         if svg is None:
@@ -55,7 +57,8 @@ def build(cards, subject):
         payload.append({
             "id": c["id"], "title": c["title"], "bullets": c["bullets"],
             "kind": c["kind"], "hook": c["hook"],
-            "subjectName": c["subjectName"], "svg": wrap_scene(c, svg),
+            "subject": c["subject"], "subjectName": c["subjectName"],
+            "svg": wrap_scene(c, svg),
         })
     tmpl = open(os.path.join(HERE, "templates", "app.html"), encoding="utf-8").read()
     data = json.dumps(payload, ensure_ascii=False)
@@ -64,17 +67,33 @@ def build(cards, subject):
     return tmpl.replace("/*__CARDS__*/", data)
 
 
+def subjects_with_scenes(cards):
+    return sorted({c["subject"] for c in cards
+                   if os.path.exists(os.path.join(HERE, "scenes", c["id"] + ".svg"))})
+
+
 def main():
-    subject = int(sys.argv[1]) if len(sys.argv) > 1 else 1
     cards = json.load(open(os.path.join(HERE, "cards.json"), encoding="utf-8"))
+    # No args: build every subject that has at least one scene authored.
+    if len(sys.argv) > 1:
+        subjects = sorted({int(a) for a in sys.argv[1:]})
+    else:
+        subjects = subjects_with_scenes(cards)
+    if not subjects:
+        raise SystemExit("no subjects have scenes yet — author some scenes/NNN.svg first")
+
     out = os.path.join(HERE, "index.html")
-    html = build(cards, subject)
     with open(out, "w", encoding="utf-8") as fh:
-        fh.write(html)
-    total = len([c for c in cards if c["subject"] == subject])
-    drawn = sum(1 for c in cards if c["subject"] == subject
-                and os.path.exists(os.path.join(HERE, "scenes", c["id"] + ".svg")))
-    print(f"wrote {out}: {drawn}/{total} cards have scenes")
+        fh.write(build(cards, subjects))
+
+    print(f"wrote {out}")
+    for s in subjects:
+        total = len([c for c in cards if c["subject"] == s])
+        drawn = sum(1 for c in cards if c["subject"] == s
+                    and os.path.exists(os.path.join(HERE, "scenes", c["id"] + ".svg")))
+        name = next((c["subjectName"] for c in cards if c["subject"] == s), "?")
+        flag = "" if drawn == total else "   <-- incomplete"
+        print(f"  {s}과목 {name}: {drawn}/{total} cards have scenes{flag}")
     return 0
 
 

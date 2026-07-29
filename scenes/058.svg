@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 190">
+  <circle cx="140" cy="74" r="46" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="140" y="88" font-size="38" text-anchor="middle">⚡</text>
+  <text x="140" y="150" font-size="16" font-weight="800" text-anchor="middle" fill="#1a1a1a">인터럽트 처리</text>
+  <text x="140" y="170" font-size="12" text-anchor="middle" fill="#9aa4ae">Interrupt</text>
+
+  <circle cx="360" cy="74" r="46" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="360" y="88" font-size="38" text-anchor="middle">🧮</text>
+  <text x="360" y="150" font-size="16" font-weight="800" text-anchor="middle" fill="#1a1a1a">수식 계산·표기</text>
+  <text x="360" y="170" font-size="12" text-anchor="middle" fill="#9aa4ae">수식 계산 및 수식 표기법</text>
+
+  <circle cx="580" cy="74" r="46" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="580" y="88" font-size="38" text-anchor="middle">🔁</text>
+  <text x="580" y="150" font-size="16" font-weight="800" text-anchor="middle" fill="#1a1a1a">서브루틴 호출</text>
+  <text x="580" y="170" font-size="12" text-anchor="middle" fill="#9aa4ae">호출 및 복귀 주소 저장</text>
+</svg>

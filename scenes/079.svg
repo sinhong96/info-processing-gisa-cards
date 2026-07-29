@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 220">
+  <defs>
+    <marker id="arw079" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="#0b8ad4"/>
+    </marker>
+  </defs>
+  <g>
+    <rect x="34"  y="20" width="192" height="130" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+    <text x="130" y="62"  font-size="28" text-anchor="middle">📤</text>
+    <text x="130" y="94"  font-size="17" font-weight="800" text-anchor="middle" fill="#0a3d5c">체크아웃</text>
+    <text x="130" y="112" font-size="11" text-anchor="middle" fill="#9aa4ae">Check-Out</text>
+    <text x="130" y="132" font-size="11" text-anchor="middle" fill="#1a1a1a">저장소에서 파일 받아옴</text>
+
+    <rect x="264" y="20" width="192" height="130" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+    <text x="360" y="62"  font-size="28" text-anchor="middle">📥</text>
+    <text x="360" y="94"  font-size="17" font-weight="800" text-anchor="middle" fill="#0a3d5c">체크인</text>
+    <text x="360" y="112" font-size="11" text-anchor="middle" fill="#9aa4ae">Check-In</text>
+    <text x="360" y="132" font-size="11" text-anchor="middle" fill="#1a1a1a">수정 완료 후 새 버전 갱신</text>
+
+    <rect x="494" y="20" width="192" height="130" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+    <text x="590" y="62"  font-size="28" text-anchor="middle">✅</text>
+    <text x="590" y="94"  font-size="17" font-weight="800" text-anchor="middle" fill="#0a3d5c">커밋</text>
+    <text x="590" y="112" font-size="11" text-anchor="middle" fill="#9aa4ae">Commit</text>
+    <text x="590" y="132" font-size="11" text-anchor="middle" fill="#1a1a1a">충돌 시 diff로 수정 후 갱신</text>
+  </g>
+  <path d="M230 85 h30" stroke="#0b8ad4" stroke-width="3" marker-end="url(#arw079)"/>
+  <path d="M460 85 h30" stroke="#0b8ad4" stroke-width="3" marker-end="url(#arw079)"/>
+  <text x="360" y="188" font-size="12.5" text-anchor="middle" fill="#e03131" font-weight="700">Commit 시 이전 갱신 내용이 있으면 Conflict(충돌)를 알림</text>
+</svg>

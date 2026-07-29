@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 240">
+  <rect x="40" y="20" width="180" height="90" rx="10" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="130" y="58"  font-size="17" font-weight="800" text-anchor="middle" fill="#0a3d5c">기초 경로 검사</text>
+  <text x="130" y="80"  font-size="11" text-anchor="middle" fill="#1a1a1a">Base Path Test</text>
+  <text x="130" y="96"  font-size="10.5" text-anchor="middle" fill="#9aa4ae">수행 가능한 모든 경로 검사</text>
+
+  <rect x="300" y="20" width="380" height="46" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="490" y="49" font-size="17" font-weight="800" text-anchor="middle" fill="#0a3d5c">제어 구조 검사</text>
+
+  <line x1="362" y1="66" x2="362" y2="100" stroke="#9aa4ae" stroke-width="2"/>
+  <line x1="498" y1="66" x2="498" y2="100" stroke="#9aa4ae" stroke-width="2"/>
+  <line x1="640" y1="66" x2="640" y2="100" stroke="#9aa4ae" stroke-width="2"/>
+
+  <rect x="300" y="100" width="125" height="56" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="362" y="132" font-size="14" font-weight="800" text-anchor="middle" fill="#0a3d5c">조건 검사</text>
+
+  <rect x="435" y="100" width="125" height="56" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="498" y="132" font-size="14" font-weight="800" text-anchor="middle" fill="#0a3d5c">루프 검사</text>
+
+  <rect x="570" y="100" width="140" height="56" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="640" y="132" font-size="13.5" font-weight="800" text-anchor="middle" fill="#0a3d5c">데이터 흐름 검사</text>
+
+  <rect x="40" y="180" width="640" height="42" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="360" y="206" font-size="12.5" text-anchor="middle" fill="#1a1a1a">※ 기초 경로(Base Path = Basis Path) : 수행 가능한 모든 경로를 의미함</text>
+</svg>

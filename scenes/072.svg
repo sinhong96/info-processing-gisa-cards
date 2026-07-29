@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 210">
+  <rect x="24"  y="20" width="156" height="150" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="102" y="58" font-size="28" text-anchor="middle">🐜</text>
+  <text x="102" y="92" font-size="16" font-weight="800" text-anchor="middle" fill="#0a3d5c">Ant</text>
+  <text x="102" y="118" font-size="11.5" text-anchor="middle" fill="#1a1a1a">아파치 소프트웨어</text>
+  <text x="102" y="134" font-size="11.5" text-anchor="middle" fill="#1a1a1a">재단이 개발</text>
+
+  <rect x="196" y="20" width="156" height="150" rx="10" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="274" y="58" font-size="28" text-anchor="middle">🏔️</text>
+  <text x="274" y="92" font-size="16" font-weight="800" text-anchor="middle" fill="#0a3d5c">Maven</text>
+  <text x="274" y="118" font-size="11.5" text-anchor="middle" fill="#1a1a1a">Ant의 대안으로</text>
+  <text x="274" y="134" font-size="11.5" text-anchor="middle" fill="#1a1a1a">개발</text>
+
+  <rect x="368" y="20" width="156" height="150" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="446" y="58" font-size="28" text-anchor="middle">⚙️</text>
+  <text x="446" y="92" font-size="16" font-weight="800" text-anchor="middle" fill="#0a3d5c">Jenkins</text>
+  <text x="446" y="118" font-size="11.5" text-anchor="middle" fill="#1a1a1a">JAVA 기반</text>
+  <text x="446" y="134" font-size="11.5" text-anchor="middle" fill="#1a1a1a">오픈 소스 빌드 도구</text>
+
+  <rect x="540" y="20" width="156" height="150" rx="10" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="618" y="58" font-size="28" text-anchor="middle">🐘</text>
+  <text x="618" y="92" font-size="16" font-weight="800" text-anchor="middle" fill="#0a3d5c">Gradle</text>
+  <text x="618" y="118" font-size="11.5" text-anchor="middle" fill="#1a1a1a">Groovy 기반</text>
+  <text x="618" y="134" font-size="11.5" text-anchor="middle" fill="#1a1a1a">오픈 소스 빌드 도구</text>
+</svg>

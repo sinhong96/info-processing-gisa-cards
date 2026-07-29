@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 200">
+  <defs>
+    <marker id="na094" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#e03131"/>
+    </marker>
+  </defs>
+  <rect x="70" y="24" width="200" height="120" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="92" y="50" font-size="12" fill="#4a5560">if (x &gt; 0) {</text>
+  <text x="92" y="70" font-size="12" fill="#4a5560">&#160;&#160;run();</text>
+  <text x="92" y="90" font-size="12" fill="#4a5560">} else {</text>
+  <text x="92" y="110" font-size="12" fill="#4a5560">&#160;&#160;stop();</text>
+  <text x="92" y="130" font-size="12" fill="#4a5560">}</text>
+  <line x1="270" y1="60" x2="330" y2="30" stroke="#e03131" stroke-width="2.5" marker-end="url(#na094)"/>
+  <text x="220" y="20" font-size="30" text-anchor="middle">🔍</text>
+  <text x="170" y="164" font-size="13" font-weight="700" text-anchor="middle" fill="#1a1a1a">실행하지 않고 코드만 분석</text>
+  <text x="170" y="180" font-size="11" text-anchor="middle" fill="#9aa4ae">하드웨어·소프트웨어적 방법으로 분석</text>
+
+  <rect x="330" y="30" width="120" height="52" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="390" y="62" font-size="15" font-weight="800" text-anchor="middle" fill="#0a3d5c">pmd</text>
+  <rect x="466" y="30" width="120" height="52" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="526" y="62" font-size="15" font-weight="800" text-anchor="middle" fill="#0a3d5c">checkstyle</text>
+  <rect x="330" y="94" width="120" height="52" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="390" y="126" font-size="15" font-weight="800" text-anchor="middle" fill="#0a3d5c">cppcheck</text>
+  <rect x="466" y="94" width="120" height="52" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="526" y="126" font-size="14" font-weight="700" text-anchor="middle" fill="#9aa4ae">등</text>
+</svg>

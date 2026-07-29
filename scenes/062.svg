@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 330">
+  <!-- edges -->
+  <line x1="300" y1="40" x2="180" y2="98" stroke="#9aa4ae" stroke-width="2.5"/>
+  <line x1="300" y1="40" x2="420" y2="98" stroke="#9aa4ae" stroke-width="2.5"/>
+  <line x1="180" y1="108" x2="120" y2="158" stroke="#9aa4ae" stroke-width="2.5"/>
+  <line x1="180" y1="108" x2="240" y2="158" stroke="#9aa4ae" stroke-width="2.5"/>
+  <line x1="420" y1="108" x2="360" y2="158" stroke="#9aa4ae" stroke-width="2.5"/>
+  <line x1="420" y1="108" x2="480" y2="158" stroke="#9aa4ae" stroke-width="2.5"/>
+  <line x1="120" y1="168" x2="90"  y2="216" stroke="#9aa4ae" stroke-width="2.5"/>
+  <line x1="120" y1="168" x2="150" y2="216" stroke="#9aa4ae" stroke-width="2.5"/>
+
+  <!-- nodes -->
+  <circle cx="300" cy="30" r="20" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="300" y="37" font-size="16" font-weight="800" text-anchor="middle" fill="#0a3d5c">A</text>
+
+  <circle cx="180" cy="98" r="18" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="180" y="104" font-size="15" font-weight="800" text-anchor="middle" fill="#0a3d5c">B</text>
+  <circle cx="420" cy="98" r="18" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="420" y="104" font-size="15" font-weight="800" text-anchor="middle" fill="#0a3d5c">C</text>
+
+  <circle cx="120" cy="158" r="17" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2.5"/>
+  <text x="120" y="164" font-size="14" font-weight="800" text-anchor="middle" fill="#0a3d5c">D</text>
+  <circle cx="240" cy="158" r="17" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="240" y="164" font-size="14" font-weight="800" text-anchor="middle" fill="#0a3d5c">E</text>
+  <circle cx="360" cy="158" r="17" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="360" y="164" font-size="14" font-weight="800" text-anchor="middle" fill="#0a3d5c">F</text>
+  <circle cx="480" cy="158" r="17" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="480" y="164" font-size="14" font-weight="800" text-anchor="middle" fill="#0a3d5c">G</text>
+
+  <circle cx="90" cy="216" r="17" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="90" y="222" font-size="14" font-weight="800" text-anchor="middle" fill="#0a3d5c">H</text>
+  <circle cx="150" cy="216" r="17" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="150" y="222" font-size="14" font-weight="800" text-anchor="middle" fill="#0a3d5c">I</text>
+
+  <!-- traversal result rows -->
+  <rect x="510" y="16" width="180" height="230" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="600" y="42"  font-size="13" font-weight="800" text-anchor="middle" fill="#0a3d5c">Preorder</text>
+  <text x="600" y="60"  font-size="11" text-anchor="middle" fill="#9aa4ae">Root→Left→Right</text>
+  <text x="600" y="82"  font-size="16" font-weight="800" text-anchor="middle" fill="#e03131">ABDHIECFG</text>
+
+  <text x="600" y="116" font-size="13" font-weight="800" text-anchor="middle" fill="#0a3d5c">Inorder</text>
+  <text x="600" y="134" font-size="11" text-anchor="middle" fill="#9aa4ae">Left→Root→Right</text>
+  <text x="600" y="156" font-size="16" font-weight="800" text-anchor="middle" fill="#e03131">HDIBEAFCG</text>
+
+  <text x="600" y="190" font-size="13" font-weight="800" text-anchor="middle" fill="#0a3d5c">Postorder</text>
+  <text x="600" y="208" font-size="11" text-anchor="middle" fill="#9aa4ae">Left→Right→Root</text>
+  <text x="600" y="230" font-size="16" font-weight="800" text-anchor="middle" fill="#e03131">HIDEBFGCA</text>
+
+  <text x="255" y="280" font-size="14" text-anchor="middle" fill="#1a1a1a" font-weight="700">Inorder, Preorder, Postorder 방법으로 운행했을 때 각 노드를 방문한 순서</text>
+</svg>

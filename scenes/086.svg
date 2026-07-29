@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 220">
+  <!-- Alpha panel -->
+  <rect x="40" y="16" width="300" height="188" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <rect x="40" y="16" width="300" height="48" rx="10" fill="#0b8ad4"/>
+  <rect x="40" y="44" width="300" height="20" fill="#0b8ad4"/>
+  <text x="190" y="48" font-size="19" font-weight="800" text-anchor="middle" fill="#fff">알파 테스트</text>
+  <text x="190" y="102" font-size="30" text-anchor="middle">🏢</text>
+  <text x="190" y="140" font-size="13" text-anchor="middle" fill="#0a3d5c" font-weight="700">개발자의 장소에서</text>
+  <text x="190" y="160" font-size="13" text-anchor="middle" fill="#0a3d5c" font-weight="700">사용자가 개발자 앞에서 행함</text>
+  <text x="190" y="188" font-size="12" text-anchor="middle" fill="#9aa4ae">개발사 안(In-house)</text>
+
+  <!-- Beta panel -->
+  <rect x="380" y="16" width="300" height="188" rx="10" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <rect x="380" y="16" width="300" height="48" rx="10" fill="#e8b33a"/>
+  <rect x="380" y="44" width="300" height="20" fill="#e8b33a"/>
+  <text x="530" y="48" font-size="19" font-weight="800" text-anchor="middle" fill="#fff">베타 테스트</text>
+  <text x="530" y="102" font-size="30" text-anchor="middle">🌍</text>
+  <text x="530" y="140" font-size="13" text-anchor="middle" fill="#0a3d5c" font-weight="700">선정된 최종 사용자가</text>
+  <text x="530" y="160" font-size="13" text-anchor="middle" fill="#0a3d5c" font-weight="700">여러 사용자 앞에서 행함</text>
+  <text x="530" y="188" font-size="12" text-anchor="middle" fill="#9aa4ae">현장 = 필드 테스팅(Field Testing)</text>
+</svg>

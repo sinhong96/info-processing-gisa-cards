@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 200">
+  <text x="360" y="20" font-size="14" font-weight="800" text-anchor="middle" fill="#0a3d5c">🔐 네트워크 트래픽에 대한 암호화 설정</text>
+
+  <circle cx="150" cy="94" r="42" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="150" y="106" font-size="30" text-anchor="middle">🛡️</text>
+  <text x="150" y="160" font-size="17" font-weight="800" text-anchor="middle" fill="#1a1a1a">IPSec</text>
+
+  <circle cx="360" cy="94" r="42" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="360" y="106" font-size="30" text-anchor="middle">🔒</text>
+  <text x="360" y="160" font-size="17" font-weight="800" text-anchor="middle" fill="#1a1a1a">SSL</text>
+
+  <circle cx="570" cy="94" r="42" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="570" y="106" font-size="30" text-anchor="middle">🌐</text>
+  <text x="570" y="160" font-size="17" font-weight="800" text-anchor="middle" fill="#1a1a1a">S-HTTP</text>
+
+  <text x="360" y="188" font-size="12" text-anchor="middle" fill="#9aa4ae">등 다양한 방식으로 암호화를 적용한다</text>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 190">
+  <text x="130" y="90" font-size="46" text-anchor="middle">🥷</text>
+  <text x="130" y="150" font-size="12" text-anchor="middle" fill="#9aa4ae">크래커 (백도어·설정 변경)</text>
+
+  <line x1="230" y1="95" x2="500" y2="95" stroke="#4a5560" stroke-width="3" stroke-dasharray="2 6"/>
+  <text x="365" y="80" font-size="13" font-weight="800" text-anchor="middle" fill="#4a5560">tripwire (철사)</text>
+
+  <rect x="330" y="105" width="70" height="50" rx="6" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="365" y="136" font-size="24" text-anchor="middle">📄</text>
+
+  <text x="580" y="80" font-size="46" text-anchor="middle">🚨</text>
+  <text x="580" y="140" font-size="12" font-weight="800" text-anchor="middle" fill="#e03131">데이터 무결성 검사</text>
+  <text x="580" y="156" font-size="12" font-weight="800" text-anchor="middle" fill="#e03131">도구로 분석</text>
+
+  <text x="360" y="20" font-size="14" font-weight="800" text-anchor="middle" fill="#0a3d5c">몰래 바뀐 걸 잡아내는 철사</text>
+</svg>

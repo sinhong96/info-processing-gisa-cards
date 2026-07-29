@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 224">
+  <!-- 선형 구조 panel -->
+  <rect x="36" y="16" width="300" height="196" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <rect x="36" y="16" width="300" height="46" rx="10" fill="#0b8ad4"/>
+  <rect x="36" y="42" width="300" height="20" fill="#0b8ad4"/>
+  <text x="186" y="46" font-size="19" font-weight="800" text-anchor="middle" fill="#fff">선형 구조</text>
+  <text x="186" y="94" font-size="26" text-anchor="middle">📏</text>
+  <text x="70" y="126" font-size="14" fill="#0a3d5c" font-weight="700">• 배열</text>
+  <text x="70" y="148" font-size="14" fill="#0a3d5c" font-weight="700">• 선형 리스트</text>
+  <text x="70" y="170" font-size="14" fill="#0a3d5c" font-weight="700">• 스택</text>
+  <text x="220" y="126" font-size="14" fill="#0a3d5c" font-weight="700">• 큐</text>
+  <text x="220" y="148" font-size="14" fill="#0a3d5c" font-weight="700">• 데크</text>
+
+  <!-- 비선형 구조 panel -->
+  <rect x="384" y="16" width="300" height="196" rx="10" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <rect x="384" y="16" width="300" height="46" rx="10" fill="#e8b33a"/>
+  <rect x="384" y="42" width="300" height="20" fill="#e8b33a"/>
+  <text x="534" y="46" font-size="19" font-weight="800" text-anchor="middle" fill="#fff">비선형 구조</text>
+  <text x="534" y="104" font-size="30" text-anchor="middle">🌲</text>
+  <text x="534" y="150" font-size="15" fill="#0a3d5c" font-weight="700" text-anchor="middle">트리</text>
+  <text x="534" y="176" font-size="15" fill="#0a3d5c" font-weight="700" text-anchor="middle">그래프</text>
+</svg>

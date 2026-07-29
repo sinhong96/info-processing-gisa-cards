@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 190">
+  <circle cx="140" cy="74" r="46" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="140" y="88" font-size="38" text-anchor="middle">🧮</text>
+  <text x="140" y="150" font-size="15" font-weight="800" text-anchor="middle" fill="#1a1a1a">알고리즘 오류</text>
+  <text x="140" y="170" font-size="11.5" text-anchor="middle" fill="#9aa4ae">원치 않는 결과</text>
+
+  <circle cx="360" cy="74" r="46" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="360" y="88" font-size="38" text-anchor="middle">🔁</text>
+  <text x="360" y="150" font-size="15" font-weight="800" text-anchor="middle" fill="#1a1a1a">무한 반복문</text>
+  <text x="360" y="170" font-size="11.5" text-anchor="middle" fill="#9aa4ae">탈출구가 없는 반복</text>
+
+  <circle cx="580" cy="74" r="46" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="580" y="88" font-size="38" text-anchor="middle">➗</text>
+  <text x="580" y="150" font-size="15" font-weight="800" text-anchor="middle" fill="#1a1a1a">계산 수식 오류</text>
+  <text x="580" y="170" font-size="11.5" text-anchor="middle" fill="#9aa4ae">틀린 수식 → 잘못된 결과</text>
+</svg>

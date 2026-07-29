@@ -132,6 +132,24 @@ class TestExtraction(unittest.TestCase):
         self.assertIsNone(self.by_id["002"]["kind"])
         self.assertIsNone(self.by_id["002"]["hook"])
 
+    def test_phase2_graphic_overrides_are_applied(self):
+        # Regression: 059's PUSH/POP box diagram, 061's tree diagram, and
+        # 066-068's sort-trace boxes draw their state transitions as
+        # vector arrows with no text-stream representation; 062's worked
+        # solution has no id marker of its own and, due to this PDF's
+        # non-visual marker stream order on pages 9-10 (062's marker
+        # precedes 061's, and the untagged solution text that follows
+        # 061 in the stream actually belongs to 062's box), the raw
+        # extractor misattributes it to 061. bullet_overrides.json
+        # supplies hand-read replacements for all of these (same
+        # mechanism as 062's original override and 204's Gantt chart).
+        self.assertIn("PUSH A → PUSH B", self.by_id["059"]["bullets"][-1])
+        self.assertNotIn("Preorder", " ".join(self.by_id["061"]["bullets"]))
+        self.assertIn("ABDHIECFG", " ".join(self.by_id["062"]["bullets"]))
+        self.assertIn("8 5 6 2 4 → 5 8 6 2 4", self.by_id["066"]["bullets"][2])
+        self.assertIn("→", self.by_id["067"]["bullets"][2])
+        self.assertIn("→", self.by_id["068"]["bullets"][2])
+
 
 class TestMergeSafety(unittest.TestCase):
     def test_rerun_preserves_authored_kind_and_hook(self):

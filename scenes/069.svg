@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 264">
+  <defs>
+    <marker id="ba069" markerWidth="8" markerHeight="8" refX="4" refY="7" orient="auto"><path d="M0,0 L8,0 L4,8 z" fill="#0b8ad4"/></marker>
+  </defs>
+  <text x="360" y="20" font-size="13" fill="#9aa4ae" text-anchor="middle">정렬된 레코드 1 ~ 8, 중간 레코드 번호 M = (F + L) / 2</text>
+  <rect x="162" y="32" width="46" height="34" rx="4" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="185" y="54" font-size="14" font-weight="700" text-anchor="middle" fill="#1a1a1a">1</text>
+  <rect x="212" y="32" width="46" height="34" rx="4" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="235" y="54" font-size="14" font-weight="700" text-anchor="middle" fill="#1a1a1a">2</text>
+  <rect x="262" y="32" width="46" height="34" rx="4" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="285" y="54" font-size="14" font-weight="700" text-anchor="middle" fill="#1a1a1a">3</text>
+  <rect x="312" y="32" width="46" height="34" rx="4" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="335" y="54" font-size="14" font-weight="700" text-anchor="middle" fill="#1a1a1a">4</text>
+  <rect x="362" y="32" width="46" height="34" rx="4" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="385" y="54" font-size="14" font-weight="700" text-anchor="middle" fill="#1a1a1a">5</text>
+  <rect x="412" y="32" width="46" height="34" rx="4" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="435" y="54" font-size="14" font-weight="700" text-anchor="middle" fill="#1a1a1a">6</text>
+  <rect x="462" y="32" width="46" height="34" rx="4" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="485" y="54" font-size="14" font-weight="700" text-anchor="middle" fill="#1a1a1a">7</text>
+  <rect x="512" y="32" width="46" height="34" rx="4" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="535" y="54" font-size="14" font-weight="700" text-anchor="middle" fill="#1a1a1a">8</text>
+  <rect x="162" y="98" width="396" height="18" rx="4" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <path d="M335 92 L335 100" stroke="#e03131" stroke-width="2.5" marker-end="url(#ba069)"/>
+  <text x="335" y="130" font-size="11" text-anchor="middle" fill="#e03131" font-weight="700">M=4</text>
+  <text x="154" y="111" font-size="10" text-anchor="end" fill="#9aa4ae">F=1</text>
+  <text x="566" y="111" font-size="10" text-anchor="start" fill="#9aa4ae">L=8</text>
+  <text x="24" y="111" font-size="13" font-weight="800" fill="#0a3d5c">1차 검색</text>
+  <rect x="362" y="150" width="196" height="18" rx="4" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <path d="M435 144 L435 152" stroke="#e03131" stroke-width="2.5" marker-end="url(#ba069)"/>
+  <text x="435" y="182" font-size="11" text-anchor="middle" fill="#e03131" font-weight="700">M=6</text>
+  <text x="354" y="163" font-size="10" text-anchor="end" fill="#9aa4ae">F=5</text>
+  <text x="566" y="163" font-size="10" text-anchor="start" fill="#9aa4ae">L=8</text>
+  <text x="24" y="163" font-size="13" font-weight="800" fill="#0a3d5c">2차 검색</text>
+  <rect x="462" y="202" width="96" height="18" rx="4" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <path d="M485 196 L485 204" stroke="#e03131" stroke-width="2.5" marker-end="url(#ba069)"/>
+  <text x="485" y="234" font-size="11" text-anchor="middle" fill="#e03131" font-weight="700">M=7</text>
+  <text x="454" y="215" font-size="10" text-anchor="end" fill="#9aa4ae">F=7</text>
+  <text x="566" y="215" font-size="10" text-anchor="start" fill="#9aa4ae">L=8</text>
+  <text x="24" y="215" font-size="13" font-weight="800" fill="#0a3d5c">3차 검색</text>
+</svg>

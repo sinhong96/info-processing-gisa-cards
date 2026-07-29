@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 210">
+  <text x="360" y="18" font-size="13" text-anchor="middle" fill="#9aa4ae">📦 내부 구조를 보지 않고 입·출력만으로 검사</text>
+
+  <circle cx="102" cy="94" r="40" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="102" y="106" font-size="30" text-anchor="middle">➗</text>
+  <text x="102" y="156" font-size="14" font-weight="800" text-anchor="middle" fill="#1a1a1a">동치 분할</text>
+
+  <circle cx="235" cy="94" r="40" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="235" y="106" font-size="30" text-anchor="middle">📏</text>
+  <text x="235" y="156" font-size="14" font-weight="800" text-anchor="middle" fill="#1a1a1a">경계값 분석</text>
+
+  <circle cx="368" cy="94" r="40" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="368" y="106" font-size="30" text-anchor="middle">🔀</text>
+  <text x="368" y="150" font-size="14" font-weight="800" text-anchor="middle" fill="#1a1a1a">원인-효과</text>
+  <text x="368" y="168" font-size="14" font-weight="800" text-anchor="middle" fill="#1a1a1a">그래프 검사</text>
+
+  <circle cx="501" cy="94" r="40" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="501" y="106" font-size="30" text-anchor="middle">🎯</text>
+  <text x="501" y="156" font-size="14" font-weight="800" text-anchor="middle" fill="#1a1a1a">오류 예측</text>
+
+  <circle cx="634" cy="94" r="40" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="634" y="106" font-size="30" text-anchor="middle">⚖️</text>
+  <text x="634" y="156" font-size="14" font-weight="800" text-anchor="middle" fill="#1a1a1a">비교 검사</text>
+</svg>

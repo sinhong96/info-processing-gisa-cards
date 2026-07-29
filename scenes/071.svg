@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 260">
+  <rect x="24" y="8"   width="672" height="76" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="48" y="32" font-size="15" font-weight="800" fill="#0a3d5c">외부 스키마</text>
+  <text x="48" y="52" font-size="12.5" fill="#1a1a1a">사용자·응용 프로그래머가 개인 입장에서 필요로 하는</text>
+  <text x="48" y="70" font-size="12.5" fill="#1a1a1a">데이터베이스의 논리적 구조</text>
+
+  <rect x="24" y="92"  width="672" height="76" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="48" y="116" font-size="15" font-weight="800" fill="#0a3d5c">개념 스키마</text>
+  <text x="48" y="136" font-size="12.5" fill="#1a1a1a">DB 전체의 논리적 구조. 개체 간 관계·제약 조건, 접근 권한·</text>
+  <text x="48" y="154" font-size="12.5" fill="#1a1a1a">보안·무결성 규칙의 명세를 정의</text>
+
+  <rect x="24" y="176" width="672" height="76" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="48" y="200" font-size="15" font-weight="800" fill="#0a3d5c">내부 스키마</text>
+  <text x="48" y="220" font-size="12.5" fill="#1a1a1a">물리적 저장장치 입장의 DB 구조. 저장 레코드 형식, 데이터 항목</text>
+  <text x="48" y="238" font-size="12.5" fill="#1a1a1a">표현 방법, 내부 레코드의 물리적 순서 등을 나타냄</text>
+</svg>
