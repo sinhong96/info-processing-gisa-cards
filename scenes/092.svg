@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 250">
+  <path d="M50 56 L360 8 L670 56 Z" fill="#0b8ad4"/>
+  <text x="360" y="46" font-size="17" font-weight="800" fill="#fff" text-anchor="middle">클린 코드(Clean Code) 작성 원칙</text>
+
+  <rect x="57"  y="64" width="106" height="150" rx="5" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="110" y="102" font-size="26" text-anchor="middle">👀</text>
+  <text x="110" y="132" font-size="13" font-weight="800" text-anchor="middle" fill="#1a1a1a">가독성</text>
+  <text x="110" y="150" font-size="10" text-anchor="middle" fill="#9aa4ae">누구나 쉽게</text>
+  <text x="110" y="164" font-size="10" text-anchor="middle" fill="#9aa4ae">읽을 수 있게</text>
+
+  <rect x="181" y="64" width="106" height="150" rx="5" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="234" y="102" font-size="26" text-anchor="middle">🧊</text>
+  <text x="234" y="132" font-size="13" font-weight="800" text-anchor="middle" fill="#1a1a1a">단순성</text>
+  <text x="234" y="150" font-size="10" text-anchor="middle" fill="#9aa4ae">코드를</text>
+  <text x="234" y="164" font-size="10" text-anchor="middle" fill="#9aa4ae">간단하게</text>
+
+  <rect x="305" y="64" width="110" height="150" rx="5" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="360" y="102" font-size="26" text-anchor="middle">🔓</text>
+  <text x="360" y="132" font-size="13" font-weight="800" text-anchor="middle" fill="#1a1a1a">의존성 배제</text>
+  <text x="360" y="150" font-size="10" text-anchor="middle" fill="#9aa4ae">다른 모듈 영향</text>
+  <text x="360" y="164" font-size="10" text-anchor="middle" fill="#9aa4ae">최소화</text>
+
+  <rect x="429" y="64" width="110" height="150" rx="5" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="484" y="102" font-size="26" text-anchor="middle">♻️</text>
+  <text x="484" y="132" font-size="13" font-weight="800" text-anchor="middle" fill="#1a1a1a">중복성 최소화</text>
+  <text x="484" y="150" font-size="10" text-anchor="middle" fill="#9aa4ae">코드의 중복을</text>
+  <text x="484" y="164" font-size="10" text-anchor="middle" fill="#9aa4ae">최소화</text>
+
+  <rect x="557" y="64" width="106" height="150" rx="5" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="610" y="102" font-size="26" text-anchor="middle">🧬</text>
+  <text x="610" y="132" font-size="13" font-weight="800" text-anchor="middle" fill="#1a1a1a">추상화</text>
+  <text x="610" y="150" font-size="10" text-anchor="middle" fill="#9aa4ae">상위는 간략히,</text>
+  <text x="610" y="164" font-size="10" text-anchor="middle" fill="#9aa4ae">하위에서 구현</text>
+
+  <rect x="50" y="222" width="620" height="14" rx="3" fill="#4a5560"/>
+</svg>

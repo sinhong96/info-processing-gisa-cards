@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 230">
+  <defs>
+    <marker id="ia087" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="#0b8ad4"/>
+    </marker>
+    <marker id="ib087" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="#e8b33a"/>
+    </marker>
+  </defs>
+  <!-- 하향식 -->
+  <rect x="40" y="16" width="300" height="196" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="190" y="40" font-size="17" font-weight="800" text-anchor="middle" fill="#0a3d5c">하향식 통합 테스트</text>
+  <rect x="155" y="52" width="70" height="30" rx="5" fill="#fff" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="190" y="72" font-size="12" font-weight="700" text-anchor="middle" fill="#0a3d5c">상위 모듈</text>
+  <line x1="190" y1="82" x2="130" y2="112" stroke="#9aa4ae" stroke-width="2"/>
+  <line x1="190" y1="82" x2="250" y2="112" stroke="#9aa4ae" stroke-width="2"/>
+  <rect x="95"  y="112" width="70" height="30" rx="5" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="130" y="132" font-size="12" fill="#0a3d5c" text-anchor="middle">하위 모듈</text>
+  <rect x="215" y="112" width="70" height="30" rx="5" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="250" y="132" font-size="12" fill="#0a3d5c" text-anchor="middle">하위 모듈</text>
+  <path d="M300 60 L300 130" stroke="#0b8ad4" stroke-width="3.5" marker-end="url(#ia087)"/>
+  <text x="315" y="100" font-size="18" font-weight="800" fill="#0b8ad4">↓</text>
+  <text x="190" y="174" font-size="11.5" text-anchor="middle" fill="#1a1a1a">상위 → 하위 모듈 방향으로 통합</text>
+  <text x="190" y="194" font-size="11" text-anchor="middle" fill="#9aa4ae">깊이 우선 / 넓이 우선 통합법</text>
+
+  <!-- 상향식 -->
+  <rect x="380" y="16" width="300" height="196" rx="10" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="530" y="40" font-size="17" font-weight="800" text-anchor="middle" fill="#0a3d5c">상향식 통합 테스트</text>
+  <rect x="495" y="52" width="70" height="30" rx="5" fill="#fff" stroke="#e8b33a" stroke-width="2"/>
+  <text x="530" y="72" font-size="12" font-weight="700" text-anchor="middle" fill="#0a3d5c">상위 모듈</text>
+  <line x1="530" y1="82" x2="470" y2="112" stroke="#9aa4ae" stroke-width="2"/>
+  <line x1="530" y1="82" x2="590" y2="112" stroke="#9aa4ae" stroke-width="2"/>
+  <rect x="435" y="112" width="70" height="30" rx="5" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="470" y="132" font-size="12" fill="#0a3d5c" text-anchor="middle">하위 모듈</text>
+  <rect x="555" y="112" width="70" height="30" rx="5" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="590" y="132" font-size="12" fill="#0a3d5c" text-anchor="middle">하위 모듈</text>
+  <path d="M645 130 L645 60" stroke="#e8b33a" stroke-width="3.5" marker-end="url(#ib087)"/>
+  <text x="655" y="100" font-size="18" font-weight="800" fill="#e8b33a">↑</text>
+  <text x="530" y="174" font-size="11.5" text-anchor="middle" fill="#1a1a1a">하위 → 상위 모듈 방향으로 통합</text>
+</svg>

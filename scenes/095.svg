@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 260">
+  <rect x="24" y="8"   width="672" height="56" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="66" y="32" font-size="26" text-anchor="middle">🔗</text>
+  <text x="110" y="30" font-size="14" font-weight="800" fill="#0a3d5c">Point-to-Point</text>
+  <text x="110" y="48" font-size="12" fill="#1a1a1a">애플리케이션을 1:1로 연결함</text>
+
+  <rect x="24" y="70"  width="672" height="56" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="66" y="94" font-size="26" text-anchor="middle">⭐</text>
+  <text x="110" y="92" font-size="14" font-weight="800" fill="#0a3d5c">Hub &amp; Spoke</text>
+  <text x="110" y="110" font-size="12" fill="#1a1a1a">단일 접점인 허브 시스템을 통해 전송하는 중앙 집중형 방식</text>
+
+  <rect x="24" y="132" width="672" height="56" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="66" y="156" font-size="26" text-anchor="middle">🚌</text>
+  <text x="110" y="154" font-size="14" font-weight="800" fill="#0a3d5c">Message Bus (ESB 방식)</text>
+  <text x="110" y="172" font-size="12" fill="#1a1a1a">애플리케이션 사이에 미들웨어를 두어 처리하는 방식</text>
+
+  <rect x="24" y="194" width="672" height="56" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="66" y="218" font-size="26" text-anchor="middle">🔀</text>
+  <text x="110" y="216" font-size="14" font-weight="800" fill="#0a3d5c">Hybrid</text>
+  <text x="110" y="234" font-size="12" fill="#1a1a1a">Hub &amp; Spoke 와 Message Bus의 혼합 방식</text>
+</svg>

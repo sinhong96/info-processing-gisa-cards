@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 200">
+  <defs>
+    <marker id="dv088" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="#0b8ad4"/>
+    </marker>
+  </defs>
+  <rect x="280" y="24" width="160" height="56" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="360" y="58" font-size="15" font-weight="800" text-anchor="middle" fill="#0a3d5c">테스트 대상 모듈</text>
+
+  <path d="M325 118 L325 84" stroke="#0b8ad4" stroke-width="3" marker-end="url(#dv088)"/>
+  <text x="313" y="106" font-size="11.5" fill="#0b8ad4" font-weight="700" text-anchor="end">호출·매개변수</text>
+  <path d="M395 84 L395 118" stroke="#9aa4ae" stroke-width="2.5" marker-end="url(#dv088)"/>
+  <text x="407" y="106" font-size="11.5" fill="#9aa4ae" font-weight="700" text-anchor="start">결과 반환</text>
+
+  <rect x="260" y="120" width="200" height="56" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="360" y="145" font-size="16" font-weight="800" text-anchor="middle" fill="#0a3d5c">테스트 드라이버</text>
+  <text x="360" y="164" font-size="11" text-anchor="middle" fill="#9aa4ae">상위 모듈 역할을 대신함</text>
+
+  <text x="360" y="196" font-size="13" font-weight="700" text-anchor="middle" fill="#e03131">상향식 통합 테스트에 사용 — 하위 모듈을 호출</text>
+</svg>
