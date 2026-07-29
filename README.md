@@ -23,10 +23,17 @@ To study on a phone: AirDrop `index.html` to it and open in Safari.
 | 😵 어려움 | mark as hard, advance |
 | ✅ 암기함 | mark as memorized, advance |
 | 😵 어려운 것만 | drill only the cards marked hard |
-| 🔀 섞기 | shuffle |
+| 🔀 섞기 | shuffle (the 목차 index stays in id order) |
+| ☰ 목차 | open the table of contents; click any card to jump to it |
+| 과목 selector | study one 과목, or 전체 for everything |
 | ↺ 초기화 | clear all marks |
 
-Progress is kept in the browser's `localStorage` under `gisa-cards-v1`. Clearing site data
+The 목차 panel lists every card with its number, title, and 😵/✅ mark, so you can see
+what a 과목 contains and jump straight to a card. On a phone it collapses behind the
+☰ 목차 button. Clicking an entry clears whatever filter would otherwise hide it.
+
+Progress is kept in the browser's `localStorage` under `gisa-cards-v1`, and the selected
+과목 under `gisa-cards-subject`. Clearing site data
 resets it. There is no account and nothing is uploaded.
 
 ## Status
@@ -37,7 +44,7 @@ cleaned in `cards.json`; what remains per subject is authoring the scenes.
 | 과목 | Name | Cards | Scenes |
 | --- | --- | --- | --- |
 | 1 | 소프트웨어 설계 | 55 | ✅ 55 |
-| 2 | 소프트웨어 개발 | 45 | in progress |
+| 2 | 소프트웨어 개발 | 45 | ✅ 45 |
 | 3 | 데이터베이스 구축 | 54 | — |
 | 4 | 프로그래밍 언어 활용 | 61 | — |
 | 5 | 정보시스템 구축 관리 | 109 | — |
@@ -66,11 +73,14 @@ master PDF ──extract.py──> cards.json ──┐
 
 ```bash
 python3 extract.py         # master PDF  -> cards.json
-python3 classify.py 1      # check a subject's kind/hook are complete
-python3 build.py 1         # cards.json + scenes/ -> index.html
-python3 verify_render.py   # screenshot it in headless Chrome
+python3 classify.py 2      # check one subject's kind/hook are complete
+python3 build.py           # every subject that has scenes -> index.html
+python3 verify_render.py   # screenshot front and back in headless Chrome
 python3 -m unittest discover -s tests -v
 ```
+
+`build.py` with no arguments includes every 과목 that has at least one scene authored, and
+flags any that are incomplete. Pass subject numbers (`python3 build.py 1 2`) to restrict it.
 
 `extract.py` is safe to re-run. It merges by `id` and never overwrites an authored `kind`
 or `hook`, nor anything in `title_overrides.json` / `bullet_overrides.json`.
@@ -94,10 +104,17 @@ before trusting a card:
 - **Some content is a graphic, not text.** Those cards cannot be parsed and carry
   hand-written entries instead:
   - `title_overrides.json` — ID 142, whose title renders as an image.
-  - `bullet_overrides.json` — IDs 062 and 204, a tree-traversal diagram and a Gantt chart.
+  - `bullet_overrides.json` — IDs 045, 046, 050, 052, 059, 061, 062, 066, 067, 068, 091,
+    204. Mostly worked examples, sorting traces, a tree-traversal diagram, a complexity
+    table, and a Gantt chart — content the PDF draws rather than writes.
 
   Anything in these files was read off the rendered page by hand. If a card looks wrong,
-  check here first.
+  check here first, then `docs/verification/phase*-fidelity.md` for what was checked and
+  why.
+
+  Two known source defects are reproduced faithfully rather than silently corrected: the
+  book itself omits a "3회전" label on card 066, and card 061's degree figures refer to a
+  tree that is not recoverable from the page, so its scene shows a generic tree.
 
 ## Repository layout
 
