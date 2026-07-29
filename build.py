@@ -74,15 +74,24 @@ def subjects_with_scenes(cards):
 
 def main():
     cards = json.load(open(os.path.join(HERE, "cards.json"), encoding="utf-8"))
-    # No args: build every subject that has at least one scene authored.
-    if len(sys.argv) > 1:
-        subjects = sorted({int(a) for a in sys.argv[1:]})
-    else:
-        subjects = subjects_with_scenes(cards)
+    args = sys.argv[1:]
+
+    # -o/--out writes somewhere other than index.html, so parallel workers can
+    # each build and screenshot their own subject without fighting over one file.
+    out = os.path.join(HERE, "index.html")
+    for flag in ("-o", "--out"):
+        if flag in args:
+            k = args.index(flag)
+            try:
+                out = os.path.abspath(args[k + 1])
+            except IndexError:
+                raise SystemExit(f"{flag} needs a path")
+            del args[k:k + 2]
+
+    # No remaining args: build every subject that has at least one scene authored.
+    subjects = sorted({int(a) for a in args}) if args else subjects_with_scenes(cards)
     if not subjects:
         raise SystemExit("no subjects have scenes yet — author some scenes/NNN.svg first")
-
-    out = os.path.join(HERE, "index.html")
     with open(out, "w", encoding="utf-8") as fh:
         fh.write(build(cards, subjects))
 

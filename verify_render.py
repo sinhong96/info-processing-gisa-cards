@@ -37,10 +37,14 @@ def shoot(html_path, out_png, size="900,1300"):
     return out_png
 
 
-def make_flipped_probe(src_html, dest_html):
-    """Copy index.html with the initial render forced to the back face."""
+def make_flipped_probe(src_html, dest_html, card=None):
+    """Copy the built page with its first render forced to the back face.
+
+    Pass a card id to open on that specific card instead of the first one.
+    """
     src = open(src_html, encoding="utf-8").read()
-    probe = src.replace("\nrender();", "\nflipped=true;render();")
+    jump = f'i=CARDS.findIndex(c=>c.id==="{card}");' if card else ""
+    probe = src.replace("\nrender();", f"\n{jump}flipped=true;render();")
     if probe == src:
         raise SystemExit("could not build flipped probe: 'render();' call not found")
     open(dest_html, "w", encoding="utf-8").write(probe)
@@ -48,18 +52,29 @@ def make_flipped_probe(src_html, dest_html):
 
 
 def main():
-    html = os.path.join(HERE, "index.html")
-    if not os.path.exists(html):
-        raise SystemExit("index.html not found — run build.py first")
-    os.makedirs(OUT_DIR, exist_ok=True)
+    # Optional args so parallel workers can point at their own build and output
+    # directory instead of contending for index.html and docs/verification/.
+    #   verify_render.py [HTML] [OUT_DIR] [--card NNN]
+    argv = sys.argv[1:]
+    card = None
+    if "--card" in argv:
+        k = argv.index("--card")
+        card = argv[k + 1] if len(argv) > k + 1 else None
+        del argv[k:k + 2]
+    html = os.path.abspath(argv[0]) if argv else os.path.join(HERE, "index.html")
+    out_dir = os.path.abspath(argv[1]) if len(argv) > 1 else OUT_DIR
 
-    front = shoot(html, os.path.join(OUT_DIR, "render-front.png"))
+    if not os.path.exists(html):
+        raise SystemExit(f"{html} not found — run build.py first")
+    os.makedirs(out_dir, exist_ok=True)
+
+    front = shoot(html, os.path.join(out_dir, "render-front.png"))
     print(f"front OK -> {front} ({os.path.getsize(front)} bytes)")
 
-    probe = os.path.join(OUT_DIR, "_flipped.html")
+    probe = os.path.join(out_dir, "_flipped.html")
     try:
-        make_flipped_probe(html, probe)
-        back = shoot(probe, os.path.join(OUT_DIR, "render-back.png"))
+        make_flipped_probe(html, probe, card)
+        back = shoot(probe, os.path.join(out_dir, "render-back.png"))
         print(f"back  OK -> {back} ({os.path.getsize(back)} bytes)")
     finally:
         if os.path.exists(probe):
