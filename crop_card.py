@@ -28,7 +28,9 @@ LEFT_COL = (40.0, 302.0)
 RIGHT_COL = (316.0, 578.0)
 HEADER_DROP = 20.0            # start the crop this far below the title baseline
 BOTTOM_MARGIN = 50.0          # clears the printed page number in the bottom corner
-GAP_ABOVE_NEXT = 14.0         # leave this much clear of the next card's badge
+# The next card's grey title bar sits well above its badge's text baseline, so a
+# small gap here drags that bar into the crop. Measured: the bar starts ~34pt up.
+GAP_ABOVE_NEXT = 40.0
 
 
 def locate(card_id):
@@ -87,6 +89,24 @@ def crop(png_path, box_pt, page_h_pt, dpi):
     return im.crop(px)
 
 
+def trim_whitespace(img, pad=8):
+    """Drop uniform white margins.
+
+    A card rarely fills the space down to the next one, so the geometric crop
+    leaves a tall blank strip. Trimming to the actual ink keeps the card tight
+    and stops the scene's aspect ratio from being mostly emptiness.
+    """
+    from PIL import ImageChops
+    rgb = img.convert("RGB")
+    bg = Image.new("RGB", rgb.size, (255, 255, 255))
+    bbox = ImageChops.difference(rgb, bg).getbbox()
+    if not bbox:
+        return img
+    l, t, r, b = bbox
+    return img.crop((max(0, l - pad), max(0, t - pad),
+                     min(img.width, r + pad), min(img.height, b + pad)))
+
+
 def to_scene_svg(img, card_id):
     """Wrap a cropped image as a scene: 720 wide, height set by the aspect ratio."""
     height = round(720 * img.height / img.width)
@@ -133,7 +153,7 @@ def main():
         box = (x0, y0, x1, y1 + HEADER_DROP + 26)
     with tempfile.TemporaryDirectory() as tmp:
         png = render_page(page_index, args.dpi, tmp)
-        img = crop(png, box, page_h, args.dpi)
+        img = trim_whitespace(crop(png, box, page_h, args.dpi))
     svg, height, b64len = to_scene_svg(img, cid)
 
     out = os.path.join(HERE, "scenes", f"{cid}.svg")

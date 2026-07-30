@@ -39,11 +39,18 @@ class TestSubjectOneIsFullyClassified(unittest.TestCase):
         problems = classify.validate(cards, 1)
         self.assertEqual(problems, [], "\n".join(problems))
 
-    def test_both_kinds_are_used(self):
+    def test_drawn_kinds_are_both_used(self):
+        """A subject should use both drawn styles, not collapse onto one.
+
+        "image" is also valid — those cards are crops of the source page for
+        content the book draws rather than writes — so this checks the two
+        hand-drawn kinds are present, not that they are the only ones.
+        """
         cards = [c for c in json.load(open(os.path.join(ROOT, "cards.json"),
                                            encoding="utf-8")) if c["subject"] == 1]
         kinds = {c["kind"] for c in cards}
-        self.assertEqual(kinds, {"diagram", "mnemonic"})
+        self.assertLessEqual({"diagram", "mnemonic"}, kinds)
+        self.assertLessEqual(kinds, {"diagram", "mnemonic", "image"})
 
 
 if __name__ == "__main__":

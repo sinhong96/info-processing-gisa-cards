@@ -129,7 +129,7 @@
     "bullets": [
       "기호 표기법프로세스(Process) 물품 확인자료 흐름(Data Flow) 물품 코드자료 저장소(Data Store) 물품대장단말(Terminator) 공장"
     ],
-    "kind": "diagram",
+    "kind": "image",
     "hook": "프 · 흐 · 저 · 단"
   },
   {
@@ -580,7 +580,7 @@
       "팬인(Fan-In) : A는 0, B·C·D·E·G는 1, F·H·I는 2",
       "팬아웃(Fan-Out) : H·I는 0, C·E·F·G는 1, B·D는 2, A 는 3"
     ],
-    "kind": "diagram",
+    "kind": "image",
     "hook": "팬인=호출받음 · 팬아웃=호출함"
   },
   {
