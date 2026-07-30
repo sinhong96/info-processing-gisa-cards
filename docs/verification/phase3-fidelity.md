@@ -154,3 +154,82 @@ not modified.
   listing or worked trace with box diagrams.
 - **All other cards (155-158, 160-166, 169, 174-179, 182-188, 190,
   193-200, 202-204, 206-215):** read against pages 23-32, byte-exact.
+
+## 5과목 (pages 33-45, 109 cards)
+
+The 20 flagged "short single bullet" cards were, as expected, almost all
+legitimate one-sentence definitions (Docker, Honeypot, Phishing, etc.) — the
+source box genuinely has no `•` character and no second sentence. All 20
+confirmed correct except 319 (see below, caught for an unrelated reason).
+Skimming the rest against the rendered pages found 4 more issues not on
+either list.
+
+### Corrections table
+
+| ID | Field | Extracted | Correct | Fix |
+| --- | --- | --- | --- | --- |
+| 238 | bullets | PERT/CPM critical-path network diagram (milestones, weighted edges, bold critical path) flattened into a run-on dump of bare numbers and labels | 2-bullet conservative summary (not guessing at exact edge connectivity); cropped as `image` | `bullet_overrides.json` |
+| 247 | bullets | "외부적 기준" (a plain sub-header, no `•`) glued onto the tail of the prior bullet with no separator: `...구성원의 능력 등외부적 기준` | "외부적 기준" restored as its own bullet | `bullet_overrides.json` |
+| 260 | bullets | bus-topology diagram (line + 3 station drops + direction arrow) flattened into the bullet's tail: `...연결된 형태이다. 스테이션1 스테이션3 스테이션5 데이터 전송 방향` | 2 clean bullets, diagram description separated out | `bullet_overrides.json` |
+| 310 | bullets | had 3 bullets — its own 2, plus 319's orphaned "인증의 유형" (3 authentication types) | trimmed to its own 2 bullets | `bullet_overrides.json` |
+| 319 | bullets | only 1 bullet (definition) — missing "인증의 유형", which had leaked into 310 | 5 bullets (definition + the 3 authentication types) | `bullet_overrides.json` |
+
+### The systemic pattern, continued — largest jump found
+
+310/319 is the same misattribution bug as every other instance in this
+file, but the **largest stream-distance jump found in this entire pass**:
+310 is on page 43, and the content that leaked into it (319's "인증의
+유형") is visually printed on page 44 — confirmed via `find_markers` offsets
+that 310's next-marker-in-stream is 320, not 311 (a jump of 10 card numbers,
+spanning a full page). I flagged this to check whether it signalled a
+broader problem, but the mechanism is identical to every prior instance
+(stream order ≠ visual order at a column/page break, unheaded overflow
+text with no marker of its own) and the fix (hand override, verified
+against the rendered page) is the one already established.
+
+I additionally ran a systematic sweep: every point in subject 5 where a
+card's next-marker-in-stream differs from its numeric successor by more
+than 3 (23 such points, `find_markers` offsets), and spot-checked a sample
+of the larger jumps (218→227, 231→244, 271→283, and others) against the
+rendered pages — all confirmed correct as extracted. A large stream jump
+by itself is not evidence of a bug; it only causes a defect when the
+intervening stream text includes an unheaded overflow that doesn't belong
+to the card that swallows it, which I checked for directly by eye against
+every rendered page in this subject, not just the flagged list.
+
+### Confirmed correct (checked against rendered pages, no changes)
+
+- **All 20 originally-flagged "short single bullet" cards** (218, 233,
+  244, 255, 257, 262, 268, 273, 274, 275, 277, 278, 280, 283, 292, 296,
+  298, 307, 311) except 319: confirmed legitimately one-sentence
+  definitions, no `•` character in the source box.
+- **306's "DES(Data ncryption Standard)"**: the missing "E" is a defect in
+  the **source PDF itself** (confirmed against the rendered page 43, which
+  prints it the same way) — reproduced faithfully, not corrected, per the
+  same policy as 066's missing "3회전" label in phase 2.
+- **All other cards (216-317 not listed above, 320-324):** read against
+  pages 33-45, byte-exact.
+
+## Commands run
+
+```
+$ python3 extract.py
+wrote 324 cards to .../cards.json
+  1과목 소프트웨어 설계: 55
+  2과목 소프트웨어 개발: 45
+  3과목 데이터베이스 구축: 54
+  4과목 프로그래밍 언어 활용: 61
+  5과목 정보시스템 구축 관리: 109
+
+$ python3 -m unittest discover -s tests -v
+...
+Ran 49 tests in 2.1s
+OK
+
+$ python3 classify.py 3
+3과목: all 54 cards classified — {'diagram': 27, 'image': 3, 'mnemonic': 24}
+$ python3 classify.py 4
+4과목: all 61 cards classified — {'diagram': 37, 'mnemonic': 12, 'image': 12}
+$ python3 classify.py 5
+5과목: all 109 cards classified — {'mnemonic': 76, 'diagram': 32, 'image': 1}
+```

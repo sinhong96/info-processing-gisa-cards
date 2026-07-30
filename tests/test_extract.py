@@ -231,6 +231,26 @@ class TestExtraction(unittest.TestCase):
         self.assertEqual(len(self.by_id["189"]["bullets"]), 2)
         self.assertIn("for i in a", self.by_id["189"]["bullets"][1])
 
+    def test_card_310_319_misattribution_is_fixed(self):
+        # Regression: 319's "인증의 유형" continuation (3 authentication
+        # types) has a stream position landing inside 310's body window
+        # (310's next-in-stream marker is 320, not 311 — the biggest
+        # stream-distance jump found in this pass, page 43 to page 44),
+        # even though it's visually printed as part of 319's own box.
+        self.assertEqual(len(self.by_id["310"]["bullets"]), 2)
+        self.assertNotIn("인증의 유형", " ".join(self.by_id["310"]["bullets"]))
+        self.assertIn("인증의 유형", " ".join(self.by_id["319"]["bullets"]))
+        self.assertIn("행위 기반 인증", " ".join(self.by_id["319"]["bullets"]))
+
+    def test_card_247_section_header_is_not_glued_to_prior_bullet(self):
+        # Regression: "외부적 기준" is a plain sub-header (no • prefix),
+        # so split_bullets glued it onto the tail of the preceding
+        # bulleted item with no separator at all.
+        bullets = self.by_id["247"]["bullets"]
+        self.assertIn("외부적 기준", bullets)
+        joined = " ".join(bullets)
+        self.assertNotIn("등외부적", joined)
+
 
 class TestMergeSafety(unittest.TestCase):
     def test_rerun_preserves_authored_kind_and_hook(self):
