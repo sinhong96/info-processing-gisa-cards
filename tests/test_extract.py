@@ -193,6 +193,44 @@ class TestExtraction(unittest.TestCase):
         self.assertIn("GRANT", " ".join(self.by_id["145"]["bullets"]))
         self.assertIn("REVOKE", " ".join(self.by_id["145"]["bullets"]))
 
+    def test_phase3_subject4_column_overflow_misattributions_are_fixed(self):
+        # Regression: two MORE instances of the same bug, both more severe
+        # than any found before — the swallowed card was left with a
+        # completely EMPTY body, not just a missing tail:
+        #   - 168's entire operator-precedence table was swallowed into
+        #     167 (167's marker's next-in-stream marker is 169, skipping
+        #     168's own marker/title entirely from 167's perspective, and
+        #     168's own body — between its marker and 169's — is empty).
+        #   - 171's three JAVA output-method examples were swallowed into
+        #     170 the same way.
+        self.assertEqual(len(self.by_id["167"]["bullets"]), 3)
+        self.assertNotIn("대분류", " ".join(self.by_id["167"]["bullets"]))
+        self.assertGreater(len(self.by_id["168"]["bullets"]), 3)
+        self.assertTrue(all(b.strip() for b in self.by_id["168"]["bullets"]))
+        self.assertEqual(len(self.by_id["170"]["bullets"]), 3)
+        self.assertNotIn("println", " ".join(self.by_id["170"]["bullets"]))
+        self.assertGreater(len(self.by_id["171"]["bullets"]), 1)
+        self.assertIn("println", " ".join(self.by_id["171"]["bullets"]))
+
+    def test_card_172_code_snippets_are_not_both_on_the_same_bullet(self):
+        # Regression: both if/if-else code snippets are drawn (in the PDF)
+        # after all the prose, with no bullet marker of their own, so
+        # split_bullets glued BOTH onto the last "•" segment, leaving the
+        # middle bullet ("조건이 참일 때만 실행하는 경우") with no code.
+        bullets = self.by_id["172"]["bullets"]
+        self.assertIn("Gilbut", bullets[1])
+        self.assertIn("참", bullets[2])
+        self.assertIn("거짓", bullets[2])
+
+    def test_card_189_190_column_overflow_misattribution_is_fixed(self):
+        # Regression: 189 ("Python의 for문") demonstrates two methods
+        # (range-based, list-based); the 2nd overflowed into 190's
+        # ("Python의 while문", an unrelated topic) body. Same bug class.
+        self.assertEqual(len(self.by_id["190"]["bullets"]), 1)
+        self.assertNotIn("for i in a", self.by_id["190"]["bullets"][0])
+        self.assertEqual(len(self.by_id["189"]["bullets"]), 2)
+        self.assertIn("for i in a", self.by_id["189"]["bullets"][1])
+
 
 class TestMergeSafety(unittest.TestCase):
     def test_rerun_preserves_authored_kind_and_hook(self):

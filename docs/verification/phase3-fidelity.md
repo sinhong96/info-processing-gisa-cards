@@ -91,3 +91,66 @@ correct lists below and the 5과목 section for what else was checked.
 **3과목, all other cards (101-104, 106, 107, 109-118, 120, 121, 123, 124,
 126-134 post-fix, 136, 138-145 post-fix, 147-152, 154):** read against
 pages 16-22, byte-exact.
+
+## 4과목 (pages 23-32)
+
+The hard subject, as warned. 13 cards were flagged; the rest were skimmed
+against the rendered pages, and I additionally checked **every card at a
+page-column-break position** by hand (see "systemic pattern" above) since
+that is exactly where 3과목's bugs clustered. This found 3 more
+misattribution instances beyond the 13 flagged, two of which left the
+swallowed card **completely empty** — the worst fidelity defects found in
+this entire pass.
+
+### Corrections table
+
+| ID | Field | Extracted | Correct | Fix |
+| --- | --- | --- | --- | --- |
+| 167 | bullets | own 3-sentence ternary example, with all of 168's operator-precedence table appended | trimmed to own 3 bullets | `bullet_overrides.json` |
+| 168 | bullets | **completely empty** (marker immediately followed by 169's marker) | 9 bullets, one per precedence row | `bullet_overrides.json`; cropped as `image` |
+| 170 | bullets | own printf() example, with all of 171's 3 JAVA output-method examples appended | trimmed to own 3 bullets | `bullet_overrides.json` |
+| 171 | bullets | **completely empty**, same pattern as 168 | 3 bullets (printf/print/println) | `bullet_overrides.json` |
+| 172 | bullets | both if/if-else code snippets glued onto bullet 3; bullet 2 had no code at all | each bullet carries its own snippet | `bullet_overrides.json`; cropped as `image` |
+| 189 | bullets | only the range-based for-loop example; the list-based example (189's own 2nd method) had leaked into 190 | 2 bullets (both for-loop methods) | `bullet_overrides.json` |
+| 190 | bullets | had 2 bullets — its own while-loop example, plus 189's leaked list-based for-loop example | trimmed to its own 1 bullet | `bullet_overrides.json` |
+| 180 | scene | `crop_card.py`'s single-page crop stopped at the bottom of page 26, missing the worked example (main() program + result) that overflows onto page 27's next column | hand-stitched a second crop from page 27's overflow region beneath the first, same technique `crop_card.py` uses | one-off script using `crop_card`'s own helpers (`render_page`/`crop`/`to_scene_svg`/`set_kind_image`); no hand-authored SVG |
+| 201 | scene | same single-page-crop limitation — the ❶❷❸ trace explanation overflows onto page 31's next column | same stitching technique | same |
+
+### The systemic pattern, continued
+
+167/168 and 170/171 are **not** page-boundary overflows like 3과목's
+instances — they're *same-page* stream-order scrambles (167 and 168 are
+both on page 24's right column; the table's own marker/title text
+apparently sits later in the raw content stream than the table's cells,
+so `title_offset` never finds a stopping point and the whole table gets
+swallowed by the preceding card, leaving 168 with zero body). 189/190 is
+the page-boundary flavor (189 is the last card in page 28's right column;
+its second example overflows onto page 29's left column, ahead of 190's
+own badge).
+
+I checked **every right-column-last card** in this subject (162, 169, 174,
+180, 184, 189, 193, 201, 207) against the top of the next page's left
+column for this exact overflow signature — 180, 189, and 201 had it; the
+rest (162, 169, 174, 184, 193, 207) start their next page cleanly with no
+stray text before the following badge.
+
+`crop_card.py` itself has a real limitation surfaced by this: it locates
+a card by its badge on a single page and can't see a continuation that
+prints on the next page. For 180 and 201 (both chosen as `image` for
+independent reasons — a worked program, and a worked numeric trace) I
+wrote a one-off script reusing `crop_card`'s own `render_page`/`crop`/
+`to_scene_svg`/`set_kind_image` helpers to crop both pages and stitch them
+vertically, rather than hand-authoring an SVG. `crop_card.py` itself was
+not modified.
+
+### Confirmed correct (checked against rendered pages, no changes)
+
+- **202, 214** ("short single bullet"): confirmed legitimately
+  one-sentence definitions (스래싱, MQTT), no bullet character in the
+  source box, matching the established single-bullet-fallback pattern.
+- **173, 181, 186, 187, 191, 192** (flagged as code/worked-example heavy):
+  all confirmed byte-correct as extracted — no misattribution — and
+  classified `image` (see Part 3) given their content is a real code
+  listing or worked trace with box diagrams.
+- **All other cards (155-158, 160-166, 169, 174-179, 182-188, 190,
+  193-200, 202-204, 206-215):** read against pages 23-32, byte-exact.
