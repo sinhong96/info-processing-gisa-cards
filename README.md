@@ -20,9 +20,10 @@ To study on a phone: AirDrop `index.html` to it and open in Safari.
 | --- | --- |
 | `space` or tap the card | flip |
 | `→` / `←`, or swipe | next / previous |
-| 😵 어려움 | mark as hard, advance |
-| ✅ 암기함 | mark as memorized, advance |
-| 😵 어려운 것만 | drill only the cards marked hard |
+| 😵 어려움 | mark as hard, advance (key `1`) |
+| 🤔 애매함 | mark as half-known, advance (key `2`) |
+| ✅ 암기함 | mark as memorized, advance (key `3`) |
+| 🔁 복습할 것만 | drill everything not yet mastered — 어려움 and 애매함 both |
 | 🔀 섞기 | shuffle (the 목차 index stays in id order) |
 | ☰ 목차 | open the table of contents; click any card to jump to it |
 | 과목 selector | study one 과목, or 전체 for everything |
