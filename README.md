@@ -38,16 +38,15 @@ resets it. There is no account and nothing is uploaded.
 
 ## Status
 
-324 points total, IDs 001–324, contiguous with no gaps. All 324 are already extracted and
-cleaned in `cards.json`; what remains per subject is authoring the scenes.
+**Complete — all 324 cards have scenes.** IDs 001–324, contiguous with no gaps.
 
 | 과목 | Name | Cards | Scenes |
 | --- | --- | --- | --- |
 | 1 | 소프트웨어 설계 | 55 | ✅ 55 |
 | 2 | 소프트웨어 개발 | 45 | ✅ 45 |
-| 3 | 데이터베이스 구축 | 54 | — |
-| 4 | 프로그래밍 언어 활용 | 61 | — |
-| 5 | 정보시스템 구축 관리 | 109 | — |
+| 3 | 데이터베이스 구축 | 54 | ✅ 54 |
+| 4 | 프로그래밍 언어 활용 | 61 | ✅ 61 |
+| 5 | 정보시스템 구축 관리 | 109 | ✅ 109 |
 
 ## How it works
 
