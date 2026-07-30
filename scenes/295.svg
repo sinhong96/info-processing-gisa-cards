@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 200">
+  <defs>
+    <marker id="arw295" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="#e03131"/>
+    </marker>
+  </defs>
+  <rect x="30" y="50" width="260" height="80" rx="10" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="55" y="78" font-size="11" fill="#9aa4ae">로그인 ID</text>
+  <rect x="50" y="86" width="220" height="28" rx="4" fill="#fff" stroke="#e03131" stroke-width="2"/>
+  <text x="60" y="105" font-size="12" font-family="monospace" fill="#e03131">' OR '1'='1' --</text>
+
+  <path d="M290 90 h60" stroke="#e03131" stroke-width="3" marker-end="url(#arw295)"/>
+
+  <rect x="360" y="40" width="120" height="120" rx="10" fill="#fff" stroke="#9aa4ae" stroke-width="2.5"/>
+  <text x="420" y="100" font-size="42" text-anchor="middle">🗄️</text>
+  <text x="420" y="55" font-size="11" text-anchor="middle" fill="#9aa4ae">DB 서버</text>
+  <text x="460" y="58" font-size="22">🔓</text>
+
+  <path d="M480 100 h55" stroke="#e03131" stroke-width="3" marker-end="url(#arw295)"/>
+  <text x="540" y="85" font-size="26" text-anchor="middle">📤</text>
+  <text x="540" y="120" font-size="12" font-weight="800" text-anchor="middle" fill="#e03131">데이터 유출·변조</text>
+
+  <text x="360" y="188" font-size="12" text-anchor="middle" fill="#4a5560" font-weight="700">입력창에 SQL을 심어 DB를 직접 조작</text>
+</svg>

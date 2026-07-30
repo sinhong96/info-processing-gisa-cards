@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 220">
+  <rect x="40" y="10" width="640" height="200" rx="10" fill="#0a3d5c"/>
+  <rect x="40" y="10" width="640" height="34" rx="10" fill="#4a5560"/>
+  <rect x="40" y="27" width="640" height="17" fill="#4a5560"/>
+  <text x="60" y="33" font-size="12" font-weight="800" fill="#fff" font-family="monospace">$ 커널 로그</text>
+
+  <text x="60" y="80" font-size="14" font-weight="800" fill="#e8b33a" font-family="monospace">wtmp</text>
+  <text x="180" y="80" font-size="12" fill="#eef1f4">성공한 로그인/로그아웃, 시스템 시작/종료 시간</text>
+
+  <text x="60" y="115" font-size="14" font-weight="800" fill="#e8b33a" font-family="monospace">utmp</text>
+  <text x="180" y="115" font-size="12" fill="#eef1f4">현재 로그인한 사용자의 상태</text>
+
+  <text x="60" y="150" font-size="14" font-weight="800" fill="#e8b33a" font-family="monospace">btmp</text>
+  <text x="180" y="150" font-size="12" fill="#eef1f4">실패한 로그인 기록</text>
+
+  <text x="60" y="185" font-size="14" font-weight="800" fill="#e8b33a" font-family="monospace">lastlog</text>
+  <text x="180" y="185" font-size="12" fill="#eef1f4">마지막으로 성공한 로그인 기록</text>
+</svg>

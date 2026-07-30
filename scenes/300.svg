@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 210">
+  <rect x="40" y="30" width="150" height="150" rx="6" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <rect x="40" y="30" width="150" height="40" fill="#e8f4fc"/>
+  <text x="115" y="55" font-size="11" font-weight="800" text-anchor="middle" fill="#0a3d5c">복귀 주소</text>
+  <rect x="40" y="70" width="150" height="36" fill="#fff3d6"/>
+  <text x="115" y="93" font-size="11" font-weight="800" text-anchor="middle" fill="#1a1a1a">가드값</text>
+  <rect x="40" y="106" width="150" height="74" fill="#fff"/>
+  <text x="115" y="148" font-size="11" font-weight="800" text-anchor="middle" fill="#4a5560">지역 변수(버퍼)</text>
+  <text x="115" y="20" font-size="12" font-weight="800" text-anchor="middle" fill="#4a5560">정상 실행</text>
+  <text x="115" y="200" font-size="11" text-anchor="middle" fill="#9aa4ae">가드값 그대로 ✅</text>
+
+  <text x="360" y="105" font-size="18" font-weight="800" text-anchor="middle" fill="#9aa4ae">VS</text>
+
+  <rect x="430" y="30" width="150" height="150" rx="6" fill="#eef1f4" stroke="#e03131" stroke-width="2"/>
+  <rect x="430" y="30" width="150" height="40" fill="#e8f4fc"/>
+  <text x="505" y="55" font-size="11" font-weight="800" text-anchor="middle" fill="#0a3d5c">복귀 주소</text>
+  <rect x="430" y="70" width="150" height="36" fill="#e03131" fill-opacity=".3"/>
+  <text x="505" y="93" font-size="11" font-weight="800" text-anchor="middle" fill="#e03131">가드값 변경!</text>
+  <rect x="430" y="106" width="150" height="74" fill="#fff"/>
+  <text x="505" y="148" font-size="11" font-weight="800" text-anchor="middle" fill="#e03131">오버플로 데이터</text>
+  <text x="505" y="20" font-size="12" font-weight="800" text-anchor="middle" fill="#e03131">오버플로 공격</text>
+  <text x="505" y="200" font-size="11" text-anchor="middle" fill="#e03131">가드값 변조 감지 → 실행 중단 🚫</text>
+</svg>

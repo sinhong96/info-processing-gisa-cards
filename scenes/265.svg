@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 200">
+  <defs>
+    <marker id="arw265" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#0b8ad4"/>
+    </marker>
+  </defs>
+  <text x="360" y="20" font-size="13" text-anchor="middle" fill="#1a1a1a" font-weight="700">IGP에 속하는 거리 벡터 라우팅 프로토콜</text>
+
+  <circle cx="70" cy="90" r="18" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="70" y="96" font-size="12" text-anchor="middle" fill="#0a3d5c" font-weight="800">1</text>
+  <path d="M90 90 h40" stroke="#0b8ad4" stroke-width="2.5" marker-end="url(#arw265)"/>
+  <circle cx="150" cy="90" r="18" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="150" y="96" font-size="12" text-anchor="middle" fill="#0a3d5c" font-weight="800">2</text>
+  <path d="M170 90 h30" stroke="#0b8ad4" stroke-width="2.5" marker-end="url(#arw265)"/>
+  <text x="216" y="94" font-size="16" text-anchor="middle" fill="#9aa4ae" font-weight="800">···</text>
+  <path d="M236 90 h30" stroke="#0b8ad4" stroke-width="2.5" marker-end="url(#arw265)"/>
+
+  <circle cx="310" cy="90" r="24" fill="#fff3d6" stroke="#e8b33a" stroke-width="3"/>
+  <text x="310" y="97" font-size="16" text-anchor="middle" fill="#0a3d5c" font-weight="800">15</text>
+
+  <path d="M338 90 h30" stroke="#e03131" stroke-width="2.5" stroke-dasharray="4 4"/>
+  <rect x="368" y="66" width="90" height="48" rx="8" fill="#eef1f4" stroke="#e03131" stroke-width="2"/>
+  <text x="413" y="86" font-size="20" text-anchor="middle">🚫</text>
+  <text x="413" y="104" font-size="10.5" font-weight="800" text-anchor="middle" fill="#e03131">16 도달불가</text>
+
+  <text x="310" y="135" font-size="12" font-weight="800" text-anchor="middle" fill="#e03131">최대 홉(Hop) 수 15로 제한</text>
+
+  <text x="590" y="80" font-size="34" text-anchor="middle">🔀</text>
+  <text x="590" y="112" font-size="12" font-weight="800" text-anchor="middle" fill="#1a1a1a">거리 벡터</text>
+  <text x="590" y="130" font-size="11" text-anchor="middle" fill="#9aa4ae">RIP</text>
+</svg>

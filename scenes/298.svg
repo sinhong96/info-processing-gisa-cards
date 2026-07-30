@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 190">
+  <text x="150" y="35" font-size="12" font-weight="800" fill="#0a3d5c" text-anchor="middle">버퍼 (고정 크기)</text>
+  <rect x="40" y="45" width="220" height="70" rx="6" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <line x1="95" y1="45" x2="95" y2="115" stroke="#0b8ad4" stroke-width="1"/>
+  <line x1="150" y1="45" x2="150" y2="115" stroke="#0b8ad4" stroke-width="1"/>
+  <line x1="205" y1="45" x2="205" y2="115" stroke="#0b8ad4" stroke-width="1"/>
+
+  <text x="530" y="35" font-size="12" font-weight="800" fill="#e03131" text-anchor="middle">인접 메모리(복귀 주소 등)</text>
+  <rect x="420" y="45" width="220" height="70" rx="6" fill="#fff" stroke="#9aa4ae" stroke-width="2"/>
+
+  <path d="M60 80 L600 80" stroke="#e03131" stroke-width="8" stroke-linecap="round" stroke-dasharray="1 12"/>
+  <text x="330" y="65" font-size="22" text-anchor="middle">⚠️</text>
+
+  <rect x="420" y="55" width="90" height="50" rx="4" fill="#e03131" fill-opacity=".2" stroke="#e03131" stroke-width="2" stroke-dasharray="4 3"/>
+  <text x="465" y="85" font-size="11" font-weight="800" text-anchor="middle" fill="#e03131">덮어씀</text>
+
+  <text x="360" y="160" font-size="13" text-anchor="middle" fill="#4a5560" font-weight="700">할당 범위 밖까지 읽거나 쓰는 보안 약점</text>
+</svg>

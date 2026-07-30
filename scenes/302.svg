@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 190">
+  <defs>
+    <marker id="arw302" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="#0b8ad4"/>
+    </marker>
+  </defs>
+  <rect x="30" y="60" width="110" height="60" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="85" y="98" font-size="22" text-anchor="middle">📄</text>
+  <text x="85" y="140" font-size="11" text-anchor="middle" fill="#9aa4ae">평문</text>
+
+  <path d="M140 90 h50" stroke="#0b8ad4" stroke-width="3" marker-end="url(#arw302)"/>
+  <text x="165" y="75" font-size="22" text-anchor="middle">🔑</text>
+
+  <rect x="200" y="60" width="110" height="60" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="255" y="98" font-size="22" text-anchor="middle">🔐</text>
+  <text x="255" y="140" font-size="11" text-anchor="middle" fill="#9aa4ae">암호문</text>
+
+  <path d="M310 90 h50" stroke="#0b8ad4" stroke-width="3" marker-end="url(#arw302)"/>
+  <text x="335" y="75" font-size="22" text-anchor="middle">🔑</text>
+
+  <rect x="370" y="60" width="110" height="60" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="425" y="98" font-size="22" text-anchor="middle">📄</text>
+  <text x="425" y="140" font-size="11" text-anchor="middle" fill="#9aa4ae">평문</text>
+
+  <path d="M165 65 C 165 30, 335 30, 335 65" stroke="#e8b33a" stroke-width="2" stroke-dasharray="4 3" fill="none"/>
+  <text x="250" y="24" font-size="12" font-weight="800" text-anchor="middle" fill="#e8b33a">동일한 키</text>
+
+  <text x="590" y="80" font-size="34" text-anchor="middle">⚡</text>
+  <text x="590" y="112" font-size="12" font-weight="800" text-anchor="middle" fill="#0a3d5c">알고리즘 단순</text>
+  <text x="590" y="128" font-size="12" font-weight="800" text-anchor="middle" fill="#0a3d5c">속도 빠름</text>
+</svg>

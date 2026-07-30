@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 175">
+  <text x="30" y="35" font-size="12" font-weight="800" fill="#0b8ad4">개인키 암호화</text>
+  <rect x="30" y="45" width="150" height="70" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="105" y="80" font-size="20" font-weight="800" text-anchor="middle" fill="#0a3d5c">DES</text>
+  <text x="105" y="100" font-size="10" text-anchor="middle" fill="#9aa4ae">64비트, 1975 NBS</text>
+
+  <rect x="200" y="45" width="150" height="70" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="275" y="80" font-size="20" font-weight="800" text-anchor="middle" fill="#0a3d5c">AES</text>
+  <text x="275" y="100" font-size="10" text-anchor="middle" fill="#9aa4ae">2001 NIST, DES 대체</text>
+
+  <line x1="390" y1="30" x2="390" y2="150" stroke="#d3d5d8" stroke-width="2"/>
+
+  <text x="430" y="35" font-size="12" font-weight="800" fill="#e8b33a">공개키 암호화</text>
+  <rect x="430" y="45" width="260" height="70" rx="10" fill="#fff3d6" stroke="#e8b33a" stroke-width="2"/>
+  <text x="560" y="80" font-size="20" font-weight="800" text-anchor="middle" fill="#1a1a1a">RSA</text>
+  <text x="560" y="100" font-size="10" text-anchor="middle" fill="#9aa4ae">소인수분해의 어려움 기반</text>
+
+  <text x="360" y="150" font-size="12" text-anchor="middle" fill="#4a5560" font-weight="700">암호화·복호화가 모두 가능한 양방향 알고리즘</text>
+</svg>

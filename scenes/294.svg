@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 210">
+  <defs>
+    <marker id="arwb294" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="#0b8ad4"/>
+    </marker>
+    <marker id="arwr294" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="#e03131"/>
+    </marker>
+  </defs>
+  <text x="90" y="70" font-size="40" text-anchor="middle">🧑‍💻</text>
+  <text x="90" y="105" font-size="12" text-anchor="middle" fill="#9aa4ae">클라이언트</text>
+
+  <path d="M140 62 C 300 30, 420 30, 590 62" stroke="#0b8ad4" stroke-width="2.5" fill="none" marker-end="url(#arwb294)"/>
+  <text x="365" y="34" font-size="12" font-weight="800" text-anchor="middle" fill="#0b8ad4">🎫 세션</text>
+
+  <text x="630" y="70" font-size="40" text-anchor="middle">🖥️</text>
+  <text x="630" y="105" font-size="12" text-anchor="middle" fill="#9aa4ae">서버</text>
+
+  <path d="M365 122 L365 75" stroke="#e03131" stroke-width="3" stroke-dasharray="6 5" marker-end="url(#arwr294)"/>
+  <circle cx="365" cy="160" r="34" fill="#fff" stroke="#e03131" stroke-width="2.5"/>
+  <text x="365" y="172" font-size="28" text-anchor="middle">🕵️</text>
+  <text x="365" y="204" font-size="13" font-weight="800" text-anchor="middle" fill="#e03131">세션 정보 가로채기</text>
+</svg>

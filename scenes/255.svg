@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 200">
+  <text x="360" y="18" font-size="13" text-anchor="middle" fill="#1a1a1a" font-weight="700">소프트웨어 개발 환경을 제공하는 개방형 클라우드 컴퓨팅 플랫폼</text>
+
+  <rect x="220" y="36" width="280" height="40" rx="6" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="360" y="61" font-size="13" font-weight="700" text-anchor="middle" fill="#4a5560">SaaS · 애플리케이션</text>
+
+  <rect x="220" y="80" width="280" height="52" rx="6" fill="#0b8ad4"/>
+  <text x="360" y="102" font-size="14" font-weight="800" text-anchor="middle" fill="#fff">PaaS-TA</text>
+  <text x="360" y="120" font-size="11" text-anchor="middle" fill="#e8f4fc">개방형 클라우드 플랫폼 · 개발 환경 제공</text>
+
+  <rect x="220" y="136" width="280" height="40" rx="6" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="360" y="161" font-size="13" font-weight="700" text-anchor="middle" fill="#4a5560">IaaS · 서버·스토리지·네트워크</text>
+</svg>

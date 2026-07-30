@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 260">
+  <rect x="30" y="20" width="320" height="220" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <rect x="30" y="20" width="320" height="44" rx="10" fill="#0b8ad4"/>
+  <rect x="30" y="42" width="320" height="22" fill="#0b8ad4"/>
+  <text x="190" y="48" font-size="15" font-weight="800" text-anchor="middle" fill="#fff">🏢 내부적 기준</text>
+  <text x="55" y="92" font-size="12.5" fill="#1a1a1a" font-weight="700">• 목표 환경 : 개발 환경과 유형</text>
+  <text x="55" y="120" font-size="12.5" fill="#1a1a1a" font-weight="700">• 요구사항 : 개발·운영·유지보수</text>
+  <text x="55" y="148" font-size="12.5" fill="#1a1a1a" font-weight="700">• 프로젝트 규모 : 비용·인력·기간</text>
+  <text x="55" y="176" font-size="12.5" fill="#1a1a1a" font-weight="700">• 보유 기술 : 프로세스·방법론·</text>
+  <text x="70" y="200" font-size="12.5" fill="#1a1a1a" font-weight="700">산출물·구성원 능력</text>
+
+  <rect x="370" y="20" width="320" height="220" rx="10" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <rect x="370" y="20" width="320" height="44" rx="10" fill="#e8b33a"/>
+  <rect x="370" y="42" width="320" height="22" fill="#e8b33a"/>
+  <text x="530" y="48" font-size="15" font-weight="800" text-anchor="middle" fill="#fff">⚖️ 외부적 기준</text>
+  <text x="395" y="100" font-size="12.5" fill="#1a1a1a" font-weight="700">• 법적 제약사항 : 프로젝트별</text>
+  <text x="410" y="122" font-size="12.5" fill="#1a1a1a" font-weight="700">적용될 IT Compliance</text>
+  <text x="395" y="156" font-size="12.5" fill="#1a1a1a" font-weight="700">• 표준 품질 기준 : 금융·제도 등</text>
+  <text x="410" y="178" font-size="12.5" fill="#1a1a1a" font-weight="700">분야별 표준 품질 기준</text>
+</svg>

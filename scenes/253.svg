@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 210">
+  <text x="360" y="20" font-size="13" text-anchor="middle" fill="#1a1a1a" font-weight="700">독립된 통신장치들이 블루투스·UWB로 형성하는 무선 네트워크</text>
+
+  <circle cx="360" cy="118" r="82" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2" stroke-dasharray="5 4"/>
+
+  <line x1="360" y1="118" x2="360" y2="52" stroke="#0b8ad4" stroke-width="2"/>
+  <line x1="360" y1="118" x2="290" y2="150" stroke="#0b8ad4" stroke-width="2"/>
+  <line x1="360" y1="118" x2="430" y2="150" stroke="#0b8ad4" stroke-width="2"/>
+  <line x1="360" y1="118" x2="270" y2="90" stroke="#0b8ad4" stroke-width="2"/>
+  <line x1="360" y1="118" x2="450" y2="90" stroke="#0b8ad4" stroke-width="2"/>
+
+  <circle cx="360" cy="118" r="26" fill="#0b8ad4"/>
+  <text x="360" y="126" font-size="20" text-anchor="middle">📡</text>
+
+  <circle cx="360" cy="52" r="16" fill="#fff3d6" stroke="#e8b33a" stroke-width="2"/>
+  <text x="360" y="58" font-size="14" text-anchor="middle">📱</text>
+  <circle cx="290" cy="150" r="16" fill="#fff3d6" stroke="#e8b33a" stroke-width="2"/>
+  <text x="290" y="156" font-size="14" text-anchor="middle">📱</text>
+  <circle cx="430" cy="150" r="16" fill="#fff3d6" stroke="#e8b33a" stroke-width="2"/>
+  <text x="430" y="156" font-size="14" text-anchor="middle">📱</text>
+  <circle cx="270" cy="90" r="16" fill="#fff3d6" stroke="#e8b33a" stroke-width="2"/>
+  <text x="270" y="96" font-size="14" text-anchor="middle">📱</text>
+  <circle cx="450" cy="90" r="16" fill="#fff3d6" stroke="#e8b33a" stroke-width="2"/>
+  <text x="450" y="96" font-size="14" text-anchor="middle">📱</text>
+
+  <text x="530" y="118" font-size="11" fill="#9aa4ae" font-weight="700">블루투스 · UWB</text>
+
+  <text x="360" y="200" font-size="12" text-anchor="middle" fill="#1a1a1a" font-weight="700">피코넷 (PICONET)</text>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 200">
+  <rect x="30" y="15" width="205" height="175" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="132" y="45" font-size="26" text-anchor="middle">📋</text>
+  <text x="132" y="70" font-size="14" font-weight="800" text-anchor="middle" fill="#0a3d5c">관리적 보안</text>
+  <text x="132" y="100" font-size="11" text-anchor="middle" fill="#1a1a1a">정보보호 정책</text>
+  <text x="132" y="120" font-size="11" text-anchor="middle" fill="#1a1a1a">정보보호 조직</text>
+  <text x="132" y="140" font-size="11" text-anchor="middle" fill="#1a1a1a">인적 보안</text>
+
+  <rect x="257" y="15" width="205" height="175" rx="10" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="359" y="45" font-size="26" text-anchor="middle">🏢</text>
+  <text x="359" y="70" font-size="14" font-weight="800" text-anchor="middle" fill="#1a1a1a">물리적 보안</text>
+  <text x="359" y="100" font-size="11" text-anchor="middle" fill="#1a1a1a">출입 통제 지침</text>
+  <text x="359" y="120" font-size="11" text-anchor="middle" fill="#1a1a1a">전산실 관리 지침</text>
+  <text x="359" y="140" font-size="11" text-anchor="middle" fill="#1a1a1a">재해 복구 센터 운영</text>
+
+  <rect x="484" y="15" width="206" height="175" rx="10" fill="#fff3d6" stroke="#e8b33a" stroke-width="2"/>
+  <text x="587" y="45" font-size="26" text-anchor="middle">💻</text>
+  <text x="587" y="70" font-size="14" font-weight="800" text-anchor="middle" fill="#1a1a1a">기술적 보안</text>
+  <text x="587" y="100" font-size="11" text-anchor="middle" fill="#1a1a1a">사용자 인증</text>
+  <text x="587" y="120" font-size="11" text-anchor="middle" fill="#1a1a1a">접근 제어</text>
+  <text x="587" y="140" font-size="11" text-anchor="middle" fill="#1a1a1a">네트워크·DB 보안지침</text>
+</svg>

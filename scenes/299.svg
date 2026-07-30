@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 190">
+  <defs>
+    <marker id="arw299" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="#e03131"/>
+    </marker>
+  </defs>
+  <rect x="30" y="30" width="260" height="120" rx="10" fill="#0a3d5c"/>
+  <text x="55" y="58" font-size="12" font-family="monospace" fill="#9aa4ae">// config.java</text>
+  <text x="55" y="83" font-size="13" font-family="monospace" fill="#fff">String pw</text>
+  <text x="55" y="106" font-size="13" font-family="monospace" fill="#e8b33a">= "admin1234";</text>
+  <text x="55" y="133" font-size="11" font-family="monospace" fill="#9aa4ae">// 하드코드된 비밀번호</text>
+
+  <path d="M290 90 h95" stroke="#e03131" stroke-width="3" marker-end="url(#arw299)"/>
+  <text x="335" y="75" font-size="11" font-weight="800" text-anchor="middle" fill="#e03131">소스코드 유출</text>
+
+  <text x="440" y="75" font-size="40" text-anchor="middle">🕵️</text>
+  <text x="490" y="55" font-size="26">👑</text>
+  <text x="465" y="135" font-size="13" font-weight="800" text-anchor="middle" fill="#e03131">관리자 권한 탈취</text>
+</svg>

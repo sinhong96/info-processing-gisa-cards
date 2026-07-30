@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 190">
+  <defs>
+    <marker id="arw316" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="#e03131"/>
+    </marker>
+  </defs>
+  <rect x="30" y="60" width="220" height="80" rx="10" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="140" y="110" font-size="34" text-anchor="middle">⌨️</text>
+  <text x="140" y="135" font-size="11" text-anchor="middle" fill="#9aa4ae">사용자 키 입력</text>
+
+  <rect x="70" y="28" width="140" height="26" rx="4" fill="#fff" stroke="#e03131" stroke-width="1.5"/>
+  <text x="140" y="46" font-size="11" font-family="monospace" text-anchor="middle" fill="#e03131">pw: 5959kim!</text>
+
+  <path d="M250 90 h50" stroke="#e03131" stroke-width="3" marker-end="url(#arw316)"/>
+  <text x="275" y="76" font-size="20" text-anchor="middle">👁️</text>
+
+  <rect x="310" y="60" width="130" height="80" rx="10" fill="#fff3d6" stroke="#e8b33a" stroke-width="2"/>
+  <text x="375" y="110" font-size="30" text-anchor="middle">📝</text>
+  <text x="375" y="135" font-size="11" text-anchor="middle" fill="#9aa4ae">키 입력 기록</text>
+
+  <path d="M440 100 h60" stroke="#e03131" stroke-width="3" marker-end="url(#arw316)"/>
+
+  <text x="560" y="80" font-size="42" text-anchor="middle">🕵️</text>
+  <text x="560" y="120" font-size="12" font-weight="800" text-anchor="middle" fill="#e03131">ID·PW·계좌번호 탈취</text>
+</svg>

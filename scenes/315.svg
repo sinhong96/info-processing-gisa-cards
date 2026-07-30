@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 200">
+  <defs>
+    <marker id="arw315" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="#e03131"/>
+    </marker>
+  </defs>
+  <text x="60" y="55" font-size="26" text-anchor="middle">🐛</text>
+  <text x="60" y="90" font-size="11" text-anchor="middle" fill="#9aa4ae">감염 1대</text>
+
+  <path d="M95 45 L200 30" stroke="#e03131" stroke-width="2" marker-end="url(#arw315)"/>
+  <path d="M95 55 L200 70" stroke="#e03131" stroke-width="2" marker-end="url(#arw315)"/>
+
+  <text x="225" y="30" font-size="20" text-anchor="middle">🐛</text>
+  <text x="225" y="70" font-size="20" text-anchor="middle">🐛</text>
+
+  <path d="M245 30 L340 20" stroke="#e03131" stroke-width="2" marker-end="url(#arw315)"/>
+  <path d="M245 30 L340 55" stroke="#e03131" stroke-width="2" marker-end="url(#arw315)"/>
+  <path d="M245 70 L340 90" stroke="#e03131" stroke-width="2" marker-end="url(#arw315)"/>
+  <path d="M245 70 L340 125" stroke="#e03131" stroke-width="2" marker-end="url(#arw315)"/>
+
+  <text x="360" y="20" font-size="16" text-anchor="middle">🐛</text>
+  <text x="360" y="55" font-size="16" text-anchor="middle">🐛</text>
+  <text x="360" y="90" font-size="16" text-anchor="middle">🐛</text>
+  <text x="360" y="125" font-size="16" text-anchor="middle">🐛</text>
+
+  <path d="M420 65 h100" stroke="#e03131" stroke-width="2.5" stroke-dasharray="5 4" marker-end="url(#arw315)"/>
+
+  <text x="580" y="75" font-size="46" text-anchor="middle">🖥️</text>
+  <text x="628" y="45" font-size="26">💥</text>
+  <text x="580" y="120" font-size="12" font-weight="800" text-anchor="middle" fill="#e03131">부하 급증 → 시스템 다운</text>
+
+  <text x="360" y="180" font-size="12" text-anchor="middle" fill="#4a5560" font-weight="700">네트워크를 통해 스스로 계속 복제</text>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 180">
+  <circle cx="102" cy="74" r="42" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="102" y="87" font-size="34" text-anchor="middle">🌍</text>
+  <text x="102" y="140" font-size="15" font-weight="800" text-anchor="middle" fill="#1a1a1a">Public</text>
+  <text x="102" y="160" font-size="11" text-anchor="middle" fill="#9aa4ae">전체 공개</text>
+
+  <circle cx="270" cy="74" r="42" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="270" y="87" font-size="34" text-anchor="middle">👨‍👩‍👧</text>
+  <text x="270" y="140" font-size="15" font-weight="800" text-anchor="middle" fill="#1a1a1a">Protected</text>
+  <text x="270" y="160" font-size="11" text-anchor="middle" fill="#9aa4ae">상속 관계까지</text>
+
+  <circle cx="438" cy="74" r="42" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="438" y="87" font-size="34" text-anchor="middle">📦</text>
+  <text x="438" y="140" font-size="15" font-weight="800" text-anchor="middle" fill="#1a1a1a">Default</text>
+  <text x="438" y="160" font-size="11" text-anchor="middle" fill="#9aa4ae">같은 패키지만</text>
+
+  <circle cx="606" cy="74" r="42" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="606" y="87" font-size="34" text-anchor="middle">🔒</text>
+  <text x="606" y="140" font-size="15" font-weight="800" text-anchor="middle" fill="#1a1a1a">Private</text>
+  <text x="606" y="160" font-size="11" text-anchor="middle" fill="#9aa4ae">자신만</text>
+</svg>

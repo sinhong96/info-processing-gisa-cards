@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 200">
+  <rect x="30" y="60" width="660" height="70" rx="35" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="360" y="45" font-size="12" text-anchor="middle" fill="#9aa4ae">공중 네트워크(Internet)</text>
+
+  <rect x="120" y="72" width="480" height="46" rx="23" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5" stroke-dasharray="8 5"/>
+  <text x="360" y="100" font-size="12" font-weight="800" text-anchor="middle" fill="#0a3d5c">🔒 암호화 터널</text>
+
+  <text x="75" y="105" font-size="32" text-anchor="middle">🏢</text>
+  <text x="645" y="105" font-size="32" text-anchor="middle">🏢</text>
+
+  <text x="360" y="165" font-size="13" text-anchor="middle" fill="#4a5560" font-weight="700">전용 회선을 쓰는 것처럼 안전하게 연결</text>
+</svg>

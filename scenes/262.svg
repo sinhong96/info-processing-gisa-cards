@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 210">
+  <defs>
+    <marker id="arw262" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#0b8ad4"/>
+    </marker>
+  </defs>
+  <text x="360" y="20" font-size="13" text-anchor="middle" fill="#1a1a1a" font-weight="700">Wi-Fi에서 제정한 무선 랜(WLAN) 인증 및 암호화 관련 표준</text>
+
+  <rect x="60" y="46" width="150" height="110" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="135" y="106" font-size="40" text-anchor="middle">💻</text>
+  <text x="135" y="140" font-size="12" font-weight="800" text-anchor="middle" fill="#0a3d5c">단말기</text>
+
+  <rect x="510" y="46" width="150" height="110" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="585" y="106" font-size="40" text-anchor="middle">📶</text>
+  <text x="585" y="140" font-size="12" font-weight="800" text-anchor="middle" fill="#0a3d5c">무선 AP</text>
+
+  <path d="M216 70 h288" stroke="#0b8ad4" stroke-width="3" marker-end="url(#arw262)"/>
+  <text x="360" y="64" font-size="11" text-anchor="middle" fill="#9aa4ae">인증 요청</text>
+  <path d="M504 178 h-288" stroke="#0b8ad4" stroke-width="3" marker-end="url(#arw262)"/>
+  <text x="360" y="192" font-size="11" text-anchor="middle" fill="#9aa4ae">암호화된 데이터</text>
+
+  <rect x="290" y="86" width="140" height="66" rx="10" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="360" y="112" font-size="24" text-anchor="middle">🔐</text>
+  <text x="360" y="140" font-size="13" font-weight="800" text-anchor="middle" fill="#0a3d5c">WPA</text>
+</svg>

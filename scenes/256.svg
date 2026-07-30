@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 190">
+  <defs>
+    <marker id="arw256a" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto">
+      <path d="M0,0 L7,3.5 L0,7 z" fill="#4a5560"/>
+    </marker>
+    <marker id="arw256b" markerWidth="7" markerHeight="7" refX="0" refY="3.5" orient="auto-start-reverse">
+      <path d="M7,0 L0,3.5 L7,7 z" fill="#4a5560"/>
+    </marker>
+  </defs>
+  <text x="360" y="20" font-size="13" text-anchor="middle" fill="#1a1a1a" font-weight="700">10cm 이내 거리에서 3.5Gbps 속도의 초고속 근접무선통신(NFC)</text>
+
+  <rect x="70" y="50" width="80" height="90" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="110" y="102" font-size="34" text-anchor="middle">📱</text>
+
+  <rect x="570" y="50" width="80" height="90" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="610" y="102" font-size="34" text-anchor="middle">📱</text>
+
+  <line x1="150" y1="95" x2="570" y2="95" stroke="#4a5560" stroke-width="2" marker-start="url(#arw256b)" marker-end="url(#arw256a)"/>
+  <rect x="290" y="72" width="140" height="34" rx="17" fill="#fff3d6" stroke="#e8b33a" stroke-width="2"/>
+  <text x="360" y="95" font-size="16" font-weight="800" text-anchor="middle" fill="#0a3d5c">10cm 이내</text>
+
+  <text x="360" y="128" font-size="30" text-anchor="middle">⚡</text>
+  <rect x="290" y="150" width="140" height="30" rx="15" fill="#0b8ad4"/>
+  <text x="360" y="171" font-size="14" font-weight="800" text-anchor="middle" fill="#fff">3.5Gbps</text>
+</svg>

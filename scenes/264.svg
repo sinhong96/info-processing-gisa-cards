@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 210">
+  <defs>
+    <marker id="arw264" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#0b8ad4"/>
+    </marker>
+  </defs>
+  <text x="220" y="20" font-size="13" text-anchor="middle" fill="#1a1a1a" font-weight="700">802.11의 부가 기능 표준</text>
+
+  <rect x="70" y="40" width="300" height="42" rx="6" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="220" y="66" font-size="13" font-weight="700" text-anchor="middle" fill="#4a5560">물리 계층 (PHY)</text>
+
+  <rect x="70" y="86" width="300" height="46" rx="6" fill="#0b8ad4"/>
+  <text x="220" y="106" font-size="13" font-weight="800" text-anchor="middle" fill="#fff">매체 접근 제어 (MAC) 계층</text>
+  <text x="220" y="123" font-size="10.5" font-weight="700" text-anchor="middle" fill="#e8f4fc">802.11e가 이 부분을 수정</text>
+
+  <rect x="70" y="136" width="300" height="42" rx="6" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="220" y="162" font-size="13" font-weight="700" text-anchor="middle" fill="#4a5560">상위 응용 계층</text>
+
+  <path d="M380 109 h50" stroke="#0b8ad4" stroke-width="3" marker-end="url(#arw264)"/>
+
+  <rect x="440" y="70" width="90" height="78" rx="10" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="485" y="115" font-size="16" font-weight="800" text-anchor="middle" fill="#0a3d5c">802.11e</text>
+
+  <path d="M540 109 h50" stroke="#0b8ad4" stroke-width="3" marker-end="url(#arw264)"/>
+
+  <text x="650" y="95" font-size="30" text-anchor="middle">✅</text>
+  <text x="650" y="128" font-size="13" font-weight="800" text-anchor="middle" fill="#1a1a1a">QoS</text>
+</svg>

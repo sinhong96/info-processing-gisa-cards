@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 190">
+  <defs>
+    <marker id="arw324" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="#0b8ad4"/>
+    </marker>
+  </defs>
+  <rect x="40" y="40" width="180" height="100" rx="10" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="130" y="95" font-size="34" text-anchor="middle">⌨️</text>
+  <text x="130" y="125" font-size="11" text-anchor="middle" fill="#9aa4ae">로컬 사용자</text>
+
+  <path d="M220 90 h280" stroke="#0b8ad4" stroke-width="3" marker-end="url(#arw324)"/>
+  <text x="360" y="76" font-size="20" text-anchor="middle">🔒</text>
+  <rect x="330" y="98" width="60" height="26" rx="13" fill="#0a3d5c"/>
+  <text x="360" y="116" font-size="13" font-weight="800" text-anchor="middle" fill="#fff">22</text>
+
+  <rect x="500" y="40" width="180" height="100" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="590" y="95" font-size="34" text-anchor="middle">🖥️</text>
+  <text x="590" y="125" font-size="11" text-anchor="middle" fill="#9aa4ae">원격 서버</text>
+
+  <text x="360" y="170" font-size="12" text-anchor="middle" fill="#4a5560" font-weight="700">원격 로그인·명령 실행·파일 복사</text>
+</svg>

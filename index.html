@@ -48,7 +48,12 @@
   .front .num{font-size:44px;font-weight:800;color:var(--blue);font-variant-numeric:tabular-nums}
   .front .ttl{font-size:26px;font-weight:800;margin-top:10px;line-height:1.35}
   .front .tap{margin-top:32px;color:var(--muted);font-size:13px}
-  .card svg{width:100%;height:auto;display:block}
+  /* Every scene is authored against a light background — dark body text, light
+     panel fills. In dark mode the card itself is dark, which made #1a1a1a labels
+     effectively invisible (card 002's stage names, among others). Give the scene
+     its own white plate in both themes so it always renders as drawn. */
+  .card svg{width:100%;height:auto;display:block;background:#fff;border-radius:10px;
+            padding:6px 4px}
   ul{margin:16px 0 0;padding-left:20px;line-height:1.65;font-size:15px}
   li{margin-bottom:7px}
   .hook{margin-top:14px;text-align:center;color:#e03131;font-weight:800;font-size:15px}

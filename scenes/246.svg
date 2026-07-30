@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 200">
+  <defs>
+    <marker id="arw246" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="#0b8ad4"/>
+    </marker>
+  </defs>
+  <rect x="40" y="30" width="220" height="110" rx="10" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="150" y="80" font-size="34" text-anchor="middle">📐</text>
+  <text x="150" y="112" font-size="14" font-weight="800" text-anchor="middle" fill="#1a1a1a">정의된 개발 방법론</text>
+  <text x="150" y="130" font-size="11" text-anchor="middle" fill="#9aa4ae">절차·기법 (표준형)</text>
+
+  <path d="M272 85 h58" stroke="#0b8ad4" stroke-width="3.5" marker-end="url(#arw246)"/>
+  <text x="301" y="70" font-size="26" text-anchor="middle">✂️</text>
+  <text x="301" y="112" font-size="12" font-weight="800" text-anchor="middle" fill="#e03131">테일러링</text>
+
+  <rect x="460" y="30" width="220" height="110" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="570" y="80" font-size="34" text-anchor="middle">🧩</text>
+  <text x="570" y="112" font-size="14" font-weight="800" text-anchor="middle" fill="#0a3d5c">이 프로젝트 맞춤</text>
+  <text x="570" y="130" font-size="11" text-anchor="middle" fill="#9aa4ae">절차·기법 수정·보완</text>
+
+  <text x="360" y="176" font-size="13" text-anchor="middle" fill="#1a1a1a" font-weight="700">프로젝트 상황·특성에 맞도록 절차·기법을 수정 및 보완</text>
+</svg>
