@@ -16,9 +16,9 @@
 
   <rect x="140" y="122" width="440" height="60" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
   <text x="360" y="146" font-size="13" font-weight="800" text-anchor="middle" fill="#4a5560">🔌 물리 네트워크 장비</text>
-  <text x="200" y="170" font-size="20" text-anchor="middle">🖧</text>
-  <text x="360" y="170" font-size="20" text-anchor="middle">🖧</text>
-  <text x="520" y="170" font-size="20" text-anchor="middle">🖧</text>
+  <text x="200" y="170" font-size="20" text-anchor="middle">🌐</text>
+  <text x="360" y="170" font-size="20" text-anchor="middle">🌐</text>
+  <text x="520" y="170" font-size="20" text-anchor="middle">🌐</text>
 
   <text x="360" y="205" font-size="12" text-anchor="middle" fill="#e03131" font-weight="800">SDN = 제어를 장비에서 소프트웨어로 분리</text>
 </svg>

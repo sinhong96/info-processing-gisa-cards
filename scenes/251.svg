@@ -21,7 +21,7 @@
   <text x="370" y="184" font-size="12" font-weight="800" text-anchor="middle" fill="#0a3d5c">스토리지 자원</text>
 
   <rect x="450" y="122" width="160" height="76" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
-  <text x="530" y="158" font-size="26" text-anchor="middle">🖧</text>
+  <text x="530" y="158" font-size="26" text-anchor="middle">🌐</text>
   <text x="530" y="184" font-size="12" font-weight="800" text-anchor="middle" fill="#0a3d5c">네트워크 자원</text>
 
   <text x="360" y="12" font-size="12" text-anchor="middle" fill="#e03131" font-weight="800">데이터 센터의 모든 자원을 가상화</text>
