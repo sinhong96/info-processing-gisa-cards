@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 350">
+  <defs>
+    <marker id="ds103" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="#9aa4ae"/>
+    </marker>
+  </defs>
+  <rect x="40" y="20" width="170" height="110" rx="10" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="125" y="62" font-size="30" text-anchor="middle" opacity=".5">💡</text>
+  <text x="125" y="94" font-size="16" font-weight="700" text-anchor="middle" fill="#9aa4ae">개념적 설계</text>
+  <text x="125" y="114" font-size="11" text-anchor="middle" fill="#9aa4ae">1단계</text>
+
+  <rect x="275" y="20" width="170" height="110" rx="10" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="360" y="62" font-size="30" text-anchor="middle" opacity=".5">🗺️</text>
+  <text x="360" y="94" font-size="16" font-weight="700" text-anchor="middle" fill="#9aa4ae">논리적 설계</text>
+  <text x="360" y="114" font-size="11" text-anchor="middle" fill="#9aa4ae">2단계</text>
+
+  <rect x="510" y="20" width="170" height="110" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="595" y="62" font-size="30" text-anchor="middle">💾</text>
+  <text x="595" y="94" font-size="16" font-weight="800" text-anchor="middle" fill="#0a3d5c">물리적 설계</text>
+  <text x="595" y="114" font-size="11" text-anchor="middle" fill="#0b8ad4">3단계</text>
+
+  <path d="M214 75 h57" stroke="#9aa4ae" stroke-width="2.5" marker-end="url(#ds103)"/>
+  <path d="M449 75 h57" stroke="#9aa4ae" stroke-width="2.5" marker-end="url(#ds103)"/>
+
+  <rect x="40" y="160" width="640" height="170" rx="10" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="64" y="192" font-size="13" font-weight="700" fill="#1a1a1a">논리적 구조로 표현된 데이터를 물리적 구조의</text>
+  <text x="64" y="216" font-size="13" font-weight="700" fill="#1a1a1a">데이터로 변환하는 과정이다.</text>
+  <text x="64" y="248" font-size="12" fill="#4a5560">데이터베이스 파일의 저장 구조 및 액세스 경로를 결정한다.</text>
+  <text x="64" y="278" font-size="12" fill="#4a5560">저장 레코드의 형식, 순서, 접근 경로, 조회가 집중되는</text>
+  <text x="64" y="302" font-size="12" fill="#4a5560">레코드와 같은 정보를 사용한다.</text>
+</svg>

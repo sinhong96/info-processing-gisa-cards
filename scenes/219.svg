@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 210">
+  <defs>
+    <marker id="arw219" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#0b8ad4"/>
+    </marker>
+  </defs>
+  <rect x="290" y="16" width="140" height="54" rx="8" fill="#0b8ad4"/>
+  <text x="360" y="49" font-size="16" font-weight="800" text-anchor="middle" fill="#fff">전체 문제</text>
+
+  <path d="M330 70 L200 118" stroke="#0b8ad4" stroke-width="2.5" marker-end="url(#arw219)"/>
+  <path d="M390 70 L520 118" stroke="#0b8ad4" stroke-width="2.5" marker-end="url(#arw219)"/>
+
+  <rect x="130" y="118" width="140" height="52" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="200" y="150" font-size="14" font-weight="700" text-anchor="middle" fill="#0a3d5c">처리 A</text>
+
+  <rect x="450" y="118" width="140" height="52" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="520" y="150" font-size="14" font-weight="700" text-anchor="middle" fill="#0a3d5c">처리 B</text>
+
+  <text x="360" y="98" font-size="13" fill="#e03131" text-anchor="middle" font-weight="800">분할과 정복 (Divide and Conquer)</text>
+
+  <text x="360" y="196" font-size="13" text-anchor="middle" fill="#1a1a1a" font-weight="700">처리(Process) 중심으로 요구사항을 정형화하여 문서화</text>
+</svg>

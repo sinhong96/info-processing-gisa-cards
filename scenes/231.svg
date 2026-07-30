@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 180">
+  <circle cx="180" cy="80" r="48" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="180" y="96" font-size="36" text-anchor="middle">🧮</text>
+  <text x="180" y="152" font-size="16" font-weight="800" text-anchor="middle" fill="#1a1a1a">COCOMO 모형</text>
+
+  <circle cx="360" cy="80" r="48" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="360" y="96" font-size="36" text-anchor="middle">📈</text>
+  <text x="360" y="152" font-size="16" font-weight="800" text-anchor="middle" fill="#1a1a1a">Putnam 모형</text>
+
+  <circle cx="540" cy="80" r="48" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="540" y="96" font-size="36" text-anchor="middle">🧾</text>
+  <text x="540" y="152" font-size="16" font-weight="800" text-anchor="middle" fill="#1a1a1a">기능 점수(FP) 모형</text>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 200">
+  <defs>
+    <marker id="arw283" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="#0b8ad4"/>
+    </marker>
+  </defs>
+  <rect x="30" y="70" width="150" height="70" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="105" y="112" font-size="13" font-weight="700" text-anchor="middle" fill="#1a1a1a">대용량 데이터</text>
+
+  <path d="M180 105 h40" stroke="#0b8ad4" stroke-width="3" marker-end="url(#arw283)"/>
+
+  <rect x="230" y="30" width="150" height="60" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="305" y="65" font-size="15" font-weight="800" text-anchor="middle" fill="#0a3d5c">Map</text>
+  <rect x="230" y="110" width="150" height="60" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="305" y="145" font-size="15" font-weight="800" text-anchor="middle" fill="#0a3d5c">Map</text>
+  <text x="220" y="60" font-size="11" text-anchor="middle" fill="#9aa4ae">분산 처리</text>
+
+  <path d="M380 60 C 430 60, 430 105, 470 105" stroke="#0b8ad4" stroke-width="3" fill="none" marker-end="url(#arw283)"/>
+  <path d="M380 140 C 430 140, 430 105, 470 105" stroke="#0b8ad4" stroke-width="3" fill="none" marker-end="url(#arw283)"/>
+
+  <rect x="480" y="75" width="200" height="60" rx="8" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="580" y="110" font-size="15" font-weight="800" text-anchor="middle" fill="#1a1a1a">Reduce</text>
+  <text x="580" y="150" font-size="11" text-anchor="middle" fill="#9aa4ae">결과 취합</text>
+
+  <text x="360" y="188" font-size="12" text-anchor="middle" fill="#4a5560" font-weight="700">대용량 데이터를 분산 처리하기 위한 프로그래밍 모델</text>
+</svg>

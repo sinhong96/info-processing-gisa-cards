@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 190">
+  <defs>
+    <marker id="arw280" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="#0b8ad4"/>
+    </marker>
+  </defs>
+  <rect x="60"  y="40" width="140" height="100" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="130" y="90" font-size="30" text-anchor="middle">📱</text>
+  <text x="130" y="122" font-size="12" font-weight="700" text-anchor="middle" fill="#0a3d5c">스마트폰</text>
+
+  <rect x="290" y="40" width="140" height="100" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="360" y="90" font-size="30" text-anchor="middle">💻</text>
+  <text x="360" y="122" font-size="12" font-weight="700" text-anchor="middle" fill="#0a3d5c">노트북</text>
+
+  <rect x="520" y="40" width="140" height="100" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="590" y="90" font-size="30" text-anchor="middle">📺</text>
+  <text x="590" y="122" font-size="12" font-weight="700" text-anchor="middle" fill="#0a3d5c">TV</text>
+
+  <path d="M200 90 h90" stroke="#0b8ad4" stroke-width="2.5" stroke-dasharray="6 5" marker-end="url(#arw280)"/>
+  <path d="M430 90 h90" stroke="#0b8ad4" stroke-width="2.5" stroke-dasharray="6 5" marker-end="url(#arw280)"/>
+  <text x="245" y="78" font-size="18" text-anchor="middle">▶️</text>
+  <text x="475" y="78" font-size="18" text-anchor="middle">▶️</text>
+  <text x="360" y="170" font-size="13" text-anchor="middle" fill="#4a5560" font-weight="700">동일한 콘텐츠를 N개의 단말기에서 자유롭게 이용</text>
+</svg>

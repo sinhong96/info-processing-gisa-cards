@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 190">
+  <defs>
+    <marker id="arw243" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#0b8ad4"/>
+    </marker>
+  </defs>
+  <g>
+    <rect x="49" y="30" width="110" height="100" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+    <text x="104" y="66" font-size="26" text-anchor="middle">🌪️</text>
+    <text x="104" y="94" font-size="13" font-weight="800" text-anchor="middle" fill="#0a3d5c">초기</text>
+    <text x="104" y="114" font-size="15" font-weight="800" text-anchor="middle" fill="#9aa4ae">1</text>
+
+    <rect x="177" y="30" width="110" height="100" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+    <text x="232" y="66" font-size="26" text-anchor="middle">📋</text>
+    <text x="232" y="94" font-size="13" font-weight="800" text-anchor="middle" fill="#0a3d5c">관리</text>
+    <text x="232" y="114" font-size="15" font-weight="800" text-anchor="middle" fill="#9aa4ae">2</text>
+
+    <rect x="305" y="30" width="110" height="100" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+    <text x="360" y="66" font-size="26" text-anchor="middle">📐</text>
+    <text x="360" y="94" font-size="13" font-weight="800" text-anchor="middle" fill="#0a3d5c">정의</text>
+    <text x="360" y="114" font-size="15" font-weight="800" text-anchor="middle" fill="#9aa4ae">3</text>
+
+    <rect x="433" y="30" width="110" height="100" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+    <text x="488" y="66" font-size="26" text-anchor="middle">📊</text>
+    <text x="488" y="94" font-size="12" font-weight="800" text-anchor="middle" fill="#0a3d5c">정량적 관리</text>
+    <text x="488" y="114" font-size="15" font-weight="800" text-anchor="middle" fill="#9aa4ae">4</text>
+
+    <rect x="561" y="30" width="110" height="100" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+    <text x="616" y="66" font-size="26" text-anchor="middle">🏆</text>
+    <text x="616" y="94" font-size="13" font-weight="800" text-anchor="middle" fill="#0a3d5c">최적화</text>
+    <text x="616" y="114" font-size="15" font-weight="800" text-anchor="middle" fill="#9aa4ae">5</text>
+  </g>
+  <path d="M163 80 h10" stroke="#0b8ad4" stroke-width="3" marker-end="url(#arw243)"/>
+  <path d="M291 80 h10" stroke="#0b8ad4" stroke-width="3" marker-end="url(#arw243)"/>
+  <path d="M419 80 h10" stroke="#0b8ad4" stroke-width="3" marker-end="url(#arw243)"/>
+  <path d="M547 80 h10" stroke="#0b8ad4" stroke-width="3" marker-end="url(#arw243)"/>
+
+  <text x="360" y="160" font-size="13" text-anchor="middle" fill="#1a1a1a" font-weight="700">소프트웨어 프로세스 성숙도 5단계</text>
+</svg>

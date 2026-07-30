@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 290">
+  <rect x="30" y="20" width="660" height="76" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="64" y="60" font-size="26" text-anchor="middle">🏗️</text>
+  <text x="100" y="46" font-size="15" font-weight="800" fill="#0a3d5c">구조 (Structure)</text>
+  <text x="100" y="66" font-size="12" fill="#1a1a1a">논리적으로 표현된 개체 타입들 간의 관계로서</text>
+  <text x="100" y="84" font-size="12" fill="#1a1a1a">데이터 구조 및 정적 성질을 표현함</text>
+
+  <rect x="30" y="104" width="660" height="76" rx="10" fill="#fff3d6" stroke="#e8b33a" stroke-width="2"/>
+  <text x="64" y="144" font-size="26" text-anchor="middle">⚙️</text>
+  <text x="100" y="130" font-size="15" font-weight="800" fill="#0a3d5c">연산 (Operation)</text>
+  <text x="100" y="150" font-size="12" fill="#1a1a1a">데이터베이스에 저장된 실제 데이터를 처리하는</text>
+  <text x="100" y="168" font-size="12" fill="#1a1a1a">작업 명세, 데이터베이스를 조작하는 기본 도구</text>
+
+  <rect x="30" y="188" width="660" height="76" rx="10" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="64" y="228" font-size="26" text-anchor="middle">🔒</text>
+  <text x="100" y="214" font-size="15" font-weight="800" fill="#0a3d5c">제약 조건 (Constraint)</text>
+  <text x="100" y="234" font-size="12" fill="#1a1a1a">데이터베이스에 저장될 수 있는 실제 데이터의</text>
+  <text x="100" y="252" font-size="12" fill="#1a1a1a">논리적인 제약 조건</text>
+</svg>

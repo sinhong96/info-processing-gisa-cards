@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 210">
+  <rect x="40" y="20" width="160" height="34" fill="#0b8ad4"/>
+  <rect x="200" y="20" width="480" height="34" fill="#0b8ad4"/>
+  <text x="120" y="43" font-size="14" font-weight="800" text-anchor="middle" fill="#fff">자료형</text>
+  <text x="440" y="43" font-size="14" font-weight="800" text-anchor="middle" fill="#fff">설명</text>
+
+  <rect x="40" y="54" width="160" height="50" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1"/>
+  <rect x="200" y="54" width="480" height="50" fill="#fff" stroke="#9aa4ae" stroke-width="1"/>
+  <text x="120" y="84" font-size="14" font-weight="800" text-anchor="middle" fill="#0a3d5c" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">List</text>
+  <text x="440" y="84" font-size="13" text-anchor="middle" fill="#1a1a1a">필요에 따라 개수를 늘리거나 줄일 수 있음</text>
+
+  <rect x="40" y="104" width="160" height="50" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1"/>
+  <rect x="200" y="104" width="480" height="50" fill="#fff" stroke="#9aa4ae" stroke-width="1"/>
+  <text x="120" y="134" font-size="14" font-weight="800" text-anchor="middle" fill="#0a3d5c" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">Tuple</text>
+  <text x="440" y="134" font-size="13" text-anchor="middle" fill="#1a1a1a">요소의 추가, 삭제, 변경은 불가능함</text>
+
+  <rect x="40" y="154" width="160" height="50" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1"/>
+  <rect x="200" y="154" width="480" height="50" fill="#fff" stroke="#9aa4ae" stroke-width="1"/>
+  <text x="120" y="184" font-size="14" font-weight="800" text-anchor="middle" fill="#0a3d5c" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">range</text>
+  <text x="440" y="184" font-size="13" text-anchor="middle" fill="#1a1a1a">연속된 숫자를 생성함</text>
+
+  <rect x="40" y="20" width="640" height="184" fill="none" stroke="#9aa4ae" stroke-width="1.5"/>
+  <line x1="200" y1="20" x2="200" y2="204" stroke="#0b8ad4" stroke-width="2"/>
+</svg>

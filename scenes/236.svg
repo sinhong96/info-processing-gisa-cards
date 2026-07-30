@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 150">
+  <rect x="20" y="20" width="128" height="100" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="84" y="55" font-size="26" text-anchor="middle">📥</text>
+  <text x="84" y="86" font-size="12" font-weight="800" text-anchor="middle" fill="#0a3d5c">자료 입력</text>
+  <text x="84" y="102" font-size="10.5" text-anchor="middle" fill="#9aa4ae">입력 양식</text>
+
+  <rect x="158" y="20" width="128" height="100" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="222" y="55" font-size="26" text-anchor="middle">📤</text>
+  <text x="222" y="86" font-size="12" font-weight="800" text-anchor="middle" fill="#0a3d5c">정보 출력</text>
+  <text x="222" y="102" font-size="10.5" text-anchor="middle" fill="#9aa4ae">출력 보고서</text>
+
+  <rect x="296" y="20" width="128" height="100" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="360" y="55" font-size="26" text-anchor="middle">💬</text>
+  <text x="360" y="86" font-size="12" font-weight="800" text-anchor="middle" fill="#0a3d5c">명령어</text>
+  <text x="360" y="102" font-size="10.5" text-anchor="middle" fill="#9aa4ae">사용자 질의수</text>
+
+  <rect x="434" y="20" width="128" height="100" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="498" y="55" font-size="26" text-anchor="middle">🗂️</text>
+  <text x="498" y="86" font-size="12" font-weight="800" text-anchor="middle" fill="#0a3d5c">데이터 파일</text>
+
+  <rect x="572" y="20" width="128" height="100" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="636" y="55" font-size="26" text-anchor="middle">🔌</text>
+  <text x="636" y="86" font-size="12" font-weight="800" text-anchor="middle" fill="#0a3d5c">인터페이스</text>
+  <text x="636" y="102" font-size="10.5" text-anchor="middle" fill="#9aa4ae">외부 루틴 연계</text>
+</svg>

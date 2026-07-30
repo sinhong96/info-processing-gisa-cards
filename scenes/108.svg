@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 230">
+  <rect x="40" y="30" width="150" height="34" fill="#0b8ad4"/>
+  <text x="115" y="52" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">A1 (학년)</text>
+  <rect x="40" y="64" width="150" height="40" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="1.5"/>
+  <text x="115" y="88" font-size="13" text-anchor="middle" fill="#1a1a1a">2</text>
+  <rect x="40" y="104" width="150" height="40" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="1.5"/>
+  <text x="115" y="128" font-size="13" text-anchor="middle" fill="#1a1a1a">3</text>
+
+  <text x="240" y="90" font-size="26" text-anchor="middle">→</text>
+
+  <circle cx="360" cy="90" r="70" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="360" y="78" font-size="14" font-weight="800" text-anchor="middle" fill="#0a3d5c">도메인</text>
+  <text x="360" y="100" font-size="16" font-weight="700" text-anchor="middle" fill="#1a1a1a">{1, 2, 3, 4}</text>
+
+  <text x="480" y="76" font-size="13" fill="#4a5560">하나의 애트리뷰트가 취할 수 있는</text>
+  <text x="480" y="98" font-size="13" fill="#4a5560">같은 타입의 원자(Atomic)값들의</text>
+  <text x="480" y="120" font-size="13" fill="#4a5560">집합이다.</text>
+
+  <rect x="40" y="176" width="640" height="40" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="64" y="201" font-size="13" font-weight="700" fill="#1a1a1a">애트리뷰트가 취할 값의 집합 = 도메인 (Domain)</text>
+</svg>

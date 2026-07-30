@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 260">
+  <defs>
+    <marker id="nr123" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="#0b8ad4"/>
+    </marker>
+  </defs>
+  <rect x="30" y="24" width="200" height="110" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="130" y="14" font-size="12" font-weight="700" text-anchor="middle" fill="#9aa4ae">잘못 설계된 스키마</text>
+  <line x1="30" y1="58" x2="230" y2="58" stroke="#9aa4ae"/>
+  <line x1="30" y1="92" x2="230" y2="92" stroke="#9aa4ae"/>
+  <line x1="30" y1="126" x2="230" y2="126" stroke="#9aa4ae"/>
+  <text x="130" y="46" font-size="11" text-anchor="middle" fill="#4a5560">중복 데이터 가득</text>
+
+  <path d="M244 78 h50" stroke="#0b8ad4" stroke-width="2.5" marker-end="url(#nr123)"/>
+  <text x="269" y="66" font-size="12" font-weight="800" text-anchor="middle" fill="#0a3d5c">정규화</text>
+
+  <rect x="310" y="24" width="180" height="46" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <rect x="310" y="80" width="180" height="46" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="400" y="14" font-size="12" font-weight="700" text-anchor="middle" fill="#0b8ad4">작은 속성 세트로 분해</text>
+  <text x="400" y="52" font-size="11" text-anchor="middle" fill="#0a3d5c">스키마 A</text>
+  <text x="400" y="108" font-size="11" text-anchor="middle" fill="#0a3d5c">스키마 B</text>
+
+  <rect x="30" y="160" width="660" height="86" rx="10" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="360" y="186" font-size="13" font-weight="700" text-anchor="middle" fill="#1a1a1a">함수적 종속성을 이용해 바람직한 스키마로 분해하는 과정</text>
+  <text x="360" y="210" font-size="12" text-anchor="middle" fill="#4a5560">논리적 설계 단계에서 수행 · 데이터 중복 배제로 이상 방지</text>
+  <text x="360" y="230" font-size="12" text-anchor="middle" fill="#4a5560">자료 저장 공간의 최소화 가능</text>
+</svg>

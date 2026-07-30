@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 170">
+  <circle cx="102" cy="74" r="42" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="102" y="87" font-size="32" text-anchor="middle">🏗️</text>
+  <text x="102" y="140" font-size="14" font-weight="800" text-anchor="middle" fill="#1a1a1a">구조적 기법</text>
+
+  <circle cx="235" cy="74" r="42" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="235" y="87" font-size="32" text-anchor="middle">🧪</text>
+  <text x="235" y="140" font-size="14" font-weight="800" text-anchor="middle" fill="#1a1a1a">프로토타이핑</text>
+
+  <circle cx="368" cy="74" r="42" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="368" y="87" font-size="32" text-anchor="middle">🤖</text>
+  <text x="368" y="140" font-size="14" font-weight="800" text-anchor="middle" fill="#1a1a1a">자동 프로그래밍</text>
+
+  <circle cx="501" cy="74" r="42" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="501" y="87" font-size="32" text-anchor="middle">🗄️</text>
+  <text x="501" y="140" font-size="14" font-weight="800" text-anchor="middle" fill="#1a1a1a">정보 저장소</text>
+
+  <circle cx="634" cy="74" r="42" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="634" y="87" font-size="32" text-anchor="middle">🌐</text>
+  <text x="634" y="140" font-size="14" font-weight="800" text-anchor="middle" fill="#1a1a1a">분산처리</text>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 210">
+  <defs>
+    <marker id="arw274" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="#0b8ad4"/>
+    </marker>
+  </defs>
+  <ellipse cx="360" cy="55" rx="120" ry="42" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="360" y="68" font-size="34" text-anchor="middle">☁️</text>
+  <text x="360" y="35" font-size="14" font-weight="800" text-anchor="middle" fill="#0a3d5c">클라우드</text>
+
+  <path d="M300 100 L270 150" stroke="#0b8ad4" stroke-width="2.5" marker-end="url(#arw274)"/>
+  <path d="M360 100 L360 150" stroke="#0b8ad4" stroke-width="2.5" marker-end="url(#arw274)"/>
+  <path d="M420 100 L450 150" stroke="#0b8ad4" stroke-width="2.5" marker-end="url(#arw274)"/>
+
+  <rect x="180" y="152" width="360" height="50" rx="10" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="220" y="184" font-size="26" text-anchor="middle">⛓️</text>
+  <text x="380" y="184" font-size="15" font-weight="800" text-anchor="middle" fill="#1a1a1a">블록체인 앱 개발 환경</text>
+</svg>

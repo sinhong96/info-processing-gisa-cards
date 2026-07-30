@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 210">
+  <g font-family="Helvetica" font-weight="800">
+    <text x="50" y="46" font-size="26" fill="#0b8ad4">O</text>
+    <text x="50" y="80" font-size="26" fill="#0b8ad4">W</text>
+    <text x="50" y="114" font-size="26" fill="#0b8ad4">A</text>
+    <text x="50" y="148" font-size="26" fill="#0b8ad4">S</text>
+    <text x="50" y="182" font-size="26" fill="#0b8ad4">P</text>
+  </g>
+  <text x="90" y="46"  font-size="16" fill="#1a1a1a" font-weight="700">Open — 오픈</text>
+  <text x="90" y="80"  font-size="16" fill="#1a1a1a" font-weight="700">Web — 웹</text>
+  <text x="90" y="114" font-size="16" fill="#1a1a1a" font-weight="700">Application — 애플리케이션</text>
+  <text x="90" y="148" font-size="16" fill="#1a1a1a" font-weight="700">Security — 보안</text>
+  <text x="90" y="182" font-size="16" fill="#1a1a1a" font-weight="700">Project — 프로젝트</text>
+
+  <line x1="420" y1="20" x2="420" y2="190" stroke="#d3d5d8" stroke-width="2"/>
+
+  <text x="560" y="80" font-size="40" text-anchor="middle">🐞</text>
+  <text x="560" y="118" font-size="14" font-weight="800" text-anchor="middle" fill="#1a1a1a">웹 보안 취약점 연구</text>
+  <text x="560" y="138" font-size="12" text-anchor="middle" fill="#9aa4ae">비영리 단체</text>
+</svg>

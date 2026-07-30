@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 200">
+  <line x1="60" y1="150" x2="660" y2="150" stroke="#4a5560" stroke-width="2.5"/>
+  <line x1="60" y1="150" x2="60" y2="24" stroke="#4a5560" stroke-width="2.5"/>
+  <text x="30" y="90" font-size="12" fill="#9aa4ae" text-anchor="middle" transform="rotate(-90 30 90)">노력(Effort)</text>
+  <text x="660" y="170" font-size="12" fill="#9aa4ae" text-anchor="middle">시간(Time)</text>
+
+  <path d="M60 150 C 110 150, 150 40, 230 40 S 420 60, 640 148" fill="none" stroke="#0b8ad4" stroke-width="3.5"/>
+
+  <text x="230" y="26" font-size="13" font-weight="800" fill="#e03131" text-anchor="middle">Rayleigh-Norden 곡선</text>
+
+  <text x="360" y="188" font-size="13" text-anchor="middle" fill="#1a1a1a" font-weight="700">SW 생명주기 전 과정의 노력 분포를 곡선으로 가정하는 모형</text>
+</svg>

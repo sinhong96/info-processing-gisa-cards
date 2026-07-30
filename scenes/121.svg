@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 240">
+  <defs>
+    <marker id="cp121" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="#0b8ad4"/>
+    </marker>
+  </defs>
+  <rect x="30" y="30" width="150" height="90" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="105" y="20" font-size="12" font-weight="700" text-anchor="middle" fill="#9aa4ae">R</text>
+  <line x1="105" y1="30" x2="105" y2="120" stroke="#9aa4ae"/>
+  <line x1="30" y1="75" x2="180" y2="75" stroke="#9aa4ae"/>
+  <text x="105" y="150" font-size="12" text-anchor="middle" fill="#4a5560">디그리 2, 카디널리티 3</text>
+
+  <text x="215" y="82" font-size="26" font-weight="800" text-anchor="middle" fill="#0a3d5c">×</text>
+
+  <rect x="250" y="30" width="150" height="90" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="325" y="20" font-size="12" font-weight="700" text-anchor="middle" fill="#9aa4ae">S</text>
+  <line x1="300" y1="30" x2="300" y2="120" stroke="#9aa4ae"/>
+  <line x1="350" y1="30" x2="350" y2="120" stroke="#9aa4ae"/>
+  <text x="325" y="150" font-size="12" text-anchor="middle" fill="#4a5560">디그리 3, 카디널리티 2</text>
+
+  <path d="M410 75 h50" stroke="#0b8ad4" stroke-width="2.5" marker-end="url(#cp121)"/>
+
+  <rect x="470" y="30" width="220" height="90" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="580" y="20" font-size="12" font-weight="700" text-anchor="middle" fill="#0b8ad4">R × S</text>
+  <text x="580" y="70" font-size="14" font-weight="800" text-anchor="middle" fill="#0a3d5c">디그리 5, 카디널리티 6</text>
+  <text x="580" y="94" font-size="11" text-anchor="middle" fill="#4a5560">모든 튜플의 순서쌍</text>
+
+  <rect x="30" y="170" width="660" height="56" rx="10" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="360" y="192" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">디그리 = 두 릴레이션의 디그리를 더한 값 (2+3=5)</text>
+  <text x="360" y="212" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">카디널리티 = 두 릴레이션의 카디널리티를 곱한 값 (3×2=6)</text>
+</svg>

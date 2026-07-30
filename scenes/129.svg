@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 210">
+  <path d="M280 40 a70 18 0 0 1 140 0 v90 a70 18 0 0 1 -140 0 z" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <ellipse cx="350" cy="40" rx="70" ry="18" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="350" y="46" font-size="13" font-weight="800" text-anchor="middle" fill="#0a3d5c">시스템 카탈로그</text>
+  <text x="350" y="100" font-size="11" text-anchor="middle" fill="#0a3d5c">메타데이터 DB</text>
+
+  <text x="180" y="80" font-size="30" text-anchor="middle">🔍</text>
+  <text x="180" y="120" font-size="13" font-weight="800" text-anchor="middle" fill="#0a3d5c">검색 ✅</text>
+
+  <text x="520" y="80" font-size="30" text-anchor="middle">🔒</text>
+  <text x="520" y="120" font-size="13" font-weight="800" text-anchor="middle" fill="#e03131">갱신 ❌</text>
+
+  <rect x="30" y="156" width="660" height="44" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="360" y="184" font-size="12" text-anchor="middle" fill="#4a5560">사용자는 시스템 카탈로그 내용을 검색할 수는 있지만 갱신할 수는 없다</text>
+</svg>

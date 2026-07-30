@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 210">
+  <defs>
+    <marker id="arw226" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="#0b8ad4"/>
+    </marker>
+  </defs>
+  <rect x="60" y="20" width="260" height="170" rx="10" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <rect x="60" y="20" width="260" height="46" rx="10" fill="#9aa4ae"/>
+  <rect x="60" y="46" width="260" height="20" fill="#9aa4ae"/>
+  <text x="190" y="50" font-size="16" font-weight="800" text-anchor="middle" fill="#fff">사람이 수작업</text>
+  <text x="190" y="120" font-size="34" text-anchor="middle">🧑‍💻</text>
+  <text x="190" y="155" font-size="12" text-anchor="middle" fill="#1a1a1a">설계~시험 등 단계를</text>
+  <text x="190" y="172" font-size="12" text-anchor="middle" fill="#1a1a1a">각각 사람이 직접 수행</text>
+
+  <path d="M328 105 h64" stroke="#0b8ad4" stroke-width="3.5" marker-end="url(#arw226)"/>
+
+  <rect x="400" y="20" width="260" height="170" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <rect x="400" y="20" width="260" height="46" rx="10" fill="#0b8ad4"/>
+  <rect x="400" y="46" width="260" height="20" fill="#0b8ad4"/>
+  <text x="530" y="50" font-size="16" font-weight="800" text-anchor="middle" fill="#fff">CASE 도구가 자동화</text>
+  <text x="530" y="120" font-size="34" text-anchor="middle">🤖</text>
+  <text x="530" y="155" font-size="12" text-anchor="middle" fill="#1a1a1a">개발 과정 전체·일부를</text>
+  <text x="530" y="172" font-size="12" text-anchor="middle" fill="#1a1a1a">컴퓨터와 전용 도구로 자동화</text>
+</svg>

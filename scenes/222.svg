@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 180">
+  <circle cx="105" cy="74" r="42" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="105" y="87" font-size="34" text-anchor="middle">⏱️</text>
+  <text x="105" y="140" font-size="15" font-weight="800" text-anchor="middle" fill="#1a1a1a">시간·비용 단축</text>
+
+  <circle cx="285" cy="74" r="42" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="285" y="87" font-size="34" text-anchor="middle">⭐</text>
+  <text x="285" y="140" font-size="15" font-weight="800" text-anchor="middle" fill="#1a1a1a">품질 향상</text>
+
+  <circle cx="465" cy="74" r="42" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="465" y="87" font-size="34" text-anchor="middle">📈</text>
+  <text x="465" y="140" font-size="15" font-weight="800" text-anchor="middle" fill="#1a1a1a">생산성 향상</text>
+
+  <circle cx="645" cy="74" r="42" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="645" y="87" font-size="34" text-anchor="middle">📄</text>
+  <text x="645" y="140" font-size="15" font-weight="800" text-anchor="middle" fill="#1a1a1a">문서 공유</text>
+</svg>

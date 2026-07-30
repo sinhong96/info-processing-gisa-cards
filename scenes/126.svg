@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 190">
+  <defs>
+    <marker id="fd126" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="#0b8ad4"/>
+    </marker>
+  </defs>
+  <rect x="180" y="26" width="150" height="70" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="255" y="68" font-size="18" font-weight="800" text-anchor="middle" fill="#0a3d5c">학번</text>
+
+  <path d="M338 61 h70" stroke="#0b8ad4" stroke-width="3" marker-end="url(#fd126)"/>
+  <text x="373" y="48" font-size="13" font-weight="800" text-anchor="middle" fill="#0a3d5c">함수적 종속</text>
+
+  <rect x="416" y="26" width="150" height="70" rx="10" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="491" y="68" font-size="18" font-weight="800" text-anchor="middle" fill="#0a3d5c">이름</text>
+
+  <rect x="30" y="128" width="660" height="46" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="360" y="156" font-size="13" text-anchor="middle" fill="#1a1a1a">학번에 따라 이름이 결정될 때, 이름은 학번에 함수 종속적 (학번 → 이름)</text>
+</svg>

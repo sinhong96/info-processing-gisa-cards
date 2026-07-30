@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 210">
+  <path d="M360 26 L520 178 L200 178 Z" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="360" y="128" font-size="15" font-weight="800" text-anchor="middle" fill="#0a3d5c">프로젝트</text>
+  <text x="360" y="148" font-size="15" font-weight="800" text-anchor="middle" fill="#0a3d5c">관리</text>
+
+  <text x="360" y="10" font-size="28" text-anchor="middle">⏳</text>
+  <text x="360" y="18" font-size="12" font-weight="800" text-anchor="middle" fill="#1a1a1a">정해진 기간</text>
+
+  <text x="176" y="200" font-size="28" text-anchor="middle">💰</text>
+  <text x="176" y="208" font-size="12" font-weight="800" text-anchor="middle" fill="#1a1a1a"></text>
+  <text x="140" y="198" font-size="12" font-weight="800" fill="#1a1a1a">최소 비용</text>
+
+  <text x="544" y="200" font-size="28" text-anchor="middle">😊</text>
+  <text x="560" y="198" font-size="12" font-weight="800" fill="#1a1a1a">사용자 만족</text>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 260">
+  <defs>
+    <marker id="fk114" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="#0b8ad4"/>
+    </marker>
+  </defs>
+  <text x="150" y="24" font-size="13" font-weight="800" text-anchor="middle" fill="#0a3d5c">참조하는 릴레이션</text>
+  <rect x="40" y="34" width="220" height="34" fill="#4a5560"/>
+  <text x="90" y="56" font-size="12" font-weight="700" text-anchor="middle" fill="#fff">…</text>
+  <text x="185" y="56" font-size="12" font-weight="700" text-anchor="middle" fill="#fff">속성 A</text>
+  <rect x="150" y="34" width="110" height="70" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <rect x="40" y="68" width="220" height="36" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="90" y="90" font-size="12" text-anchor="middle" fill="#1a1a1a">…</text>
+  <text x="205" y="90" font-size="12" font-weight="700" text-anchor="middle" fill="#0a3d5c">a1</text>
+
+  <text x="570" y="24" font-size="13" font-weight="800" text-anchor="middle" fill="#0a3d5c">참조되는 릴레이션</text>
+  <rect x="460" y="34" width="220" height="34" fill="#4a5560"/>
+  <text x="510" y="56" font-size="12" font-weight="700" text-anchor="middle" fill="#fff">…</text>
+  <text x="605" y="56" font-size="12" font-weight="700" text-anchor="middle" fill="#fff">속성 B (PK)</text>
+  <rect x="550" y="34" width="130" height="70" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <rect x="460" y="68" width="220" height="36" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="510" y="90" font-size="12" text-anchor="middle" fill="#1a1a1a">…</text>
+  <text x="615" y="90" font-size="12" font-weight="700" text-anchor="middle" fill="#0a3d5c">a1</text>
+
+  <path d="M260 90 C 360 130, 460 130, 550 90" stroke="#0b8ad4" stroke-width="2.5" fill="none" marker-end="url(#fk114)"/>
+  <text x="405" y="140" font-size="12" font-weight="700" text-anchor="middle" fill="#0b8ad4">참조 (동일 도메인)</text>
+
+  <rect x="40" y="164" width="640" height="76" rx="10" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="64" y="192" font-size="13" font-weight="700" fill="#1a1a1a">외래키 (Foreign Key) = 다른 릴레이션의 기본키를</text>
+  <text x="64" y="216" font-size="13" font-weight="700" fill="#1a1a1a">참조하는 속성 또는 속성들의 집합</text>
+</svg>

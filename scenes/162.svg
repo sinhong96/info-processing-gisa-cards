@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 250">
+  <rect x="30" y="14" width="660" height="38" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="1.5"/>
+  <text x="52" y="38" font-size="20" text-anchor="middle">✅</text>
+  <text x="76" y="38" font-size="13" fill="#0a3d5c" font-weight="700">영문자, 숫자, <tspan font-family="ui-monospace,SFMono-Regular,Menlo,monospace">_</tspan>(under bar)를 사용할 수 있다.</text>
+
+  <rect x="30" y="58" width="660" height="38" rx="8" fill="#fdeaea" stroke="#e03131" stroke-width="1.5"/>
+  <text x="52" y="82" font-size="20" text-anchor="middle">🚫</text>
+  <text x="76" y="82" font-size="13" fill="#7a1414" font-weight="700">첫 글자는 숫자는 올 수 없다.</text>
+
+  <rect x="30" y="102" width="660" height="38" rx="8" fill="#fdeaea" stroke="#e03131" stroke-width="1.5"/>
+  <text x="52" y="126" font-size="20" text-anchor="middle">🚫</text>
+  <text x="76" y="126" font-size="13" fill="#7a1414" font-weight="700">공백이나 <tspan font-family="ui-monospace,SFMono-Regular,Menlo,monospace">*, +, -, /</tspan> 등의 특수문자를 사용할 수 없다.</text>
+
+  <rect x="30" y="146" width="660" height="38" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="1.5"/>
+  <text x="52" y="170" font-size="20" text-anchor="middle">✅</text>
+  <text x="76" y="170" font-size="13" fill="#0a3d5c" font-weight="700">대·소문자를 구분한다.</text>
+
+  <rect x="30" y="190" width="660" height="38" rx="8" fill="#fdeaea" stroke="#e03131" stroke-width="1.5"/>
+  <text x="52" y="214" font-size="20" text-anchor="middle">🚫</text>
+  <text x="76" y="214" font-size="13" fill="#7a1414" font-weight="700">예약어를 변수명으로 사용할 수 없다.</text>
+</svg>

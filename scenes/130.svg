@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 200">
+  <path d="M60 30 q-14 0 -14 14 v26 q0 10 -10 10 q10 0 10 10 v26 q0 14 14 14"
+        stroke="#0b8ad4" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <rect x="90" y="30" width="110" height="40" rx="6" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="145" y="55" font-size="12" font-weight="700" text-anchor="middle" fill="#0a3d5c">Read</text>
+  <rect x="90" y="80" width="110" height="40" rx="6" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="145" y="105" font-size="12" font-weight="700" text-anchor="middle" fill="#0a3d5c">Update</text>
+  <rect x="90" y="130" width="110" height="40" rx="6" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="145" y="155" font-size="12" font-weight="700" text-anchor="middle" fill="#0a3d5c">Write</text>
+  <path d="M230 30 q14 0 14 14 v26 q0 10 10 10 q-10 0 -10 10 v26 q0 14 -14 14"
+        stroke="#0b8ad4" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <text x="340" y="70" font-size="15" font-weight="800" fill="#0a3d5c">= 하나의 논리적 작업 단위</text>
+  <text x="340" y="96" font-size="12" fill="#1a1a1a">데이터베이스 상태를 변환시키는</text>
+  <text x="340" y="116" font-size="12" fill="#1a1a1a">하나의 논리적 기능을 수행하기 위한 작업의 단위</text>
+
+  <rect x="30" y="156" width="660" height="34" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="360" y="178" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">한꺼번에 모두 수행되어야 할 일련의 연산</text>
+</svg>

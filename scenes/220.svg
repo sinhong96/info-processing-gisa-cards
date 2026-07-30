@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 190">
+  <text x="360" y="30" font-size="14" fill="#1a1a1a" text-anchor="middle" font-weight="800">자료(Data) 중심의 방법론</text>
+  <text x="360" y="50" font-size="12" fill="#9aa4ae" text-anchor="middle">개체 관계도(ERD)로 데이터 모델링</text>
+
+  <rect x="120" y="70" width="150" height="60" rx="6" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="195" y="106" font-size="15" font-weight="800" text-anchor="middle" fill="#0a3d5c">개체 A</text>
+
+  <rect x="450" y="70" width="150" height="60" rx="6" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="525" y="106" font-size="15" font-weight="800" text-anchor="middle" fill="#0a3d5c">개체 B</text>
+
+  <path d="M270 100 h180" stroke="#0b8ad4" stroke-width="2.5"/>
+  <path d="M360 78 L400 100 L360 122 L320 100 Z" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="360" y="105" font-size="12" text-anchor="middle" font-weight="700" fill="#0a3d5c">관계</text>
+
+  <text x="360" y="168" font-size="13" text-anchor="middle" fill="#1a1a1a" font-weight="700">정형화된 기법들을 통합 적용, 데이터베이스 설계 중심</text>
+</svg>

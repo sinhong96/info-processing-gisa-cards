@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 200">
+  <text x="360" y="22" font-size="13" fill="#9aa4ae" text-anchor="middle">GROUP BY절에 지정된 그룹별로 속성의 값을 집계</text>
+  <circle cx="76"  cy="110" r="40" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="76"  y="103" font-size="14" font-weight="800" text-anchor="middle" fill="#0a3d5c" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">COUNT</text>
+  <text x="76"  y="121" font-size="12" text-anchor="middle" fill="#1a1a1a">튜플 수</text>
+
+  <circle cx="220" cy="110" r="40" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="220" y="103" font-size="14" font-weight="800" text-anchor="middle" fill="#7a4f00" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">SUM</text>
+  <text x="220" y="121" font-size="12" text-anchor="middle" fill="#1a1a1a">합계</text>
+
+  <circle cx="364" cy="110" r="40" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="364" y="103" font-size="14" font-weight="800" text-anchor="middle" fill="#0a3d5c" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">AVG</text>
+  <text x="364" y="121" font-size="12" text-anchor="middle" fill="#1a1a1a">평균</text>
+
+  <circle cx="508" cy="110" r="40" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="508" y="103" font-size="14" font-weight="800" text-anchor="middle" fill="#7a4f00" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">MAX</text>
+  <text x="508" y="121" font-size="12" text-anchor="middle" fill="#1a1a1a">최대값</text>
+
+  <circle cx="652" cy="110" r="40" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="652" y="103" font-size="14" font-weight="800" text-anchor="middle" fill="#0a3d5c" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">MIN</text>
+  <text x="652" y="121" font-size="12" text-anchor="middle" fill="#1a1a1a">최소값</text>
+
+  <text x="360" y="176" font-size="12" text-anchor="middle" fill="#9aa4ae" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">함수(속성명) : 그룹별로 계산</text>
+</svg>

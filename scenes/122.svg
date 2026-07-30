@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 220">
+  <text x="360" y="24" font-size="12" text-anchor="middle" fill="#9aa4ae">코드(Codd)가 술어 해석(Predicate Calculus)에 기반해 제안</text>
+
+  <circle cx="230" cy="110" r="60" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="3"/>
+  <text x="230" y="128" font-size="46" font-weight="800" text-anchor="middle" fill="#0a3d5c">∀</text>
+  <text x="230" y="192" font-size="14" font-weight="800" text-anchor="middle" fill="#1a1a1a">전칭 정량자</text>
+  <text x="230" y="210" font-size="11" text-anchor="middle" fill="#9aa4ae">가능한 모든 튜플에 대하여</text>
+
+  <circle cx="490" cy="110" r="60" fill="#fff3d6" stroke="#e8b33a" stroke-width="3"/>
+  <text x="490" y="128" font-size="46" font-weight="800" text-anchor="middle" fill="#0a3d5c">∃</text>
+  <text x="490" y="192" font-size="14" font-weight="800" text-anchor="middle" fill="#1a1a1a">존재 정량자</text>
+  <text x="490" y="210" font-size="11" text-anchor="middle" fill="#9aa4ae">하나라도 일치하는 튜플이 있음</text>
+</svg>

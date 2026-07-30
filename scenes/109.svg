@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 280">
+  <rect x="30" y="16" width="320" height="60" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="50" y="41" font-size="20" text-anchor="middle">🚫</text>
+  <text x="70" y="38" font-size="13" font-weight="800" fill="#0a3d5c">튜플의 상이성</text>
+  <text x="70" y="58" font-size="11" fill="#4a5560">동일한 튜플이 포함될 수 없다</text>
+
+  <rect x="370" y="16" width="320" height="60" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="390" y="41" font-size="20" text-anchor="middle">🔀</text>
+  <text x="410" y="38" font-size="13" font-weight="800" fill="#0a3d5c">튜플의 무순서</text>
+  <text x="410" y="58" font-size="11" fill="#4a5560">튜플 사이에는 순서가 없다</text>
+
+  <rect x="30" y="86" width="320" height="60" rx="8" fill="#fff3d6" stroke="#e8b33a" stroke-width="2"/>
+  <text x="50" y="111" font-size="20" text-anchor="middle">🏷️</text>
+  <text x="70" y="108" font-size="13" font-weight="800" fill="#0a3d5c">속성명의 유일성</text>
+  <text x="70" y="128" font-size="11" fill="#4a5560">속성의 유일한 식별을 위해 명칭이 유일</text>
+
+  <rect x="370" y="86" width="320" height="60" rx="8" fill="#fff3d6" stroke="#e8b33a" stroke-width="2"/>
+  <text x="390" y="111" font-size="20" text-anchor="middle">⚛️</text>
+  <text x="410" y="108" font-size="13" font-weight="800" fill="#0a3d5c">속성값의 원자성</text>
+  <text x="410" y="128" font-size="11" fill="#4a5560">더 이상 쪼갤 수 없는 원자값만 저장</text>
+
+  <rect x="30" y="164" width="660" height="96" rx="10" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="360" y="198" font-size="14" font-weight="800" text-anchor="middle" fill="#0a3d5c">릴레이션의 특징</text>
+  <text x="360" y="222" font-size="12" text-anchor="middle" fill="#1a1a1a">튜플 상이 · 무순서 · 원자값 · 유일한 속성명</text>
+  <text x="360" y="244" font-size="11" text-anchor="middle" fill="#9aa4ae">네 가지 성질을 모두 만족해야 릴레이션이다</text>
+</svg>

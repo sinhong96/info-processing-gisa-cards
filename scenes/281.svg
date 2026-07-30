@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 230">
+  <rect x="30" y="16" width="660" height="60" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="70" y="55" font-size="30" text-anchor="middle">🖥️</text>
+  <text x="150" y="46" font-size="16" font-weight="800" fill="#0a3d5c">OS</text>
+  <text x="150" y="65" font-size="11" fill="#9aa4ae">기존 운영체제</text>
+  <text x="360" y="52" font-size="20" fill="#0b8ad4" text-anchor="middle" font-weight="800">+</text>
+  <text x="460" y="46" font-size="16" font-weight="800" fill="#0a3d5c">보안 커널</text>
+  <text x="460" y="65" font-size="11" fill="#9aa4ae">Secure Kernel 이식</text>
+  <text x="580" y="55" font-size="30" text-anchor="middle">🔐</text>
+
+  <rect x="30"  y="96" width="212" height="60" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="136" y="121" font-size="13" font-weight="700" text-anchor="middle" fill="#1a1a1a">식별 및 인증</text>
+  <text x="136" y="140" font-size="11" text-anchor="middle" fill="#9aa4ae">Identification</text>
+
+  <rect x="254" y="96" width="212" height="60" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="360" y="121" font-size="13" font-weight="700" text-anchor="middle" fill="#1a1a1a">임의적·강제적 접근통제</text>
+  <text x="360" y="140" font-size="11" text-anchor="middle" fill="#9aa4ae">Access Control</text>
+
+  <rect x="478" y="96" width="212" height="60" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="584" y="121" font-size="13" font-weight="700" text-anchor="middle" fill="#1a1a1a">객체 재사용 보호</text>
+  <text x="584" y="140" font-size="11" text-anchor="middle" fill="#9aa4ae">Object Reuse</text>
+
+  <rect x="30"  y="164" width="212" height="60" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="136" y="189" font-size="13" font-weight="700" text-anchor="middle" fill="#1a1a1a">완전한 조정</text>
+  <text x="136" y="208" font-size="11" text-anchor="middle" fill="#9aa4ae">Complete Mediation</text>
+
+  <rect x="254" y="164" width="212" height="60" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="360" y="189" font-size="13" font-weight="700" text-anchor="middle" fill="#1a1a1a">신뢰 경로</text>
+  <text x="360" y="208" font-size="11" text-anchor="middle" fill="#9aa4ae">Trusted Path</text>
+
+  <rect x="478" y="164" width="212" height="60" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="584" y="189" font-size="13" font-weight="700" text-anchor="middle" fill="#1a1a1a">감사 및 감사기록 축소</text>
+  <text x="584" y="208" font-size="11" text-anchor="middle" fill="#9aa4ae">Audit</text>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 190">
+  <rect x="150" y="26" width="160" height="140" rx="6" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <line x1="170" y1="52" x2="270" y2="52" stroke="#9aa4ae" stroke-width="2"/>
+  <line x1="170" y1="68" x2="290" y2="68" stroke="#9aa4ae" stroke-width="2"/>
+  <line x1="170" y1="84" x2="250" y2="84" stroke="#9aa4ae" stroke-width="2"/>
+  <line x1="170" y1="100" x2="280" y2="100" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="230" y="40" font-size="12" text-anchor="middle" fill="#9aa4ae">SW 프로세스</text>
+
+  <circle cx="440" cy="96" r="62" fill="#fff3d6" stroke="#e8b33a" stroke-width="4"/>
+  <circle cx="440" cy="96" r="48" fill="none" stroke="#e8b33a" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <text x="440" y="88" font-size="14" font-weight="800" text-anchor="middle" fill="#0a3d5c">국제 표준</text>
+  <text x="440" y="112" font-size="22" text-anchor="middle">✅</text>
+
+  <text x="360" y="182" font-size="13" text-anchor="middle" fill="#1a1a1a" font-weight="700">SW 품질·생산성 향상을 위해 프로세스를 평가·개선하는 국제 표준</text>
+</svg>

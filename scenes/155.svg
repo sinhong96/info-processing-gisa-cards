@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 200">
+  <text x="360" y="24" font-size="13" fill="#9aa4ae" text-anchor="middle">지정된 속성이 두 숫자 사이의 값을 가지는 튜플을 검색</text>
+  <line x1="60" y1="100" x2="660" y2="100" stroke="#d3d5d8" stroke-width="4" stroke-linecap="round"/>
+  <line x1="220" y1="100" x2="500" y2="100" stroke="#0b8ad4" stroke-width="8" stroke-linecap="round"/>
+  <text x="360" y="76" font-size="30" text-anchor="middle">🔍</text>
+  <circle cx="220" cy="100" r="9" fill="#fff" stroke="#0b8ad4" stroke-width="3"/>
+  <circle cx="500" cy="100" r="9" fill="#fff" stroke="#0b8ad4" stroke-width="3"/>
+  <text x="220" y="132" font-size="13" font-weight="800" text-anchor="middle" fill="#0a3d5c" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">#01/09/69#</text>
+  <text x="500" y="132" font-size="13" font-weight="800" text-anchor="middle" fill="#0a3d5c" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">#10/22/73#</text>
+  <text x="360" y="132" font-size="12" fill="#e03131" font-weight="700" text-anchor="middle">BETWEEN … AND …</text>
+  <rect x="40" y="150" width="640" height="38" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="360" y="174" font-size="13" text-anchor="middle" fill="#1a1a1a" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">WHERE 생일 BETWEEN #01/09/69# AND #10/22/73#</text>
+</svg>

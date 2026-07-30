@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 200">
+  <rect x="30" y="20" width="330" height="160" rx="10" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="195" y="48" font-size="14" font-weight="800" text-anchor="middle" fill="#1a1a1a">로킹 단위 큼</text>
+  <rect x="60"  y="66" width="270" height="90" rx="6" fill="#fff" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="195" y="118" font-size="26" text-anchor="middle">🔒</text>
+  <text x="195" y="178" font-size="11" text-anchor="middle" fill="#4a5560">로크 수 ↓ · 병행성 ↓</text>
+
+  <rect x="360" y="20" width="330" height="160" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="525" y="48" font-size="14" font-weight="800" text-anchor="middle" fill="#0a3d5c">로킹 단위 작음</text>
+  <g>
+    <rect x="390" y="66" width="60" height="90" rx="4" fill="#fff" stroke="#0b8ad4" stroke-width="1.5"/>
+    <text x="420" y="115" font-size="18" text-anchor="middle">🔒</text>
+    <rect x="454" y="66" width="60" height="90" rx="4" fill="#fff" stroke="#0b8ad4" stroke-width="1.5"/>
+    <text x="484" y="115" font-size="18" text-anchor="middle">🔒</text>
+    <rect x="518" y="66" width="60" height="90" rx="4" fill="#fff" stroke="#0b8ad4" stroke-width="1.5"/>
+    <text x="548" y="115" font-size="18" text-anchor="middle">🔒</text>
+    <rect x="582" y="66" width="60" height="90" rx="4" fill="#fff" stroke="#0b8ad4" stroke-width="1.5"/>
+    <text x="612" y="115" font-size="18" text-anchor="middle">🔒</text>
+  </g>
+  <text x="525" y="178" font-size="11" text-anchor="middle" fill="#4a5560">로크 수 ↑ · 병행성 ↑</text>
+</svg>

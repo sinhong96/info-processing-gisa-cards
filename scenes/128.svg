@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 260">
+  <defs>
+    <marker id="dn128" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="#e03131"/>
+    </marker>
+  </defs>
+  <rect x="30" y="24" width="180" height="46" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <rect x="30" y="80" width="180" height="46" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="120" y="14" font-size="12" font-weight="700" text-anchor="middle" fill="#9aa4ae">정규화된 테이블</text>
+  <text x="120" y="52" font-size="11" text-anchor="middle" fill="#0a3d5c">테이블 A</text>
+  <text x="120" y="108" font-size="11" text-anchor="middle" fill="#0a3d5c">테이블 B</text>
+
+  <path d="M224 74 h50" stroke="#e03131" stroke-width="2.5" marker-end="url(#dn128)"/>
+  <text x="249" y="62" font-size="12" font-weight="800" text-anchor="middle" fill="#e03131">반정규화</text>
+
+  <rect x="290" y="24" width="220" height="102" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="400" y="14" font-size="12" font-weight="700" text-anchor="middle" fill="#9aa4ae">성능 위해 의도적으로 통합</text>
+  <text x="400" y="80" font-size="14" font-weight="800" text-anchor="middle" fill="#0a3d5c">통합 테이블</text>
+
+  <rect x="30" y="150" width="660" height="94" rx="10" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="360" y="176" font-size="13" font-weight="700" text-anchor="middle" fill="#1a1a1a">성능 향상 · 운영 편의를 위해 정규화 원칙을 의도적으로 위배</text>
+  <text x="360" y="200" font-size="12" text-anchor="middle" fill="#4a5560">방법 : 테이블 통합 · 테이블 분할</text>
+  <text x="360" y="222" font-size="12" text-anchor="middle" fill="#4a5560">중복 테이블 추가 · 중복 속성 추가</text>
+</svg>

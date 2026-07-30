@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 240">
+  <defs>
+    <marker id="dv120" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="#0b8ad4"/>
+    </marker>
+  </defs>
+  <text x="115" y="24" font-size="12" font-weight="700" text-anchor="middle" fill="#9aa4ae">R(X) — X⊃Y</text>
+  <rect x="30" y="34" width="170" height="80" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <rect x="30" y="34" width="120" height="80" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="90" y="78" font-size="11" text-anchor="middle" fill="#0a3d5c">X−Y 속성</text>
+  <text x="175" y="78" font-size="11" text-anchor="middle" fill="#4a5560">Y</text>
+
+  <text x="235" y="82" font-size="28" font-weight="800" text-anchor="middle" fill="#0a3d5c">÷</text>
+
+  <text x="330" y="24" font-size="12" font-weight="700" text-anchor="middle" fill="#9aa4ae">S(Y)</text>
+  <rect x="280" y="34" width="100" height="80" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="330" y="78" font-size="11" text-anchor="middle" fill="#4a5560">S의 속성값 전부</text>
+
+  <path d="M390 75 h50" stroke="#0b8ad4" stroke-width="2.5" marker-end="url(#dv120)"/>
+
+  <text x="500" y="24" font-size="12" font-weight="700" text-anchor="middle" fill="#9aa4ae">결과 (Y 제외)</text>
+  <rect x="450" y="34" width="120" height="80" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="510" y="78" font-size="11" font-weight="700" text-anchor="middle" fill="#0a3d5c">X−Y 속성만</text>
+
+  <rect x="600" y="34" width="90" height="80" rx="8" fill="#fff3d6" stroke="#e8b33a" stroke-width="2"/>
+  <text x="645" y="80" font-size="28" font-weight="800" text-anchor="middle" fill="#0a3d5c">÷</text>
+  <text x="645" y="100" font-size="11" text-anchor="middle" fill="#4a5560">Division</text>
+
+  <rect x="30" y="140" width="660" height="76" rx="10" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="360" y="166" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">R의 속성이 S의 속성값을 모두 가진 튜플에서</text>
+  <text x="360" y="188" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">S가 가진 속성을 제외한 속성만을 구하는 연산</text>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 200">
+  <path d="M60 170 L660 170 L620 60 L100 60 Z" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2"/>
+  <text x="130" y="150" font-size="12" fill="#9aa4ae">01010</text>
+  <text x="250" y="130" font-size="12" fill="#9aa4ae">01100</text>
+  <text x="400" y="150" font-size="12" fill="#9aa4ae">11001</text>
+  <text x="530" y="120" font-size="12" fill="#9aa4ae">00110</text>
+  <text x="180" y="100" font-size="12" fill="#9aa4ae">10101</text>
+  <text x="480" y="90"  font-size="12" fill="#9aa4ae">01011</text>
+  <text x="90"  y="45" font-size="13" font-weight="700" fill="#4a5560">데이터 웨어하우스</text>
+
+  <text x="360" y="105" font-size="40" text-anchor="middle">⛏️</text>
+  <circle cx="360" cy="60" r="24" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="360" y="68" font-size="20" text-anchor="middle">💎</text>
+
+  <text x="360" y="192" font-size="13" text-anchor="middle" fill="#0a3d5c" font-weight="800">유용하고 가능성 있는 정보 발견</text>
+</svg>

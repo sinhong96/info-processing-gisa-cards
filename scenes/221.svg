@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 190">
+  <defs>
+    <marker id="arw221" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="#0b8ad4"/>
+    </marker>
+  </defs>
+  <rect x="50" y="50" width="70" height="70" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="85" y="94" font-size="28" text-anchor="middle">🧩</text>
+  <rect x="140" y="50" width="70" height="70" rx="8" fill="#fff3d6" stroke="#e8b33a" stroke-width="2"/>
+  <text x="175" y="94" font-size="28" text-anchor="middle">🧩</text>
+  <rect x="230" y="50" width="70" height="70" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="265" y="94" font-size="28" text-anchor="middle">🧩</text>
+
+  <path d="M320 85 h60" stroke="#0b8ad4" stroke-width="3.5" marker-end="url(#arw221)"/>
+
+  <rect x="400" y="36" width="270" height="98" rx="12" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="535" y="90" font-size="34" text-anchor="middle">📱</text>
+  <text x="535" y="118" font-size="15" font-weight="800" text-anchor="middle" fill="#0a3d5c">새로운 애플리케이션</text>
+
+  <text x="360" y="160" font-size="13" text-anchor="middle" fill="#1a1a1a" font-weight="700">기존 컴포넌트를 조합하여 새 애플리케이션 생성</text>
+  <text x="360" y="178" font-size="11" text-anchor="middle" fill="#9aa4ae">분석 단계에서 사용자 요구사항 정의서 산출</text>
+</svg>

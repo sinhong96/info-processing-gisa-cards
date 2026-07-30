@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 200">
+  <defs>
+    <marker id="arw237" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#0b8ad4"/>
+    </marker>
+  </defs>
+  <rect x="110" y="28" width="140" height="42" rx="8" fill="#fff3d6" stroke="#e8b33a" stroke-width="2"/>
+  <text x="180" y="54" font-size="14" text-anchor="middle" font-weight="800" fill="#0a3d5c">🙂3 😐5 🙁9</text>
+
+  <circle cx="90" cy="110" r="28" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="90" y="117" font-size="16" font-weight="800" text-anchor="middle" fill="#0a3d5c">①</text>
+
+  <circle cx="270" cy="110" r="28" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="270" y="117" font-size="16" font-weight="800" text-anchor="middle" fill="#0a3d5c">②</text>
+
+  <circle cx="450" cy="110" r="28" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="450" y="117" font-size="16" font-weight="800" text-anchor="middle" fill="#0a3d5c">③</text>
+
+  <circle cx="630" cy="110" r="28" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="630" y="117" font-size="16" font-weight="800" text-anchor="middle" fill="#0a3d5c">④</text>
+
+  <path d="M118 108 h124" stroke="#0b8ad4" stroke-width="3" marker-end="url(#arw237)"/>
+  <path d="M298 110 h124" stroke="#0b8ad4" stroke-width="3" marker-end="url(#arw237)"/>
+  <path d="M478 110 h124" stroke="#0b8ad4" stroke-width="3" marker-end="url(#arw237)"/>
+
+  <text x="360" y="168" font-size="13" text-anchor="middle" fill="#1a1a1a" font-weight="700">낙관·가능성 있는·비관적 경우로 단계별 종료 시기를 추정</text>
+  <text x="360" y="188" font-size="12" text-anchor="middle" fill="#9aa4ae">결정 경로·경계 시간·작업 간 상호 관련성을 파악</text>
+</svg>

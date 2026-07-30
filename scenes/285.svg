@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 220">
+  <rect x="30"  y="20" width="152" height="72" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="106" y="55" font-size="20" text-anchor="middle">⬆️</text>
+  <text x="106" y="78" font-size="14" font-weight="800" text-anchor="middle" fill="#0a3d5c">Roll-up</text>
+
+  <rect x="196" y="20" width="152" height="72" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="272" y="55" font-size="20" text-anchor="middle">⬇️</text>
+  <text x="272" y="78" font-size="14" font-weight="800" text-anchor="middle" fill="#0a3d5c">Drill-down</text>
+
+  <rect x="362" y="20" width="152" height="72" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="438" y="55" font-size="20" text-anchor="middle">🔎</text>
+  <text x="438" y="78" font-size="14" font-weight="800" text-anchor="middle" fill="#0a3d5c">Drill-through</text>
+
+  <rect x="528" y="20" width="162" height="72" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="609" y="55" font-size="20" text-anchor="middle">↔️</text>
+  <text x="609" y="78" font-size="14" font-weight="800" text-anchor="middle" fill="#0a3d5c">Drill-across</text>
+
+  <rect x="113" y="112" width="152" height="72" rx="10" fill="#fff3d6" stroke="#e8b33a" stroke-width="2"/>
+  <text x="189" y="147" font-size="20" text-anchor="middle">🔄</text>
+  <text x="189" y="170" font-size="14" font-weight="800" text-anchor="middle" fill="#1a1a1a">Pivoting</text>
+
+  <rect x="279" y="112" width="152" height="72" rx="10" fill="#fff3d6" stroke="#e8b33a" stroke-width="2"/>
+  <text x="355" y="147" font-size="20" text-anchor="middle">🔪</text>
+  <text x="355" y="170" font-size="14" font-weight="800" text-anchor="middle" fill="#1a1a1a">Slicing</text>
+
+  <rect x="445" y="112" width="152" height="72" rx="10" fill="#fff3d6" stroke="#e8b33a" stroke-width="2"/>
+  <text x="521" y="147" font-size="20" text-anchor="middle">🎲</text>
+  <text x="521" y="170" font-size="14" font-weight="800" text-anchor="middle" fill="#1a1a1a">Dicing</text>
+</svg>
