@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 210">
+  <text x="360" y="22" font-size="13" fill="#9aa4ae" text-anchor="middle">128비트 = 16비트 × 8부분, 콜론(:)으로 구분</text>
+
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10.5" font-weight="800" fill="#0a3d5c">
+  <rect x="30" y="38" width="78" height="36" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="1.5"/>
+  <text x="69" y="60" text-anchor="middle">16bit</text>
+  <rect x="118" y="38" width="78" height="36" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="1.5"/>
+  <text x="157" y="60" text-anchor="middle">16bit</text>
+  <rect x="206" y="38" width="78" height="36" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="1.5"/>
+  <text x="245" y="60" text-anchor="middle">16bit</text>
+  <rect x="294" y="38" width="78" height="36" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="1.5"/>
+  <text x="333" y="60" text-anchor="middle">16bit</text>
+  <rect x="382" y="38" width="78" height="36" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="1.5"/>
+  <text x="421" y="60" text-anchor="middle">16bit</text>
+  <rect x="470" y="38" width="78" height="36" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="1.5"/>
+  <text x="509" y="60" text-anchor="middle">16bit</text>
+  <rect x="558" y="38" width="78" height="36" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="1.5"/>
+  <text x="597" y="60" text-anchor="middle">16bit</text>
+  <rect x="646" y="38" width="44" height="36" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="1.5"/>
+  <text x="668" y="60" text-anchor="middle" font-size="9">16bit</text>
+  </g>
+  <text x="360" y="94" font-size="12" text-anchor="middle" fill="#9aa4ae">각 부분을 16진수로 표현하고, 콜론(:)으로 구분</text>
+
+  <rect x="30" y="110" width="200" height="80" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="130" y="140" font-size="26" text-anchor="middle">🎯</text>
+  <text x="130" y="170" font-size="13" font-weight="800" text-anchor="middle" fill="#0a3d5c">유니캐스트</text>
+
+  <rect x="260" y="110" width="200" height="80" rx="10" fill="#fff3d6" stroke="#e8b33a" stroke-width="2"/>
+  <text x="360" y="140" font-size="26" text-anchor="middle">📡</text>
+  <text x="360" y="170" font-size="13" font-weight="800" text-anchor="middle" fill="#7a4f00">멀티캐스트</text>
+
+  <rect x="490" y="110" width="200" height="80" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="590" y="140" font-size="26" text-anchor="middle">🎲</text>
+  <text x="590" y="170" font-size="13" font-weight="800" text-anchor="middle" fill="#0a3d5c">애니캐스트</text>
+</svg>

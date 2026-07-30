@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 268">
+  <rect x="20" y="16" width="680" height="232" fill="none" stroke="#9aa4ae" stroke-width="1.5"/>
+  <line x1="110" y1="16" x2="110" y2="248" stroke="#9aa4ae" stroke-width="1"/>
+  <line x1="230" y1="16" x2="230" y2="248" stroke="#0b8ad4" stroke-width="2"/>
+  <line x1="20" y1="74" x2="700" y2="74" stroke="#9aa4ae" stroke-width="1"/>
+  <line x1="20" y1="132" x2="700" y2="132" stroke="#9aa4ae" stroke-width="1"/>
+  <line x1="20" y1="190" x2="700" y2="190" stroke="#9aa4ae" stroke-width="1"/>
+
+  <!-- Row 1: Atomicity -->
+  <rect x="110" y="16" width="590" height="58" fill="#fff"/>
+  <rect x="20" y="16" width="90" height="58" fill="#e8f4fc"/>
+  <text x="65" y="46" font-size="22" font-weight="800" text-anchor="middle" fill="#0a3d5c" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">A</text>
+  <text x="65" y="62" font-size="11" text-anchor="middle" fill="#9aa4ae">Atomicity</text>
+  <text x="170" y="49" font-size="14" font-weight="800" text-anchor="middle" fill="#1a1a1a">원자성</text>
+  <text x="240" y="42" font-size="12" fill="#1a1a1a">트랜잭션의 연산은 데이터베이스에 모두 반영되도록</text>
+  <text x="240" y="60" font-size="12" fill="#1a1a1a">완료(Commit)되든지, 전혀 반영되지 않도록 복구(Rollback)되어야 함</text>
+
+  <!-- Row 2: Consistency -->
+  <rect x="110" y="74" width="590" height="58" fill="#fff"/>
+  <rect x="20" y="74" width="90" height="58" fill="#fff3d6"/>
+  <text x="65" y="104" font-size="22" font-weight="800" text-anchor="middle" fill="#7a4f00" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">C</text>
+  <text x="65" y="120" font-size="11" text-anchor="middle" fill="#9aa4ae">Consistency</text>
+  <text x="170" y="107" font-size="14" font-weight="800" text-anchor="middle" fill="#1a1a1a">일관성</text>
+  <text x="240" y="100" font-size="12" fill="#1a1a1a">트랜잭션이 그 실행을 성공적으로 완료하면</text>
+  <text x="240" y="118" font-size="12" fill="#1a1a1a">언제나 일관성 있는 데이터베이스 상태로 변환함</text>
+
+  <!-- Row 3: Isolation -->
+  <rect x="110" y="132" width="590" height="58" fill="#fff"/>
+  <rect x="20" y="132" width="90" height="58" fill="#e8f4fc"/>
+  <text x="65" y="162" font-size="22" font-weight="800" text-anchor="middle" fill="#0a3d5c" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">I</text>
+  <text x="65" y="178" font-size="11" text-anchor="middle" fill="#9aa4ae">Isolation</text>
+  <text x="170" y="165" font-size="14" font-weight="800" text-anchor="middle" fill="#1a1a1a">독립성</text>
+  <text x="240" y="158" font-size="12" fill="#1a1a1a">둘 이상의 트랜잭션이 동시에 병행 실행되는 경우</text>
+  <text x="240" y="176" font-size="12" fill="#1a1a1a">어느 하나의 실행 중에 다른 트랜잭션의 연산이 끼어들 수 없음</text>
+
+  <!-- Row 4: Durability -->
+  <rect x="110" y="190" width="590" height="58" fill="#fff"/>
+  <rect x="20" y="190" width="90" height="58" fill="#fff3d6"/>
+  <text x="65" y="220" font-size="22" font-weight="800" text-anchor="middle" fill="#7a4f00" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">D</text>
+  <text x="65" y="236" font-size="11" text-anchor="middle" fill="#9aa4ae">Durability</text>
+  <text x="170" y="223" font-size="14" font-weight="800" text-anchor="middle" fill="#1a1a1a">영속성</text>
+  <text x="240" y="216" font-size="12" fill="#1a1a1a">성공적으로 완료된 트랜잭션의 결과는</text>
+  <text x="240" y="234" font-size="12" fill="#1a1a1a">시스템이 고장나더라도 영구적으로 반영되어야 함</text>
+</svg>

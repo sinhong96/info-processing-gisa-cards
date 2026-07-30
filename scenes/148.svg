@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 216">
+  <text x="360" y="24" font-size="12.5" fill="#9aa4ae" text-anchor="middle">기본 테이블을 제거하는 명령문</text>
+  <rect x="60" y="40" width="600" height="40" rx="6" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="360" y="65" font-size="13" text-anchor="middle" fill="#1a1a1a" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">DROP TABLE 테이블명 [CASCADE | RESTRICT];</text>
+
+  <rect x="60" y="96" width="290" height="106" rx="10" fill="#fdeaea" stroke="#e03131" stroke-width="2"/>
+  <rect x="60" y="96" width="290" height="34" rx="10" fill="#e03131"/>
+  <rect x="60" y="112" width="290" height="18" fill="#e03131"/>
+  <text x="205" y="119" font-size="14" font-weight="800" text-anchor="middle" fill="#fff" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">CASCADE</text>
+  <text x="205" y="152" font-size="24" text-anchor="middle">🔗💥</text>
+  <text x="205" y="180" font-size="12" font-weight="700" text-anchor="middle" fill="#7a1414">제거할 요소를 참조하는</text>
+  <text x="205" y="196" font-size="12" font-weight="700" text-anchor="middle" fill="#7a1414">다른 모든 개체를 함께 제거함</text>
+
+  <rect x="370" y="96" width="290" height="106" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <rect x="370" y="96" width="290" height="34" rx="10" fill="#0b8ad4"/>
+  <rect x="370" y="112" width="290" height="18" fill="#0b8ad4"/>
+  <text x="515" y="119" font-size="14" font-weight="800" text-anchor="middle" fill="#fff" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">RESTRICT</text>
+  <text x="515" y="152" font-size="24" text-anchor="middle">🛑</text>
+  <text x="515" y="180" font-size="12" font-weight="700" text-anchor="middle" fill="#0a3d5c">다른 개체가 참조 중일 때는</text>
+  <text x="515" y="196" font-size="12" font-weight="700" text-anchor="middle" fill="#0a3d5c">제거를 취소함</text>
+</svg>

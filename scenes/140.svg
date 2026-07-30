@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 194">
+  <circle cx="110" cy="90" r="56" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2.5"/>
+  <text x="110" y="104" font-size="42" text-anchor="middle">🎖️</text>
+
+  <rect x="260" y="26" width="200" height="26" rx="5" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="345" y="44" font-size="11.5" font-weight="700" text-anchor="middle" fill="#0a3d5c">상급 🔒 읽기·쓰기 제한</text>
+  <text x="470" y="44" font-size="11" text-anchor="middle" fill="#9aa4ae">기밀성 높음</text>
+
+  <rect x="260" y="62" width="260" height="26" rx="5" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="390" y="80" font-size="11.5" font-weight="700" text-anchor="middle" fill="#0a3d5c">중급 🔒 읽기·쓰기 제한</text>
+
+  <rect x="260" y="98" width="320" height="26" rx="5" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="420" y="116" font-size="11.5" font-weight="700" text-anchor="middle" fill="#0a3d5c">하급 🔓 읽기·쓰기 제한</text>
+  <text x="530" y="116" font-size="11" text-anchor="middle" fill="#9aa4ae">기밀성 낮음</text>
+
+  <text x="390" y="150" font-size="12.5" text-anchor="middle" fill="#9aa4ae">군대의 보안 레벨처럼 정보의 기밀성에 따라 상하 관계를 구분</text>
+  <rect x="60" y="164" width="600" height="28" rx="6" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="360" y="183" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">보안 취급자의 등급을 기준으로 읽기 · 쓰기 권한 제한</text>
+</svg>

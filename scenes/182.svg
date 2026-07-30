@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 200">
+  <defs>
+    <marker id="arw182" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#0b8ad4"/></marker>
+  </defs>
+  <rect x="140" y="14" width="440" height="34" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="360" y="37" font-size="13" font-weight="700" text-anchor="middle" fill="#1a1a1a" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">a = input('입력하세요.')</text>
+
+  <rect x="30" y="70" width="180" height="96" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="120" y="110" font-size="26" text-anchor="middle">💬</text>
+  <text x="120" y="140" font-size="13" font-weight="800" text-anchor="middle" fill="#0a3d5c">프롬프트 출력</text>
+  <text x="120" y="156" font-size="10.5" text-anchor="middle" fill="#9aa4ae">'입력하세요.'</text>
+
+  <path d="M216 118 h30" stroke="#0b8ad4" stroke-width="3" marker-end="url(#arw182)"/>
+
+  <rect x="252" y="70" width="180" height="96" rx="10" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="342" y="110" font-size="26" text-anchor="middle">⌨️</text>
+  <text x="342" y="140" font-size="13" font-weight="800" text-anchor="middle" fill="#7a4f00">키보드 입력</text>
+  <text x="342" y="156" font-size="10.5" text-anchor="middle" fill="#9aa4ae">커서 대기</text>
+
+  <path d="M438 118 h30" stroke="#0b8ad4" stroke-width="3" marker-end="url(#arw182)"/>
+
+  <rect x="474" y="70" width="216" height="96" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="582" y="106" font-size="24" text-anchor="middle">📦</text>
+  <text x="582" y="136" font-size="14" font-weight="800" text-anchor="middle" fill="#0a3d5c" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">a (문자열)</text>
+  <text x="582" y="154" font-size="10.5" text-anchor="middle" fill="#9aa4ae">항상 str 타입으로 저장</text>
+
+  <text x="360" y="190" font-size="12.5" text-anchor="middle" fill="#9aa4ae">입력되는 값은 문자열로 취급되어 저장된다</text>
+</svg>

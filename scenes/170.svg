@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 190">
+  <defs>
+    <marker id="arw170" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#0b8ad4"/></marker>
+  </defs>
+  <rect x="30" y="36" width="230" height="112" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="145" y="78" font-size="26" text-anchor="middle">🖨️</text>
+  <text x="145" y="108" font-size="13" font-weight="800" text-anchor="middle" fill="#0a3d5c" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">printf(“%d, %c”,</text>
+  <text x="145" y="126" font-size="13" font-weight="800" text-anchor="middle" fill="#0a3d5c" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">a, b);</text>
+
+  <path d="M264 92 h30" stroke="#0b8ad4" stroke-width="3" marker-end="url(#arw170)"/>
+
+  <rect x="298" y="36" width="176" height="112" rx="10" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="386" y="80" font-size="26" text-anchor="middle">⚙️</text>
+  <text x="386" y="110" font-size="13" font-weight="800" text-anchor="middle" fill="#7a4f00">인수를 형식에</text>
+  <text x="386" y="128" font-size="13" font-weight="800" text-anchor="middle" fill="#7a4f00">맞춰 변환</text>
+
+  <path d="M478 92 h30" stroke="#0b8ad4" stroke-width="3" marker-end="url(#arw170)"/>
+
+  <rect x="512" y="36" width="178" height="112" rx="10" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2.5"/>
+  <text x="601" y="80" font-size="24" text-anchor="middle">🖥️</text>
+  <text x="601" y="112" font-size="14" font-weight="800" text-anchor="middle" fill="#1a1a1a">화면 출력</text>
+  <text x="601" y="130" font-size="11" text-anchor="middle" fill="#9aa4ae">Screen</text>
+
+  <text x="360" y="176" font-size="12" text-anchor="middle" fill="#9aa4ae">a는 정수로, 쉼표·공백 후 b는 문자로 출력</text>
+</svg>

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 292">
+  <defs>
+    <marker id="arw131" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="#0b8ad4"/>
+    </marker>
+    <marker id="arwr131" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="#e03131"/>
+    </marker>
+  </defs>
+
+  <!-- Active (center) -->
+  <rect x="20" y="104" width="140" height="80" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="90" y="134" font-size="24" text-anchor="middle">🏃</text>
+  <text x="90" y="160" font-size="14" font-weight="800" text-anchor="middle" fill="#0a3d5c">활동</text>
+  <text x="90" y="176" font-size="11" text-anchor="middle" fill="#9aa4ae">Active</text>
+
+  <!-- Partially Committed -->
+  <rect x="230" y="16" width="170" height="80" rx="10" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2.5"/>
+  <text x="315" y="46" font-size="24" text-anchor="middle">🕓</text>
+  <text x="315" y="72" font-size="14" font-weight="800" text-anchor="middle" fill="#1a1a1a">부분 완료</text>
+  <text x="315" y="88" font-size="11" text-anchor="middle" fill="#9aa4ae">Partially Committed</text>
+
+  <!-- Committed -->
+  <rect x="440" y="16" width="150" height="80" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="515" y="46" font-size="24" text-anchor="middle">✅</text>
+  <text x="515" y="72" font-size="14" font-weight="800" text-anchor="middle" fill="#0a3d5c">완료</text>
+  <text x="515" y="88" font-size="11" text-anchor="middle" fill="#9aa4ae">Committed</text>
+
+  <!-- Failed -->
+  <rect x="230" y="196" width="170" height="80" rx="10" fill="#fdeaea" stroke="#e03131" stroke-width="2.5"/>
+  <text x="315" y="226" font-size="24" text-anchor="middle">⚠️</text>
+  <text x="315" y="252" font-size="14" font-weight="800" text-anchor="middle" fill="#7a1414">실패</text>
+  <text x="315" y="268" font-size="11" text-anchor="middle" fill="#9aa4ae">Failed</text>
+
+  <!-- Aborted -->
+  <rect x="440" y="196" width="150" height="80" rx="10" fill="#fdeaea" stroke="#e03131" stroke-width="2.5"/>
+  <text x="515" y="226" font-size="24" text-anchor="middle">↩️</text>
+  <text x="515" y="252" font-size="14" font-weight="800" text-anchor="middle" fill="#7a1414">철회</text>
+  <text x="515" y="268" font-size="11" text-anchor="middle" fill="#9aa4ae">Aborted</text>
+
+  <!-- Arrows -->
+  <line x1="160" y1="128" x2="228" y2="60" stroke="#0b8ad4" stroke-width="3" marker-end="url(#arw131)"/>
+  <rect x="144" y="78" width="112" height="18" rx="4" fill="#eef1f4"/>
+  <text x="150" y="90" font-size="11.5" font-weight="700" fill="#0a3d5c">마지막 연산 완료</text>
+
+  <line x1="400" y1="56" x2="438" y2="56" stroke="#0b8ad4" stroke-width="3" marker-end="url(#arw131)"/>
+  <rect x="389" y="32" width="60" height="18" rx="4" fill="#eef1f4"/>
+  <text x="419" y="44" font-size="11.5" font-weight="700" text-anchor="middle" fill="#0a3d5c" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">Commit</text>
+
+  <line x1="160" y1="160" x2="228" y2="228" stroke="#e03131" stroke-width="3" marker-end="url(#arwr131)"/>
+  <rect x="144" y="198" width="90" height="18" rx="4" fill="#fdeaea"/>
+  <text x="150" y="210" font-size="11.5" font-weight="700" fill="#7a1414">오류 발생</text>
+
+  <line x1="400" y1="236" x2="438" y2="236" stroke="#e03131" stroke-width="3" marker-end="url(#arwr131)"/>
+  <rect x="379" y="212" width="80" height="18" rx="4" fill="#fdeaea"/>
+  <text x="419" y="224" font-size="11.5" font-weight="700" text-anchor="middle" fill="#7a1414" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">Rollback</text>
+</svg>

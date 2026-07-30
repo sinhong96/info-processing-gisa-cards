@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 216">
+  <rect x="30" y="14" width="660" height="38" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="1.5"/>
+  <text x="52" y="38" font-size="20" text-anchor="middle">✅</text>
+  <text x="76" y="38" font-size="13" fill="#0a3d5c" font-weight="700">대부분 C 언어로 작성되어 있어 이식성이 높다.</text>
+
+  <rect x="30" y="58" width="660" height="38" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="1.5"/>
+  <text x="52" y="82" font-size="20" text-anchor="middle">✅</text>
+  <text x="76" y="82" font-size="13" fill="#0a3d5c" font-weight="700">장치와 프로세스 간의 호환성이 높다.</text>
+
+  <rect x="30" y="102" width="660" height="38" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="1.5"/>
+  <text x="52" y="126" font-size="20" text-anchor="middle">✅</text>
+  <text x="76" y="126" font-size="13" fill="#0a3d5c" font-weight="700">다중 사용자(Multi-User), 다중 작업(Multi-Tasking)을 지원한다.</text>
+
+  <rect x="30" y="146" width="660" height="38" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="1.5"/>
+  <text x="52" y="170" font-size="20" text-anchor="middle">✅</text>
+  <text x="76" y="170" font-size="13" fill="#0a3d5c" font-weight="700">트리 구조의 파일 시스템을 갖는다.</text>
+</svg>

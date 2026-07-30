@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 190">
+  <defs>
+    <marker id="arw199" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#0b8ad4"/></marker>
+  </defs>
+  <rect x="30" y="36" width="180" height="112" rx="10" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2.5"/>
+  <text x="120" y="80" font-size="26" text-anchor="middle">🧑</text>
+  <text x="120" y="112" font-size="13" font-weight="800" text-anchor="middle" fill="#1a1a1a">사용자 명령어</text>
+
+  <path d="M214 92 h30" stroke="#0b8ad4" stroke-width="3" marker-end="url(#arw199)"/>
+
+  <rect x="248" y="36" width="220" height="112" rx="10" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="358" y="80" font-size="26" text-anchor="middle">🐚</text>
+  <text x="358" y="110" font-size="14" font-weight="800" text-anchor="middle" fill="#7a4f00">쉘 (Shell)</text>
+  <text x="358" y="128" font-size="11" text-anchor="middle" fill="#9aa4ae">명령어 해석기</text>
+
+  <path d="M472 92 h30" stroke="#0b8ad4" stroke-width="3" marker-end="url(#arw199)"/>
+
+  <rect x="506" y="36" width="184" height="112" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="598" y="80" font-size="26" text-anchor="middle">▶️</text>
+  <text x="598" y="110" font-size="13" font-weight="800" text-anchor="middle" fill="#0a3d5c">프로그램 호출</text>
+  <text x="598" y="128" font-size="11" text-anchor="middle" fill="#9aa4ae">및 실행</text>
+
+  <text x="360" y="176" font-size="12" text-anchor="middle" fill="#9aa4ae">시스템과 사용자 간의 인터페이스를 담당</text>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 280">
+  <rect x="30" y="16" width="150" height="76" rx="8" fill="#0b8ad4"/>
+  <text x="105" y="60" font-size="16" font-weight="800" text-anchor="middle" fill="#fff" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">printf( )</text>
+  <rect x="190" y="16" width="500" height="76" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="210" y="42" font-size="12.5" fill="#1a1a1a" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">System.out.printf(“%d”, r);</text>
+  <text x="210" y="66" font-size="12.5" fill="#4a5560">r의 값을 10진수 정수로 출력한다.</text>
+
+  <rect x="30" y="102" width="150" height="76" rx="8" fill="#0b8ad4"/>
+  <text x="105" y="146" font-size="16" font-weight="800" text-anchor="middle" fill="#fff" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">print( )</text>
+  <rect x="190" y="102" width="500" height="76" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="210" y="128" font-size="12.5" fill="#1a1a1a" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">System.out.print(r + s);</text>
+  <text x="210" y="152" font-size="12.5" fill="#4a5560">r과 s를 더한 값을 출력한다.</text>
+
+  <rect x="30" y="188" width="150" height="80" rx="8" fill="#0b8ad4"/>
+  <text x="105" y="232" font-size="14" font-weight="800" text-anchor="middle" fill="#fff" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">println( )</text>
+  <rect x="190" y="188" width="500" height="80" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="210" y="214" font-size="12.5" fill="#1a1a1a" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">System.out.println(r + “은(는) 소수”);</text>
+  <text x="210" y="238" font-size="12.5" fill="#4a5560">r의 값과 은(는) 소수를 출력 후, 커서를</text>
+  <text x="210" y="256" font-size="12.5" fill="#4a5560">다음 줄의 처음으로 옮긴다.</text>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 200">
+  <g font-size="11" font-weight="700">
+  <rect x="20" y="20" width="150" height="18" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1"/>
+  <text x="95" y="33" text-anchor="middle" fill="#9aa4ae">7 응용</text>
+  <rect x="20" y="38" width="150" height="18" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1"/>
+  <text x="95" y="51" text-anchor="middle" fill="#9aa4ae">6 표현</text>
+  <rect x="20" y="56" width="150" height="18" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1"/>
+  <text x="95" y="69" text-anchor="middle" fill="#9aa4ae">5 세션</text>
+  <rect x="20" y="74" width="150" height="18" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1"/>
+  <text x="95" y="87" text-anchor="middle" fill="#9aa4ae">4 전송</text>
+  <rect x="20" y="92" width="150" height="20" fill="#0b8ad4"/>
+  <text x="95" y="106" text-anchor="middle" fill="#fff">3 네트워크</text>
+  <rect x="20" y="112" width="150" height="18" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1"/>
+  <text x="95" y="125" text-anchor="middle" fill="#9aa4ae">2 데이터 링크</text>
+  <rect x="20" y="130" width="150" height="18" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1"/>
+  <text x="95" y="143" text-anchor="middle" fill="#9aa4ae">1 물리</text>
+  </g>
+
+  <text x="440" y="34" font-size="12" fill="#4a5560">개방 시스템 간의 네트워크 연결을 관리하고 데이터를 교환·중계</text>
+
+  <text x="200" y="70" font-size="11" fill="#9aa4ae">기능</text>
+  <g font-size="12.5" font-weight="700" fill="#0a3d5c">
+  <rect x="200" y="80" width="90" height="32" rx="16" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="1.5"/>
+  <text x="245" y="101" text-anchor="middle">경로 설정</text>
+  <rect x="300" y="80" width="100" height="32" rx="16" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="1.5"/>
+  <text x="350" y="101" text-anchor="middle">트래픽 제어</text>
+  <rect x="410" y="80" width="140" height="32" rx="16" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="1.5"/>
+  <text x="480" y="101" text-anchor="middle">패킷 정보 전송</text>
+  </g>
+
+  <text x="360" y="164" font-size="12" text-anchor="middle" fill="#9aa4ae">OSI 3계층 : 경로 설정</text>
+</svg>

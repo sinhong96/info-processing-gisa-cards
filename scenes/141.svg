@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 180">
+  <rect x="60" y="30" width="150" height="100" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="135" y="70" font-size="28" text-anchor="middle">🖥️</text>
+  <text x="135" y="100" font-size="14" font-weight="800" text-anchor="middle" fill="#0a3d5c">서버</text>
+  <text x="135" y="118" font-size="11" text-anchor="middle" fill="#9aa4ae">Server</text>
+
+  <line x1="212" y1="80" x2="508" y2="80" stroke="#0b8ad4" stroke-width="6" stroke-linecap="round"/>
+  <rect x="255" y="54" width="210" height="20" rx="5" fill="#eef1f4"/>
+  <text x="360" y="68" font-size="12.5" font-weight="700" text-anchor="middle" fill="#0a3d5c">전용 케이블 직접 연결</text>
+
+  <rect x="510" y="30" width="150" height="100" rx="10" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="585" y="70" font-size="28" text-anchor="middle">💾</text>
+  <text x="585" y="100" font-size="14" font-weight="800" text-anchor="middle" fill="#7a4f00">저장장치</text>
+  <text x="585" y="118" font-size="11" text-anchor="middle" fill="#9aa4ae">Storage</text>
+
+  <text x="360" y="160" font-size="12.5" text-anchor="middle" fill="#9aa4ae">가정에서 컴퓨터에 외장하드를 연결하는 것이 여기에 해당됨</text>
+</svg>

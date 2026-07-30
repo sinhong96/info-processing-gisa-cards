@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 170">
+  <text x="130" y="42" font-size="13" font-weight="800" fill="#0a3d5c">처리 시간</text>
+  <rect x="220" y="24" width="110" height="30" rx="6" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+
+  <text x="130" y="102" font-size="13" font-weight="800" fill="#7a1414">페이지 교체 시간</text>
+  <rect x="270" y="84" width="400" height="30" rx="6" fill="#fdeaea" stroke="#e03131" stroke-width="2.5"/>
+
+  <text x="360" y="146" font-size="13" font-weight="800" text-anchor="middle" fill="#e03131">⚠️ 처리 시간 &lt; 페이지 교체 시간 → 스래싱 발생</text>
+</svg>

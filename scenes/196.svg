@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 190">
+  <text x="360" y="24" font-size="13" fill="#9aa4ae" text-anchor="middle">stdlib.h — 형변환, 난수 발생, 메모리 할당 기능 제공</text>
+
+  <rect x="30" y="44" width="200" height="120" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="130" y="76" font-size="24" text-anchor="middle">🔤</text>
+  <text x="130" y="102" font-size="13" font-weight="800" text-anchor="middle" fill="#0a3d5c">형변환</text>
+  <text x="130" y="130" font-size="13" font-weight="700" text-anchor="middle" fill="#0a3d5c" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">atoi</text>
+  <text x="130" y="150" font-size="13" font-weight="700" text-anchor="middle" fill="#0a3d5c" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">atof</text>
+
+  <rect x="260" y="44" width="200" height="120" rx="10" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="360" y="76" font-size="24" text-anchor="middle">🎲</text>
+  <text x="360" y="102" font-size="13" font-weight="800" text-anchor="middle" fill="#7a4f00">난수 발생</text>
+  <text x="360" y="130" font-size="13" font-weight="700" text-anchor="middle" fill="#7a4f00" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">srand</text>
+  <text x="360" y="150" font-size="13" font-weight="700" text-anchor="middle" fill="#7a4f00" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">rand</text>
+
+  <rect x="490" y="44" width="200" height="120" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="590" y="76" font-size="24" text-anchor="middle">🧠</text>
+  <text x="590" y="102" font-size="13" font-weight="800" text-anchor="middle" fill="#0a3d5c">메모리 할당</text>
+  <text x="590" y="130" font-size="13" font-weight="700" text-anchor="middle" fill="#0a3d5c" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">malloc</text>
+  <text x="590" y="150" font-size="13" font-weight="700" text-anchor="middle" fill="#0a3d5c" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">free</text>
+</svg>

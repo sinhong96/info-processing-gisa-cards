@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 220">
+  <rect x="100" y="16" width="520" height="36" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="360" y="40" font-size="12.5" font-weight="700" text-anchor="middle" fill="#1a1a1a" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">int b[2][3] = {{11,22,33},{44,55,66}};</text>
+
+  <text x="270" y="86" font-size="11.5" text-anchor="middle" fill="#9aa4ae" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">[0][0]</text>
+  <text x="340" y="86" font-size="11.5" text-anchor="middle" fill="#9aa4ae" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">[0][1]</text>
+  <text x="410" y="86" font-size="11.5" text-anchor="middle" fill="#9aa4ae" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">[0][2]</text>
+
+  <text x="180" y="122" font-size="14" font-weight="800" fill="#0a3d5c">배열 b</text>
+  <rect x="240" y="96" width="60" height="50" rx="6" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="270" y="128" font-size="17" font-weight="800" text-anchor="middle" fill="#0a3d5c" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">11</text>
+  <rect x="310" y="96" width="60" height="50" rx="6" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="340" y="128" font-size="17" font-weight="800" text-anchor="middle" fill="#0a3d5c" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">22</text>
+  <rect x="380" y="96" width="60" height="50" rx="6" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="410" y="128" font-size="17" font-weight="800" text-anchor="middle" fill="#0a3d5c" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">33</text>
+
+  <rect x="240" y="150" width="60" height="50" rx="6" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="270" y="182" font-size="17" font-weight="800" text-anchor="middle" fill="#7a4f00" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">44</text>
+  <rect x="310" y="150" width="60" height="50" rx="6" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="340" y="182" font-size="17" font-weight="800" text-anchor="middle" fill="#7a4f00" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">55</text>
+  <rect x="380" y="150" width="60" height="50" rx="6" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="410" y="182" font-size="17" font-weight="800" text-anchor="middle" fill="#7a4f00" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">66</text>
+
+  <text x="472" y="122" font-size="11.5" text-anchor="middle" fill="#9aa4ae" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">[1][0..2]</text>
+  <text x="360" y="212" font-size="12.5" text-anchor="middle" fill="#9aa4ae">변수들을 행과 열로 조합한 2차원 배열</text>
+</svg>

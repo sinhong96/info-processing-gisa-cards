@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 224">
+  <defs>
+    <marker id="arw142" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="#0b8ad4"/>
+    </marker>
+  </defs>
+  <rect x="40" y="16" width="180" height="54" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="130" y="40" font-size="13" font-weight="800" text-anchor="middle" fill="#0a3d5c" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">DAS</text>
+  <text x="130" y="58" font-size="11" text-anchor="middle" fill="#0a3d5c" font-weight="700">빠른 처리</text>
+
+  <rect x="500" y="16" width="180" height="54" rx="8" fill="#fff3d6" stroke="#e8b33a" stroke-width="2"/>
+  <text x="590" y="40" font-size="13" font-weight="800" text-anchor="middle" fill="#7a4f00" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">NAS</text>
+  <text x="590" y="58" font-size="11" text-anchor="middle" fill="#7a4f00" font-weight="700">파일 공유</text>
+
+  <path d="M180 70 L300 110" stroke="#0b8ad4" stroke-width="2.5" marker-end="url(#arw142)"/>
+  <path d="M540 70 L420 110" stroke="#0b8ad4" stroke-width="2.5" marker-end="url(#arw142)"/>
+
+  <rect x="290" y="112" width="140" height="54" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2.5"/>
+  <text x="360" y="136" font-size="14" font-weight="800" text-anchor="middle" fill="#1a1a1a" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">SAN</text>
+  <text x="360" y="154" font-size="11" text-anchor="middle" fill="#9aa4ae">전용 네트워크</text>
+
+  <path d="M360 166 v22" stroke="#0b8ad4" stroke-width="2.5" marker-end="url(#arw142)"/>
+
+  <rect x="260" y="192" width="200" height="26" rx="6" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="1.5"/>
+  <text x="360" y="210" font-size="11.5" font-weight="700" text-anchor="middle" fill="#0a3d5c">🗄️ 저장장치</text>
+</svg>

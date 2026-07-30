@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 216">
+  <rect x="30" y="16" width="120" height="34" fill="#0b8ad4"/>
+  <rect x="150" y="16" width="540" height="34" fill="#0b8ad4"/>
+  <text x="90" y="39" font-size="14" font-weight="800" text-anchor="middle" fill="#fff">유형</text>
+  <text x="420" y="39" font-size="14" font-weight="800" text-anchor="middle" fill="#fff">표기 형식</text>
+
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace">
+  <rect x="30" y="50" width="120" height="40" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1"/>
+  <rect x="150" y="50" width="540" height="40" fill="#fff" stroke="#9aa4ae" stroke-width="1"/>
+  <text x="90" y="75" font-size="14" font-weight="800" text-anchor="middle" fill="#0a3d5c">SELECT</text>
+  <text x="420" y="75" font-size="13" text-anchor="middle" fill="#1a1a1a">SELECT~ FROM~ WHERE~</text>
+
+  <rect x="30" y="90" width="120" height="40" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1"/>
+  <rect x="150" y="90" width="540" height="40" fill="#fff" stroke="#9aa4ae" stroke-width="1"/>
+  <text x="90" y="115" font-size="14" font-weight="800" text-anchor="middle" fill="#0a3d5c">INSERT</text>
+  <text x="420" y="115" font-size="13" text-anchor="middle" fill="#1a1a1a">INSERT INTO~ VALUES~</text>
+
+  <rect x="30" y="130" width="120" height="40" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1"/>
+  <rect x="150" y="130" width="540" height="40" fill="#fff" stroke="#9aa4ae" stroke-width="1"/>
+  <text x="90" y="155" font-size="14" font-weight="800" text-anchor="middle" fill="#0a3d5c">DELETE</text>
+  <text x="420" y="155" font-size="13" text-anchor="middle" fill="#1a1a1a">DELETE~ FROM~ WHERE~</text>
+
+  <rect x="30" y="170" width="120" height="40" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1"/>
+  <rect x="150" y="170" width="540" height="40" fill="#fff" stroke="#9aa4ae" stroke-width="1"/>
+  <text x="90" y="195" font-size="14" font-weight="800" text-anchor="middle" fill="#0a3d5c">UPDATE</text>
+  <text x="420" y="195" font-size="13" text-anchor="middle" fill="#1a1a1a">UPDATE~ SET~ WHERE~</text>
+  </g>
+
+  <text x="90" y="82" font-size="11" text-anchor="middle" fill="#9aa4ae" font-family="-apple-system,'Apple SD Gothic Neo',sans-serif">검색</text>
+  <text x="90" y="122" font-size="11" text-anchor="middle" fill="#9aa4ae" font-family="-apple-system,'Apple SD Gothic Neo',sans-serif">삽입</text>
+  <text x="90" y="162" font-size="11" text-anchor="middle" fill="#9aa4ae" font-family="-apple-system,'Apple SD Gothic Neo',sans-serif">삭제</text>
+  <text x="90" y="202" font-size="11" text-anchor="middle" fill="#9aa4ae" font-family="-apple-system,'Apple SD Gothic Neo',sans-serif">변경</text>
+
+  <rect x="30" y="16" width="660" height="194" fill="none" stroke="#9aa4ae" stroke-width="1.5"/>
+  <line x1="150" y1="16" x2="150" y2="210" stroke="#0b8ad4" stroke-width="2"/>
+</svg>

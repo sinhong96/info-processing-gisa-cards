@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 270">
+  <defs>
+    <marker id="arw200" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#0b8ad4"/></marker>
+  </defs>
+  <text x="140" y="34" font-size="12.5" font-weight="700" fill="#0a3d5c">📥 요청 4K</text>
+  <path d="M150 40 h70" stroke="#0b8ad4" stroke-width="2.5" fill="none" marker-end="url(#arw200)"/>
+
+  <rect x="230" y="20" width="90" height="40" rx="6" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="275" y="45" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">10K</text>
+  <rect x="330" y="20" width="60" height="40" rx="6" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="360" y="45" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">4K</text>
+  <rect x="400" y="20" width="150" height="40" rx="6" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="475" y="45" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">20K</text>
+  <text x="620" y="45" font-size="11" fill="#9aa4ae">여유 공간(Hole)</text>
+
+  <text x="40" y="102" font-size="13" font-weight="800" fill="#0a3d5c">최초 적합</text>
+  <rect x="230" y="82" width="90" height="40" rx="6" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="3"/>
+  <text x="275" y="107" font-size="12" font-weight="800" text-anchor="middle" fill="#0a3d5c">10K</text>
+  <rect x="330" y="82" width="60" height="40" rx="6" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="360" y="107" font-size="12" text-anchor="middle" fill="#9aa4ae">4K</text>
+  <rect x="400" y="82" width="150" height="40" rx="6" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="475" y="107" font-size="12" text-anchor="middle" fill="#9aa4ae">20K</text>
+  <text x="620" y="107" font-size="11" fill="#9aa4ae">첫 번째로 큰 곳</text>
+
+  <text x="40" y="156" font-size="13" font-weight="800" fill="#0a3d5c">최적 적합</text>
+  <rect x="230" y="136" width="90" height="40" rx="6" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="275" y="161" font-size="12" text-anchor="middle" fill="#9aa4ae">10K</text>
+  <rect x="330" y="136" width="60" height="40" rx="6" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="3"/>
+  <text x="360" y="161" font-size="12" font-weight="800" text-anchor="middle" fill="#0a3d5c">4K</text>
+  <rect x="400" y="136" width="150" height="40" rx="6" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="475" y="161" font-size="12" text-anchor="middle" fill="#9aa4ae">20K</text>
+  <text x="620" y="161" font-size="11" fill="#9aa4ae">단편화 최소</text>
+
+  <text x="40" y="210" font-size="13" font-weight="800" fill="#0a3d5c">최악 적합</text>
+  <rect x="230" y="190" width="90" height="40" rx="6" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="275" y="215" font-size="12" text-anchor="middle" fill="#9aa4ae">10K</text>
+  <rect x="330" y="190" width="60" height="40" rx="6" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="360" y="215" font-size="12" text-anchor="middle" fill="#9aa4ae">4K</text>
+  <rect x="400" y="190" width="150" height="40" rx="6" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="3"/>
+  <text x="475" y="215" font-size="12" font-weight="800" text-anchor="middle" fill="#0a3d5c">20K</text>
+  <text x="620" y="215" font-size="11" fill="#9aa4ae">단편화 최대</text>
+
+  <text x="360" y="256" font-size="12" text-anchor="middle" fill="#9aa4ae">최초 적합(First) · 최적 적합(Best) · 최악 적합(Worst) — 배치 전략</text>
+</svg>

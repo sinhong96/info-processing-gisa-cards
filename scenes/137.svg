@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 258">
+  <rect x="20" y="16" width="680" height="222" fill="none" stroke="#9aa4ae" stroke-width="1.5"/>
+  <line x1="190" y1="16" x2="190" y2="238" stroke="#0b8ad4" stroke-width="2"/>
+  <line x1="20" y1="72" x2="700" y2="72" stroke="#9aa4ae" stroke-width="1"/>
+  <line x1="20" y1="128" x2="700" y2="128" stroke="#9aa4ae" stroke-width="1"/>
+  <line x1="20" y1="184" x2="700" y2="184" stroke="#9aa4ae" stroke-width="1"/>
+
+  <rect x="190" y="16" width="510" height="56" fill="#fff"/>
+  <rect x="20" y="16" width="170" height="56" fill="#e8f4fc"/>
+  <text x="44" y="44" font-size="20" text-anchor="middle">📍</text>
+  <text x="120" y="44" font-size="12.5" font-weight="800" text-anchor="middle" fill="#0a3d5c">위치 투명성</text>
+  <text x="120" y="60" font-size="11" text-anchor="middle" fill="#9aa4ae">Location</text>
+  <text x="210" y="40" font-size="11.5" fill="#1a1a1a">액세스하려는 데이터베이스의 실제 위치를 알 필요 없이</text>
+  <text x="210" y="58" font-size="11.5" fill="#1a1a1a">논리적인 명칭만으로 액세스할 수 있음</text>
+
+  <rect x="190" y="72" width="510" height="56" fill="#fff"/>
+  <rect x="20" y="72" width="170" height="56" fill="#fff3d6"/>
+  <text x="44" y="100" font-size="20" text-anchor="middle">📑</text>
+  <text x="120" y="100" font-size="12.5" font-weight="800" text-anchor="middle" fill="#7a4f00">중복 투명성</text>
+  <text x="120" y="116" font-size="11" text-anchor="middle" fill="#9aa4ae">Replication</text>
+  <text x="210" y="96" font-size="11.5" fill="#1a1a1a">동일 데이터가 여러 곳에 중복되어 있어도 사용자는</text>
+  <text x="210" y="114" font-size="11.5" fill="#1a1a1a">하나의 데이터만 있는 것처럼 사용, 시스템이 자동 처리</text>
+
+  <rect x="190" y="128" width="510" height="56" fill="#fff"/>
+  <rect x="20" y="128" width="170" height="56" fill="#e8f4fc"/>
+  <text x="44" y="156" font-size="20" text-anchor="middle">🔀</text>
+  <text x="120" y="156" font-size="12.5" font-weight="800" text-anchor="middle" fill="#0a3d5c">병행 투명성</text>
+  <text x="120" y="172" font-size="11" text-anchor="middle" fill="#9aa4ae">Concurrency</text>
+  <text x="210" y="152" font-size="11.5" fill="#1a1a1a">다수의 트랜잭션이 동시에 실현되더라도</text>
+  <text x="210" y="170" font-size="11.5" fill="#1a1a1a">그 트랜잭션의 결과는 영향을 받지 않음</text>
+
+  <rect x="190" y="184" width="510" height="54" fill="#fff"/>
+  <rect x="20" y="184" width="170" height="54" fill="#fff3d6"/>
+  <text x="44" y="212" font-size="20" text-anchor="middle">🚨</text>
+  <text x="120" y="212" font-size="12.5" font-weight="800" text-anchor="middle" fill="#7a4f00">장애 투명성</text>
+  <text x="120" y="228" font-size="11" text-anchor="middle" fill="#9aa4ae">Failure</text>
+  <text x="210" y="208" font-size="11.5" fill="#1a1a1a">트랜잭션, DBMS, 네트워크, 컴퓨터 장애에도</text>
+  <text x="210" y="226" font-size="11.5" fill="#1a1a1a">불구하고 트랜잭션을 정확하게 처리함</text>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 180">
+  <rect x="130" y="16" width="460" height="36" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="360" y="40" font-size="13" font-weight="700" text-anchor="middle" fill="#1a1a1a" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">char a[3] = {'A', 'B', 'C'};</text>
+
+  <text x="230" y="86" font-size="12" text-anchor="middle" fill="#9aa4ae" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">a[0]</text>
+  <text x="290" y="86" font-size="12" text-anchor="middle" fill="#9aa4ae" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">a[1]</text>
+  <text x="350" y="86" font-size="12" text-anchor="middle" fill="#9aa4ae" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">a[2]</text>
+
+  <text x="150" y="122" font-size="14" font-weight="800" fill="#0a3d5c">배열 a</text>
+  <rect x="205" y="96" width="50" height="50" rx="6" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="230" y="128" font-size="18" font-weight="800" text-anchor="middle" fill="#0a3d5c" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">'A'</text>
+  <rect x="265" y="96" width="50" height="50" rx="6" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="290" y="128" font-size="18" font-weight="800" text-anchor="middle" fill="#0a3d5c" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">'B'</text>
+  <rect x="325" y="96" width="50" height="50" rx="6" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="350" y="128" font-size="18" font-weight="800" text-anchor="middle" fill="#0a3d5c" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">'C'</text>
+
+  <text x="360" y="168" font-size="12.5" text-anchor="middle" fill="#9aa4ae">변수들을 일직선상의 개념으로 조합한 배열</text>
+</svg>

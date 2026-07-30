@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 190">
+  <defs>
+    <marker id="arw214" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#0b8ad4"/></marker>
+  </defs>
+  <rect x="30" y="36" width="180" height="112" rx="10" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2.5"/>
+  <text x="120" y="80" font-size="26" text-anchor="middle">📤</text>
+  <text x="120" y="112" font-size="13" font-weight="800" text-anchor="middle" fill="#1a1a1a">발행자</text>
+  <text x="120" y="128" font-size="11" text-anchor="middle" fill="#9aa4ae">Publisher</text>
+
+  <path d="M214 92 h30" stroke="#0b8ad4" stroke-width="3" marker-end="url(#arw214)"/>
+
+  <rect x="248" y="36" width="224" height="112" rx="10" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="360" y="80" font-size="26" text-anchor="middle">📡</text>
+  <text x="360" y="110" font-size="14" font-weight="800" text-anchor="middle" fill="#0a3d5c" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">MQTT Broker</text>
+  <text x="360" y="128" font-size="11" text-anchor="middle" fill="#9aa4ae">IoT 메시징</text>
+
+  <path d="M486 92 h30" stroke="#0b8ad4" stroke-width="3" marker-end="url(#arw214)"/>
+
+  <rect x="520" y="36" width="180" height="112" rx="10" fill="#eef1f4" stroke="#9aa4ae" stroke-width="2.5"/>
+  <text x="610" y="80" font-size="26" text-anchor="middle">📥</text>
+  <text x="610" y="112" font-size="13" font-weight="800" text-anchor="middle" fill="#1a1a1a">구독자</text>
+  <text x="610" y="128" font-size="11" text-anchor="middle" fill="#9aa4ae">Subscriber</text>
+
+  <text x="360" y="176" font-size="12" text-anchor="middle" fill="#9aa4ae">발행-구독 기반 메시징 프로토콜, IoT 환경에서 자주 사용</text>
+</svg>

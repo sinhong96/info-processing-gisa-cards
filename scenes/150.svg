@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 200">
+  <defs>
+    <marker id="arw150" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="#e03131"/>
+    </marker>
+  </defs>
+  <text x="360" y="24" font-size="12.5" fill="#9aa4ae" text-anchor="middle">기본 테이블에 있는 튜플들 중 특정 튜플(행)을 삭제할 때 사용</text>
+
+  <rect x="60" y="44" width="220" height="120" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <line x1="60" y1="74" x2="280" y2="74" stroke="#9aa4ae"/>
+  <rect x="60" y="74" width="220" height="30" fill="#fdeaea" stroke="#e03131" stroke-width="2.5"/>
+  <line x1="66" y1="89" x2="274" y2="89" stroke="#e03131" stroke-width="2"/>
+  <line x1="60" y1="104" x2="280" y2="104" stroke="#9aa4ae"/>
+  <text x="170" y="63" font-size="11" text-anchor="middle" fill="#9aa4ae">테이블</text>
+  <text x="170" y="93" font-size="12" font-weight="700" text-anchor="middle" fill="#7a1414">삭제될 튜플</text>
+
+  <path d="M310 90 h100" stroke="#e03131" stroke-width="3" marker-end="url(#arw150)"/>
+  <rect x="335" y="68" width="50" height="18" rx="4" fill="#fdeaea"/>
+  <text x="360" y="80" font-size="13" font-weight="700" text-anchor="middle" fill="#7a1414">삭제</text>
+
+  <rect x="620" y="55" width="60" height="60" rx="10" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="650" y="94" font-size="26" text-anchor="middle">🗑️</text>
+
+  <rect x="40" y="176" width="640" height="24" rx="5" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1"/>
+  <text x="360" y="193" font-size="13" text-anchor="middle" fill="#1a1a1a" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">DELETE FROM 테이블명 [WHERE 조건];</text>
+</svg>

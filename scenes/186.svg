@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 230">
+  <rect x="90" y="14" width="540" height="34" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="360" y="37" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">a = {'이름':'홍길동', '나이':25, '주소':'서울'}</text>
+
+  <rect x="60" y="70" width="150" height="42" rx="6" fill="#fff3d6" stroke="#e8b33a" stroke-width="2" font-family="ui-monospace,SFMono-Regular,Menlo,monospace"/>
+  <text x="135" y="96" font-size="13" font-weight="800" text-anchor="middle" fill="#7a4f00" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">a['이름']</text>
+  <path d="M212 91 h50" stroke="#0b8ad4" stroke-width="2.5" fill="none"/>
+  <rect x="264" y="70" width="150" height="42" rx="6" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="339" y="96" font-size="14" font-weight="800" text-anchor="middle" fill="#0a3d5c" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">'홍길동'</text>
+
+  <rect x="60" y="122" width="150" height="42" rx="6" fill="#fff3d6" stroke="#e8b33a" stroke-width="2"/>
+  <text x="135" y="148" font-size="13" font-weight="800" text-anchor="middle" fill="#7a4f00" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">a['나이']</text>
+  <path d="M212 143 h50" stroke="#0b8ad4" stroke-width="2.5" fill="none"/>
+  <rect x="264" y="122" width="150" height="42" rx="6" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="339" y="148" font-size="14" font-weight="800" text-anchor="middle" fill="#0a3d5c" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">25</text>
+
+  <rect x="60" y="174" width="150" height="42" rx="6" fill="#fff3d6" stroke="#e8b33a" stroke-width="2"/>
+  <text x="135" y="200" font-size="13" font-weight="800" text-anchor="middle" fill="#7a4f00" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">a['주소']</text>
+  <path d="M212 195 h50" stroke="#0b8ad4" stroke-width="2.5" fill="none"/>
+  <rect x="264" y="174" width="150" height="42" rx="6" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="339" y="200" font-size="14" font-weight="800" text-anchor="middle" fill="#0a3d5c" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">'서울'</text>
+
+  <text x="580" y="90" font-size="12" fill="#9aa4ae">키(key)로 값(value)에</text>
+  <text x="580" y="108" font-size="12" fill="#9aa4ae">직접 접근</text>
+  <rect x="470" y="140" width="220" height="40" rx="6" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="580" y="164" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">a['이름'] = '이순신'</text>
+  <text x="580" y="196" font-size="11.5" text-anchor="middle" fill="#4a5560">→ '이름' 값이 갱신됨</text>
+</svg>

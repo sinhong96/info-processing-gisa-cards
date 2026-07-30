@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 224">
+  <text x="360" y="24" font-size="12.5" fill="#9aa4ae" text-anchor="middle">스키마, 도메인, 테이블, 뷰, 인덱스를 정의 · 변경 · 삭제할 때 사용하는 언어</text>
+
+  <rect x="30" y="42" width="120" height="34" fill="#0b8ad4"/>
+  <rect x="150" y="42" width="540" height="34" fill="#0b8ad4"/>
+  <text x="90" y="65" font-size="14" font-weight="800" text-anchor="middle" fill="#fff">명령어</text>
+  <text x="420" y="65" font-size="14" font-weight="800" text-anchor="middle" fill="#fff">기능</text>
+
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace">
+  <rect x="30" y="76" width="120" height="46" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1"/>
+  <rect x="150" y="76" width="540" height="46" fill="#fff" stroke="#9aa4ae" stroke-width="1"/>
+  <text x="90" y="104" font-size="15" font-weight="800" text-anchor="middle" fill="#0a3d5c">CREATE</text>
+
+  <rect x="30" y="122" width="120" height="46" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1"/>
+  <rect x="150" y="122" width="540" height="46" fill="#fff" stroke="#9aa4ae" stroke-width="1"/>
+  <text x="90" y="150" font-size="15" font-weight="800" text-anchor="middle" fill="#0a3d5c">ALTER</text>
+
+  <rect x="30" y="168" width="120" height="46" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1"/>
+  <rect x="150" y="168" width="540" height="46" fill="#fff" stroke="#9aa4ae" stroke-width="1"/>
+  <text x="90" y="196" font-size="15" font-weight="800" text-anchor="middle" fill="#0a3d5c">DROP</text>
+  </g>
+
+  <text x="420" y="94" font-size="12" text-anchor="middle" fill="#1a1a1a">스키마, 도메인, 테이블, 뷰,</text>
+  <text x="420" y="110" font-size="12" text-anchor="middle" fill="#1a1a1a">인덱스를 정의함</text>
+
+  <text x="420" y="150" font-size="12" text-anchor="middle" fill="#1a1a1a">TABLE에 대한 정의를 변경하는 데 사용함</text>
+
+  <text x="420" y="188" font-size="12" text-anchor="middle" fill="#1a1a1a">스키마, 도메인, 테이블, 뷰,</text>
+  <text x="420" y="204" font-size="12" text-anchor="middle" fill="#1a1a1a">인덱스를 삭제함</text>
+
+  <rect x="30" y="42" width="660" height="172" fill="none" stroke="#9aa4ae" stroke-width="1.5"/>
+  <line x1="150" y1="42" x2="150" y2="214" stroke="#0b8ad4" stroke-width="2"/>
+</svg>

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 210">
+  <defs>
+    <marker id="arw134" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="#0b8ad4"/>
+    </marker>
+  </defs>
+
+  <rect x="60" y="24" width="180" height="90" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="150" y="60" font-size="26" text-anchor="middle">🗄️</text>
+  <text x="150" y="90" font-size="14" font-weight="800" text-anchor="middle" fill="#0a3d5c">기본 테이블</text>
+
+  <path d="M244 52 h72" stroke="#0b8ad4" stroke-width="3" marker-end="url(#arw134)"/>
+  <rect x="250" y="32" width="60" height="18" rx="4" fill="#eef1f4"/>
+  <text x="280" y="44" font-size="12" font-weight="700" text-anchor="middle" fill="#0a3d5c" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">CREATE</text>
+  <path d="M316 86 h-72" stroke="#9aa4ae" stroke-width="2.5" stroke-dasharray="5 4" marker-end="url(#arw134)"/>
+  <rect x="255" y="90" width="50" height="18" rx="4" fill="#eef1f4"/>
+  <text x="280" y="102" font-size="12" font-weight="700" text-anchor="middle" fill="#4a5560" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">DROP</text>
+
+  <rect x="320" y="24" width="180" height="90" rx="8" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5" stroke-dasharray="7 5"/>
+  <text x="410" y="60" font-size="26" text-anchor="middle">👻</text>
+  <text x="410" y="90" font-size="14" font-weight="800" text-anchor="middle" fill="#7a4f00">뷰 (View)</text>
+
+  <rect x="530" y="24" width="150" height="90" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="605" y="52" font-size="12" font-weight="700" text-anchor="middle" fill="#4a5560">유도된</text>
+  <text x="605" y="72" font-size="12" font-weight="700" text-anchor="middle" fill="#4a5560">가상 테이블</text>
+  <text x="605" y="94" font-size="11" text-anchor="middle" fill="#9aa4ae">물리적 구현 X</text>
+
+  <rect x="30" y="140" width="330" height="46" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="195" y="160" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">삽입 · 삭제 · 갱신 연산에</text>
+  <text x="195" y="178" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">제약이 따름</text>
+
+  <rect x="380" y="140" width="310" height="46" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="535" y="168" font-size="12" font-weight="700" text-anchor="middle" fill="#1a1a1a">독립적인 인덱스를 가질 수 없음</text>
+</svg>

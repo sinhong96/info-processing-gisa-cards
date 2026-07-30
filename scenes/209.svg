@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 210">
+  <g font-size="11" font-weight="700">
+  <rect x="20" y="20" width="150" height="18" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1"/>
+  <text x="95" y="33" text-anchor="middle" fill="#9aa4ae">7 응용</text>
+  <rect x="20" y="38" width="150" height="18" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1"/>
+  <text x="95" y="51" text-anchor="middle" fill="#9aa4ae">6 표현</text>
+  <rect x="20" y="56" width="150" height="18" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1"/>
+  <text x="95" y="69" text-anchor="middle" fill="#9aa4ae">5 세션</text>
+  <rect x="20" y="74" width="150" height="18" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1"/>
+  <text x="95" y="87" text-anchor="middle" fill="#9aa4ae">4 전송</text>
+  <rect x="20" y="92" width="150" height="18" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1"/>
+  <text x="95" y="105" text-anchor="middle" fill="#9aa4ae">3 네트워크</text>
+  <rect x="20" y="110" width="150" height="20" fill="#0b8ad4"/>
+  <text x="95" y="124" text-anchor="middle" fill="#fff">2 데이터 링크</text>
+  <rect x="20" y="130" width="150" height="18" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1"/>
+  <text x="95" y="143" text-anchor="middle" fill="#9aa4ae">1 물리</text>
+  </g>
+
+  <text x="440" y="34" font-size="12" fill="#4a5560">인접한 개방 시스템 간에 신뢰성·효율적인 정보 전송을 담당</text>
+
+  <text x="200" y="66" font-size="11" fill="#9aa4ae">기능</text>
+  <g font-size="12.5" font-weight="700" fill="#0a3d5c">
+  <rect x="200" y="76" width="90" height="32" rx="16" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="1.5"/>
+  <text x="245" y="97" text-anchor="middle">흐름 제어</text>
+  <rect x="300" y="76" width="110" height="32" rx="16" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="1.5"/>
+  <text x="355" y="97" text-anchor="middle">프레임 동기화</text>
+  <rect x="420" y="76" width="90" height="32" rx="16" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="1.5"/>
+  <text x="465" y="97" text-anchor="middle">오류 제어</text>
+  <rect x="520" y="76" width="90" height="32" rx="16" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="1.5"/>
+  <text x="565" y="97" text-anchor="middle">순서 제어</text>
+  </g>
+
+  <text x="200" y="140" font-size="11" fill="#9aa4ae">프로토콜</text>
+  <g font-size="12.5" font-weight="800" fill="#7a4f00" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">
+  <rect x="200" y="150" width="80" height="32" rx="8" fill="#fff3d6" stroke="#e8b33a" stroke-width="1.5"/>
+  <text x="240" y="171" text-anchor="middle">HDLC</text>
+  <rect x="290" y="150" width="80" height="32" rx="8" fill="#fff3d6" stroke="#e8b33a" stroke-width="1.5"/>
+  <text x="330" y="171" text-anchor="middle">LAPB</text>
+  <rect x="380" y="150" width="70" height="32" rx="8" fill="#fff3d6" stroke="#e8b33a" stroke-width="1.5"/>
+  <text x="415" y="171" text-anchor="middle">PPP</text>
+  <rect x="460" y="150" width="70" height="32" rx="8" fill="#fff3d6" stroke="#e8b33a" stroke-width="1.5"/>
+  <text x="495" y="171" text-anchor="middle">LLC</text>
+  </g>
+</svg>

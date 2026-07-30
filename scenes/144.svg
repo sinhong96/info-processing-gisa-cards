@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 264">
+  <text x="360" y="24" font-size="12.5" fill="#9aa4ae" text-anchor="middle">응용 프로그램이나 질의어를 통해 저장된 데이터를 실질적으로 처리하는 언어</text>
+
+  <rect x="30" y="42" width="120" height="34" fill="#0b8ad4"/>
+  <rect x="150" y="42" width="540" height="34" fill="#0b8ad4"/>
+  <text x="90" y="65" font-size="14" font-weight="800" text-anchor="middle" fill="#fff">명령어</text>
+  <text x="420" y="65" font-size="14" font-weight="800" text-anchor="middle" fill="#fff">기능</text>
+
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace">
+  <rect x="30" y="76" width="120" height="46" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1"/>
+  <rect x="150" y="76" width="540" height="46" fill="#fff" stroke="#9aa4ae" stroke-width="1"/>
+  <text x="90" y="104" font-size="15" font-weight="800" text-anchor="middle" fill="#0a3d5c">SELECT</text>
+
+  <rect x="30" y="122" width="120" height="46" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1"/>
+  <rect x="150" y="122" width="540" height="46" fill="#fff" stroke="#9aa4ae" stroke-width="1"/>
+  <text x="90" y="150" font-size="15" font-weight="800" text-anchor="middle" fill="#0a3d5c">INSERT</text>
+
+  <rect x="30" y="168" width="120" height="46" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1"/>
+  <rect x="150" y="168" width="540" height="46" fill="#fff" stroke="#9aa4ae" stroke-width="1"/>
+  <text x="90" y="196" font-size="15" font-weight="800" text-anchor="middle" fill="#0a3d5c">DELETE</text>
+
+  <rect x="30" y="214" width="120" height="46" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1"/>
+  <rect x="150" y="214" width="540" height="46" fill="#fff" stroke="#9aa4ae" stroke-width="1"/>
+  <text x="90" y="242" font-size="15" font-weight="800" text-anchor="middle" fill="#0a3d5c">UPDATE</text>
+  </g>
+
+  <text x="420" y="103" font-size="12" text-anchor="middle" fill="#1a1a1a">테이블에서 조건에 맞는 튜플을 검색함</text>
+  <text x="420" y="149" font-size="12" text-anchor="middle" fill="#1a1a1a">테이블에 새로운 튜플을 삽입함</text>
+  <text x="420" y="195" font-size="12" text-anchor="middle" fill="#1a1a1a">테이블에서 조건에 맞는 튜플을 삭제함</text>
+  <text x="420" y="234" font-size="12" text-anchor="middle" fill="#1a1a1a">테이블에서 조건에 맞는 튜플의</text>
+  <text x="420" y="250" font-size="12" text-anchor="middle" fill="#1a1a1a">내용을 변경함</text>
+
+  <rect x="30" y="42" width="660" height="218" fill="none" stroke="#9aa4ae" stroke-width="1.5"/>
+  <line x1="150" y1="42" x2="150" y2="260" stroke="#0b8ad4" stroke-width="2"/>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 190">
+  <defs>
+    <marker id="arw133" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="#0b8ad4"/>
+    </marker>
+  </defs>
+  <text x="360" y="24" font-size="13" fill="#9aa4ae" text-anchor="middle">데이터 레코드를 빠르게 접근하기 위한 자료 구조</text>
+
+  <rect x="40" y="54" width="120" height="52" rx="8" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2.5"/>
+  <text x="100" y="86" font-size="16" font-weight="800" text-anchor="middle" fill="#0a3d5c">키 값</text>
+  <path d="M164 80 h32" stroke="#0b8ad4" stroke-width="3" marker-end="url(#arw133)"/>
+
+  <rect x="200" y="54" width="120" height="52" rx="8" fill="#fff3d6" stroke="#e8b33a" stroke-width="2.5"/>
+  <text x="260" y="86" font-size="16" font-weight="800" text-anchor="middle" fill="#7a4f00">포인터</text>
+  <path d="M324 80 h32" stroke="#0b8ad4" stroke-width="3" marker-end="url(#arw133)"/>
+
+  <rect x="380" y="46" width="300" height="68" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <line x1="380" y1="80" x2="680" y2="80" stroke="#9aa4ae"/>
+  <rect x="380" y="80" width="300" height="17" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="2"/>
+  <text x="530" y="65" font-size="11" text-anchor="middle" fill="#9aa4ae">데이터 레코드</text>
+  <text x="530" y="93" font-size="11" font-weight="700" text-anchor="middle" fill="#0a3d5c">빠른 접근 ⚡</text>
+
+  <rect x="60" y="140" width="600" height="34" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="360" y="162" font-size="12.5" font-weight="700" text-anchor="middle" fill="#1a1a1a">데이터 정의어(DDL)로 사용자가 생성, 변경, 제거할 수 있다</text>
+</svg>

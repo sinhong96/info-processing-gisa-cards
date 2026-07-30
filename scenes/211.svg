@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 210">
+  <g font-size="11" font-weight="700">
+  <rect x="20" y="20" width="150" height="18" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1"/>
+  <text x="95" y="33" text-anchor="middle" fill="#9aa4ae">7 응용</text>
+  <rect x="20" y="38" width="150" height="18" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1"/>
+  <text x="95" y="51" text-anchor="middle" fill="#9aa4ae">6 표현</text>
+  <rect x="20" y="56" width="150" height="18" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1"/>
+  <text x="95" y="69" text-anchor="middle" fill="#9aa4ae">5 세션</text>
+  <rect x="20" y="74" width="150" height="20" fill="#0b8ad4"/>
+  <text x="95" y="88" text-anchor="middle" fill="#fff">4 전송</text>
+  <rect x="20" y="94" width="150" height="18" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1"/>
+  <text x="95" y="107" text-anchor="middle" fill="#9aa4ae">3 네트워크</text>
+  <rect x="20" y="112" width="150" height="18" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1"/>
+  <text x="95" y="125" text-anchor="middle" fill="#9aa4ae">2 데이터 링크</text>
+  <rect x="20" y="130" width="150" height="18" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1"/>
+  <text x="95" y="143" text-anchor="middle" fill="#9aa4ae">1 물리</text>
+  </g>
+
+  <text x="440" y="30" font-size="12" fill="#4a5560">종단 시스템(End-to-End) 간에 투명한 데이터 전송을 가능하게 함</text>
+
+  <text x="200" y="60" font-size="11" fill="#9aa4ae">기능</text>
+  <g font-size="12" font-weight="700" fill="#0a3d5c">
+  <rect x="200" y="70" width="110" height="30" rx="15" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="1.5"/>
+  <text x="255" y="90" text-anchor="middle">전송 연결 설정</text>
+  <rect x="320" y="70" width="94" height="30" rx="15" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="1.5"/>
+  <text x="367" y="90" text-anchor="middle">데이터 전송</text>
+  <rect x="424" y="70" width="110" height="30" rx="15" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="1.5"/>
+  <text x="479" y="90" text-anchor="middle">연결 해제 기능</text>
+  <rect x="544" y="70" width="94" height="30" rx="15" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="1.5"/>
+  <text x="591" y="90" text-anchor="middle">주소 설정</text>
+
+  <rect x="200" y="108" width="80" height="30" rx="15" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="1.5"/>
+  <text x="240" y="128" text-anchor="middle">다중화</text>
+  <rect x="290" y="108" width="80" height="30" rx="15" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="1.5"/>
+  <text x="330" y="128" text-anchor="middle">오류 제어</text>
+  <rect x="380" y="108" width="80" height="30" rx="15" fill="#e8f4fc" stroke="#0b8ad4" stroke-width="1.5"/>
+  <text x="420" y="128" text-anchor="middle">흐름 제어</text>
+  </g>
+
+  <text x="360" y="180" font-size="12" text-anchor="middle" fill="#9aa4ae">OSI 4계층 : 종단간(End-to-End) 전송</text>
+</svg>

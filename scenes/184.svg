@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 190">
+  <rect x="30" y="20" width="120" height="150" rx="8" fill="#0b8ad4"/>
+  <text x="90" y="60" font-size="13" font-weight="800" text-anchor="middle" fill="#fff">값 1개</text>
+  <text x="90" y="80" font-size="11" text-anchor="middle" fill="#e8f4fc">일 때</text>
+
+  <rect x="160" y="20" width="530" height="72" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="180" y="48" font-size="13" font-weight="800" fill="#0a3d5c" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">a = int(input( ))</text>
+  <text x="180" y="72" font-size="12" fill="#4a5560">input( )으로 입력받은 값을 정수로 변환해 a에 저장</text>
+
+  <rect x="30" y="98" width="120" height="72" rx="8" fill="#0b8ad4"/>
+  <text x="90" y="132" font-size="13" font-weight="800" text-anchor="middle" fill="#fff">값 2개</text>
+  <text x="90" y="152" font-size="11" text-anchor="middle" fill="#e8f4fc">이상일 때</text>
+
+  <rect x="160" y="98" width="530" height="72" rx="8" fill="#eef1f4" stroke="#9aa4ae" stroke-width="1.5"/>
+  <text x="180" y="126" font-size="13" font-weight="800" fill="#0a3d5c" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">a, b = map(int, input( ).split( ))</text>
+  <text x="180" y="150" font-size="12" fill="#4a5560">입력받은 2개의 값을 정수로 변환해 a, b에 저장</text>
+</svg>
