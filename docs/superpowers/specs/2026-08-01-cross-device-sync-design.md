@@ -148,15 +148,28 @@ No failure path blocks the UI and no failure path discards a local mark.
 only part with real reasoning in it, and would otherwise be trapped inside a 3.4MB generated
 file.
 
-New `sync.js` source file holds the pure functions (`mergeMarks`, `migrateV1`), inlined by
-`build.py` via a `/*__SYNC__*/` placeholder — the same pattern as the existing `/*__CARDS__*/`.
-Single-file deployment is preserved; the logic becomes testable.
+Two new sources under `templates/`, inlined by `build.py` via `/*__SYNC__*/` and
+`/*__CLOUD__*/` placeholders — the same pattern as the existing `/*__CARDS__*/`. Single-file
+deployment is preserved; the logic becomes testable.
+
+- `sync.js` — pure merge, migration, and storage-key logic. No DOM, no network.
+- `cloud.js` — Supabase access over plain `fetch`, plus the pure token/fragment parsing.
+
+**No Supabase JS SDK.** A CDN `<script src>` would break offline loading, which is the
+premise of the architecture, and vendoring a bundle to call four endpoints is not worth the
+blob. The GoTrue and PostgREST calls needed here are roughly 90 lines of `fetch`.
 
 ## Testing
 
-- `tests/test_sync.mjs` (node:test): union, timestamp precedence, tie-break in both
+- `tests/test_sync.js` (node:test): union, timestamp precedence, tie-break in both
   directions, `hard` vs `unsure` tie, v1 migration, empty input, malformed input, and key
   namespacing — that reading user A's bucket never returns user B's or the anon bucket's marks.
+- `tests/test_cloud.js` (node:test): JWT claim decoding, magic-link fragment parsing, session
+  expiry, auth-error classification, and each REST call against a stubbed `fetch`.
+
+CommonJS rather than ESM: the sources are inlined into a `<script>` by `build.py`, so they
+cannot use `import`/`export`. A `module.exports` tail guarded by `typeof module` lets
+`node --test` require them, and `build.py` strips that tail from the browser bundle.
 - `tests/test_build.py`: new case asserting the sync source is inlined into the built HTML.
 
 Auth and network paths are not unit tested; they are verified manually against the deployed
