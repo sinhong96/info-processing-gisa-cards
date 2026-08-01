@@ -20,6 +20,7 @@
   select{font:inherit;font-size:13px;font-weight:700;padding:6px 10px;border-radius:8px;
          border:1px solid var(--line);background:var(--card);color:var(--fg);cursor:pointer;
          max-width:46vw}
+  #authbtn{max-width:38vw;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 
   .body{flex:1;display:flex;min-height:0}
 
@@ -80,6 +81,7 @@
   <button id="hardonly">🔁 복습할 것만</button>
   <button id="reset">↺ 초기화</button>
   <span class="count" id="count"></span>
+  <button id="authbtn" hidden></button>
 </header>
 
 <div class="body">
@@ -326,7 +328,77 @@ addEventListener("touchend", e => {
   if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5) go(dx < 0 ? 1 : -1);
 }, {passive: true});
 
+/* ---- auth ---------------------------------------------------------------
+   Signing in only decides which localStorage bucket `mark` points at. The
+   cloud round trip is layered on in the next task, so a failed or absent
+   sign-in leaves a fully working offline app. */
+let session = null;
+
+function switchIdentity(userId) {
+  currentUser = userId;
+  mark = loadMarks(localStorage, currentUser);
+  i = 0; flipped = false;
+  render();
+}
+
+function renderAuth() {
+  const b = document.getElementById("authbtn");
+  if (!SUPA) { b.hidden = true; return; }   // built offline-only
+  b.hidden = false;
+  b.textContent = session ? "🔓 " + (session.email || "로그아웃") : "🔐 로그인";
+  b.title = session ? "로그아웃" : "이메일로 로그인";
+}
+
+function signIn() {
+  const email = prompt("로그인할 이메일 주소를 입력하세요.");
+  if (!email) return;
+  sendMagicLink(SUPA, email.trim(), location.href.split("#")[0])
+    .then(() => alert("로그인 링크를 보냈습니다. 이메일을 확인하세요."))
+    .catch(() => alert("링크를 보내지 못했습니다. 잠시 후 다시 시도하세요."));
+}
+
+function signOut() {
+  clearSession(localStorage);
+  session = null;
+  switchIdentity(null);
+  renderAuth();
+}
+
+/* Adopt a session from the magic-link fragment, else restore and refresh a
+   stored one. Every failure path lands on "stay signed out and keep working". */
+function initAuth() {
+  if (!SUPA) { renderAuth(); return Promise.resolve(); }
+  const fromLink = parseAuthHash(location.hash, now());
+  if (fromLink && fromLink.user_id) {
+    history.replaceState(null, "", location.pathname + location.search);
+    session = fromLink;
+    saveSession(localStorage, session);
+    switchIdentity(session.user_id);
+    renderAuth();
+    return Promise.resolve();
+  }
+  const stored = loadSession(localStorage);
+  if (!stored) { renderAuth(); return Promise.resolve(); }
+  if (sessionValid(stored, now())) {
+    session = stored;
+    switchIdentity(session.user_id);
+    renderAuth();
+    return Promise.resolve();
+  }
+  return refreshSession(SUPA, stored.refresh_token, now())
+    .then(s => {
+      session = s;
+      saveSession(localStorage, session);
+      switchIdentity(session.user_id);
+    })
+    .catch(() => { clearSession(localStorage); session = null; })
+    .then(renderAuth);
+}
+
+document.getElementById("authbtn").onclick = () => session ? signOut() : signIn();
+
 buildSubjectSelect();
 buildToc();
 render();
+initAuth();
 </script>
