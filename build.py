@@ -45,6 +45,16 @@ def load_scene(card_id):
         return fh.read()
 
 
+def read_js(name):
+    """Inline a templates/*.js source, minus its node-only CommonJS tail."""
+    path = os.path.join(HERE, "templates", name)
+    with open(path, encoding="utf-8") as fh:
+        src = fh.read()
+    # The `if (typeof module !== "undefined")` block exists only so node --test
+    # can require the file. It is dead weight in the browser, so drop it.
+    return re.split(r'\nif \(typeof module !== "undefined"', src)[0].rstrip() + "\n"
+
+
 def build(cards, subjects):
     """subjects: a subject number, or an iterable of them."""
     wanted = {subjects} if isinstance(subjects, int) else set(subjects)
@@ -64,7 +74,8 @@ def build(cards, subjects):
     data = json.dumps(payload, ensure_ascii=False)
     # </script> inside data would close the tag early.
     data = data.replace("</", "<\\/")
-    return tmpl.replace("/*__CARDS__*/", data)
+    out = tmpl.replace("/*__CARDS__*/", data)
+    return out.replace("/*__SYNC__*/", read_js("sync.js"))
 
 
 def subjects_with_scenes(cards):

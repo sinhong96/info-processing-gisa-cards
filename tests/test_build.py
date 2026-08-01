@@ -77,6 +77,20 @@ class TestBuild(unittest.TestCase):
         self.assertNotIn("http://", html)
         self.assertNotIn("https://", html)
 
+    def test_build_inlines_the_sync_module(self):
+        cards = json.load(open(os.path.join(ROOT, "cards.json"), encoding="utf-8"))
+        html = build.build(cards, 1)
+        self.assertIn("function mergeMarks(", html)
+        self.assertIn("gisa-cards-v2", html)
+        self.assertNotIn("/*__SYNC__*/", html)
+
+    def test_build_strips_the_node_only_module_export(self):
+        # The CommonJS tail exists for `node --test`. Leaving it in the browser
+        # bundle is harmless but dead; assert we drop it so it cannot rot.
+        cards = json.load(open(os.path.join(ROOT, "cards.json"), encoding="utf-8"))
+        html = build.build(cards, 1)
+        self.assertNotIn("module.exports", html)
+
     def test_build_includes_every_pilot_card_title(self):
         cards = json.load(open(os.path.join(ROOT, "cards.json"), encoding="utf-8"))
         html = build.build(cards, 1)
