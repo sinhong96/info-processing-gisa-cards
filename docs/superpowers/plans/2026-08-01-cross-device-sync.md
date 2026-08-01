@@ -10,6 +10,16 @@
 
 **Spec:** `docs/superpowers/specs/2026-08-01-cross-device-sync-design.md`
 
+## Running the tests
+
+```bash
+python3 -m unittest tests.test_build tests.test_classify tests.test_extract
+node --test tests/test_sync.js tests/test_cloud.js
+```
+
+`pytest` is not installed and `tests/` has no `__init__.py`, so
+`unittest discover` cannot import it — name the modules explicitly.
+
 ## Global Constraints
 
 - **No external script or link tags.** `index.html` must load and run fully offline. All JS is inlined by `build.py`. The Supabase JS SDK is deliberately *not* used — see Task 4 rationale.
@@ -319,7 +329,7 @@ Add to `tests/test_build.py`, inside `class TestBuild`:
 
 - [ ] **Step 7: Run it to verify it fails**
 
-Run: `python3 -m pytest tests/test_build.py -k sync -v`
+Run: `python3 -m unittest tests.test_build -v`
 Expected: FAIL — `/*__SYNC__*/` still present, `mergeMarks` absent
 
 - [ ] **Step 8: Teach build.py to inline the module**
@@ -352,7 +362,7 @@ to:
 
 - [ ] **Step 9: Run the full test suite**
 
-Run: `python3 -m pytest tests/ -v && node --test tests/test_sync.js`
+Run: `python3 -m unittest tests.test_build tests.test_classify tests.test_extract && node --test tests/test_sync.js`
 Expected: PASS, all tests
 
 - [ ] **Step 10: Rebuild and confirm the app still works**
@@ -579,7 +589,7 @@ Expected: `{"001":{"s":"hard","t":1},"002":{"s":"known","t":1}}`, and `gisa-card
 
 - [ ] **Step 10: Run the full suite**
 
-Run: `python3 -m pytest tests/ -v && node --test tests/test_sync.js`
+Run: `python3 -m unittest tests.test_build tests.test_classify tests.test_extract && node --test tests/test_sync.js`
 Expected: PASS
 
 - [ ] **Step 11: Commit**
@@ -668,7 +678,7 @@ And replace `test_build_emits_self_contained_html` with:
 
 - [ ] **Step 2: Run it to verify it fails**
 
-Run: `python3 -m pytest tests/test_build.py -k "self_contained or cloud or inlines_url" -v`
+Run: `python3 -m unittest tests.test_build -v`
 Expected: FAIL — `build() got an unexpected keyword argument 'supa'`
 
 - [ ] **Step 3: Add config loading to build.py**
@@ -726,7 +736,7 @@ const SUPA = /*__SUPABASE__*/;
 
 - [ ] **Step 5: Run the tests**
 
-Run: `python3 -m pytest tests/test_build.py -v`
+Run: `python3 -m unittest tests.test_build -v`
 Expected: PASS
 
 - [ ] **Step 6: Add the example config and ignore the real one**
@@ -1108,7 +1118,7 @@ Add to `tests/test_build.py`, inside `class TestBuild`:
 
 - [ ] **Step 6: Run the full suite**
 
-Run: `python3 -m pytest tests/ -v && node --test tests/test_sync.js tests/test_cloud.js`
+Run: `python3 -m unittest tests.test_build tests.test_classify tests.test_extract && node --test tests/test_sync.js tests/test_cloud.js`
 Expected: PASS
 
 - [ ] **Step 7: Commit**
@@ -1281,7 +1291,7 @@ Click 로그인 and enter an address that has no Supabase user. Because signup i
 
 - [ ] **Step 6: Run the full suite**
 
-Run: `python3 -m pytest tests/ -v && node --test tests/test_sync.js tests/test_cloud.js`
+Run: `python3 -m unittest tests.test_build tests.test_classify tests.test_extract && node --test tests/test_sync.js tests/test_cloud.js`
 Expected: PASS
 
 - [ ] **Step 7: Commit**
@@ -1533,7 +1543,7 @@ in `gisa-cards-v2:<uuid>` untouched. Sign in again and they come back.
 
 - [ ] **Step 13: Run the full suite**
 
-Run: `python3 -m pytest tests/ -v && node --test tests/test_sync.js tests/test_cloud.js`
+Run: `python3 -m unittest tests.test_build tests.test_classify tests.test_extract && node --test tests/test_sync.js tests/test_cloud.js`
 Expected: PASS
 
 - [ ] **Step 14: Commit**
@@ -1705,7 +1715,7 @@ This is the case the whole task exists for.
 
 - [ ] **Step 9: Run the full suite**
 
-Run: `python3 -m pytest tests/ -v && node --test tests/test_sync.js tests/test_cloud.js`
+Run: `python3 -m unittest tests.test_build tests.test_classify tests.test_extract && node --test tests/test_sync.js tests/test_cloud.js`
 Expected: PASS
 
 - [ ] **Step 10: Commit**
@@ -1836,7 +1846,7 @@ RLS 정책(`auth.uid() = user_id`)이 사용자별 격리를 보장하므로, �
 
 - [ ] **Step 4: Verify the README renders**
 
-Run: `python3 -m pytest tests/ -v && node --test tests/test_sync.js tests/test_cloud.js`
+Run: `python3 -m unittest tests.test_build tests.test_classify tests.test_extract && node --test tests/test_sync.js tests/test_cloud.js`
 Expected: PASS
 
 Then read the new README section on GitHub (or in a Markdown preview) and confirm the code fences and headings are intact.
@@ -1854,7 +1864,7 @@ git commit -m "chore: add Supabase keepalive workflow and operations runbook"
 
 - [ ] **Full test suite**
 
-Run: `python3 -m pytest tests/ -v && node --test tests/test_sync.js tests/test_cloud.js`
+Run: `python3 -m unittest tests.test_build tests.test_classify tests.test_extract && node --test tests/test_sync.js tests/test_cloud.js`
 Expected: PASS, no skips
 
 - [ ] **Clean rebuild**
