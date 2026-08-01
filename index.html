@@ -200,6 +200,10 @@ function applyMark(marks, id, s, now) {
 /* Present only under node --test; absent in the browser, where build.py has
    already inlined these onto the script's scope. */
 
+/* Supabase project config, or null when built without supabase.json. Null is a
+   supported state: the app runs offline-only and shows no sync UI. */
+const SUPA = null;
+
 /* null until a user signs in; marks then move to that user's own bucket so a
    shared browser never leaks progress between accounts. */
 let currentUser = null;

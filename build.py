@@ -55,7 +55,24 @@ def read_js(name):
     return re.split(r'\nif \(typeof module !== "undefined"', src)[0].rstrip() + "\n"
 
 
-def build(cards, subjects):
+def read_supabase():
+    """Project credentials, or None when the deck is built offline-only.
+
+    The anon key is safe to publish: the `own row` RLS policy is what enforces
+    per-user isolation, not the secrecy of this key.
+    """
+    path = os.path.join(HERE, "supabase.json")
+    if not os.path.exists(path):
+        return None
+    with open(path, encoding="utf-8") as fh:
+        cfg = json.load(fh)
+    missing = [k for k in ("url", "anonKey") if not cfg.get(k)]
+    if missing:
+        raise SystemExit(f"supabase.json is missing: {', '.join(missing)}")
+    return {"url": cfg["url"].rstrip("/"), "anonKey": cfg["anonKey"]}
+
+
+def build(cards, subjects, supa=None):
     """subjects: a subject number, or an iterable of them."""
     wanted = {subjects} if isinstance(subjects, int) else set(subjects)
     payload = []
@@ -75,7 +92,9 @@ def build(cards, subjects):
     # </script> inside data would close the tag early.
     data = data.replace("</", "<\\/")
     out = tmpl.replace("/*__CARDS__*/", data)
-    return out.replace("/*__SYNC__*/", read_js("sync.js"))
+    out = out.replace("/*__SYNC__*/", read_js("sync.js"))
+    return out.replace("/*__SUPABASE__*/",
+                       json.dumps(supa) if supa else "null")
 
 
 def subjects_with_scenes(cards):
@@ -104,7 +123,7 @@ def main():
     if not subjects:
         raise SystemExit("no subjects have scenes yet — author some scenes/NNN.svg first")
     with open(out, "w", encoding="utf-8") as fh:
-        fh.write(build(cards, subjects))
+        fh.write(build(cards, subjects, read_supabase()))
 
     print(f"wrote {out}")
     for s in subjects:

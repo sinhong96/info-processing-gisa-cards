@@ -1,3 +1,7 @@
 __pycache__/
 *.pyc
 .DS_Store
+
+# Real project credentials. The anon key is publishable, but keeping the
+# file out of git stops a fork from silently syncing into this project.
+supabase.json

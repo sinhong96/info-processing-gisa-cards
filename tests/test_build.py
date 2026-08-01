@@ -70,12 +70,31 @@ class TestPilotScenes(unittest.TestCase):
 
 class TestBuild(unittest.TestCase):
     def test_build_emits_self_contained_html(self):
+        # The page must load and run with no network. Requests to Supabase are
+        # made at runtime by fetch; what is banned is anything the *browser*
+        # would have to fetch before the app can start.
         cards = json.load(open(os.path.join(ROOT, "cards.json"), encoding="utf-8"))
-        html = build.build(cards, 1)
+        html = build.build(cards, 1, supa={"url": "https://abc.supabase.co",
+                                           "anonKey": "k"})
         self.assertNotIn("<script src", html)
         self.assertNotIn("<link ", html)
         self.assertNotIn("http://", html)
-        self.assertNotIn("https://", html)
+        # The Supabase project origin is the only allowed absolute URL.
+        for url in re.findall(r"https://[\w.-]+", html):
+            self.assertEqual(url, "https://abc.supabase.co", f"unexpected host {url}")
+
+    def test_build_without_config_disables_the_cloud(self):
+        cards = json.load(open(os.path.join(ROOT, "cards.json"), encoding="utf-8"))
+        html = build.build(cards, 1, supa=None)
+        self.assertIn("const SUPA = null", html)
+        self.assertNotIn("/*__SUPABASE__*/", html)
+
+    def test_build_with_config_inlines_url_and_key(self):
+        cards = json.load(open(os.path.join(ROOT, "cards.json"), encoding="utf-8"))
+        html = build.build(cards, 1, supa={"url": "https://abc.supabase.co",
+                                           "anonKey": "anon-key-here"})
+        self.assertIn("https://abc.supabase.co", html)
+        self.assertIn("anon-key-here", html)
 
     def test_build_inlines_the_sync_module(self):
         cards = json.load(open(os.path.join(ROOT, "cards.json"), encoding="utf-8"))

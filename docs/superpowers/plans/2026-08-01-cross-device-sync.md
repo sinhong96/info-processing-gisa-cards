@@ -562,9 +562,9 @@ function setMark(v) {
 
 - [ ] **Step 8: Rebuild and verify by hand**
 
-Run: `python3 build.py && python3 -m http.server 8000 --directory .`
+Run: `python3 build.py && python3 -m http.server 8765 --directory .`
 
-In a browser at `http://localhost:8000/index.html`:
+In a browser at `http://localhost:8765/index.html`:
 1. Mark a card 😵 어려움 — the count badge shows 😵 and the TOC row shows 😵.
 2. Reload — the mark survives.
 3. In devtools console, run `localStorage.getItem("gisa-cards-v2:anon")` — expect JSON of shape `{"001":{"s":"hard","t":1754...}}`.
@@ -636,7 +636,7 @@ create policy "own row" on progress
 
 3. Authentication → Providers → Email: enable it, and turn **Confirm email** on.
 4. Authentication → Sign In / Providers → **disable "Allow new users to sign up"**. This is the only thing keeping the deck private, and it lives in dashboard config rather than in this repo.
-5. Authentication → URL Configuration: set **Site URL** to `https://sinhong96.github.io/info-processing-gisa-cards/` and add both that URL and `http://localhost:8000/index.html` to **Redirect URLs**.
+5. Authentication → URL Configuration: set **Site URL** to `https://sinhong96.github.io/info-processing-gisa-cards/` and add both that URL and `http://localhost:8765/index.html` to **Redirect URLs**.
 6. Authentication → Users → Add user: create the account with the email you will study under.
 
 - [ ] **Step 1: Write the failing test**
@@ -1136,7 +1136,7 @@ Adds the header control, the magic-link round trip, and session restore. No mark
 
 **Files:**
 - Modify: `templates/app.html` — header markup (~line 82), CSS (~line 22), and the script tail (~line 321)
-- Test: manual, against `http://localhost:8000`
+- Test: manual, against `http://localhost:8765`
 
 **Interfaces:**
 - Consumes: `SUPA`, `currentUser`, `mark`, `save`, `loadMarks`, `render` from Tasks 1-4; all of `cloud.js`.
@@ -1263,10 +1263,10 @@ initAuth();
 
 ```bash
 mv supabase.json supabase.json.bak && python3 build.py
-python3 -m http.server 8000 --directory .
+python3 -m http.server 8765 --directory .
 ```
 
-At `http://localhost:8000/index.html`: the header shows **no** 로그인 button, and marking cards works exactly as before. This is the "built without config" contract from Task 3.
+At `http://localhost:8765/index.html`: the header shows **no** 로그인 button, and marking cards works exactly as before. This is the "built without config" contract from Task 3.
 
 ```bash
 mv supabase.json.bak supabase.json && python3 build.py
@@ -1274,12 +1274,12 @@ mv supabase.json.bak supabase.json && python3 build.py
 
 - [ ] **Step 4: Verify the magic-link round trip**
 
-With the server still running, reload `http://localhost:8000/index.html`.
+With the server still running, reload `http://localhost:8765/index.html`.
 
 1. The header shows 🔐 로그인.
 2. Click it, enter the email you created in the Task 3 prerequisite.
 3. Expect the alert "로그인 링크를 보냈습니다."
-4. Open the link from your inbox. It must land back on `localhost:8000` with the header now showing 🔓 and your marks reset to that account's (empty) bucket.
+4. Open the link from your inbox. It must land back on `localhost:8765` with the header now showing 🔓 and your marks reset to that account's (empty) bucket.
 5. In the console, `localStorage.getItem("gisa-cards-session")` returns a JSON session, and the URL has **no** `#access_token` left in it.
 6. Mark a card, then check `Object.keys(localStorage).filter(k => k.startsWith("gisa-cards-v2"))` — expect both `:anon` and `:<your-uuid>`, with the new mark only in the user bucket.
 7. Reload — you stay signed in and the mark is still there.
@@ -1496,10 +1496,10 @@ And in `signOut`, add `setSyncStatus("off");` immediately after `session = null;
 - [ ] **Step 9: Rebuild and verify single-device sync**
 
 ```bash
-python3 build.py && python3 -m http.server 8000 --directory .
+python3 build.py && python3 -m http.server 8765 --directory .
 ```
 
-At `http://localhost:8000/index.html`, signed in:
+At `http://localhost:8765/index.html`, signed in:
 1. The dot turns 🟡 then 🟢 shortly after load.
 2. Mark a card — the dot goes 🟡, then 🟢 within ~2s.
 3. In the Supabase dashboard, Table Editor → `progress`: your row holds the mark.
@@ -1695,7 +1695,7 @@ Only the magic-link branch prompts. Restoring a stored session on every reload m
 - [ ] **Step 7: Rebuild and verify the claim path**
 
 ```bash
-python3 build.py && python3 -m http.server 8000 --directory .
+python3 build.py && python3 -m http.server 8765 --directory .
 ```
 
 1. Sign out. Mark three cards. Confirm they land in `gisa-cards-v2:anon`.
