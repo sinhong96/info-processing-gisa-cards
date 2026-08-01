@@ -1,0 +1,34 @@
+# Supabase pauses free-tier projects after ~7 days of inactivity. A weekly
+# read keeps the project warm so a two-week study break does not come back to
+# a dead sync.
+#
+# Limit worth knowing: GitHub disables scheduled workflows after 60 days of
+# repo inactivity, so a genuinely long hiatus still needs a manual unpause.
+# See the "Supabase 운영" section of README.md.
+name: supabase-keepalive
+
+on:
+  schedule:
+    - cron: "17 3 * * 1"   # 03:17 UTC every Monday
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping PostgREST
+        env:
+          URL: ${{ secrets.SUPABASE_URL }}
+          KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+        run: |
+          set -euo pipefail
+          code=$(curl -s -o /dev/null -w '%{http_code}' \
+            -H "apikey: $KEY" \
+            "$URL/rest/v1/progress?select=user_id&limit=1")
+          echo "PostgREST returned $code"
+          # 200 = reachable. 401 also proves the project is awake and
+          # answering, which is all this job needs to establish.
+          case "$code" in
+            200|401) exit 0 ;;
+            *) echo "::error::project may be paused or unreachable"; exit 1 ;;
+          esac
