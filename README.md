@@ -151,3 +151,86 @@ docs/verification/       verification records
 
 Python 3.14 and `pypdf`. Nothing else — the test suite uses stdlib `unittest`, and the
 study app has no build step or dependencies at all.
+
+## 진도 동기화 (cross-device sync)
+
+카드 상태(😵 / 🤔 / ✅)는 기기의 localStorage에 저장되고, 로그인하면 Supabase의
+개인 행(row)과 동기화됩니다. 아이폰에서 표시한 것이 맥북에서도 보입니다.
+
+- **오프라인 우선.** 네트워크가 없어도 앱은 그대로 동작하고, 표시한 내용은
+  기기에 저장됩니다. 연결되면 자동으로 합쳐집니다.
+- **병합 규칙.** 카드별로 최신 표시가 이깁니다. 시각이 같으면 복습 필요
+  (😵 / 🤔)가 암기함(✅)을 이깁니다.
+- **헤더의 점.** 🟢 동기화됨 · 🟡 동기화 중 · 🔴 오프라인.
+- **로그인 전 기록.** 로그인하면 "합칠까요?"를 묻습니다. 묻지 않고 합치는 일은
+  없습니다 — 한 기기를 여러 사람이 쓸 때 남의 기록이 섞이는 것을 막기 위함입니다.
+
+### 처음 설정할 때
+
+```bash
+cp supabase.example.json supabase.json   # URL과 publishable key 입력
+python3 build.py
+```
+
+`supabase.json`이 없으면 동기화 없이 오프라인 전용으로 빌드됩니다.
+**secret key를 넣으면 빌드가 거부됩니다** — index.html은 공개되므로 secret key는
+RLS를 무력화합니다. publishable(anon) key만 사용하세요.
+
+### 테스트
+
+```bash
+python3 -m unittest tests.test_build tests.test_classify tests.test_extract
+node --test tests/test_sync.js tests/test_cloud.js
+```
+
+## Supabase 운영
+
+### 무료 플랜 일시정지 (founder runbook)
+
+무료 플랜 프로젝트는 약 7일간 활동이 없으면 **일시정지(paused)** 됩니다.
+매주 월요일에 도는 `.github/workflows/supabase-keepalive.yml`이 이를 막지만,
+저장소 자체가 60일간 조용하면 GitHub이 이 스케줄을 꺼버립니다.
+
+**증상:** 로그인은 되는데 헤더의 점이 계속 🔴 오프라인. 표시한 내용은 기기에
+남아 있으므로 데이터가 사라진 것은 아닙니다.
+
+**복구:**
+
+1. https://supabase.com/dashboard 에서 프로젝트를 열고 **Restore project** 클릭
+2. 몇 분 후 Actions → supabase-keepalive → Run workflow 로 확인
+3. 각 기기에서 새로고침 — 점이 🟢 으로 바뀌고 밀려 있던 표시가 올라갑니다
+
+### 이메일 전송 한도
+
+무료 플랜의 기본 메일 발송은 **시간당 몇 통**으로 제한됩니다. 로그인 링크가
+오지 않으면 대부분 이 한도입니다(앱이 "이메일 전송 한도를 초과했습니다"로
+알려줍니다). 1시간 후 다시 시도하거나, 자주 겪는다면 Supabase에 custom SMTP를
+설정하면 사라집니다.
+
+### 로그인 리디렉션
+
+Authentication → URL Configuration 에 아래가 등록되어 있어야 합니다.
+빠지면 링크가 Supabase 기본값(`localhost:3000`)으로 가서 열리지 않습니다.
+
+```
+Site URL       https://sinhong96.github.io/info-processing-gisa-cards/
+Redirect URLs  https://sinhong96.github.io/info-processing-gisa-cards/
+               https://sinhong96.github.io/info-processing-gisa-cards/**
+               http://localhost:8765/**
+```
+
+### 다른 사용자에게 열어주기
+
+지금은 Supabase 대시보드에서 신규 가입이 꺼져 있어 등록된 계정만 로그인할 수
+있습니다. 열어주려면 Authentication → Sign In / Providers → **Allow new users
+to sign up** 을 켜면 됩니다. 코드 변경은 필요 없습니다.
+
+RLS 정책(`auth.uid() = user_id`)이 서버에서 사용자별 격리를 보장하고, 기기
+쪽에서는 localStorage 키를 사용자별로 나누어(`gisa-cards-v2:<user_id>`) 한
+브라우저를 공유해도 기록이 섞이지 않습니다.
+
+### 배포
+
+GitHub Pages는 `.github/workflows/pages.yml`(GitHub Actions)로 배포합니다.
+기존 Jekyll 빌더는 로그 없이 "Page build failed"만 남기고 멈춰서 교체했습니다.
+`.nojekyll`도 함께 두어 저장소를 그대로 서빙합니다.
