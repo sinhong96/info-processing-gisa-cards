@@ -1,5 +1,10 @@
 # Cross-Device Progress Sync Implementation Plan
 
+**Status (2026-08-02):** Tasks 1–8 are implemented, committed (`740b384`…`727ba03`),
+and pushed. Boxes were ticked retroactively — the work happened without them being
+maintained in flight. The only step still genuinely open is the last one: the
+two-device acceptance check on the deployed URL.
+
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** Card marks made on one device appear on the user's other devices, with each user's progress fully isolated from every other user's.
@@ -57,7 +62,7 @@ Creates the merge/migration logic as a standalone, unit-tested source file and t
   - `runV1Migration(storage: Storage) -> boolean`
   - `STATE_RANK: {hard: 3, unsure: 2, known: 1}`
 
-- [ ] **Step 1: Write the failing test**
+- [x] **Step 1: Write the failing test**
 
 Create `tests/test_sync.js`:
 
@@ -184,12 +189,12 @@ test("runV1Migration is a no-op when there is no v1 data", () => {
 });
 ```
 
-- [ ] **Step 2: Run test to verify it fails**
+- [x] **Step 2: Run test to verify it fails**
 
 Run: `node --test tests/test_sync.js`
 Expected: FAIL with `Cannot find module '../templates/sync.js'`
 
-- [ ] **Step 3: Write the implementation**
+- [x] **Step 3: Write the implementation**
 
 Create `templates/sync.js`:
 
@@ -287,12 +292,12 @@ if (typeof module !== "undefined" && module.exports) {
 }
 ```
 
-- [ ] **Step 4: Run test to verify it passes**
+- [x] **Step 4: Run test to verify it passes**
 
 Run: `node --test tests/test_sync.js`
 Expected: PASS, 16 tests
 
-- [ ] **Step 5: Add the placeholder to the app template**
+- [x] **Step 5: Add the placeholder to the app template**
 
 In `templates/app.html`, replace line 101:
 
@@ -307,7 +312,7 @@ const CARDS = /*__CARDS__*/;
 /*__SYNC__*/
 ```
 
-- [ ] **Step 6: Write the failing build test**
+- [x] **Step 6: Write the failing build test**
 
 Add to `tests/test_build.py`, inside `class TestBuild`:
 
@@ -327,12 +332,12 @@ Add to `tests/test_build.py`, inside `class TestBuild`:
         self.assertNotIn("module.exports", html)
 ```
 
-- [ ] **Step 7: Run it to verify it fails**
+- [x] **Step 7: Run it to verify it fails**
 
 Run: `python3 -m unittest tests.test_build -v`
 Expected: FAIL — `/*__SYNC__*/` still present, `mergeMarks` absent
 
-- [ ] **Step 8: Teach build.py to inline the module**
+- [x] **Step 8: Teach build.py to inline the module**
 
 In `build.py`, add this helper above `def build(`:
 
@@ -360,17 +365,17 @@ to:
     return out.replace("/*__SYNC__*/", read_js("sync.js"))
 ```
 
-- [ ] **Step 9: Run the full test suite**
+- [x] **Step 9: Run the full test suite**
 
 Run: `python3 -m unittest tests.test_build tests.test_classify tests.test_extract && node --test tests/test_sync.js`
 Expected: PASS, all tests
 
-- [ ] **Step 10: Rebuild and confirm the app still works**
+- [x] **Step 10: Rebuild and confirm the app still works**
 
 Run: `python3 build.py && python3 -c "print(open('index.html').read().count('mergeMarks'))"`
 Expected: prints `1` or more, and the build prints its usual per-subject summary
 
-- [ ] **Step 11: Commit**
+- [x] **Step 11: Commit**
 
 ```bash
 git add templates/sync.js tests/test_sync.js templates/app.html build.py tests/test_build.py index.html
@@ -399,7 +404,7 @@ Switches the app from the bare-string v1 map to timestamped, per-identity marks.
   - `save() -> void` — persists `mark` to the current identity's bucket.
   - `now() -> number` — unix seconds.
 
-- [ ] **Step 1: Write the failing test**
+- [x] **Step 1: Write the failing test**
 
 Add to `tests/test_sync.js`:
 
@@ -433,12 +438,12 @@ test("applyMark does not mutate its input", () => {
 });
 ```
 
-- [ ] **Step 2: Run test to verify it fails**
+- [x] **Step 2: Run test to verify it fails**
 
 Run: `node --test tests/test_sync.js`
 Expected: FAIL with `S.stateOf is not a function`
 
-- [ ] **Step 3: Add the two accessors to sync.js**
+- [x] **Step 3: Add the two accessors to sync.js**
 
 In `templates/sync.js`, insert above the `module.exports` block:
 
@@ -461,12 +466,12 @@ function applyMark(marks, id, s, now) {
 
 And extend the export list with `stateOf: stateOf, applyMark: applyMark,`.
 
-- [ ] **Step 4: Run test to verify it passes**
+- [x] **Step 4: Run test to verify it passes**
 
 Run: `node --test tests/test_sync.js`
 Expected: PASS, 21 tests
 
-- [ ] **Step 5: Switch the app template to v2 storage**
+- [x] **Step 5: Switch the app template to v2 storage**
 
 In `templates/app.html`, replace lines 102-105:
 
@@ -490,7 +495,7 @@ const state = id => stateOf(mark, id);
 const now = () => Math.floor(Date.now() / 1000);
 ```
 
-- [ ] **Step 6: Update every read of the old bare-string shape**
+- [x] **Step 6: Update every read of the old bare-string shape**
 
 In `templates/app.html`, replace line 123:
 
@@ -536,7 +541,7 @@ with:
     : state(c.id) === "known" ? " ✅" : "";
 ```
 
-- [ ] **Step 7: Update the writer**
+- [x] **Step 7: Update the writer**
 
 In `templates/app.html`, replace lines 247-253:
 
@@ -560,7 +565,7 @@ function setMark(v) {
 }
 ```
 
-- [ ] **Step 8: Rebuild and verify by hand**
+- [x] **Step 8: Rebuild and verify by hand**
 
 Run: `python3 build.py && python3 -m http.server 8765 --directory .`
 
@@ -574,7 +579,7 @@ In a browser at `http://localhost:8765/index.html`:
 
 Stop the server with Ctrl-C.
 
-- [ ] **Step 9: Verify the migration against real v1 data**
+- [x] **Step 9: Verify the migration against real v1 data**
 
 In the devtools console:
 
@@ -587,12 +592,12 @@ location.reload();
 After reload, run `localStorage.getItem("gisa-cards-v2:anon")`.
 Expected: `{"001":{"s":"hard","t":1},"002":{"s":"known","t":1}}`, and `gisa-cards-v1` is gone. Card 001 shows 😵 and 002 shows ✅ in the TOC.
 
-- [ ] **Step 10: Run the full suite**
+- [x] **Step 10: Run the full suite**
 
 Run: `python3 -m unittest tests.test_build tests.test_classify tests.test_extract && node --test tests/test_sync.js`
 Expected: PASS
 
-- [ ] **Step 11: Commit**
+- [x] **Step 11: Commit**
 
 ```bash
 git add templates/sync.js templates/app.html tests/test_sync.js index.html
@@ -639,7 +644,7 @@ create policy "own row" on progress
 5. Authentication → URL Configuration: set **Site URL** to `https://sinhong96.github.io/info-processing-gisa-cards/` and add both that URL and `http://localhost:8765/index.html` to **Redirect URLs**.
 6. Authentication → Users → Add user: create the account with the email you will study under.
 
-- [ ] **Step 1: Write the failing test**
+- [x] **Step 1: Write the failing test**
 
 Add to `tests/test_build.py`, inside `class TestBuild`:
 
@@ -676,12 +681,12 @@ And replace `test_build_emits_self_contained_html` with:
             self.assertEqual(url, "https://abc.supabase.co", f"unexpected host {url}")
 ```
 
-- [ ] **Step 2: Run it to verify it fails**
+- [x] **Step 2: Run it to verify it fails**
 
 Run: `python3 -m unittest tests.test_build -v`
 Expected: FAIL — `build() got an unexpected keyword argument 'supa'`
 
-- [ ] **Step 3: Add config loading to build.py**
+- [x] **Step 3: Add config loading to build.py**
 
 In `build.py`, add above `def build(`:
 
@@ -724,7 +729,7 @@ In `main()`, change the write call from `fh.write(build(cards, subjects))` to:
         fh.write(build(cards, subjects, read_supabase()))
 ```
 
-- [ ] **Step 4: Add the placeholder to the template**
+- [x] **Step 4: Add the placeholder to the template**
 
 In `templates/app.html`, immediately after the `/*__SYNC__*/` line, add:
 
@@ -734,12 +739,12 @@ In `templates/app.html`, immediately after the `/*__SYNC__*/` line, add:
 const SUPA = /*__SUPABASE__*/;
 ```
 
-- [ ] **Step 5: Run the tests**
+- [x] **Step 5: Run the tests**
 
 Run: `python3 -m unittest tests.test_build -v`
 Expected: PASS
 
-- [ ] **Step 6: Add the example config and ignore the real one**
+- [x] **Step 6: Add the example config and ignore the real one**
 
 Create `supabase.example.json`:
 
@@ -759,7 +764,7 @@ supabase.json
 The anon key is publishable, but the real config is gitignored anyway so a
 fork does not silently sync into someone else's project.
 
-- [ ] **Step 7: Create your real config and rebuild**
+- [x] **Step 7: Create your real config and rebuild**
 
 ```bash
 cp supabase.example.json supabase.json
@@ -770,7 +775,7 @@ grep -c "supabase.co" index.html
 
 Expected: `grep` prints a non-zero count.
 
-- [ ] **Step 8: Commit**
+- [x] **Step 8: Commit**
 
 ```bash
 git add build.py templates/app.html tests/test_build.py supabase.example.json .gitignore index.html
@@ -807,7 +812,7 @@ The network layer, split from the UI so its parsing logic can be tested.
 
 A session object is always `{access_token, refresh_token, expires_at, user_id, email}`. `email` is carried so the header can show who is signed in without a second request.
 
-- [ ] **Step 1: Write the failing test**
+- [x] **Step 1: Write the failing test**
 
 Create `tests/test_cloud.js`:
 
@@ -949,12 +954,12 @@ test("refreshSession surfaces a dead refresh token as an auth error", async () =
 });
 ```
 
-- [ ] **Step 2: Run test to verify it fails**
+- [x] **Step 2: Run test to verify it fails**
 
 Run: `node --test tests/test_cloud.js`
 Expected: FAIL with `Cannot find module '../templates/cloud.js'`
 
-- [ ] **Step 3: Write the implementation**
+- [x] **Step 3: Write the implementation**
 
 Create `templates/cloud.js`:
 
@@ -1087,12 +1092,12 @@ if (typeof module !== "undefined" && module.exports) {
 }
 ```
 
-- [ ] **Step 4: Run test to verify it passes**
+- [x] **Step 4: Run test to verify it passes**
 
 Run: `node --test tests/test_cloud.js`
 Expected: PASS, 15 tests
 
-- [ ] **Step 5: Inline it in the build**
+- [x] **Step 5: Inline it in the build**
 
 In `templates/app.html`, add `/*__CLOUD__*/` on its own line immediately after the `const SUPA = ...;` line.
 
@@ -1116,12 +1121,12 @@ Add to `tests/test_build.py`, inside `class TestBuild`:
         self.assertNotIn("/*__CLOUD__*/", html)
 ```
 
-- [ ] **Step 6: Run the full suite**
+- [x] **Step 6: Run the full suite**
 
 Run: `python3 -m unittest tests.test_build tests.test_classify tests.test_extract && node --test tests/test_sync.js tests/test_cloud.js`
 Expected: PASS
 
-- [ ] **Step 7: Commit**
+- [x] **Step 7: Commit**
 
 ```bash
 git add templates/cloud.js tests/test_cloud.js build.py templates/app.html tests/test_build.py index.html
@@ -1146,7 +1151,7 @@ Adds the header control, the magic-link round trip, and session restore. No mark
   - `signIn() -> void`, `signOut() -> void`
   - `renderAuth() -> void` — refreshes the header control.
 
-- [ ] **Step 1: Add the header control and its styling**
+- [x] **Step 1: Add the header control and its styling**
 
 In `templates/app.html`, replace line 82:
 
@@ -1167,7 +1172,7 @@ And add to the `<style>` block, after the `select{...}` rule (line 22):
   #authbtn{max-width:38vw;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 ```
 
-- [ ] **Step 2: Add the session lifecycle to the script**
+- [x] **Step 2: Add the session lifecycle to the script**
 
 In `templates/app.html`, insert immediately before the `buildSubjectSelect();` call at the end of the script:
 
@@ -1259,7 +1264,7 @@ render();
 initAuth();
 ```
 
-- [ ] **Step 3: Rebuild and verify the offline-only path first**
+- [x] **Step 3: Rebuild and verify the offline-only path first**
 
 ```bash
 mv supabase.json supabase.json.bak && python3 build.py
@@ -1272,7 +1277,7 @@ At `http://localhost:8765/index.html`: the header shows **no** 로그인 button,
 mv supabase.json.bak supabase.json && python3 build.py
 ```
 
-- [ ] **Step 4: Verify the magic-link round trip**
+- [x] **Step 4: Verify the magic-link round trip**
 
 With the server still running, reload `http://localhost:8765/index.html`.
 
@@ -1285,16 +1290,16 @@ With the server still running, reload `http://localhost:8765/index.html`.
 7. Reload — you stay signed in and the mark is still there.
 8. Click 🔓 to sign out — marks revert to the anon bucket's contents, and the user bucket is left untouched on disk.
 
-- [ ] **Step 5: Verify an unknown email is rejected**
+- [x] **Step 5: Verify an unknown email is rejected**
 
 Click 로그인 and enter an address that has no Supabase user. Because signup is disabled, expect the failure alert rather than a new account. If a new account *is* created, revisit step 4 of the Task 3 prerequisite — signup is still enabled.
 
-- [ ] **Step 6: Run the full suite**
+- [x] **Step 6: Run the full suite**
 
 Run: `python3 -m unittest tests.test_build tests.test_classify tests.test_extract && node --test tests/test_sync.js tests/test_cloud.js`
 Expected: PASS
 
-- [ ] **Step 7: Commit**
+- [x] **Step 7: Commit**
 
 ```bash
 git add templates/app.html index.html
@@ -1320,7 +1325,7 @@ Wires marks to the cloud: pull-and-merge on sign-in, debounced push after change
   - `queuePush() -> void` — debounced, ~2s.
   - `flushPush() -> void` — immediate; used on `pagehide`.
 
-- [ ] **Step 1: Write the failing test**
+- [x] **Step 1: Write the failing test**
 
 Add to `tests/test_sync.js`:
 
@@ -1336,12 +1341,12 @@ test("marksDiffer detects an added, changed, or removed card", () => {
 });
 ```
 
-- [ ] **Step 2: Run it to verify it fails**
+- [x] **Step 2: Run it to verify it fails**
 
 Run: `node --test tests/test_sync.js`
 Expected: FAIL with `S.marksDiffer is not a function`
 
-- [ ] **Step 3: Implement it**
+- [x] **Step 3: Implement it**
 
 In `templates/sync.js`, add above the `module.exports` block:
 
@@ -1359,12 +1364,12 @@ function marksDiffer(a, b) {
 
 Extend the export list with `marksDiffer: marksDiffer,`.
 
-- [ ] **Step 4: Run test to verify it passes**
+- [x] **Step 4: Run test to verify it passes**
 
 Run: `node --test tests/test_sync.js`
 Expected: PASS, 22 tests
 
-- [ ] **Step 5: Add the status dot to the header**
+- [x] **Step 5: Add the status dot to the header**
 
 In `templates/app.html`, replace the `<button id="authbtn" hidden></button>` line with:
 
@@ -1382,7 +1387,7 @@ Add to the `<style>` block, after the `#authbtn{...}` rule:
   #syncdot.offline{background:#e03131}
 ```
 
-- [ ] **Step 6: Add the sync engine to the script**
+- [x] **Step 6: Add the sync engine to the script**
 
 In `templates/app.html`, insert immediately before the `document.getElementById("authbtn").onclick` line:
 
@@ -1464,7 +1469,7 @@ addEventListener("visibilitychange", () => {
 });
 ```
 
-- [ ] **Step 7: Trigger a push whenever marks change**
+- [x] **Step 7: Trigger a push whenever marks change**
 
 In `templates/app.html`, change `setMark` to:
 
@@ -1482,7 +1487,7 @@ And change the 초기화 handler body from `mark = {}; save();` to:
   mark = {}; save(); queuePush();
 ```
 
-- [ ] **Step 8: Pull on sign-in and on load**
+- [x] **Step 8: Pull on sign-in and on load**
 
 In `templates/app.html`, in `switchIdentity`, replace the final `render();` with:
 
@@ -1493,7 +1498,7 @@ In `templates/app.html`, in `switchIdentity`, replace the final `render();` with
 
 And in `signOut`, add `setSyncStatus("off");` immediately after `session = null;`.
 
-- [ ] **Step 9: Rebuild and verify single-device sync**
+- [x] **Step 9: Rebuild and verify single-device sync**
 
 ```bash
 python3 build.py && python3 -m http.server 8765 --directory .
@@ -1506,7 +1511,7 @@ At `http://localhost:8765/index.html`, signed in:
 4. Devtools → Network → set throttling to **Offline**. Mark another card. The dot turns 🔴, the mark still appears in the UI and in localStorage, and nothing throws in the console.
 5. Set throttling back to **No throttling** and reload. The dot returns 🟢 and the offline mark is now in the Supabase row.
 
-- [ ] **Step 10: Verify the cross-device merge**
+- [x] **Step 10: Verify the cross-device merge**
 
 This is the actual goal of the whole plan, so test it for real.
 
@@ -1516,7 +1521,7 @@ This is the actual goal of the whole plan, so test it for real.
 4. On the phone, mark card 002 as ✅.
 5. Back on the MacBook, reload. Card 002 now shows ✅ and card 001 is still 😵.
 
-- [ ] **Step 11: Verify the offline-conflict case**
+- [x] **Step 11: Verify the offline-conflict case**
 
 The scenario the per-card merge exists for:
 
@@ -1525,7 +1530,7 @@ The scenario the per-card merge exists for:
 3. Phone: back online, reload.
 4. Expect **both** 003 😵 and 004 ✅ present on both devices. Neither device's work is lost.
 
-- [ ] **Step 12: Verify the expired-session path**
+- [x] **Step 12: Verify the expired-session path**
 
 Forge a dead session and confirm it recovers rather than silently failing. In the console:
 
@@ -1541,12 +1546,12 @@ Expected: the refresh fails, you land signed out with the alert
 "로그인이 만료되었습니다…", the dot returns to hidden, and your marks are still
 in `gisa-cards-v2:<uuid>` untouched. Sign in again and they come back.
 
-- [ ] **Step 13: Run the full suite**
+- [x] **Step 13: Run the full suite**
 
 Run: `python3 -m unittest tests.test_build tests.test_classify tests.test_extract && node --test tests/test_sync.js tests/test_cloud.js`
 Expected: PASS
 
-- [ ] **Step 14: Commit**
+- [x] **Step 14: Commit**
 
 ```bash
 git add templates/sync.js templates/app.html tests/test_sync.js index.html
@@ -1570,7 +1575,7 @@ The device-side half of user isolation. Without this, a friend signing in on a s
   - `claimAnon(storage, userId) -> object` — merges anon into the user's bucket, clears anon, returns the merged map.
   - `maybeClaimAnon() -> void` in the app.
 
-- [ ] **Step 1: Write the failing test**
+- [x] **Step 1: Write the failing test**
 
 Add to `tests/test_sync.js`:
 
@@ -1615,12 +1620,12 @@ test("claimAnon leaves other users' buckets untouched", () => {
 });
 ```
 
-- [ ] **Step 2: Run it to verify it fails**
+- [x] **Step 2: Run it to verify it fails**
 
 Run: `node --test tests/test_sync.js`
 Expected: FAIL with `S.anonMarkCount is not a function`
 
-- [ ] **Step 3: Implement**
+- [x] **Step 3: Implement**
 
 In `templates/sync.js`, add above the `module.exports` block:
 
@@ -1642,12 +1647,12 @@ function claimAnon(storage, userId) {
 
 Extend the export list with `anonMarkCount: anonMarkCount, claimAnon: claimAnon,`.
 
-- [ ] **Step 4: Run test to verify it passes**
+- [x] **Step 4: Run test to verify it passes**
 
 Run: `node --test tests/test_sync.js`
 Expected: PASS, 26 tests
 
-- [ ] **Step 5: Ask before claiming, in the app**
+- [x] **Step 5: Ask before claiming, in the app**
 
 In `templates/app.html`, add immediately after the `switchIdentity` function:
 
@@ -1667,7 +1672,7 @@ function maybeClaimAnon() {
 }
 ```
 
-- [ ] **Step 6: Call it on sign-in only, not on every load**
+- [x] **Step 6: Call it on sign-in only, not on every load**
 
 In `templates/app.html`, in `initAuth`, change the magic-link branch so the prompt fires right after the identity switch. Replace:
 
@@ -1692,7 +1697,7 @@ with:
 
 Only the magic-link branch prompts. Restoring a stored session on every reload must not re-ask, or the dialog becomes a permanent nuisance for a user who already said 아니오.
 
-- [ ] **Step 7: Rebuild and verify the claim path**
+- [x] **Step 7: Rebuild and verify the claim path**
 
 ```bash
 python3 build.py && python3 -m http.server 8765 --directory .
@@ -1703,7 +1708,7 @@ python3 build.py && python3 -m http.server 8765 --directory .
 3. Answer 확인. The three marks appear under your account, `gisa-cards-v2:anon` is gone, and the Supabase row now contains them.
 4. Reload. **No dialog** — the stored-session path must not re-prompt.
 
-- [ ] **Step 8: Verify the isolation path**
+- [x] **Step 8: Verify the isolation path**
 
 This is the case the whole task exists for.
 
@@ -1713,12 +1718,12 @@ This is the case the whole task exists for.
 4. `gisa-cards-v2:anon` still holds those two marks, and the Supabase row was not written.
 5. Sign out. The two anon marks are visible again.
 
-- [ ] **Step 9: Run the full suite**
+- [x] **Step 9: Run the full suite**
 
 Run: `python3 -m unittest tests.test_build tests.test_classify tests.test_extract && node --test tests/test_sync.js tests/test_cloud.js`
 Expected: PASS
 
-- [ ] **Step 10: Commit**
+- [x] **Step 10: Commit**
 
 ```bash
 git add templates/sync.js templates/app.html tests/test_sync.js index.html
@@ -1746,7 +1751,7 @@ Stops the Supabase free tier from pausing, and writes down what to do when it pa
 
 They are secrets for tidiness rather than confidentiality; the anon key is already published in `index.html`.
 
-- [ ] **Step 1: Create the workflow**
+- [x] **Step 1: Create the workflow**
 
 Create `.github/workflows/supabase-keepalive.yml`:
 
@@ -1787,14 +1792,14 @@ jobs:
           esac
 ```
 
-- [ ] **Step 2: Run it once by hand**
+- [x] **Step 2: Run it once by hand**
 
 Push the branch, then in the GitHub UI: Actions → supabase-keepalive → Run workflow.
 Expected: green, with `PostgREST returned 200` (or `401`) in the log.
 
 If it fails, check that both repository secrets exist and that `SUPABASE_URL` has no trailing slash.
 
-- [ ] **Step 3: Add the runbook to the README**
+- [x] **Step 3: Add the runbook to the README**
 
 Append to `README.md`:
 
@@ -1844,14 +1849,14 @@ RLS 정책(`auth.uid() = user_id`)이 사용자별 격리를 보장하므로, �
 표시가 섞이지 않습니다.
 ```
 
-- [ ] **Step 4: Verify the README renders**
+- [x] **Step 4: Verify the README renders**
 
 Run: `python3 -m unittest tests.test_build tests.test_classify tests.test_extract && node --test tests/test_sync.js tests/test_cloud.js`
 Expected: PASS
 
 Then read the new README section on GitHub (or in a Markdown preview) and confirm the code fences and headings are intact.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add .github/workflows/supabase-keepalive.yml README.md
@@ -1862,12 +1867,12 @@ git commit -m "chore: add Supabase keepalive workflow and operations runbook"
 
 ## Final verification
 
-- [ ] **Full test suite**
+- [x] **Full test suite**
 
 Run: `python3 -m unittest tests.test_build tests.test_classify tests.test_extract && node --test tests/test_sync.js tests/test_cloud.js`
 Expected: PASS, no skips
 
-- [ ] **Clean rebuild**
+- [x] **Clean rebuild**
 
 Run: `python3 build.py`
 Expected: the usual per-subject summary, all 5 과목 complete
