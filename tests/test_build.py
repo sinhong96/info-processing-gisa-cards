@@ -152,6 +152,12 @@ class TestBuild(unittest.TestCase):
         self.assertIn("gisa-cards-v2", html)
         self.assertNotIn("/*__SYNC__*/", html)
 
+    def test_build_inlines_the_cloud_module(self):
+        cards = json.load(open(os.path.join(ROOT, "cards.json"), encoding="utf-8"))
+        html = build.build(cards, 1)
+        self.assertIn("function pushProgress(", html)
+        self.assertNotIn("/*__CLOUD__*/", html)
+
     def test_build_strips_the_node_only_module_export(self):
         # The CommonJS tail exists for `node --test`. Leaving it in the browser
         # bundle is harmless but dead; assert we drop it so it cannot rot.

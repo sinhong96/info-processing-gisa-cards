@@ -103,6 +103,7 @@ def build(cards, subjects, supa=None):
     data = data.replace("</", "<\\/")
     out = tmpl.replace("/*__CARDS__*/", data)
     out = out.replace("/*__SYNC__*/", read_js("sync.js"))
+    out = out.replace("/*__CLOUD__*/", read_js("cloud.js"))
     return out.replace("/*__SUPABASE__*/",
                        json.dumps(supa) if supa else "null")
 
