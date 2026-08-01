@@ -141,6 +141,45 @@ test("applyMark replaces a different state rather than toggling", () => {
     {"001": {s: "known", t: 2000}});
 });
 
+test("anonMarkCount counts only the anon bucket", () => {
+  const st = fakeStorage({
+    "gisa-cards-v2:anon": JSON.stringify({"001": {s: "hard", t: 1}}),
+    "gisa-cards-v2:u1": JSON.stringify({"002": {s: "known", t: 1},
+                                        "003": {s: "known", t: 1}}),
+  });
+  assert.equal(S.anonMarkCount(st), 1);
+  assert.equal(S.anonMarkCount(fakeStorage()), 0);
+});
+
+test("claimAnon merges anon into the user bucket and clears anon", () => {
+  const st = fakeStorage({
+    "gisa-cards-v2:anon": JSON.stringify({"001": {s: "hard", t: 5}}),
+    "gisa-cards-v2:u1": JSON.stringify({"002": {s: "known", t: 5}}),
+  });
+  const out = S.claimAnon(st, "u1");
+  assert.deepEqual(out, {"001": {s: "hard", t: 5}, "002": {s: "known", t: 5}});
+  assert.deepEqual(S.loadMarks(st, "u1"), out);
+  assert.equal(st.getItem("gisa-cards-v2:anon"), null);
+});
+
+test("claimAnon applies the merge rule rather than overwriting", () => {
+  const st = fakeStorage({
+    "gisa-cards-v2:anon": JSON.stringify({"001": {s: "hard", t: 1}}),
+    "gisa-cards-v2:u1": JSON.stringify({"001": {s: "known", t: 99}}),
+  });
+  // The user's newer 암기함 must survive a legacy t:1 어려움.
+  assert.deepEqual(S.claimAnon(st, "u1"), {"001": {s: "known", t: 99}});
+});
+
+test("claimAnon leaves other users' buckets untouched", () => {
+  const st = fakeStorage({
+    "gisa-cards-v2:anon": JSON.stringify({"001": {s: "hard", t: 5}}),
+    "gisa-cards-v2:u2": JSON.stringify({"009": {s: "known", t: 5}}),
+  });
+  S.claimAnon(st, "u1");
+  assert.deepEqual(S.loadMarks(st, "u2"), {"009": {s: "known", t: 5}});
+});
+
 test("marksDiffer detects an added, changed, or removed card", () => {
   const a = {"001": {s: "hard", t: 1}};
   assert.equal(S.marksDiffer(a, a), false);

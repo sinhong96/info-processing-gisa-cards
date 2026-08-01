@@ -204,6 +204,20 @@ function applyMark(marks, id, s, now) {
   return out;
 }
 
+function anonMarkCount(storage) {
+  return Object.keys(loadMarks(storage, null)).length;
+}
+
+/* Fold pre-login marks into a signed-in user's bucket. Called only after an
+   explicit yes — a silent claim is exactly how one user would inherit
+   another's progress on a shared browser. */
+function claimAnon(storage, userId) {
+  var merged = mergeMarks(loadMarks(storage, userId), loadMarks(storage, null));
+  saveMarks(storage, userId, merged);
+  try { storage.removeItem(markKey(null)); } catch (e) {}
+  return merged;
+}
+
 /* Cheap equality over the mark map. Used to decide whether a merge actually
    changed anything, so an unchanged pull does not trigger a pointless push. */
 function marksDiffer(a, b) {
@@ -575,6 +589,21 @@ function switchIdentity(userId) {
   if (currentUser) pullAndMerge(); else setSyncStatus("off");
 }
 
+/* Pre-login marks belong to whoever made them, and only that person knows who
+   that is. Asking is what keeps a shared browser from moving one user's
+   progress into another user's account. */
+function maybeClaimAnon() {
+  if (!currentUser) return;
+  const n = anonMarkCount(localStorage);
+  if (!n) return;
+  const ok = confirm(
+    "이 기기에 로그인 전 학습 기록이 " + n + "장 있습니다.\n내 계정에 합칠까요?");
+  if (!ok) return;
+  mark = claimAnon(localStorage, currentUser);
+  render();
+  queuePush();
+}
+
 function renderAuth() {
   const b = document.getElementById("authbtn");
   if (!SUPA) { b.hidden = true; return; }   // built offline-only
@@ -609,9 +638,12 @@ function initAuth() {
     session = fromLink;
     saveSession(localStorage, session);
     switchIdentity(session.user_id);
+    maybeClaimAnon();
     renderAuth();
     return Promise.resolve();
   }
+  /* Only the magic-link branch prompts. Restoring a stored session on every
+     reload must not re-ask, or a user who said 아니오 is nagged forever. */
   const stored = loadSession(localStorage);
   if (!stored) { renderAuth(); return Promise.resolve(); }
   if (sessionValid(stored, now())) {

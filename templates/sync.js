@@ -96,6 +96,20 @@ function applyMark(marks, id, s, now) {
   return out;
 }
 
+function anonMarkCount(storage) {
+  return Object.keys(loadMarks(storage, null)).length;
+}
+
+/* Fold pre-login marks into a signed-in user's bucket. Called only after an
+   explicit yes — a silent claim is exactly how one user would inherit
+   another's progress on a shared browser. */
+function claimAnon(storage, userId) {
+  var merged = mergeMarks(loadMarks(storage, userId), loadMarks(storage, null));
+  saveMarks(storage, userId, merged);
+  try { storage.removeItem(markKey(null)); } catch (e) {}
+  return merged;
+}
+
 /* Cheap equality over the mark map. Used to decide whether a merge actually
    changed anything, so an unchanged pull does not trigger a pointless push. */
 function marksDiffer(a, b) {
@@ -113,5 +127,5 @@ if (typeof module !== "undefined" && module.exports) {
     markKey: markKey, validMark: validMark, migrateV1: migrateV1,
     mergeMarks: mergeMarks, loadMarks: loadMarks, saveMarks: saveMarks,
     runV1Migration: runV1Migration, stateOf: stateOf, applyMark: applyMark,
-    marksDiffer: marksDiffer};
+    marksDiffer: marksDiffer, anonMarkCount: anonMarkCount, claimAnon: claimAnon};
 }
