@@ -69,7 +69,17 @@ def read_supabase():
     missing = [k for k in ("url", "anonKey") if not cfg.get(k)]
     if missing:
         raise SystemExit(f"supabase.json is missing: {', '.join(missing)}")
-    return {"url": cfg["url"].rstrip("/"), "anonKey": cfg["anonKey"]}
+    # The dashboard's "Data API" panel shows the REST endpoint, not the project
+    # origin, so pasting it verbatim is the obvious mistake. Trim it rather than
+    # letting requests land on /rest/v1/rest/v1/progress.
+    url = re.sub(r"/(rest|auth)/v1/?$", "", cfg["url"].strip().rstrip("/"))
+    if not url.startswith("https://"):
+        raise SystemExit(f"supabase.json url must start with https:// — got {url!r}")
+    if cfg["anonKey"].startswith("sb_secret_") or ".service_role." in cfg["anonKey"]:
+        raise SystemExit(
+            "supabase.json holds a SECRET key. That key bypasses row-level "
+            "security and index.html is public — use the publishable/anon key.")
+    return {"url": url, "anonKey": cfg["anonKey"].strip()}
 
 
 def build(cards, subjects, supa=None):

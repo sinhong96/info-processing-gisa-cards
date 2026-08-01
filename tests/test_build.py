@@ -68,6 +68,55 @@ class TestPilotScenes(unittest.TestCase):
                 self.assertIn(hexcode.lower(), allowed, f"{cid} uses {hexcode}")
 
 
+class TestSupabaseConfig(unittest.TestCase):
+    def read(self, cfg):
+        import tempfile, unittest.mock
+        with tempfile.TemporaryDirectory() as d:
+            path = os.path.join(d, "supabase.json")
+            with open(path, "w", encoding="utf-8") as fh:
+                json.dump(cfg, fh)
+            with unittest.mock.patch.object(build, "HERE", d):
+                return build.read_supabase()
+
+    def test_missing_file_means_offline_only(self):
+        import tempfile, unittest.mock
+        with tempfile.TemporaryDirectory() as d:
+            with unittest.mock.patch.object(build, "HERE", d):
+                self.assertIsNone(build.read_supabase())
+
+    def test_plain_project_url_is_kept(self):
+        cfg = self.read({"url": "https://abc.supabase.co", "anonKey": "k"})
+        self.assertEqual(cfg["url"], "https://abc.supabase.co")
+
+    def test_rest_endpoint_url_is_trimmed_to_the_origin(self):
+        # This is what the dashboard's "Data API" panel actually shows.
+        for pasted in ("https://abc.supabase.co/rest/v1/",
+                       "https://abc.supabase.co/rest/v1",
+                       "https://abc.supabase.co/auth/v1/",
+                       "  https://abc.supabase.co/  "):
+            cfg = self.read({"url": pasted, "anonKey": "k"})
+            self.assertEqual(cfg["url"], "https://abc.supabase.co", pasted)
+
+    def test_non_https_url_is_rejected(self):
+        with self.assertRaises(SystemExit):
+            self.read({"url": "abc.supabase.co", "anonKey": "k"})
+
+    def test_secret_keys_are_refused(self):
+        # index.html is public; a secret key there would bypass RLS entirely.
+        for bad in ("sb_secret_abc123", "eyJ.service_role.xyz"):
+            with self.assertRaises(SystemExit, msg=bad):
+                self.read({"url": "https://abc.supabase.co", "anonKey": bad})
+
+    def test_publishable_and_anon_keys_are_accepted(self):
+        for ok in ("sb_publishable_abc123", "eyJhbGciOiJIUzI1NiJ9.abc.def"):
+            cfg = self.read({"url": "https://abc.supabase.co", "anonKey": ok})
+            self.assertEqual(cfg["anonKey"], ok)
+
+    def test_incomplete_config_is_refused(self):
+        with self.assertRaises(SystemExit):
+            self.read({"url": "https://abc.supabase.co"})
+
+
 class TestBuild(unittest.TestCase):
     def test_build_emits_self_contained_html(self):
         # The page must load and run with no network. Requests to Supabase are
