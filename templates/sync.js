@@ -81,11 +81,26 @@ function runV1Migration(storage) {
   } catch (e) { return false; }
 }
 
+function stateOf(marks, id) {
+  var m = marks[id];
+  return validMark(m) ? m.s : undefined;
+}
+
+/* Returns a new map. Re-applying the state a card already has clears it, which
+   is how the footer buttons have always toggled. */
+function applyMark(marks, id, s, now) {
+  var out = {};
+  Object.keys(marks).forEach(function (k) { out[k] = marks[k]; });
+  if (stateOf(out, id) === s) delete out[id];
+  else out[id] = {s: s, t: now};
+  return out;
+}
+
 /* Present only under node --test; absent in the browser, where build.py has
    already inlined these onto the script's scope. */
 if (typeof module !== "undefined" && module.exports) {
   module.exports = {MARK_PREFIX: MARK_PREFIX, V1_KEY: V1_KEY, STATE_RANK: STATE_RANK,
     markKey: markKey, validMark: validMark, migrateV1: migrateV1,
     mergeMarks: mergeMarks, loadMarks: loadMarks, saveMarks: saveMarks,
-    runV1Migration: runV1Migration};
+    runV1Migration: runV1Migration, stateOf: stateOf, applyMark: applyMark};
 }

@@ -118,3 +118,31 @@ test("runV1Migration is a no-op when there is no v1 data", () => {
   assert.equal(S.runV1Migration(st), false);
   assert.equal(st.getItem("gisa-cards-v2:anon"), null);
 });
+
+test("stateOf reads the state out of a v2 mark", () => {
+  assert.equal(S.stateOf({"001": {s: "hard", t: 9}}, "001"), "hard");
+  assert.equal(S.stateOf({}, "001"), undefined);
+  assert.equal(S.stateOf({"001": {s: "bogus", t: 9}}, "001"), undefined);
+});
+
+test("applyMark sets a state with the supplied timestamp", () => {
+  assert.deepEqual(S.applyMark({}, "001", "hard", 1000),
+    {"001": {s: "hard", t: 1000}});
+});
+
+test("applyMark toggles the same state off", () => {
+  const m = {"001": {s: "hard", t: 1000}};
+  assert.deepEqual(S.applyMark(m, "001", "hard", 2000), {});
+});
+
+test("applyMark replaces a different state rather than toggling", () => {
+  const m = {"001": {s: "hard", t: 1000}};
+  assert.deepEqual(S.applyMark(m, "001", "known", 2000),
+    {"001": {s: "known", t: 2000}});
+});
+
+test("applyMark does not mutate its input", () => {
+  const m = {"001": {s: "hard", t: 1000}};
+  S.applyMark(m, "001", "known", 2000);
+  assert.deepEqual(m, {"001": {s: "hard", t: 1000}});
+});

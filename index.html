@@ -182,13 +182,32 @@ function runV1Migration(storage) {
   } catch (e) { return false; }
 }
 
+function stateOf(marks, id) {
+  var m = marks[id];
+  return validMark(m) ? m.s : undefined;
+}
+
+/* Returns a new map. Re-applying the state a card already has clears it, which
+   is how the footer buttons have always toggled. */
+function applyMark(marks, id, s, now) {
+  var out = {};
+  Object.keys(marks).forEach(function (k) { out[k] = marks[k]; });
+  if (stateOf(out, id) === s) delete out[id];
+  else out[id] = {s: s, t: now};
+  return out;
+}
+
 /* Present only under node --test; absent in the browser, where build.py has
    already inlined these onto the script's scope. */
 
-const KEY = "gisa-cards-v1";
-let mark = {};
-try { mark = JSON.parse(localStorage.getItem(KEY) || "{}"); } catch (e) { mark = {}; }
-const save = () => localStorage.setItem(KEY, JSON.stringify(mark));
+/* null until a user signs in; marks then move to that user's own bucket so a
+   shared browser never leaks progress between accounts. */
+let currentUser = null;
+runV1Migration(localStorage);
+let mark = loadMarks(localStorage, currentUser);
+const save = () => saveMarks(localStorage, currentUser, mark);
+const state = id => stateOf(mark, id);
+const now = () => Math.floor(Date.now() / 1000);
 
 const SUBJ_KEY = "gisa-cards-subject";
 let order = CARDS.slice();          // card order; shuffling permutes this
@@ -206,7 +225,7 @@ function subjectDeck() {
 }
 // "복습할 것만" means everything not yet mastered — 어려움 and 애매함 both.
 function needsReview(id) {
-  return mark[id] === "hard" || mark[id] === "unsure";
+  return state(id) === "hard" || state(id) === "unsure";
 }
 function activeDeck() {
   const d = subjectDeck();
@@ -270,7 +289,7 @@ function updateToc() {
     if (on) el.scrollIntoView({block: "nearest"});
   });
   document.querySelectorAll("[data-s]").forEach(el => {
-    const m = mark[el.dataset.s];
+    const m = state(el.dataset.s);
     el.textContent = m === "hard" ? "😵" : m === "unsure" ? "🤔" : m === "known" ? "✅" : "";
   });
 }
@@ -320,10 +339,10 @@ function render() {
     : '<div class="front"><div class="num">' + c.id + '</div><div class="ttl">'
         + esc(c.title) + '</div><div class="tap">탭하거나 space를 눌러 뒤집기</div></div>';
   const scope = subjectDeck();
-  const known = scope.filter(x => mark[x.id] === "known").length;
-  const badge = mark[c.id] === "hard" ? " 😵"
-    : mark[c.id] === "unsure" ? " 🤔"
-    : mark[c.id] === "known" ? " ✅" : "";
+  const known = scope.filter(x => state(x.id) === "known").length;
+  const badge = state(c.id) === "hard" ? " 😵"
+    : state(c.id) === "unsure" ? " 🤔"
+    : state(c.id) === "known" ? " ✅" : "";
   document.getElementById("count").textContent =
     (i + 1) + " / " + d.length + badge + "   ·   암기 " + known + "/" + scope.length;
   updateToc();
@@ -332,9 +351,7 @@ function render() {
 function go(n) { i += n; flipped = false; render(); }
 function setMark(v) {
   const d = activeDeck(); if (!d.length) return;
-  const id = d[i].id;
-  mark[id] = mark[id] === v ? undefined : v;
-  if (mark[id] === undefined) delete mark[id];
+  mark = applyMark(mark, d[i].id, v, now());
   save(); go(1);
 }
 
