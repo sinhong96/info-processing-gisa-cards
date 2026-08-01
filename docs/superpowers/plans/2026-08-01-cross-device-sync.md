@@ -1,9 +1,9 @@
 # Cross-Device Progress Sync Implementation Plan
 
-**Status (2026-08-02):** Tasks 1–8 are implemented, committed (`740b384`…`727ba03`),
-and pushed. Boxes were ticked retroactively — the work happened without them being
-maintained in flight. The only step still genuinely open is the last one: the
-two-device acceptance check on the deployed URL.
+**Status (2026-08-02): complete.** Tasks 1–8 implemented, committed
+(`740b384`…`727ba03`), and pushed; the two-device acceptance check passed on the
+deployed URL. Boxes were ticked retroactively — the work happened without them
+being maintained in flight.
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
@@ -1877,7 +1877,7 @@ Expected: PASS, no skips
 Run: `python3 build.py`
 Expected: the usual per-subject summary, all 5 과목 complete
 
-- [ ] **Deploy and confirm on both devices**
+- [x] **Deploy and confirm on both devices**
 
 Push the branch, merge, and wait for GitHub Pages. Then on the real deployed URL:
 
