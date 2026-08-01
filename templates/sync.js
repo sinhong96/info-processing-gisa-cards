@@ -96,11 +96,22 @@ function applyMark(marks, id, s, now) {
   return out;
 }
 
+/* Cheap equality over the mark map. Used to decide whether a merge actually
+   changed anything, so an unchanged pull does not trigger a pointless push. */
+function marksDiffer(a, b) {
+  var ka = Object.keys(a), kb = Object.keys(b);
+  if (ka.length !== kb.length) return true;
+  return ka.some(function (id) {
+    return !b[id] || b[id].s !== a[id].s || b[id].t !== a[id].t;
+  });
+}
+
 /* Present only under node --test; absent in the browser, where build.py has
    already inlined these onto the script's scope. */
 if (typeof module !== "undefined" && module.exports) {
   module.exports = {MARK_PREFIX: MARK_PREFIX, V1_KEY: V1_KEY, STATE_RANK: STATE_RANK,
     markKey: markKey, validMark: validMark, migrateV1: migrateV1,
     mergeMarks: mergeMarks, loadMarks: loadMarks, saveMarks: saveMarks,
-    runV1Migration: runV1Migration, stateOf: stateOf, applyMark: applyMark};
+    runV1Migration: runV1Migration, stateOf: stateOf, applyMark: applyMark,
+    marksDiffer: marksDiffer};
 }

@@ -21,6 +21,10 @@
          border:1px solid var(--line);background:var(--card);color:var(--fg);cursor:pointer;
          max-width:46vw}
   #authbtn{max-width:38vw;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  #syncdot{width:9px;height:9px;border-radius:50%;flex:none;background:var(--muted)}
+  #syncdot.synced{background:#2f9e44}
+  #syncdot.pending{background:#e8b33a}
+  #syncdot.offline{background:#e03131}
 
   .body{flex:1;display:flex;min-height:0}
 
@@ -81,6 +85,7 @@
   <button id="hardonly">🔁 복습할 것만</button>
   <button id="reset">↺ 초기화</button>
   <span class="count" id="count"></span>
+  <span id="syncdot" title="" hidden></span>
   <button id="authbtn" hidden></button>
 </header>
 
@@ -259,7 +264,7 @@ function go(n) { i += n; flipped = false; render(); }
 function setMark(v) {
   const d = activeDeck(); if (!d.length) return;
   mark = applyMark(mark, d[i].id, v, now());
-  save(); go(1);
+  save(); queuePush(); go(1);
 }
 
 function openToc() {
@@ -298,7 +303,7 @@ document.getElementById("hardonly").onclick = function () {
   i = 0; flipped = false; render();
 };
 document.getElementById("reset").onclick = function () {
-  mark = {}; save(); order = CARDS.slice(); i = 0; flipped = false;
+  mark = {}; save(); queuePush(); order = CARDS.slice(); i = 0; flipped = false;
   hardOnly = false; document.getElementById("hardonly").classList.remove("on");
   render();
 };
@@ -339,6 +344,7 @@ function switchIdentity(userId) {
   mark = loadMarks(localStorage, currentUser);
   i = 0; flipped = false;
   render();
+  if (currentUser) pullAndMerge(); else setSyncStatus("off");
 }
 
 function renderAuth() {
@@ -360,6 +366,7 @@ function signIn() {
 function signOut() {
   clearSession(localStorage);
   session = null;
+  setSyncStatus("off");
   switchIdentity(null);
   renderAuth();
 }
@@ -394,6 +401,82 @@ function initAuth() {
     .catch(() => { clearSession(localStorage); session = null; })
     .then(renderAuth);
 }
+
+/* ---- sync ---------------------------------------------------------------
+   localStorage is the source of truth; this layer only reconciles it with the
+   cloud. Every failure below is swallowed on purpose: a dead network must
+   degrade to "offline dot" and never to a lost mark or a blocked UI. */
+let syncStatus = "off";
+let pushTimer = null;
+
+function setSyncStatus(s) {
+  syncStatus = s;
+  const d = document.getElementById("syncdot");
+  d.hidden = (s === "off");
+  d.className = s;
+  d.title = s === "synced" ? "동기화됨"
+    : s === "pending" ? "동기화 중…"
+    : s === "offline" ? "오프라인 — 기기에만 저장됨" : "";
+}
+
+/* A 401 means the session died, not that the network did, and the two need
+   different responses. Refresh once and retry; if the refresh also fails, the
+   session is unrecoverable — drop to signed-out and say so. Marks stay in the
+   user's bucket either way, so nothing is lost by being logged out. */
+function withAuth(attempt) {
+  return attempt().catch(err => {
+    if (!isAuthError(err) || !session) throw err;
+    return refreshSession(SUPA, session.refresh_token, now())
+      .then(s => { session = s; saveSession(localStorage, session); renderAuth(); })
+      .then(attempt)
+      .catch(err2 => {
+        if (!isAuthError(err2)) throw err2;
+        signOut();
+        alert("로그인이 만료되었습니다. 다시 로그인해 주세요.\n" +
+              "표시한 내용은 이 기기에 그대로 남아 있습니다.");
+        throw err2;
+      });
+  });
+}
+
+function pullAndMerge() {
+  if (!SUPA || !session) return Promise.resolve();
+  setSyncStatus("pending");
+  return withAuth(() => fetchProgress(SUPA, session))
+    .then(remote => {
+      const merged = mergeMarks(mark, remote);
+      const localChanged = marksDiffer(mark, merged);
+      const remoteStale = marksDiffer(remote, merged);
+      if (localChanged) { mark = merged; save(); render(); }
+      // Only write back when the merge actually taught the server something.
+      return remoteStale ? withAuth(() => pushProgress(SUPA, session, merged)) : true;
+    })
+    .then(() => setSyncStatus("synced"))
+    .catch(() => setSyncStatus("offline"));
+}
+
+function flushPush() {
+  if (!SUPA || !session) return;
+  clearTimeout(pushTimer); pushTimer = null;
+  setSyncStatus("pending");
+  withAuth(() => pushProgress(SUPA, session, mark))
+    .then(() => setSyncStatus("synced"))
+    .catch(() => setSyncStatus("offline"));
+}
+
+/* Debounced: marking runs in bursts, and one request per card would be rate
+   limits and phone battery for no benefit. */
+function queuePush() {
+  if (!SUPA || !session) return;
+  setSyncStatus("pending");
+  clearTimeout(pushTimer);
+  pushTimer = setTimeout(flushPush, 2000);
+}
+
+addEventListener("pagehide", flushPush);
+addEventListener("visibilitychange", () => {
+  if (document.visibilityState === "hidden") flushPush();
+});
 
 document.getElementById("authbtn").onclick = () => session ? signOut() : signIn();
 

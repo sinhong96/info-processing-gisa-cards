@@ -141,6 +141,16 @@ test("applyMark replaces a different state rather than toggling", () => {
     {"001": {s: "known", t: 2000}});
 });
 
+test("marksDiffer detects an added, changed, or removed card", () => {
+  const a = {"001": {s: "hard", t: 1}};
+  assert.equal(S.marksDiffer(a, a), false);
+  assert.equal(S.marksDiffer(a, {"001": {s: "hard", t: 1}}), false);
+  assert.equal(S.marksDiffer(a, {"001": {s: "known", t: 1}}), true);
+  assert.equal(S.marksDiffer(a, {"001": {s: "hard", t: 2}}), true);
+  assert.equal(S.marksDiffer(a, {}), true);
+  assert.equal(S.marksDiffer(a, {"001": {s: "hard", t: 1}, "002": {s: "known", t: 1}}), true);
+});
+
 test("applyMark does not mutate its input", () => {
   const m = {"001": {s: "hard", t: 1000}};
   S.applyMark(m, "001", "known", 2000);
