@@ -1,0 +1,39 @@
+# Deploy the site with GitHub Actions rather than the legacy Pages builder.
+#
+# The legacy builder runs Jekyll over the whole repo and reports failures as a
+# bare "Page build failed" with no log. It jammed permanently after the sync
+# work landed. This workflow just uploads the repo as-is — the site is a single
+# self-contained index.html and needs no build step — and surfaces real logs
+# when something goes wrong.
+name: pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Let a running deploy finish; queue at most one behind it.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - name: Upload the site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - id: deployment
+        uses: actions/deploy-pages@v4
